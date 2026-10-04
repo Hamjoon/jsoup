@@ -1,0 +1,21 @@
+name: jsoup-survival
+services:
+  build:
+    build: { context: ../../.., dockerfile: experiments/survival/docker/Dockerfile }
+    image: jsoup-survival:latest
+    working_dir: /work/experiments/survival
+    volumes: [ "../../..:/work", "m2:/root/.m2" ]
+    env_file: [ ".env" ]
+    tty: true
+    stdin_open: true
+    mem_limit: 12g
+  run:
+    image: jsoup-survival:latest
+    working_dir: /work/experiments/survival
+    volumes: [ "../../..:/work", "m2:/root/.m2" ]
+    network_mode: none
+    tty: true
+    stdin_open: true
+    mem_limit: 12g
+volumes:
+  m2: {}
