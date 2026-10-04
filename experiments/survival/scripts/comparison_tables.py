@@ -13,6 +13,26 @@ from survival_common import GROUPS, read_csv, releases, matrix, key
 LABELS=dict(dev='Dev',pooled='LLM pooled',ZSL='ZSL',FSL='FSL',CoT='CoT',ToT='ToT',GToT='GToT')
 
 
+def render_table2():
+    """Render Table 2 solely from existing first-break and attribution records."""
+    attribution={r['group']:r for r in read_csv('compile-attribution-summary.csv') if r['scope']=='group'}
+    statuses=['survived','compile-fail','fail','error','timeout','absent']
+    rows=[]
+    split=[]
+    for group in [g for g in GROUPS if g!='pooled']:
+        counts=Counter(r['first_break_status'] or 'survived' for r in read_csv(f'{group}-first-break.csv'))
+        denominator=int(read_csv(f'{group}-survival.csv')[-1]['denominator'])
+        assert sum(counts[s] for s in statuses)==denominator, 'Table 2 omits a nonzero status: '+group
+        removed=len({key(r,group) for r in read_csv(f'{group}-compile-fail-cut-removed.csv')})
+        assert removed<=counts['compile-fail']
+        rows.append(dict(removed=removed,group=LABELS[group],denominator=denominator,**{s:counts[s] for s in statuses}))
+        split.append(dict(group=LABELS[group],compile_fail=counts['compile-fail'],own=attribution[group]['own'],sibling=attribution[group]['sibling']))
+    text=table(rows,[('Group','group'),('Denominator','denominator'),*[(s,s) for s in statuses[:2]],('compile-fail (removed CUT)','removed'),*[(s,s) for s in statuses[2:]]])
+    text+='\nCompile-fail attribution (subset of the compile-fail column):\n\n'+table(split,[('Group','group'),('Compile fail','compile_fail'),('Own','own'),('Sibling','sibling')])
+    (EXP/'results/table2-first-break.md').write_text(text)
+    write_csv(EXP/'results/table2-first-break.csv',rows,['group','denominator',*statuses[:2],'removed',*statuses[2:]])
+
+
 def main():
     start=time.monotonic()
     versions=releases()
@@ -26,20 +46,7 @@ def main():
             tag=release['tag']
             rows.append(dict(tag=tag,days=release['days_since_t'],**{g:data[g][tag]['survived']+'/'+data[g][tag]['denominator'] for g in GROUPS}))
         (EXP/'results'/filename).write_text(table(rows,[('Release','tag'),('Days','days'),*[(LABELS[g],g) for g in GROUPS]]))
-    attribution={r['group']:r for r in read_csv('compile-attribution-summary.csv') if r['scope']=='group'}
-    statuses=['survived','compile-fail','fail','error','timeout','absent']
-    rows=[]
-    split=[]
-    for group in [g for g in GROUPS if g!='pooled']:
-        counts=Counter(r['first_break_status'] or 'survived' for r in read_csv(f'{group}-first-break.csv'))
-        denominator=int(curves[group][versions[-1]['tag']]['denominator'])
-        assert sum(counts[s] for s in statuses)==denominator, 'Table 2 omits a nonzero status: '+group
-        rows.append(dict(group=LABELS[group],denominator=denominator,**{s:counts[s] for s in statuses}))
-        split.append(dict(group=LABELS[group],compile_fail=counts['compile-fail'],own=attribution[group]['own'],sibling=attribution[group]['sibling']))
-    text=table(rows,[('Group','group'),('Denominator','denominator'),*[(s,s) for s in statuses]])
-    text+='\nCompile-fail attribution (subset of the compile-fail column):\n\n'+table(split,[('Group','group'),('Compile fail','compile_fail'),('Own','own'),('Sibling','sibling')])
-    (EXP/'results/table2-first-break.md').write_text(text)
-    write_csv(EXP/'results/table2-first-break.csv',rows,['group','denominator',*statuses])
+    render_table2()
     pool=matrix('pooled')
     size=int(curves['dev'][versions[-1]['tag']]['denominator'])
     assert len(pool)>=size

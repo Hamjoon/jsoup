@@ -1,0 +1,17 @@
+class,technique,test_class,method,first_break_tag,symbol
+Cleaner,CoT,org.jsoup.safety.CleanerTest,constructor_NullWhitelist_Throws,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,clean_NullDocument_Throws,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValid_AllSafe_ReturnsTrue,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValid_ContainsUnsafeTagOrAttrOrHead_ReturnsFalse,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValid_NullDocument_Throws,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValidBodyHtml_SafeHtml_ReturnsTrue,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValidBodyHtml_UnsafeTag_ReturnsFalse,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValidBodyHtml_MalformedHtml_ReturnsFalseDueToParseError,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValidBodyHtml_EmptyString_ReturnsTrue,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValid_WithNoneWhitelist_AlwaysFalseWhenBodyHasElements,jsoup-1.15.1,Whitelist
+Cleaner,CoT,org.jsoup.safety.CleanerTest,isValidBodyHtml_WithNoneWhitelist_OnlyPlainTextIsValid,jsoup-1.15.1,Whitelist
+W3CDom,CoT,org.jsoup.helper.W3CDomTest,testFromJsoupBasic,jsoup-1.12.1,StringUtil
+W3CDom,CoT,org.jsoup.helper.W3CDomTest,testFromJsoupNullInput,jsoup-1.12.1,StringUtil
+W3CDom,CoT,org.jsoup.helper.W3CDomTest,testConvertNamespace,jsoup-1.12.1,StringUtil
+W3CDom,CoT,org.jsoup.helper.W3CDomTest,testAsStringBasic,jsoup-1.12.1,StringUtil
+W3CDom,CoT,org.jsoup.helper.W3CDomTest,testConvertNoLocation,jsoup-1.12.1,StringUtil

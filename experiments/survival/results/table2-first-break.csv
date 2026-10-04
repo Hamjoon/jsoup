@@ -1,7 +1,7 @@
-group,denominator,survived,compile-fail,fail,error,timeout,absent
-Dev,594,187,373,33,1,0,0
-ZSL,342,85,174,30,0,0,53
-FSL,381,76,217,23,0,0,65
-CoT,427,131,218,25,10,0,43
-ToT,345,86,167,11,2,0,79
-GToT,465,104,250,23,1,0,87
+group,denominator,survived,compile-fail,removed,fail,error,timeout,absent
+Dev,594,187,373,270,33,1,0,0
+ZSL,342,85,174,8,30,0,0,53
+FSL,381,76,217,34,23,0,0,65
+CoT,427,131,218,16,25,10,0,43
+ToT,345,86,167,33,11,2,0,79
+GToT,465,104,250,40,23,1,0,87

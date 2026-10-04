@@ -1,0 +1,9 @@
+class,technique,test_class,method,first_break_tag,symbol
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,clean_AllowsSafeTagAndAttributes_EnforcesAttributes,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,clean_UnsafeParentRemoved_ChildPreserved,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,isValid_ValidDocumentReturnsTrue,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,isValid_DocumentWithHeadContentReturnsFalse,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,isValidBodyHtml_SafeFragmentReturnsTrue,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,isValidBodyHtml_UnsafeFragmentReturnsFalse,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,clean_EnforcedAttributesAreAdded,jsoup-1.15.1,Whitelist
+Cleaner,ZSL,org.jsoup.safety.CleanerTest,clean_UnsafeAttributesAreDiscarded,jsoup-1.15.1,Whitelist

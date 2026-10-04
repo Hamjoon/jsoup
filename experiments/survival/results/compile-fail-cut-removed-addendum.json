@@ -1,0 +1,37 @@
+{
+  "groups": {
+    "pooled": {
+      "methods": 127,
+      "symbol_rows": 127
+    },
+    "ZSL": {
+      "methods": 8,
+      "symbol_rows": 8
+    },
+    "FSL": {
+      "methods": 34,
+      "symbol_rows": 34
+    },
+    "CoT": {
+      "methods": 16,
+      "symbol_rows": 16
+    },
+    "ToT": {
+      "methods": 33,
+      "symbol_rows": 33
+    },
+    "GToT": {
+      "methods": 40,
+      "symbol_rows": 40
+    },
+    "dev": {
+      "methods": 270,
+      "symbol_rows": 270
+    }
+  },
+  "matching": "LLM first-break compile-fail file joined by tag, class, technique, test_class; match only compile-errors.csv symbol column using Java identifier boundaries; simple and package-qualified names accepted; canonical simple symbols written; count distinct methods, not symbol rows",
+  "developer_subcount": "Existing accepted developer CSV unchanged",
+  "protected_result_files": 194,
+  "protected_result_files_byte_identical": true,
+  "compilation_or_execution_performed": false
+}

@@ -189,3 +189,4 @@ release,compile-fail,jsoup-1.23.2,0
 release,absent,jsoup-1.23.2,0
 release,not-run,jsoup-1.23.2,0
 release,ignored,jsoup-1.23.2,0
+cut-removed-subcount,compile-fail,,33
