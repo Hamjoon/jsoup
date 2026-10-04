@@ -20,6 +20,6 @@ Runner statuses are pass, fail, error, ignored, timeout; the wrapper adds not-ru
 At method timeout JsonRunner emits timeout and halts the JVM; the wrapper starts another JVM excluding completed and unselected methods.
 Listing uses a separate JVM; --cwd resolves classpath entries to absolute paths; --include selects named methods and marks missing selections not-run.
 
-## Required stop
+## Status-contract clarification
 
-The unchanged run_class.py has no compile-fail status; Step 3 requires it and explicitly says to stop if the status set differs. The tools were not modified. Step 4 was not started. Gary must resolve whether compile-fail is intended to be supplied by dev_compile.py rather than the copied wrapper.
+The initial exact status-set check triggered an early stop because run_class.py does not emit compile-fail. Gary confirmed that compile-fail is assigned by dev_compile.py at the file level. The Step 3 check is satisfied by pass/fail/error/ignored/timeout from JsonRunner and not-run from run_class.py. Both copied files remain unchanged. Release builds may proceed; the denominator review stop remains required.
