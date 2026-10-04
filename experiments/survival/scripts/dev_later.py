@@ -109,8 +109,8 @@ def main():
             write_json(EXP/'results/dev-unexpected-listings.json',dict(tag=tag,listings=final['unexpected_listings']))
             raise SystemExit('STOP: unexpected method listing differences; see results/dev-unexpected-listings.json')
     write_json(EXP/'results/dev-later-summary.json',dict(releases_completed=len(finals),denominator=len(denominator),
-        seconds=round(time.monotonic()-started,3),compile_seconds=sum(f['compile_seconds'] for f in finals),
-        run_seconds=sum(f['run_seconds'] for f in finals),
+        seconds=round(time.monotonic()-started,3),compile_seconds=round(sum(f['compile_seconds'] for f in finals),3),
+        run_seconds=round(sum(f['run_seconds'] for f in finals),3),
         rerun_methods=sum(len(f['reruns']) for f in finals),flaky_events=sum(len(f['flaky']) for f in finals),
         unexpected_listings=[r for f in finals for r in f['unexpected_listings']]))
 

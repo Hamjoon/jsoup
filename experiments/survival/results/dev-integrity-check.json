@@ -1,0 +1,390 @@
+{
+  "tools": [
+    {
+      "file": "tools/junit-4.13.2.jar",
+      "unchanged": true
+    },
+    {
+      "file": "tools/hamcrest-core-1.3.jar",
+      "unchanged": true
+    },
+    {
+      "file": "tools/jacocoagent.jar",
+      "unchanged": true
+    },
+    {
+      "file": "tools/jacococli.jar",
+      "unchanged": true
+    },
+    {
+      "file": "tools/VERSIONS.md",
+      "unchanged": true
+    },
+    {
+      "file": "tools/runner/JsonRunner.java",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/run_class.py",
+      "unchanged": true
+    }
+  ],
+  "frozen_libraries": [
+    {
+      "file": "gson-2.7.jar",
+      "unchanged": true
+    },
+    {
+      "file": "javax.servlet-api-3.1.0.jar",
+      "unchanged": true
+    },
+    {
+      "file": "jetty-http-9.2.22.v20170606.jar",
+      "unchanged": true
+    },
+    {
+      "file": "jetty-io-9.2.22.v20170606.jar",
+      "unchanged": true
+    },
+    {
+      "file": "jetty-security-9.2.22.v20170606.jar",
+      "unchanged": true
+    },
+    {
+      "file": "jetty-server-9.2.22.v20170606.jar",
+      "unchanged": true
+    },
+    {
+      "file": "jetty-servlet-9.2.22.v20170606.jar",
+      "unchanged": true
+    },
+    {
+      "file": "jetty-util-9.2.22.v20170606.jar",
+      "unchanged": true
+    }
+  ],
+  "releases": [
+    {
+      "tag": "jsoup-1.11.2",
+      "source_and_resource_files_checked": 133,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.11.3",
+      "source_and_resource_files_checked": 138,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.12.1",
+      "source_and_resource_files_checked": 143,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.12.2",
+      "source_and_resource_files_checked": 146,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.13.1",
+      "source_and_resource_files_checked": 151,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.14.1",
+      "source_and_resource_files_checked": 178,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.14.2",
+      "source_and_resource_files_checked": 192,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.14.3",
+      "source_and_resource_files_checked": 200,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.15.1",
+      "source_and_resource_files_checked": 204,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.15.2",
+      "source_and_resource_files_checked": 207,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.15.3",
+      "source_and_resource_files_checked": 208,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.15.4",
+      "source_and_resource_files_checked": 203,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.16.1",
+      "source_and_resource_files_checked": 204,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.16.2",
+      "source_and_resource_files_checked": 207,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.17.1",
+      "source_and_resource_files_checked": 227,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.17.2",
+      "source_and_resource_files_checked": 232,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.18.1",
+      "source_and_resource_files_checked": 233,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.18.2",
+      "source_and_resource_files_checked": 236,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.18.3",
+      "source_and_resource_files_checked": 236,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.19.1",
+      "source_and_resource_files_checked": 248,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.20.1",
+      "source_and_resource_files_checked": 256,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.21.1",
+      "source_and_resource_files_checked": 264,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.21.2",
+      "source_and_resource_files_checked": 273,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.22.1",
+      "source_and_resource_files_checked": 280,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.22.2",
+      "source_and_resource_files_checked": 290,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.23.1",
+      "source_and_resource_files_checked": 293,
+      "differences": []
+    },
+    {
+      "tag": "jsoup-1.23.2",
+      "source_and_resource_files_checked": 295,
+      "differences": []
+    }
+  ],
+  "protocol": [
+    {
+      "tag": "jsoup-1.11.3",
+      "denominator_methods": 594,
+      "rerun_methods": 1,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.12.1",
+      "denominator_methods": 594,
+      "rerun_methods": 1,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.12.2",
+      "denominator_methods": 594,
+      "rerun_methods": 7,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.13.1",
+      "denominator_methods": 594,
+      "rerun_methods": 5,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.14.1",
+      "denominator_methods": 594,
+      "rerun_methods": 7,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.14.2",
+      "denominator_methods": 594,
+      "rerun_methods": 7,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.14.3",
+      "denominator_methods": 594,
+      "rerun_methods": 7,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.1",
+      "denominator_methods": 594,
+      "rerun_methods": 7,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.2",
+      "denominator_methods": 594,
+      "rerun_methods": 11,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.3",
+      "denominator_methods": 594,
+      "rerun_methods": 11,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.4",
+      "denominator_methods": 594,
+      "rerun_methods": 12,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.16.1",
+      "denominator_methods": 594,
+      "rerun_methods": 12,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.16.2",
+      "denominator_methods": 594,
+      "rerun_methods": 13,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.17.1",
+      "denominator_methods": 594,
+      "rerun_methods": 13,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.17.2",
+      "denominator_methods": 594,
+      "rerun_methods": 13,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.18.1",
+      "denominator_methods": 594,
+      "rerun_methods": 13,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.18.2",
+      "denominator_methods": 594,
+      "rerun_methods": 13,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.18.3",
+      "denominator_methods": 594,
+      "rerun_methods": 13,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.19.1",
+      "denominator_methods": 594,
+      "rerun_methods": 12,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.20.1",
+      "denominator_methods": 594,
+      "rerun_methods": 24,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.21.1",
+      "denominator_methods": 594,
+      "rerun_methods": 15,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.21.2",
+      "denominator_methods": 594,
+      "rerun_methods": 16,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.22.1",
+      "denominator_methods": 594,
+      "rerun_methods": 17,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.22.2",
+      "denominator_methods": 594,
+      "rerun_methods": 17,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.23.1",
+      "denominator_methods": 594,
+      "rerun_methods": 18,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.23.2",
+      "denominator_methods": 594,
+      "rerun_methods": 16,
+      "flaky_methods": 0,
+      "checks_passed": true
+    }
+  ],
+  "all_source_and_resource_files_unchanged": true,
+  "all_protocol_checks_passed": true,
+  "seconds": 2.155
+}

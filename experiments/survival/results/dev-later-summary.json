@@ -2,7 +2,7 @@
   "releases_completed": 26,
   "denominator": 594,
   "seconds": 476.807,
-  "compile_seconds": 273.29300000000006,
+  "compile_seconds": 273.293,
   "run_seconds": 153.028,
   "rerun_methods": 301,
   "flaky_events": 0,
