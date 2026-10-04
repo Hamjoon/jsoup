@@ -1,0 +1,11 @@
+{
+  "pre_generation_review_accepted": true,
+  "cuts": 52,
+  "abstract_cuts": 8,
+  "abstract_count_correction": "Token is an abstract class; the document's expected count was wrong.",
+  "absent_rule_classes": ["StringUtil", "BooleanAttribute", "Whitelist", "ConstrainableInputStream", "UncheckedIOException", "ChangeNotifyingArrayList"],
+  "absence_rule": "Use the observed original source-path presence matrix for all six CUTs.",
+  "probe_accepted": true,
+  "generation_authorized": true,
+  "stop_after_llm_denominator": true
+}
