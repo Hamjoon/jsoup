@@ -37,7 +37,8 @@
     "Additional CUT source paths become absent at later releases; the observed presence matrix is retained under the explicit report-and-continue instruction.",
     "The first inventory-script version made the abstract-count mismatch fatal. This local check was corrected to follow the Step 10 report-and-continue instruction, and inventory was rerun; source data and selection were unchanged.",
     "Prompt rendering substitutes the three original template placeholder tokens in a single split/join operation. Inserted source and example text is never rescanned.",
-    "The probe sends max_tokens exactly as specified by the request body; no input-length exclusion or truncation is applied."
+    "The probe sends max_tokens exactly as specified by the request body; no input-length exclusion or truncation is applied.",
+    "Git whitespace findings are confined to preserved prompt/source and raw-response data. Those bytes remain unchanged; the implementation and metadata whitespace check passed separately."
   ],
   "stage_seconds": {
     "copy": 0.041,

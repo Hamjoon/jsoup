@@ -1,0 +1,8 @@
+{
+  "full_audit_exit": 2,
+  "data_files_flagged": 137,
+  "flags_confined_to_preserved_prompt_and_raw_response_data": true,
+  "implementation_and_metadata_audit_exit": 0,
+  "data_bytes_unchanged": true,
+  "note": "Whitespace findings are inherited measurement data; original source/template/raw-response bytes are preserved rather than normalized."
+}

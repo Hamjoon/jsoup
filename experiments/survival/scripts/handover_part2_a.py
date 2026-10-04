@@ -39,6 +39,9 @@ def main():
         'Prompt rendering substitutes the three original template placeholder tokens in a single split/join operation. Inserted source and example text is never rescanned.',
         'The probe sends max_tokens exactly as specified by the request body; no input-length exclusion or truncation is applied.'
     ]
+    whitespace=RESULTS/'part2-whitespace-audit.json'
+    if whitespace.exists():
+        deviations.append('Git whitespace findings are confined to preserved prompt/source and raw-response data. Those bytes remain unchanged; the implementation and metadata whitespace check passed separately.')
     summary=dict(observed_inventory=inventory['observed'],expected_inventory=inventory['expected'],
         abstract_classes=inventory['abstract_classes'],exclusions=inventory['exclusions'],
         source_path_absence_classes=len(exceptions),unexpected_presence_classes=sum(r['unexpected'] for r in exceptions),
@@ -66,6 +69,8 @@ def main():
     verification=RESULTS/'part2-pre-generation-check.json'
     if verification.exists():
         text+='\n## Preparation verification\n\n```json\n'+verification.read_text()+'```\n'
+    if whitespace.exists():
+        text+='\nWhitespace audit:\n\n```json\n'+whitespace.read_text()+'```\n'
     text+='\n## Recorded wall times\n\n'+table([dict(stage=k,seconds=v) for k,v in summary['stage_seconds'].items()],[('Stage','stage'),('Seconds','seconds')])
     text+='\n## Deviations and interpretations\n\n'+''.join('- '+d+'\n' for d in summary['deviations'])
     text+='\n## Review and stop\n\nReview the model response, token distribution, abstract-count difference, and additional source-path absences before authorizing the generation batch. No generated test files were created. All numeric findings above come from results files.\n'
