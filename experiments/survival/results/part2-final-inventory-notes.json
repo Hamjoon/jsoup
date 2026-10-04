@@ -1,0 +1,30 @@
+{
+  "selected_cuts": 52,
+  "abstract_cuts": 8,
+  "absence_cases": [
+    {
+      "CUT": "UncheckedIOException",
+      "first_absent": "jsoup-1.19.1"
+    },
+    {
+      "CUT": "ChangeNotifyingArrayList",
+      "first_absent": "jsoup-1.21.1"
+    },
+    {
+      "CUT": "StringUtil",
+      "first_absent": "jsoup-1.12.1"
+    },
+    {
+      "CUT": "ConstrainableInputStream",
+      "first_absent": "jsoup-1.18.1"
+    },
+    {
+      "CUT": "BooleanAttribute",
+      "first_absent": "jsoup-1.13.1"
+    },
+    {
+      "CUT": "Whitelist",
+      "first_absent": "jsoup-1.15.1"
+    }
+  ]
+}

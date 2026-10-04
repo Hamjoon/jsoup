@@ -1,0 +1,8 @@
+group,denominator,final_survived,final_survival_rate,lenient_survived
+dev,594,187,0.3148,479
+pooled,1862,431,0.2315,1160
+ZSL,342,85,0.2485,209
+FSL,381,76,0.1995,221
+CoT,427,131,0.3068,295
+ToT,345,86,0.2493,205
+GToT,465,104,0.2237,304

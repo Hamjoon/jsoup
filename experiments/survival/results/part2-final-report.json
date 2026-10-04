@@ -1,0 +1,132 @@
+{
+  "final": [
+    {
+      "group": "dev",
+      "denominator": 594,
+      "final_survived": 187,
+      "final_survival_rate": "0.3148",
+      "lenient_survived": 479
+    },
+    {
+      "group": "pooled",
+      "denominator": 1862,
+      "final_survived": 431,
+      "final_survival_rate": "0.2315",
+      "lenient_survived": 1160
+    },
+    {
+      "group": "ZSL",
+      "denominator": 342,
+      "final_survived": 85,
+      "final_survival_rate": "0.2485",
+      "lenient_survived": 209
+    },
+    {
+      "group": "FSL",
+      "denominator": 381,
+      "final_survived": 76,
+      "final_survival_rate": "0.1995",
+      "lenient_survived": 221
+    },
+    {
+      "group": "CoT",
+      "denominator": 427,
+      "final_survived": 131,
+      "final_survival_rate": "0.3068",
+      "lenient_survived": 295
+    },
+    {
+      "group": "ToT",
+      "denominator": 345,
+      "final_survived": 86,
+      "final_survival_rate": "0.2493",
+      "lenient_survived": 205
+    },
+    {
+      "group": "GToT",
+      "denominator": 465,
+      "final_survived": 104,
+      "final_survival_rate": "0.2237",
+      "lenient_survived": 304
+    }
+  ],
+  "stage_seconds": {
+    "generation": 7470.421,
+    "extraction": 0.9299999999999999,
+    "compilation": 72.861,
+    "deduplication": 0.94,
+    "coverage": 53.772,
+    "run1": 29.497999999999998,
+    "run2": 28.656,
+    "run3": 30.494,
+    "later_release_llm_sweep": 1131.399,
+    "later_release_compile": 812.197,
+    "later_release_run": 193.887,
+    "later_release_rerun": 121.594,
+    "parallel_sequential_verification": 2627.224,
+    "strict_analysis": 0.23,
+    "compile_attribution": 2.279,
+    "comparison_tables": 0.176,
+    "source_and_developer_protocol_audit": 3.281,
+    "llm_survival_protocol_audit": 2.254
+  },
+  "removed_cut_compile_fail_methods": 270,
+  "listing_difference_records": 26,
+  "missing_baseline_listing_records": 0,
+  "parallel_verification_releases": 26,
+  "all_parallel_checks_identical": true,
+  "llm_flaky_events": 0,
+  "accepted_inventory": {
+    "selected_cuts": 52,
+    "abstract_cuts": 8,
+    "absence_cases": [
+      {
+        "CUT": "UncheckedIOException",
+        "first_absent": "jsoup-1.19.1"
+      },
+      {
+        "CUT": "ChangeNotifyingArrayList",
+        "first_absent": "jsoup-1.21.1"
+      },
+      {
+        "CUT": "StringUtil",
+        "first_absent": "jsoup-1.12.1"
+      },
+      {
+        "CUT": "ConstrainableInputStream",
+        "first_absent": "jsoup-1.18.1"
+      },
+      {
+        "CUT": "BooleanAttribute",
+        "first_absent": "jsoup-1.13.1"
+      },
+      {
+        "CUT": "Whitelist",
+        "first_absent": "jsoup-1.15.1"
+      }
+    ]
+  },
+  "deviations": [
+    "Gary accepted the observed abstract CUT count and all source-path absence cases; the accepted presence matrix will be used unchanged.",
+    "All primary prompt, response, and generated-source bytes are protected from Git newline normalization with experiment-local attributes.",
+    "The original generation retained every response without non-HTTP retries. Gary subsequently authorized exactly one reissue of Elements/GToT after its finish_reason=error; attempt-2 is preserved and selected for extraction. This is not a second generation round.",
+    "Gary authorized extract_jsoup.py, a copy of unchanged extract_v2.py with only HTML detection changed from comment-masked text to comment-and-literal-masked code. The exact diff and hashes are in tools/ORIGIN.md. Generated Java bytes are not repaired.",
+    "Previously extracted files and per-file compile/run/coverage artifacts remain byte-identical. Only newly extracted files were compiled and run. Previous aggregate results and the prior handover are archived in results/part2-baseline-before-jsoup-extractor; aggregate totals and pooled deduplication flags are recomputed for the expanded set.",
+    "Listing failures retain the original wrapper output and a separate source-inventoried JUnitListingFailure record; their methods are not denominator-eligible.",
+    "Deduplication representatives are selected from compiled-file source methods in the fixed technique/source order before intersection with all-three-pass. Flags and source-body hashes remain separate from run status.",
+    "Coverage executes complete compiled LLM classes and the whole developer suite. It is supplementary coverage, not a measurement limited to deduplicated denominator methods; JaCoCo XML source-file counters accompany its requested CSV reports.",
+    "Whitespace present in prompts, raw responses, or extracted source is preserved as primary data rather than normalized.",
+    "Gary accepted the revised pooled and per-technique denominators and authorized the final release sweep.",
+    "Per-file javac and per-class runner invocations use four workers within a release. Compilation finishes before execution; releases advance in order. Reruns also use at most four independent class workers. Output ledgers use fixed input order.",
+    "Every completed release was also checked with isolated sequential compilation/execution. Exact compiler exits/stderr and successful class-file bytes, JUnit listings, method statuses and exception types were compared. Runtime message text and execution durations are excluded from equality; full raw outputs are retained, and these supplementary checks do not alter measured statuses or denominators.",
+    "First-break compile-fail methods receive own/sibling attribution from their frozen source body ranges. The lenient view rechecks attribution at every later compile-fail cell, then applies cumulative survival; it does not permanently pardon a sibling first break.",
+    "The developer removed-CUT sub-count matches whole-word CUT names in javac error headers and symbol/location details at each method\u2019s first-break file. Source-code excerpts are excluded. All affected methods retain compile-fail; CSV rows may name multiple symbols, while the summary counts distinct methods.",
+    "New listings from files that failed compilation at t are reported separately from missing baseline methods and never enlarge the fixed denominator.",
+    "The baseline preservation audit initially flagged Finder-modified .DS_Store files, which the review snapshot had inadvertently included. OS metadata is now explicitly excluded and listed separately; all experimental artifacts remain hash-checked.",
+    "The initial multi-file analysis patch was rejected before edits because it attempted two operations on one path; the patch was split and applied. No measured data changed.",
+    "Incremental compile initially stopped before compiling any file because the new JSON ledger reader lacked its json import; the import was added and the command rerun.",
+    "A read-only extractor preview needed scripts added to Python import search path; no data changed."
+  ],
+  "branch_pushed": false,
+  "steps_17_18_19_complete": true
+}

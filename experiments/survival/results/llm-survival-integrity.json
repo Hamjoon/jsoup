@@ -1,0 +1,201 @@
+{
+  "generated_files_unchanged": 260,
+  "eligible_matrix_rows": 1960,
+  "accepted_denominators": {
+    "pooled": 1862,
+    "ZSL": 342,
+    "FSL": 381,
+    "CoT": 427,
+    "ToT": 345,
+    "GToT": 465,
+    "dev": 594
+  },
+  "protocol": [
+    {
+      "tag": "jsoup-1.11.3",
+      "workers": 4,
+      "rerun_methods": 279,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.12.1",
+      "workers": 4,
+      "rerun_methods": 252,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.12.2",
+      "workers": 4,
+      "rerun_methods": 269,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.13.1",
+      "workers": 4,
+      "rerun_methods": 164,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.14.1",
+      "workers": 4,
+      "rerun_methods": 212,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.14.2",
+      "workers": 4,
+      "rerun_methods": 213,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.14.3",
+      "workers": 4,
+      "rerun_methods": 224,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.1",
+      "workers": 4,
+      "rerun_methods": 182,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.2",
+      "workers": 4,
+      "rerun_methods": 182,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.3",
+      "workers": 4,
+      "rerun_methods": 182,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.15.4",
+      "workers": 4,
+      "rerun_methods": 182,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.16.1",
+      "workers": 4,
+      "rerun_methods": 182,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.16.2",
+      "workers": 4,
+      "rerun_methods": 171,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.17.1",
+      "workers": 4,
+      "rerun_methods": 171,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.17.2",
+      "workers": 4,
+      "rerun_methods": 172,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.18.1",
+      "workers": 4,
+      "rerun_methods": 149,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.18.2",
+      "workers": 4,
+      "rerun_methods": 153,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.18.3",
+      "workers": 4,
+      "rerun_methods": 153,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.19.1",
+      "workers": 4,
+      "rerun_methods": 154,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.20.1",
+      "workers": 4,
+      "rerun_methods": 133,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.21.1",
+      "workers": 4,
+      "rerun_methods": 119,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.21.2",
+      "workers": 4,
+      "rerun_methods": 117,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.22.1",
+      "workers": 4,
+      "rerun_methods": 118,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.22.2",
+      "workers": 4,
+      "rerun_methods": 118,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.23.1",
+      "workers": 4,
+      "rerun_methods": 118,
+      "flaky_methods": 0,
+      "checks_passed": true
+    },
+    {
+      "tag": "jsoup-1.23.2",
+      "workers": 4,
+      "rerun_methods": 118,
+      "flaky_methods": 0,
+      "checks_passed": true
+    }
+  ],
+  "all_presence_skip_checks_passed": true,
+  "all_classpath_and_rerun_checks_passed": true,
+  "all_parallel_sequential_comparisons_passed": true,
+  "seconds": 2.254
+}

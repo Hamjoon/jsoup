@@ -18,13 +18,23 @@ def main():
         lenient_survived=int(read_csv(f'{g}-survival-lenient.csv')[-1]['survived'])) for g in GROUPS]
     write_csv(EXP/'results/part2-final-summary.csv',final,list(final[0]))
     verification=load('llm-parallel-verification.json')
+    verification['comparison_scope']='Exact javac exits/stderr and successful class-file bytes; exact JUnit method listing, status and exception type. Runtime message text and execution timings are excluded from equality; full raw outputs are retained.'
+    write_json(EXP/'results/llm-parallel-verification.json',verification)
     baseline=load('part2-baseline-summary.json')
+    cuts=[r for r in read_csv('cut-classes.csv') if not r['excluded']]
+    presence=read_csv('cut-presence.csv')
+    versions=read_csv('releases.csv')[1:]
+    absent=[dict(CUT=r['class'],first_absent=next(v['tag'] for v in versions if r[v['tag']]=='0')) for r in presence if any(r[v['tag']]=='0' for v in versions)]
+    inventory=dict(selected_cuts=len(cuts),abstract_cuts=sum(r['kind']=='abstract' for r in cuts),absence_cases=absent)
+    write_json(EXP/'results/part2-final-inventory-notes.json',inventory)
     stages=dict(baseline['stage_seconds'])
     stages.update(later_release_llm_sweep=later['seconds'],later_release_compile=later['compile_seconds'],
         later_release_run=later['run_seconds'],later_release_rerun=later['rerun_seconds'],
         parallel_sequential_verification=verification['seconds'],
         strict_analysis=round(sum(summaries[g]['seconds'] for g in GROUPS),3),
-        compile_attribution=load('compile-attribution-timing.json')['seconds'],comparison_tables=load('comparison-summary.json')['seconds'])
+        compile_attribution=load('compile-attribution-timing.json')['seconds'],comparison_tables=load('comparison-summary.json')['seconds'],
+        source_and_developer_protocol_audit=load('dev-integrity-check.json')['seconds'],
+        llm_survival_protocol_audit=load('llm-survival-integrity.json')['seconds'])
     listing=later['listing_differences']
     baseline_files={(r['class'],r['technique']) for r in read_csv('llm-methods.csv')}
     classified=[dict(**r,baseline_file_compiled=(r['class'],r['technique']) in baseline_files) for r in listing]
@@ -32,21 +42,23 @@ def main():
     notes=[*baseline['deviations'],
         'Gary accepted the revised pooled and per-technique denominators and authorized the final release sweep.',
         'Per-file javac and per-class runner invocations use four workers within a release. Compilation finishes before execution; releases advance in order. Reruns also use at most four independent class workers. Output ledgers use fixed input order.',
-        'Every completed release was also checked with isolated sequential compilation/execution. Exact compiler exits/stderr and class-file bytes, JUnit listings, method statuses and exception types were compared. Execution durations and process-specific message identity hashes are excluded from equality; these supplementary checks do not alter measured statuses or denominators.',
+        'Every completed release was also checked with isolated sequential compilation/execution. Exact compiler exits/stderr and successful class-file bytes, JUnit listings, method statuses and exception types were compared. Runtime message text and execution durations are excluded from equality; full raw outputs are retained, and these supplementary checks do not alter measured statuses or denominators.',
         'First-break compile-fail methods receive own/sibling attribution from their frozen source body ranges. The lenient view rechecks attribution at every later compile-fail cell, then applies cumulative survival; it does not permanently pardon a sibling first break.',
         'The developer removed-CUT sub-count matches whole-word CUT names in javac error headers and symbol/location details at each method’s first-break file. Source-code excerpts are excluded. All affected methods retain compile-fail; CSV rows may name multiple symbols, while the summary counts distinct methods.',
         'New listings from files that failed compilation at t are reported separately from missing baseline methods and never enlarge the fixed denominator.',
         'The baseline preservation audit initially flagged Finder-modified .DS_Store files, which the review snapshot had inadvertently included. OS metadata is now explicitly excluded and listed separately; all experimental artifacts remain hash-checked.',
         'The initial multi-file analysis patch was rejected before edits because it attempted two operations on one path; the patch was split and applied. No measured data changed.'
     ]
+    notes.extend(baseline['authorized_revision']['mechanical_fixes'])
     report=dict(final=final,stage_seconds=stages,removed_cut_compile_fail_methods=summaries['dev']['compile_fail_cut_removed_methods'],
         listing_difference_records=len(listing),missing_baseline_listing_records=sum(bool(r['missing']) for r in classified if r['baseline_file_compiled']),
         parallel_verification_releases=len(verification['releases']),all_parallel_checks_identical=verification['all_identical'],
-        llm_flaky_events=later['flaky_events'],deviations=notes,branch_pushed=False,steps_17_18_19_complete=True)
+        llm_flaky_events=later['flaky_events'],accepted_inventory=inventory,deviations=notes,branch_pushed=False,steps_17_18_19_complete=True)
     write_json(EXP/'results/part2-final-report.json',report)
     text='# jsoup survival comparison: final handover\n\n'
     text+='Steps 17, 18 and 19 are complete. The accepted denominators remain fixed; all later releases were evaluated in order. This is the final review stop.\n\n'
-    text+='## Final strict and lenient survivors\n\n'+table(final,[('Group','group'),('Denominator','denominator'),('Strict survivors','final_survived'),('Strict rate','final_survival_rate'),('Lenient survivors','lenient_survived')])
+    text+=f"Accepted inventory: {inventory['selected_cuts']} CUTs, including {inventory['abstract_cuts']} abstract classes (Token included). Original source-path absences:\n\n"+table(absent,[('CUT','CUT'),('First absent release','first_absent')])
+    text+='\n## Final strict and lenient survivors\n\n'+table(final,[('Group','group'),('Denominator','denominator'),('Strict survivors','final_survived'),('Strict rate','final_survival_rate'),('Lenient survivors','lenient_survived')])
     for heading,filename in [('Table 1: strict survival by minor','table1-survival-by-minor.md'),
         ('Table 2: first break and compile-fail attribution','table2-first-break.md'),('Lenient survival by minor','table1-lenient-by-minor.md')]:
         text+='\n## '+heading+'\n\n'+(EXP/'results'/filename).read_text()
