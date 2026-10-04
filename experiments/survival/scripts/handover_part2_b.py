@@ -74,6 +74,9 @@ def main():
     text+='# LLM baseline and denominator handover\n\n'
     text+='Generation and baseline evaluation are complete. This is the required denominator review stop; no later-release LLM execution or second generation round has started.\n\n'
     text+='## Generation summary\n\n```json\n'+json.dumps(generation,indent=2)+'\n```\n'
+    unusual=[{k:r[k] for k in ['class','technique','finish_reason','status','attempts']} for r in calls if r['finish_reason']!='stop']
+    if unusual:
+        text+='\nResponses with a non-stop finish (content preserved; well-formed responses were not retried):\n\n'+table(unusual,[('CUT','class'),('Technique','technique'),('Finish','finish_reason'),('Status','status'),('Attempts','attempts')])
     text+='\n## Token distributions\n\n'+table(distributions,[('Technique','technique'),('Metric','metric'),('Reported','reported'),('Min','min'),('Median','median'),('Max','max'),('Total','total')])
     text+='\nReasoning tokens are a reported subset of completion usage and are not added again to completion totals. Missing usage fields are omitted from distributions, rather than imputed.\n'
     text+='\n## Extraction\n\n'+table(extraction,[('Technique','technique'),('Responses','responses'),('MSR','msr'),('CSR v2','csr'),('Extracted','extracted'),('No class','no_class'),('HTML flagged','html_flagged')])

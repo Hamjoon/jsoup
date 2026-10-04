@@ -1,0 +1,15 @@
+{
+  "tag": "jsoup-1.11.2",
+  "run": 2,
+  "complete": true,
+  "files_run": 94,
+  "methods_measured": 1468,
+  "methods_listed": 1468,
+  "counts": {
+    "error": 35,
+    "pass": 1315,
+    "fail": 118
+  },
+  "listing_failures": [],
+  "seconds": 19.014
+}

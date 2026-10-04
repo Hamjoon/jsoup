@@ -1,0 +1,15 @@
+{
+  "requests_checked": 260,
+  "attempts_checked": 260,
+  "extracted_files_checked": 175,
+  "copied_tool_files_checked": 15,
+  "all_copied_tools_unchanged": true,
+  "baseline_source_and_resource_files_checked": 133,
+  "baseline_source_differences": [],
+  "pooled_denominator": 1224,
+  "primary_data_unchanged": true,
+  "request_settings_checked": true,
+  "no_non_http_retries": true,
+  "denominator_checks_passed": true,
+  "llm_classpaths_isolated": true
+}
