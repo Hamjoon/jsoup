@@ -1,0 +1,76 @@
+{
+  "source_commit": "eb5088094ee51a7abb945f8cfabc5558803134e1",
+  "file_hashes": [
+    {
+      "file": "tools/junit-4.13.2.jar",
+      "source_sha256": "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
+      "copied_sha256": "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3"
+    },
+    {
+      "file": "tools/hamcrest-core-1.3.jar",
+      "source_sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9",
+      "copied_sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+    },
+    {
+      "file": "tools/jacocoagent.jar",
+      "source_sha256": "67de51e9ca1db044f3a3d10613518befb02e8eee1015f2ff6d56cfb9d4506546",
+      "copied_sha256": "67de51e9ca1db044f3a3d10613518befb02e8eee1015f2ff6d56cfb9d4506546"
+    },
+    {
+      "file": "tools/jacococli.jar",
+      "source_sha256": "c449591174982bbc003d1290003fcbc7b939215436922d2f0f25239d110d531a",
+      "copied_sha256": "c449591174982bbc003d1290003fcbc7b939215436922d2f0f25239d110d531a"
+    },
+    {
+      "file": "tools/VERSIONS.md",
+      "source_sha256": "519ad230af3cbfa0029a1a7944f0caef80960eb33b63d5e63483c41e74e8c943",
+      "copied_sha256": "519ad230af3cbfa0029a1a7944f0caef80960eb33b63d5e63483c41e74e8c943"
+    },
+    {
+      "file": "tools/runner/JsonRunner.java",
+      "source_sha256": "a327f70c735214a5cb83b8c0e327db18c030abd65e2c128c1f6385f4d01d8bde",
+      "copied_sha256": "a327f70c735214a5cb83b8c0e327db18c030abd65e2c128c1f6385f4d01d8bde"
+    },
+    {
+      "file": "scripts/run_class.py",
+      "source_sha256": "b40b267d791d48dad23bf861f40856f19939090c149aa4d38ef8f1014bc0de48",
+      "copied_sha256": "b40b267d791d48dad23bf861f40856f19939090c149aa4d38ef8f1014bc0de48"
+    }
+  ],
+  "runner_statuses": [
+    "pass",
+    "fail",
+    "error",
+    "ignored",
+    "timeout"
+  ],
+  "wrapper_statuses": [
+    "not-run"
+  ],
+  "expected_wrapper_statuses": [
+    "not-run",
+    "compile-fail"
+  ],
+  "missing_statuses": [
+    "compile-fail"
+  ],
+  "wrapper_evidence": [
+    {
+      "line": 69,
+      "text": "                if event.get('status') not in {'pass', 'fail', 'error', 'ignored', 'timeout'}:"
+    },
+    {
+      "line": 79,
+      "text": "                        completed[name] = dict(method=name, status='not-run', exception=None,"
+    },
+    {
+      "line": 85,
+      "text": "            completed[name] = dict(method=name, status='not-run', exception='JUnitMethodMissing',"
+    },
+    {
+      "line": 91,
+      "text": "        completed = {name: dict(method=name, status='not-run', exception='JUnitListingFailure',"
+    }
+  ],
+  "stop_reason": "The unchanged run_class.py has no compile-fail status; Step 3 requires it and explicitly says to stop if the status set differs."
+}

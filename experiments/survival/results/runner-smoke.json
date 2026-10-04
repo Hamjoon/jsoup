@@ -1,0 +1,26 @@
+{
+  "compile": {
+    "command": [
+      "javac",
+      "-cp",
+      "tools/junit-4.13.2.jar",
+      "-d",
+      "tools/runner",
+      "tools/runner/JsonRunner.java"
+    ],
+    "exit_status": 0,
+    "stdout": "",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Duser.timezone=UTC -Dfile.encoding=UTF-8\n"
+  },
+  "junit": {
+    "command": [
+      "java",
+      "-cp",
+      "tools/junit-4.13.2.jar:tools/hamcrest-core-1.3.jar",
+      "org.junit.runner.JUnitCore"
+    ],
+    "exit_status": 0,
+    "stdout": "JUnit version 4.13.2\n\nTime: 0\n\nOK (0 tests)\n\n",
+    "stderr": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Duser.timezone=UTC -Dfile.encoding=UTF-8\n"
+  }
+}
