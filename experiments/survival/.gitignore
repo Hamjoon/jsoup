@@ -1,0 +1,14 @@
+checkouts/
+lib/
+tools/*.jar
+tools/*.zip
+tools/runner/*.class
+dev/
+docker/.env
+docs/handover-*.md
+docs/*-review-decisions.md
+docs/*.pdf
+docs/*.html
+docs/*meeting-memo*
+.DS_Store
+__pycache__/
