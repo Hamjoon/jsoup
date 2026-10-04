@@ -25,7 +25,7 @@ def main():
         package=match.group(1) if match else ''
         has_test='@Test' in text
         integration=package.startswith('org.jsoup.integration')
-        role='helper' if not has_test else ('integration' if integration else 'test')
+        role='integration' if integration else ('test' if has_test else 'helper')
         rows.append(dict(path=str(file.relative_to(T)),package=package,
                          **{'class':file.stem},has_test_annotation=int(has_test),
                          integration=int(integration),role=role))
@@ -46,11 +46,12 @@ def main():
                                 production_class=production.get((row['package'],simple),'')))
     write_csv(EXP/'results/dev-class-map.csv',mapping,['test_class','production_class'])
     roles=dict(Counter(r['role'] for r in rows))
-    expected={'files':43,'test':34,'helper':3,'integration':6}
+    expected={'files':43,'test':31,'helper':3,'integration':9}
     observed={'files':len(rows),**roles}
     errors=[f'{key}: expected {value}, found {observed.get(key,0)}'
             for key,value in expected.items() if observed.get(key,0)!=value]
     summary=dict(expected=expected,observed=observed,
+                 clarification='Gary confirmed 31 tests, 3 helpers, 9 integration files including servlets, 43 total; 599 annotations outside integration.',
                  helpers=[r['path'] for r in rows if r['role']=='helper'],
                  integration_files=[r['path'] for r in rows if r['integration']],
                  integration_with_test_annotation=sum(r['integration'] and r['has_test_annotation'] for r in rows),

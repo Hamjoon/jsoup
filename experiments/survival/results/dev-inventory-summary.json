@@ -1,25 +1,20 @@
 {
   "expected": {
     "files": 43,
-    "test": 34,
+    "test": 31,
     "helper": 3,
-    "integration": 6
+    "integration": 9
   },
   "observed": {
     "files": 43,
-    "helper": 9,
+    "helper": 3,
     "test": 31,
-    "integration": 3
+    "integration": 9
   },
+  "clarification": "Gary confirmed 31 tests, 3 helpers, 9 integration files including servlets, 43 total; 599 annotations outside integration.",
   "helpers": [
     "src/test/java/org/jsoup/MultiLocaleRule.java",
     "src/test/java/org/jsoup/TextUtil.java",
-    "src/test/java/org/jsoup/integration/Benchmark.java",
-    "src/test/java/org/jsoup/integration/TestServer.java",
-    "src/test/java/org/jsoup/integration/servlets/BaseServlet.java",
-    "src/test/java/org/jsoup/integration/servlets/EchoServlet.java",
-    "src/test/java/org/jsoup/integration/servlets/HelloServlet.java",
-    "src/test/java/org/jsoup/integration/servlets/SlowRider.java",
     "src/test/java/org/jsoup/nodes/BuildEntities.java"
   ],
   "integration_files": [
@@ -42,9 +37,5 @@
   "production_classes": 59,
   "mapped_production_classes": 26,
   "test_annotations_outside_integration": 599,
-  "errors": [
-    "test: expected 34, found 31",
-    "helper: expected 3, found 9",
-    "integration: expected 6, found 3"
-  ]
+  "errors": []
 }

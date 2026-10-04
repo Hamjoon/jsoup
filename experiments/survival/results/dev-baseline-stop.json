@@ -1,0 +1,54 @@
+{
+  "reason": "Class-level @Ignore produces no JUnit method descriptions; unchanged JsonRunner and run_class.py cannot list the ignored methods.",
+  "test_class": "org.jsoup.internal.ConstrainableInputStreamTest",
+  "source_path": "checkouts/jsoup-1.11.2/src/test/java/org/jsoup/internal/ConstrainableInputStreamTest.java",
+  "class_annotations": [
+    "Ignore"
+  ],
+  "ignored_source_methods": [
+    "remainingAfterFirstRead",
+    "noLimitAfterFirstRead"
+  ],
+  "completed_classes": [
+    {
+      "test_class": "org.jsoup.helper.DataUtilTest",
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.32
+    },
+    {
+      "test_class": "org.jsoup.helper.HttpConnectionTest",
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.234
+    },
+    {
+      "test_class": "org.jsoup.helper.StringUtilTest",
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.291
+    },
+    {
+      "test_class": "org.jsoup.helper.W3CDomTest",
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.389
+    }
+  ],
+  "completed_methods": 48,
+  "completed_class_wrapper_seconds": 1.234,
+  "listing_failure": {
+    "tag": "jsoup-1.11.2",
+    "run": 1,
+    "test_class": "org.jsoup.internal.ConstrainableInputStreamTest",
+    "exit_status": 1,
+    "output": "Traceback (most recent call last):\n  File \"/work/experiments/survival/scripts/run_class.py\", line 115, in <module>\n    summary = run_class(args.fqcn, args.classpath, args.output, args.timeout_ms, working_directory=args.cwd,\n  File \"/work/experiments/survival/scripts/run_class.py\", line 102, in run_class\n    raise RuntimeError(list_error)\nRuntimeError: Listing failed: exit=1; methods=0; missing=[]; Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Duser.timezone=UTC -Dfile.encoding=UTF-8\nException in thread \"main\" java.lang.IllegalStateException: No methods in JUnit description tree\n\tat JsonRunner.main(JsonRunner.java:25)\n\n"
+  },
+  "proposed_resolution": "Have dev_run.py detect class-level @Ignore and record its @Test methods as ignored via source/bytecode inventory, without executing them or changing copied tools or release sources.",
+  "denominator_fixed": false,
+  "run1_complete": false
+}

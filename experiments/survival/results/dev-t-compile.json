@@ -1,0 +1,197 @@
+{
+  "tag": "jsoup-1.11.2",
+  "helpers_failed": [],
+  "helper_attempts": 1,
+  "files_compiled": 31,
+  "files_compile_fail": 0,
+  "cross_test_references": [],
+  "files": [
+    {
+      "test_class": "org.jsoup.helper.DataUtilTest",
+      "path": "src/test/java/org/jsoup/helper/DataUtilTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.helper.HttpConnectionTest",
+      "path": "src/test/java/org/jsoup/helper/HttpConnectionTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.helper.StringUtilTest",
+      "path": "src/test/java/org/jsoup/helper/StringUtilTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.helper.W3CDomTest",
+      "path": "src/test/java/org/jsoup/helper/W3CDomTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.internal.ConstrainableInputStreamTest",
+      "path": "src/test/java/org/jsoup/internal/ConstrainableInputStreamTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.AttributeTest",
+      "path": "src/test/java/org/jsoup/nodes/AttributeTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.AttributesTest",
+      "path": "src/test/java/org/jsoup/nodes/AttributesTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.DocumentTest",
+      "path": "src/test/java/org/jsoup/nodes/DocumentTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.DocumentTypeTest",
+      "path": "src/test/java/org/jsoup/nodes/DocumentTypeTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.ElementTest",
+      "path": "src/test/java/org/jsoup/nodes/ElementTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.EntitiesTest",
+      "path": "src/test/java/org/jsoup/nodes/EntitiesTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.FormElementTest",
+      "path": "src/test/java/org/jsoup/nodes/FormElementTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.NodeTest",
+      "path": "src/test/java/org/jsoup/nodes/NodeTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.nodes.TextNodeTest",
+      "path": "src/test/java/org/jsoup/nodes/TextNodeTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.AttributeParseTest",
+      "path": "src/test/java/org/jsoup/parser/AttributeParseTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.CharacterReaderTest",
+      "path": "src/test/java/org/jsoup/parser/CharacterReaderTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.HtmlParserTest",
+      "path": "src/test/java/org/jsoup/parser/HtmlParserTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.HtmlTreeBuilderStateTest",
+      "path": "src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.HtmlTreeBuilderTest",
+      "path": "src/test/java/org/jsoup/parser/HtmlTreeBuilderTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.ParserSettingsTest",
+      "path": "src/test/java/org/jsoup/parser/ParserSettingsTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.TagTest",
+      "path": "src/test/java/org/jsoup/parser/TagTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.TokenQueueTest",
+      "path": "src/test/java/org/jsoup/parser/TokenQueueTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.TokeniserStateTest",
+      "path": "src/test/java/org/jsoup/parser/TokeniserStateTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.TokeniserTest",
+      "path": "src/test/java/org/jsoup/parser/TokeniserTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.parser.XmlTreeBuilderTest",
+      "path": "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.safety.CleanerTest",
+      "path": "src/test/java/org/jsoup/safety/CleanerTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.select.CssTest",
+      "path": "src/test/java/org/jsoup/select/CssTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.select.ElementsTest",
+      "path": "src/test/java/org/jsoup/select/ElementsTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.select.QueryParserTest",
+      "path": "src/test/java/org/jsoup/select/QueryParserTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.select.SelectorTest",
+      "path": "src/test/java/org/jsoup/select/SelectorTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    },
+    {
+      "test_class": "org.jsoup.select.TraversorTest",
+      "path": "src/test/java/org/jsoup/select/TraversorTest.java",
+      "exit_status": 0,
+      "status": "compiled"
+    }
+  ],
+  "seconds": 10.545
+}
