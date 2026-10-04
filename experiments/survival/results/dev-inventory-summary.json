@@ -1,0 +1,50 @@
+{
+  "expected": {
+    "files": 43,
+    "test": 34,
+    "helper": 3,
+    "integration": 6
+  },
+  "observed": {
+    "files": 43,
+    "helper": 9,
+    "test": 31,
+    "integration": 3
+  },
+  "helpers": [
+    "src/test/java/org/jsoup/MultiLocaleRule.java",
+    "src/test/java/org/jsoup/TextUtil.java",
+    "src/test/java/org/jsoup/integration/Benchmark.java",
+    "src/test/java/org/jsoup/integration/TestServer.java",
+    "src/test/java/org/jsoup/integration/servlets/BaseServlet.java",
+    "src/test/java/org/jsoup/integration/servlets/EchoServlet.java",
+    "src/test/java/org/jsoup/integration/servlets/HelloServlet.java",
+    "src/test/java/org/jsoup/integration/servlets/SlowRider.java",
+    "src/test/java/org/jsoup/nodes/BuildEntities.java"
+  ],
+  "integration_files": [
+    "src/test/java/org/jsoup/integration/Benchmark.java",
+    "src/test/java/org/jsoup/integration/ConnectTest.java",
+    "src/test/java/org/jsoup/integration/ParseTest.java",
+    "src/test/java/org/jsoup/integration/TestServer.java",
+    "src/test/java/org/jsoup/integration/UrlConnectTest.java",
+    "src/test/java/org/jsoup/integration/servlets/BaseServlet.java",
+    "src/test/java/org/jsoup/integration/servlets/EchoServlet.java",
+    "src/test/java/org/jsoup/integration/servlets/HelloServlet.java",
+    "src/test/java/org/jsoup/integration/servlets/SlowRider.java"
+  ],
+  "integration_with_test_annotation": 3,
+  "integration_package_first_roles": {
+    "helper": 3,
+    "test": 31,
+    "integration": 9
+  },
+  "production_classes": 59,
+  "mapped_production_classes": 26,
+  "test_annotations_outside_integration": 599,
+  "errors": [
+    "test: expected 34, found 31",
+    "helper: expected 3, found 9",
+    "integration: expected 6, found 3"
+  ]
+}

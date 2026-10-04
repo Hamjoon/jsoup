@@ -1,0 +1,232 @@
+{
+  "tag": "jsoup-1.11.2",
+  "test_source_files": 43,
+  "all_test_sources_unchanged": true,
+  "copied_tools": [
+    {
+      "file": "tools/runner/JsonRunner.java",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/run_class.py",
+      "unchanged": true
+    }
+  ],
+  "files": [
+    {
+      "path": "src/test/java/org/jsoup/MultiLocaleRule.java",
+      "unchanged": true,
+      "sha256": "28ccf41fe0eaadc5c7b1d5d3405cc3b1d12e0a6fd86dfca5d5484215f83685f8"
+    },
+    {
+      "path": "src/test/java/org/jsoup/TextUtil.java",
+      "unchanged": true,
+      "sha256": "0b7c454f43c8260c97b6ed423294886253d85fbc383de994ecbb3d720d0a23b8"
+    },
+    {
+      "path": "src/test/java/org/jsoup/helper/DataUtilTest.java",
+      "unchanged": true,
+      "sha256": "462677b5d7d6c242f45fdb418f2e868642131adf0d1c9ddd842dfc57750bc6a5"
+    },
+    {
+      "path": "src/test/java/org/jsoup/helper/HttpConnectionTest.java",
+      "unchanged": true,
+      "sha256": "e3dc1546ac411b4cda4d1fc8af623f6fc11382ad4303f06528c30eaf782b8551"
+    },
+    {
+      "path": "src/test/java/org/jsoup/helper/StringUtilTest.java",
+      "unchanged": true,
+      "sha256": "e8ccea80908efa6da1851b5ccf93b9bb9ebe42e6db0ede5a9ec9288fe28bbb12"
+    },
+    {
+      "path": "src/test/java/org/jsoup/helper/W3CDomTest.java",
+      "unchanged": true,
+      "sha256": "5dab8826838acae2b831540714bf2a5dabc087e75663195a4683c7d891b58dd3"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/Benchmark.java",
+      "unchanged": true,
+      "sha256": "e928f9cfbd7e67be3bb4dcee16a4023aa9971edf20f970190a95608e904473ce"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/ConnectTest.java",
+      "unchanged": true,
+      "sha256": "d2e00737ad0d54bd9b676496e8d120ba7c4fd5d57a259c97f387a6149e566731"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/ParseTest.java",
+      "unchanged": true,
+      "sha256": "cc4212c3e402acc953ffa5e77da9f3d34b6c79a258959250d54d5b5c6cc2063d"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/TestServer.java",
+      "unchanged": true,
+      "sha256": "5877fd3aa2fbdb7cc45b5a51703fe884af249c82e646ed134b580bd2a0fc8a15"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/UrlConnectTest.java",
+      "unchanged": true,
+      "sha256": "07b96393ed395660a6a76f63e6a09f267d7f876fff352f35777709a2a5db0c7e"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/servlets/BaseServlet.java",
+      "unchanged": true,
+      "sha256": "327303ca7287d739c1063946abb1959baa81319eb042dbba00806ab13cdb3c82"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/servlets/EchoServlet.java",
+      "unchanged": true,
+      "sha256": "d2e2fe9ef61150730c43ba4d3b0097eca75917da9b7bc49a63eea3c85c5c705d"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/servlets/HelloServlet.java",
+      "unchanged": true,
+      "sha256": "b9b79910d560c6b57b678cc44026ff86ca9e0a03e116370c4e0e0c91947e0b17"
+    },
+    {
+      "path": "src/test/java/org/jsoup/integration/servlets/SlowRider.java",
+      "unchanged": true,
+      "sha256": "d03c436aa611c1b4784d17f26ce9840bc0ba0d74313ff45eeaf9bd00cf478da0"
+    },
+    {
+      "path": "src/test/java/org/jsoup/internal/ConstrainableInputStreamTest.java",
+      "unchanged": true,
+      "sha256": "d478b836d6b12045f40d6dd49c698564f29e1b34aec95f633e29c20e594b227a"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/AttributeTest.java",
+      "unchanged": true,
+      "sha256": "d7313196614e895a0dbfe76f704ba9a66ccf1cb0068f18e94589b78a01fc2e33"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/AttributesTest.java",
+      "unchanged": true,
+      "sha256": "244d5d6c8b9da5cc046a3b8c862f841ef1d1a1f300efe4db4b11a0061e93b142"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/BuildEntities.java",
+      "unchanged": true,
+      "sha256": "960cb3b4c7b63eed5a69f238332d07546f42536804e1d217a12362b1a841a9bb"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/DocumentTest.java",
+      "unchanged": true,
+      "sha256": "52a3025b0eb660f45211a8ce6b79671c8fef73c95bc7a7a5fc24abfab95f2870"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/DocumentTypeTest.java",
+      "unchanged": true,
+      "sha256": "de3b0ca5ca9bd32de6987e6a57cd7e40010175757cea37b3f02e5ecc199d515f"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/ElementTest.java",
+      "unchanged": true,
+      "sha256": "12f43e0088ecf342534b85719fd5e258556289854642acc0a17683a356564b48"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/EntitiesTest.java",
+      "unchanged": true,
+      "sha256": "f90a999e75d9e78d56b937b407c26b072efcffb2ca0ad331c397db2b9c3cc519"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/FormElementTest.java",
+      "unchanged": true,
+      "sha256": "3a0d89f1190f35035a639f4f25b6da00cc5c0e713eec55e89344042de9bb0f79"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/NodeTest.java",
+      "unchanged": true,
+      "sha256": "f575eaea58da6ff5b0eec39e18733bcf8d9bd96e24daa9b04314cb346b29b72c"
+    },
+    {
+      "path": "src/test/java/org/jsoup/nodes/TextNodeTest.java",
+      "unchanged": true,
+      "sha256": "d1e7da96a11b7079b0cabcd1357e02017727ed6657b60e7ad356bd022458285d"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/AttributeParseTest.java",
+      "unchanged": true,
+      "sha256": "4c611bc6f587caa7181b9acbd30070f604973c4127531af766b6378e748dad48"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/CharacterReaderTest.java",
+      "unchanged": true,
+      "sha256": "1c6b3d1540fb5ff6bdafc99728406b14078c5a2c9a07812929d35c9c3e1e7030"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/HtmlParserTest.java",
+      "unchanged": true,
+      "sha256": "397aac224e95c46a455097ecf7289660a9f1489d99de97afb860d894ca6b36b9"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/HtmlTreeBuilderStateTest.java",
+      "unchanged": true,
+      "sha256": "bfb71d6770b054dbfcd2b821c82c09a98af5375b537064d81abac2d456a6df82"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/HtmlTreeBuilderTest.java",
+      "unchanged": true,
+      "sha256": "ecda5112b08b5993048b397700f4b281152ddb572ea5eb929f77aa17eb33cab7"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/ParserSettingsTest.java",
+      "unchanged": true,
+      "sha256": "1d29e40738bcaf6f47f9cd4fa21139280ed63e1412914e6978cc4af1a98de3fd"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/TagTest.java",
+      "unchanged": true,
+      "sha256": "c8daa888fbc43cc979ee914c6668cd2bac3a0c078fb5bd7165c02a292106497e"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/TokenQueueTest.java",
+      "unchanged": true,
+      "sha256": "9105073ea0ece934b1a63104091a38f8e866f7271810a53c16347e214c38c456"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/TokeniserStateTest.java",
+      "unchanged": true,
+      "sha256": "9da780530ff736a5682514539311105626a43db6de97d8329fc0ac71e131e74c"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/TokeniserTest.java",
+      "unchanged": true,
+      "sha256": "95ca53d4c88eb57d4dd9511a8ddd0a12521326532b6b2ac992c31d49e4ef0c3c"
+    },
+    {
+      "path": "src/test/java/org/jsoup/parser/XmlTreeBuilderTest.java",
+      "unchanged": true,
+      "sha256": "c59f7b6fe4254063b98c7412dd9a86493347a22ea2c7142b66a1537288852169"
+    },
+    {
+      "path": "src/test/java/org/jsoup/safety/CleanerTest.java",
+      "unchanged": true,
+      "sha256": "c70e2944924b71fa20c9c8d2042e54087407067d31a18e05b2c6e6e8e75349bc"
+    },
+    {
+      "path": "src/test/java/org/jsoup/select/CssTest.java",
+      "unchanged": true,
+      "sha256": "3f41994f0160a2e63b1b6cb4b10367b366254631b28467c22a86ad17e12393d3"
+    },
+    {
+      "path": "src/test/java/org/jsoup/select/ElementsTest.java",
+      "unchanged": true,
+      "sha256": "2bcf7d15e280110f6e6694430ed7d2b3c485b2287d3b94e58ce139f98c73626d"
+    },
+    {
+      "path": "src/test/java/org/jsoup/select/QueryParserTest.java",
+      "unchanged": true,
+      "sha256": "3b90ba7c101bf8f809ce2f825f8a332aba9e33114d5c1b801e3a1b9ba443585c"
+    },
+    {
+      "path": "src/test/java/org/jsoup/select/SelectorTest.java",
+      "unchanged": true,
+      "sha256": "61ea68e24ee30142d60ed81951312af4a99f55a9ab8888a6047ff8ff10cbe3b5"
+    },
+    {
+      "path": "src/test/java/org/jsoup/select/TraversorTest.java",
+      "unchanged": true,
+      "sha256": "34d33370979b0336ae3615213bc3e397d967ca2149ef026f40e04c5a1347ad64"
+    }
+  ]
+}
