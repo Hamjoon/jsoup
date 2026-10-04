@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:38:51.061910+00:00",
+  "latency": 47.62,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Mancer 2",
+  "prompt_tokens": 11718,
+  "completion_tokens": 3631,
+  "reasoning_tokens": 1278,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110333-sCndpClGiMgZPvfMHAKA",
+  "error_type": null,
+  "cut": "Element",
+  "technique": "ZSL",
+  "prompt_sha256": "a241eae96be27e657aa1cd25e0ddb4e59f6be4f85f975069e955744f5b93aeb2",
+  "response_sha256": "5c067a2c06c58fd5c70cb0829df8869c9e60c2d9b714270c2cc38f88df776578"
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:44:10.828266+00:00",
+  "latency": 17.781,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Mancer 2",
+  "prompt_tokens": 1108,
+  "completion_tokens": 3884,
+  "reasoning_tokens": 572,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110652-jcB4WGwuQROt9fveruot",
+  "error_type": null,
+  "cut": "FormElement",
+  "technique": "CoT",
+  "prompt_sha256": "068f1faceeb2ce39d7dea2ed8596298377cd61ee669f03be5bfb332f3f18e00c",
+  "response_sha256": "e3ece47282e0bdee4c1011a411906f4a15ee7175a8752ca48316a9bcad555992"
+}

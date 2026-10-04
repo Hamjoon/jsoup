@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.\nThe Java class is:\npackage org.jsoup;\n\nimport java.io.IOException;\n\npublic class UncheckedIOException extends Error {\n    public UncheckedIOException(IOException cause) {\n        super(cause);\n    }\n\n    public IOException ioException() {\n        return (IOException) getCause();\n    }\n}\n\nAt the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (UncheckedIOExceptionTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##"
+    }
+  ]
+}

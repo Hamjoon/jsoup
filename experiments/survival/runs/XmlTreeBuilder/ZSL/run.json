@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T11:25:53.495659+00:00",
+  "latency": 30.131,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Novita",
+  "prompt_tokens": 1234,
+  "completion_tokens": 3949,
+  "reasoning_tokens": 2485,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791113155-WnwqsHnAz4MzDcJAjNrB",
+  "error_type": null,
+  "cut": "XmlTreeBuilder",
+  "technique": "ZSL",
+  "prompt_sha256": "d609c8e80cd0a18f5cc24528a8a1e99c696cae3e51f0acb426e65ebebb1eb261",
+  "response_sha256": "01e7c0adb9df82f50dee5fea23b1f1997de264eb84d86309cc096eb4b0f97abf"
+}

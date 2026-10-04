@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:16:26.516102+00:00",
+  "latency": 48.247,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "prompt_tokens": 9106,
+  "completion_tokens": 3894,
+  "reasoning_tokens": 783,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791108988-oOIqVTVwEW2eNLZIek6Y",
+  "error_type": null,
+  "cut": "HttpConnection",
+  "technique": "GToT",
+  "prompt_sha256": "5c2b68135c599a137b8693981ab5f3a67acb046c1de9979adedf350bc57f1971",
+  "response_sha256": "cf7f4eccafb05416daa6ba30398b7238dda8a68e033c127f91ade351246b628c"
+}

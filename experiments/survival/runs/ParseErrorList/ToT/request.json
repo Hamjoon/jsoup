@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.\nThe Java class is:\npackage org.jsoup.parser;\n\nimport java.util.ArrayList;\n\n/**\n * A container for ParseErrors.\n * \n * @author Jonathan Hedley\n */\npublic class ParseErrorList extends ArrayList<ParseError>{\n    private static final int INITIAL_CAPACITY = 16;\n    private final int maxSize;\n    \n    ParseErrorList(int initialCapacity, int maxSize) {\n        super(initialCapacity);\n        this.maxSize = maxSize;\n    }\n    \n    boolean canAddError() {\n        return size() < maxSize;\n    }\n\n    int getMaxSize() {\n        return maxSize;\n    }\n\n    public static ParseErrorList noTracking() {\n        return new ParseErrorList(0, 0);\n    }\n    \n    public static ParseErrorList tracking(int maxSize) {\n        return new ParseErrorList(INITIAL_CAPACITY, maxSize);\n    }\n}\n\nAt the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (ParseErrorListTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:37:06.490204+00:00",
+  "latency": 58.091,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "CoreWeave",
+  "prompt_tokens": 956,
+  "completion_tokens": 2477,
+  "reasoning_tokens": 806,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110228-13k0BEZUK5W8tf5V9dx8",
+  "error_type": null,
+  "cut": "DocumentType",
+  "technique": "ZSL",
+  "prompt_sha256": "99eeff051e1a009ed9da6591ed4004d97f3846f8071e85c6c5f8a16d269b0905",
+  "response_sha256": "06fe7896863c110455dd52dd123e2d894eabec4760e345e788aa41245f537093"
+}

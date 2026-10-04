@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:34:14.136856+00:00",
+  "latency": 10.713,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "AkashML",
+  "prompt_tokens": 958,
+  "completion_tokens": 1790,
+  "reasoning_tokens": 581,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110056-01N4IoIX19e53XDju420",
+  "error_type": null,
+  "cut": "DataNode",
+  "technique": "FSL",
+  "prompt_sha256": "476836e587488981d11a4007d463f53a66c55ff2d652498480b71d472c84560d",
+  "response_sha256": "fbb25211324b005c5a49b7d3300f3ab238a701dc04ee6f014d5f75dddc1f9fe7"
+}

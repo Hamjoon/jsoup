@@ -1,0 +1,23 @@
+{
+  "prompt_tokens": 732,
+  "completion_tokens": 1404,
+  "total_tokens": 2136,
+  "cost": 0.000289632,
+  "is_byok": false,
+  "prompt_tokens_details": {
+    "cached_tokens": 64,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+  },
+  "cost_details": {
+    "upstream_inference_cost": 0.000289632,
+    "upstream_inference_prompt_cost": 2.7084e-05,
+    "upstream_inference_completions_cost": 0.000262548
+  },
+  "completion_tokens_details": {
+    "reasoning_tokens": 486,
+    "image_tokens": 0,
+    "audio_tokens": 0
+  }
+}

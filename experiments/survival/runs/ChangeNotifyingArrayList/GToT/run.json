@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:12:57.088030+00:00",
+  "latency": 16.977,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "AkashML",
+  "prompt_tokens": 716,
+  "completion_tokens": 2652,
+  "reasoning_tokens": 763,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791108779-YOQLGO3TD1rQMhKFj0Ex",
+  "error_type": null,
+  "cut": "ChangeNotifyingArrayList",
+  "technique": "GToT",
+  "prompt_sha256": "9ce63082a4585ae82ef15d84e558b800bbbe61b76beffc65cbf43e6ca99c9f93",
+  "response_sha256": "5f7a2dd0be5a1f4bfe2884fd0e2883cb9dfcd47d997c64de1e4d63793349bd5d"
+}

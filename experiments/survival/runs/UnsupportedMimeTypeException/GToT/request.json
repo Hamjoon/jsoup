@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class.To comprehensively test all methods in the following class named UnsupportedMimeTypeException they must following these steps:\n- Extract and list all the public methods including their signatures\n- For each methods, generate a basic JUnit 4 test case that checks the method's functionality\n- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested\n- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions\n- Merge all the individual test cases into a complete JUnit 4 test file (UnsupportedMimeTypeExceptionTest.java) for the given Java class.All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.\nThe Java class is:\npackage org.jsoup;\n\nimport java.io.IOException;\n\n/**\n * Signals that a HTTP response returned a mime type that is not supported.\n */\npublic class UnsupportedMimeTypeException extends IOException {\n    private String mimeType;\n    private String url;\n\n    public UnsupportedMimeTypeException(String message, String mimeType, String url) {\n        super(message);\n        this.mimeType = mimeType;\n        this.url = url;\n    }\n\n    public String getMimeType() {\n        return mimeType;\n    }\n\n    public String getUrl() {\n        return url;\n    }\n\n    @Override\n    public String toString() {\n        return super.toString() + \". Mimetype=\" + mimeType + \", URL=\"+url;\n    }\n}\n\nAt the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (UnsupportedMimeTypeExceptionTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##"
+    }
+  ]
+}

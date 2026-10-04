@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:15:14.840464+00:00",
+  "latency": 6.562,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Mara",
+  "prompt_tokens": 9332,
+  "completion_tokens": 2971,
+  "reasoning_tokens": 705,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791108916-1AG5QzgFGGJxkPXdU0J0",
+  "error_type": null,
+  "cut": "HttpConnection",
+  "technique": "FSL",
+  "prompt_sha256": "08961aa7d98ded00503eaa54be403cc97b1bdaca0f02b389313e4b15241fccbf",
+  "response_sha256": "34727d6d24a8464d5d7524d85a63c7897010e41b7bd183314b322cd484f77b3a"
+}

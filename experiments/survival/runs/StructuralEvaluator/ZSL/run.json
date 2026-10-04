@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T11:58:17.850552+00:00",
+  "latency": 12.273,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Crusoe",
+  "prompt_tokens": 805,
+  "completion_tokens": 3162,
+  "reasoning_tokens": 432,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791115099-a4JjefzF9ojWRLVYxbsF",
+  "error_type": null,
+  "cut": "StructuralEvaluator",
+  "technique": "ZSL",
+  "prompt_sha256": "26eff8514433ac220102cfaa864f58bcb26888ebd2fa369f8f23ff7f642dd2e3",
+  "response_sha256": "818b52a3902f1a0353d361b70059cd108900ed492522f9559936f98aab454a98"
+}

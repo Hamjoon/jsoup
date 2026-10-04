@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:07:18.714707+00:00",
+  "latency": 4.928,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "SambaNova",
+  "prompt_tokens": 2611,
+  "completion_tokens": 2786,
+  "reasoning_tokens": 707,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791108438-frmjdjf2EuuH2HY9F8TU",
+  "error_type": null,
+  "cut": "Jsoup",
+  "technique": "ToT",
+  "prompt_sha256": "e71263b6347f3a7ce5a056e167f2a6725c66ba77bdba9a8f97b9595253beb898",
+  "response_sha256": "ebbd6d53f88843f86723ab39cca2f95a09841d8c8cb8abbe7c2457d353dcce5c"
+}

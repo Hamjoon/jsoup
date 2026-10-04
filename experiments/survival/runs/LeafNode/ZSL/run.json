@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:44:32.931062+00:00",
+  "latency": 8.631,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Amazon Bedrock",
+  "prompt_tokens": 591,
+  "completion_tokens": 3901,
+  "reasoning_tokens": 2313,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110673-QjbFbLSjlz5NjYAu4s4v",
+  "error_type": null,
+  "cut": "LeafNode",
+  "technique": "ZSL",
+  "prompt_sha256": "8eb8e78f8245f7be57d3cfeec2b8a85ef257047ebe79d343d7999c500e329b7e",
+  "response_sha256": "9c9fb5277c810935422e4707a77f08b8279093716d82b07da4e56ecdac7f6254"
+}

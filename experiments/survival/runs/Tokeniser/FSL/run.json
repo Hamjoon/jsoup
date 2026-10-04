@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T11:17:08.182232+00:00",
+  "latency": 14.222,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Crusoe",
+  "prompt_tokens": 2646,
+  "completion_tokens": 3878,
+  "reasoning_tokens": 1729,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791112630-rkkzxdyyQJo3eibjAioD",
+  "error_type": null,
+  "cut": "Tokeniser",
+  "technique": "FSL",
+  "prompt_sha256": "e13273b00fd1c10aa80a49f6c3ed06c21b96ef62a7fa15706a58b45ac831cb16",
+  "response_sha256": "35232da4043fd2725c1893c7166ff819d6861b382a4db90409b7248fb181d2ae"
+}

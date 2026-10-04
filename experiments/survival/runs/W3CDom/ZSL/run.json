@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:20:56.913263+00:00",
+  "latency": 8.769,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Nebius",
+  "prompt_tokens": 1530,
+  "completion_tokens": 2918,
+  "reasoning_tokens": 1010,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791109258-avnq4nN1hLpNpoGQK22c",
+  "error_type": null,
+  "cut": "W3CDom",
+  "technique": "ZSL",
+  "prompt_sha256": "bfc2f61e6d66bac3f159345a159584cbaf12dd4d56766b0459799c8e1a2be260",
+  "response_sha256": "ceacd4a3430a40796c5ef6dbc2351e114f4af1f285bca7abf7cc30ec7ef67cd3"
+}

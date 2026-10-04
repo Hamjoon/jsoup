@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (NormalizerTest.java) to comprehensively test all methods in the following class named Normalizer. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:\npackage org.jsoup.internal;\n\nimport java.util.Locale;\n\n/**\n * Util methods for normalizing strings. Jsoup internal use only, please don't depend on this API.\n */\npublic final class Normalizer {\n\n    public static String lowerCase(final String input) {\n        return input != null ? input.toLowerCase(Locale.ENGLISH) : \"\";\n    }\n\n    public static String normalize(final String input) {\n        return lowerCase(input).trim();\n    }\n}\n"
+    }
+  ]
+}

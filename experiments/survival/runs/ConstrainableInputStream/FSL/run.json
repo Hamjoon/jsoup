@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:21:53.358110+00:00",
+  "latency": 82.847,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "CoreWeave",
+  "prompt_tokens": 1471,
+  "completion_tokens": 3252,
+  "reasoning_tokens": 697,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791109315-jYHdjObGxUC5MZ4sFhWh",
+  "error_type": null,
+  "cut": "ConstrainableInputStream",
+  "technique": "FSL",
+  "prompt_sha256": "0dbf40093bbbd057f935622ed929cb4fbc3f9ab12d45cf67c1b3d436a991fefd",
+  "response_sha256": "e7f27eace1f47755b734a7bf57480e899d3eee0ac0131f4a4c43e634ad0bff6e"
+}

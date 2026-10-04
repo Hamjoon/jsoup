@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (SerializationExceptionTest.java) to comprehensively test all methods in the following class named SerializationException. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:\npackage org.jsoup;\n\n/**\n * A SerializationException is raised whenever serialization of a DOM element fails. This exception usually wraps an\n * {@link java.io.IOException} that may be thrown due to an inaccessible output stream.\n */\npublic final class SerializationException extends RuntimeException {\n\t/**\n\t * Creates and initializes a new serialization exception with no error message and cause.\n\t */\n\tpublic SerializationException() {\n\t\tsuper();\n\t}\n\n\t/**\n\t * Creates and initializes a new serialization exception with the given error message and no cause.\n\t * \n\t * @param message\n\t *            the error message of the new serialization exception (may be <code>null</code>).\n\t */\n\tpublic SerializationException(String message) {\n\t\tsuper(message);\n\t}\n\n\t/**\n\t * Creates and initializes a new serialization exception with the specified cause and an error message of\n     * <code>(cause==null ? null : cause.toString())</code> (which typically contains the class and error message of\n     * <code>cause</code>).\n\t * \n\t * @param cause\n\t *            the cause of the new serialization exception (may be <code>null</code>).\n\t */\n\tpublic SerializationException(Throwable cause) {\n\t\tsuper(cause);\n\t}\n\n\t/**\n\t * Creates and initializes a new serialization exception with the given error message and cause.\n\t * \n\t * @param message\n\t *            the error message of the new serialization exception.\n\t * @param cause\n\t *            the cause of the new serialization exception.\n\t */\n\tpublic SerializationException(String message, Throwable cause) {\n\t\tsuper(message, cause);\n\t}\n}\n"
+    }
+  ]
+}

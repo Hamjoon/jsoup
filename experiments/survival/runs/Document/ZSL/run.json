@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:34:50.557800+00:00",
+  "latency": 29.462,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "AkashML",
+  "prompt_tokens": 4319,
+  "completion_tokens": 3479,
+  "reasoning_tokens": 0,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110092-XOYfWmJvI8Fw9X5aSwGI",
+  "error_type": null,
+  "cut": "Document",
+  "technique": "ZSL",
+  "prompt_sha256": "013700646c380154ee3b46fe588679e6635c490556f3d826f70562c3c4d53ec9",
+  "response_sha256": "4a01a061f198d0dbb3093b51af3f1eaf8d39c987d712f65a83d804238dcc5fa8"
+}

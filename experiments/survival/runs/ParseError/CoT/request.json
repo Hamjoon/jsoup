@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named ParseError by following these steps:\n- Extract and list all the public methods including their signatures\n- For each methods, generate a basic JUnit 4 test case that checks the method's functionality\n- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested\n- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions\n- Merge all the individual test cases into a complete JUnit 4 test file (ParseErrorTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##\nHere is the ParseError class:\npackage org.jsoup.parser;\n\n/**\n * A Parse Error records an error in the input HTML that occurs in either the tokenisation or the tree building phase.\n */\npublic class ParseError {\n    private int pos;\n    private String errorMsg;\n\n    ParseError(int pos, String errorMsg) {\n        this.pos = pos;\n        this.errorMsg = errorMsg;\n    }\n\n    ParseError(int pos, String errorFormat, Object... args) {\n        this.errorMsg = String.format(errorFormat, args);\n        this.pos = pos;\n    }\n\n    /**\n     * Retrieve the error message.\n     * @return the error message.\n     */\n    public String getErrorMessage() {\n        return errorMsg;\n    }\n\n    /**\n     * Retrieves the offset of the error.\n     * @return error offset within input\n     */\n    public int getPosition() {\n        return pos;\n    }\n\n    @Override\n    public String toString() {\n        return pos + \": \" + errorMsg;\n    }\n}\n"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:45:27.953999+00:00",
+  "latency": 4.9,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "SambaNova",
+  "prompt_tokens": 777,
+  "completion_tokens": 2874,
+  "reasoning_tokens": 895,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791110728-2lA7nEARbXsI0k8l2ItK",
+  "error_type": null,
+  "cut": "LeafNode",
+  "technique": "GToT",
+  "prompt_sha256": "cb5d3cab2bcb38d40c5b7d5646bd5f3c1d570c4d79570a77a59f9e43997a3d96",
+  "response_sha256": "15e69f5de7f797881a49ba759df364fcb2305111d3287788831d35b2e4f72aad"
+}

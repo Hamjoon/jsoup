@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:32:23.505911+00:00",
+  "latency": 64.067,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "DekaLLM",
+  "prompt_tokens": 299,
+  "completion_tokens": 1201,
+  "reasoning_tokens": 337,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791109945-CYaLHWXwOEfsbZBXD8Gm",
+  "error_type": null,
+  "cut": "BooleanAttribute",
+  "technique": "ToT",
+  "prompt_sha256": "67009ec22c4eaab81ad6ca78ba766187d03bfb00e3d002d83fade846594ec9b8",
+  "response_sha256": "df23cda84e64a5b58f623d3f94285abddb791aebbb84c10425deef18cea0adfa"
+}

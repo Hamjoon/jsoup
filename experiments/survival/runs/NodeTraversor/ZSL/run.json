@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T11:48:34.899099+00:00",
+  "latency": 173.685,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "DekaLLM",
+  "prompt_tokens": 1143,
+  "completion_tokens": 3342,
+  "reasoning_tokens": 836,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791114517-8vlQNgey2weFBVrJSacn",
+  "error_type": null,
+  "cut": "NodeTraversor",
+  "technique": "ZSL",
+  "prompt_sha256": "c499f0e96b5ab1e00391712d33f31ba7232e132f43f037a5bce86fc3de97187a",
+  "response_sha256": "fe20fdcd6e901a5c363ba9c1fc0fc204d57b4530c666cbb87b783b47b11681a7"
+}

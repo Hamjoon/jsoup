@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:50:12.872340+00:00",
+  "latency": 12.922,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Novita",
+  "prompt_tokens": 474,
+  "completion_tokens": 1832,
+  "reasoning_tokens": 975,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791111013-EkyKLZ8cQiJbPnzR8WhS",
+  "error_type": null,
+  "cut": "PseudoTextElement",
+  "technique": "GToT",
+  "prompt_sha256": "36d5ec4a4a62a2eb97f3238c7bb8372b4df61c3a9457797c6f71cdb304f14665",
+  "response_sha256": "65753b1735ad5fb89f77b34e912f9dc0edd1e348a3c03da0513899002e7f9f89"
+}

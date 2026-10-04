@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T11:30:42.849785+00:00",
+  "latency": 6.126,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "Amazon Bedrock",
+  "prompt_tokens": 1784,
+  "completion_tokens": 2429,
+  "reasoning_tokens": 538,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791113444-PomViofQ0QYHKWiEwROi",
+  "error_type": null,
+  "cut": "Cleaner",
+  "technique": "GToT",
+  "prompt_sha256": "21bbf08783fc2e52f14513741cc66f4f19e8a547f95ef0e2b9ce401d889b1ac9",
+  "response_sha256": "1a2e3b04f83a419f7b0cbc67d027dff09cd75a11c0c27cfab12ba117fae30838"
+}

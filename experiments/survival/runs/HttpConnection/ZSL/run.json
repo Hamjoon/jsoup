@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-04T10:15:00.957125+00:00",
+  "latency": 13.872,
+  "status": "ok",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "provider": "BaseTen",
+  "prompt_tokens": 8944,
+  "completion_tokens": 4009,
+  "reasoning_tokens": 0,
+  "attempt": 1,
+  "model_requested": "openai/gpt-oss-120b",
+  "model_reported": "openai/gpt-oss-120b",
+  "request_id": "gen-1791108903-CtpAQ11UoecdJkwuJA1R",
+  "error_type": null,
+  "cut": "HttpConnection",
+  "technique": "ZSL",
+  "prompt_sha256": "87cc9b4b8d6ea83bb16dd7ae08949245befed563aa2fa5bd5c20542c495342ff",
+  "response_sha256": "2e121bc8fab83cd9f8a7682b72e289fb42f61818116db98576435e2a1734ad5f"
+}
