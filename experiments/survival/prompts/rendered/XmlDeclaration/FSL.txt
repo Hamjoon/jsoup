@@ -1,0 +1,153 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named XmlDeclaration. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup.nodes;
+
+import org.jsoup.SerializationException;
+import org.jsoup.helper.Validate;
+
+import java.io.IOException;
+
+/**
+ * An XML Declaration.
+ */
+public class XmlDeclaration extends LeafNode {
+    // todo this impl isn't really right, the data shouldn't be attributes, just a run of text after the name
+    private final boolean isProcessingInstruction; // <! if true, <? if false, declaration (and last data char should be ?)
+
+    /**
+     * Create a new XML declaration
+     * @param name of declaration
+     * @param isProcessingInstruction is processing instruction
+     */
+    public XmlDeclaration(String name, boolean isProcessingInstruction) {
+        Validate.notNull(name);
+        value = name;
+        this.isProcessingInstruction = isProcessingInstruction;
+    }
+
+    /**
+     * Create a new XML declaration
+     * @param name of declaration
+     * @param baseUri Leaf Nodes don't have base URIs; they inherit from their Element
+     * @param isProcessingInstruction is processing instruction
+     * @see XmlDeclaration#XmlDeclaration(String, boolean)
+     * @deprecated
+     */
+    public XmlDeclaration(String name, String baseUri, boolean isProcessingInstruction) {
+        this(name, isProcessingInstruction);
+    }
+
+    public String nodeName() {
+        return "#declaration";
+    }
+
+    /**
+     * Get the name of this declaration.
+     * @return name of this declaration.
+     */
+    public String name() {
+        return coreValue();
+    }
+
+    /**
+     * Get the unencoded XML declaration.
+     * @return XML declaration
+     */
+    public String getWholeDeclaration() {
+        StringBuilder sb = new StringBuilder();
+        try {
+            getWholeDeclaration(sb, new Document.OutputSettings());
+        } catch (IOException e) {
+            throw new SerializationException(e);
+        }
+        return sb.toString().trim();
+    }
+
+    private void getWholeDeclaration(Appendable accum, Document.OutputSettings out) throws IOException {
+        for (Attribute attribute : attributes()) {
+            if (!attribute.getKey().equals(nodeName())) { // skips coreValue (name)
+                accum.append(' ');
+                attribute.html(accum, out);
+            }
+        }
+    }
+
+    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+        accum
+            .append("<")
+            .append(isProcessingInstruction ? "!" : "?")
+            .append(coreValue());
+        getWholeDeclaration(accum, out);
+        accum
+            .append(isProcessingInstruction ? "!" : "?")
+            .append(">");
+    }
+
+    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) {
+    }
+
+    @Override
+    public String toString() {
+        return outerHtml();
+    }
+}
+.

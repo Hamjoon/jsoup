@@ -1,0 +1,25 @@
+As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (PseudoTextElementTest.java) to comprehensively test all methods in the following class named PseudoTextElement. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup.nodes;
+
+import org.jsoup.parser.Tag;
+
+import java.io.IOException;
+
+/**
+ * Represents a {@link TextNode} as an {@link Element}, to enable text nodes to be selected with
+ * the {@link org.jsoup.select.Selector} {@code :matchText} syntax.
+ */
+public class PseudoTextElement extends Element {
+
+    public PseudoTextElement(Tag tag, String baseUri, Attributes attributes) {
+        super(tag, baseUri, attributes);
+    }
+
+    @Override
+    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+    }
+
+    @Override
+    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+    }
+}

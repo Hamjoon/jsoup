@@ -1,0 +1,86 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup.helper;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+/**
+ * Implementation of ArrayList that watches out for changes to the contents.
+ */
+public abstract class ChangeNotifyingArrayList<E> extends ArrayList<E> {
+    public ChangeNotifyingArrayList(int initialCapacity) {
+        super(initialCapacity);
+    }
+
+    public abstract void onContentsChanged();
+
+    @Override
+    public E set(int index, E element) {
+        onContentsChanged();
+        return super.set(index, element);
+    }
+
+    @Override
+    public boolean add(E e) {
+        onContentsChanged();
+        return super.add(e);
+    }
+
+    @Override
+    public void add(int index, E element) {
+        onContentsChanged();
+        super.add(index, element);
+    }
+
+    @Override
+    public E remove(int index) {
+        onContentsChanged();
+        return super.remove(index);
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        onContentsChanged();
+        return super.remove(o);
+    }
+
+    @Override
+    public void clear() {
+        onContentsChanged();
+        super.clear();
+    }
+
+    @Override
+    public boolean addAll(Collection<? extends E> c) {
+        onContentsChanged();
+        return super.addAll(c);
+    }
+
+    @Override
+    public boolean addAll(int index, Collection<? extends E> c) {
+        onContentsChanged();
+        return super.addAll(index, c);
+    }
+
+    @Override
+    protected void removeRange(int fromIndex, int toIndex) {
+        onContentsChanged();
+        super.removeRange(fromIndex, toIndex);
+    }
+
+    @Override
+    public boolean removeAll(Collection<?> c) {
+        onContentsChanged();
+        return super.removeAll(c);
+    }
+
+    @Override
+    public boolean retainAll(Collection<?> c) {
+        onContentsChanged();
+        return super.retainAll(c);
+    }
+
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (ChangeNotifyingArrayListTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

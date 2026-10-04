@@ -1,0 +1,31 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named PseudoTextElement by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (PseudoTextElementTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the PseudoTextElement class:
+package org.jsoup.nodes;
+
+import org.jsoup.parser.Tag;
+
+import java.io.IOException;
+
+/**
+ * Represents a {@link TextNode} as an {@link Element}, to enable text nodes to be selected with
+ * the {@link org.jsoup.select.Selector} {@code :matchText} syntax.
+ */
+public class PseudoTextElement extends Element {
+
+    public PseudoTextElement(Tag tag, String baseUri, Attributes attributes) {
+        super(tag, baseUri, attributes);
+    }
+
+    @Override
+    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+    }
+
+    @Override
+    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+    }
+}

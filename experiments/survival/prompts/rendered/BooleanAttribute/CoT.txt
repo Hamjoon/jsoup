@@ -1,0 +1,27 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named BooleanAttribute by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (BooleanAttributeTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the BooleanAttribute class:
+package org.jsoup.nodes;
+
+/**
+ * A boolean attribute that is written out without any value.
+ * @deprecated just use null values (vs empty string) for booleans.
+ */
+public class BooleanAttribute extends Attribute {
+    /**
+     * Create a new boolean attribute from unencoded (raw) key.
+     * @param key attribute key
+     */
+    public BooleanAttribute(String key) {
+        super(key, null);
+    }
+
+    @Override
+    protected boolean isBooleanAttribute() {
+        return true;
+    }
+}

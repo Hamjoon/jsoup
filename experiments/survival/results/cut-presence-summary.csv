@@ -1,0 +1,7 @@
+package,class,path,first_absent,last_absent,absent_releases,unexpected
+org.jsoup,UncheckedIOException,src/main/java/org/jsoup/UncheckedIOException.java,jsoup-1.19.1,jsoup-1.23.2,8,0
+org.jsoup.helper,ChangeNotifyingArrayList,src/main/java/org/jsoup/helper/ChangeNotifyingArrayList.java,jsoup-1.21.1,jsoup-1.23.2,6,1
+org.jsoup.helper,StringUtil,src/main/java/org/jsoup/helper/StringUtil.java,jsoup-1.12.1,jsoup-1.23.2,25,0
+org.jsoup.internal,ConstrainableInputStream,src/main/java/org/jsoup/internal/ConstrainableInputStream.java,jsoup-1.18.1,jsoup-1.23.2,11,1
+org.jsoup.nodes,BooleanAttribute,src/main/java/org/jsoup/nodes/BooleanAttribute.java,jsoup-1.13.1,jsoup-1.23.2,23,1
+org.jsoup.safety,Whitelist,src/main/java/org/jsoup/safety/Whitelist.java,jsoup-1.15.1,jsoup-1.23.2,19,1

@@ -1,0 +1,916 @@
+{
+  "baseline": "jsoup-1.11.2",
+  "expected": {
+    "files": 66,
+    "cuts": 52,
+    "abstract_cuts": 7
+  },
+  "observed": {
+    "files": 66,
+    "cuts": 52,
+    "abstract_cuts": 8
+  },
+  "exclusions": {
+    "interface": 3,
+    "examples": 3,
+    "package-info": 7,
+    "entities-data": 1
+  },
+  "kinds": {
+    "class": 42,
+    "abstract": 8,
+    "enum": 2
+  },
+  "presence_missing": [
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.19.1"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.20.1"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.21.1"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.21.2"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.22.1"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.22.2"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.23.1"
+    },
+    {
+      "package": "org.jsoup",
+      "class": "UncheckedIOException",
+      "tag": "jsoup-1.23.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.21.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.21.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.22.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.22.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.23.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.23.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.12.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.12.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.13.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.14.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.14.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.14.3"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.15.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.15.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.15.3"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.15.4"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.16.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.16.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.17.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.17.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.18.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.18.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.18.3"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.19.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.20.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.21.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.21.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.22.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.22.2"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.23.1"
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "StringUtil",
+      "tag": "jsoup-1.23.2"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.18.1"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.18.2"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.18.3"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.19.1"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.20.1"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.21.1"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.21.2"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.22.1"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.22.2"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.23.1"
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.23.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.13.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.14.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.14.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.14.3"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.3"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.4"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.16.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.16.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.17.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.17.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.18.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.18.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.18.3"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.19.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.20.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.21.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.21.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.22.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.22.2"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.23.1"
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.23.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.3"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.4"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.16.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.16.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.17.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.17.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.18.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.18.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.18.3"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.19.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.20.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.21.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.21.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.22.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.22.2"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.23.1"
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.23.2"
+    }
+  ],
+  "presence_unexpected": [
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.21.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.21.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.22.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.22.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.23.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.helper",
+      "class": "ChangeNotifyingArrayList",
+      "tag": "jsoup-1.23.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.18.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.18.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.18.3",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.19.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.20.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.21.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.21.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.22.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.22.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.23.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.internal",
+      "class": "ConstrainableInputStream",
+      "tag": "jsoup-1.23.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.13.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.14.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.14.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.14.3",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.3",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.15.4",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.16.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.16.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.17.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.17.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.18.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.18.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.18.3",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.19.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.20.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.21.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.21.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.22.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.22.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.23.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.nodes",
+      "class": "BooleanAttribute",
+      "tag": "jsoup-1.23.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.3",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.15.4",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.16.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.16.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.17.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.17.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.18.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.18.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.18.3",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.19.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.20.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.21.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.21.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.22.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.22.2",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.23.1",
+      "expected": 1,
+      "observed": 0
+    },
+    {
+      "package": "org.jsoup.safety",
+      "class": "Whitelist",
+      "tag": "jsoup-1.23.2",
+      "expected": 1,
+      "observed": 0
+    }
+  ],
+  "inventory_unexpected": [
+    "abstract_cuts: expected 7, found 8"
+  ],
+  "abstract_classes": [
+    "org.jsoup.helper.ChangeNotifyingArrayList",
+    "org.jsoup.nodes.LeafNode",
+    "org.jsoup.nodes.Node",
+    "org.jsoup.parser.Token",
+    "org.jsoup.parser.TreeBuilder",
+    "org.jsoup.select.CombiningEvaluator",
+    "org.jsoup.select.Evaluator",
+    "org.jsoup.select.StructuralEvaluator"
+  ],
+  "errors": [],
+  "seconds": 2.714
+}

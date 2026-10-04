@@ -1,0 +1,55 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named SerializationException by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (SerializationExceptionTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the SerializationException class:
+package org.jsoup;
+
+/**
+ * A SerializationException is raised whenever serialization of a DOM element fails. This exception usually wraps an
+ * {@link java.io.IOException} that may be thrown due to an inaccessible output stream.
+ */
+public final class SerializationException extends RuntimeException {
+	/**
+	 * Creates and initializes a new serialization exception with no error message and cause.
+	 */
+	public SerializationException() {
+		super();
+	}
+
+	/**
+	 * Creates and initializes a new serialization exception with the given error message and no cause.
+	 * 
+	 * @param message
+	 *            the error message of the new serialization exception (may be <code>null</code>).
+	 */
+	public SerializationException(String message) {
+		super(message);
+	}
+
+	/**
+	 * Creates and initializes a new serialization exception with the specified cause and an error message of
+     * <code>(cause==null ? null : cause.toString())</code> (which typically contains the class and error message of
+     * <code>cause</code>).
+	 * 
+	 * @param cause
+	 *            the cause of the new serialization exception (may be <code>null</code>).
+	 */
+	public SerializationException(Throwable cause) {
+		super(cause);
+	}
+
+	/**
+	 * Creates and initializes a new serialization exception with the given error message and cause.
+	 * 
+	 * @param message
+	 *            the error message of the new serialization exception.
+	 * @param cause
+	 *            the cause of the new serialization exception.
+	 */
+	public SerializationException(String message, Throwable cause) {
+		super(message, cause);
+	}
+}

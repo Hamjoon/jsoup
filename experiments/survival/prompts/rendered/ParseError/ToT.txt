@@ -1,0 +1,44 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup.parser;
+
+/**
+ * A Parse Error records an error in the input HTML that occurs in either the tokenisation or the tree building phase.
+ */
+public class ParseError {
+    private int pos;
+    private String errorMsg;
+
+    ParseError(int pos, String errorMsg) {
+        this.pos = pos;
+        this.errorMsg = errorMsg;
+    }
+
+    ParseError(int pos, String errorFormat, Object... args) {
+        this.errorMsg = String.format(errorFormat, args);
+        this.pos = pos;
+    }
+
+    /**
+     * Retrieve the error message.
+     * @return the error message.
+     */
+    public String getErrorMessage() {
+        return errorMsg;
+    }
+
+    /**
+     * Retrieves the offset of the error.
+     * @return error offset within input
+     */
+    public int getPosition() {
+        return pos;
+    }
+
+    @Override
+    public String toString() {
+        return pos + ": " + errorMsg;
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (ParseErrorTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

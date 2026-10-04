@@ -1,0 +1,52 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup;
+
+/**
+ * A SerializationException is raised whenever serialization of a DOM element fails. This exception usually wraps an
+ * {@link java.io.IOException} that may be thrown due to an inaccessible output stream.
+ */
+public final class SerializationException extends RuntimeException {
+	/**
+	 * Creates and initializes a new serialization exception with no error message and cause.
+	 */
+	public SerializationException() {
+		super();
+	}
+
+	/**
+	 * Creates and initializes a new serialization exception with the given error message and no cause.
+	 * 
+	 * @param message
+	 *            the error message of the new serialization exception (may be <code>null</code>).
+	 */
+	public SerializationException(String message) {
+		super(message);
+	}
+
+	/**
+	 * Creates and initializes a new serialization exception with the specified cause and an error message of
+     * <code>(cause==null ? null : cause.toString())</code> (which typically contains the class and error message of
+     * <code>cause</code>).
+	 * 
+	 * @param cause
+	 *            the cause of the new serialization exception (may be <code>null</code>).
+	 */
+	public SerializationException(Throwable cause) {
+		super(cause);
+	}
+
+	/**
+	 * Creates and initializes a new serialization exception with the given error message and cause.
+	 * 
+	 * @param message
+	 *            the error message of the new serialization exception.
+	 * @param cause
+	 *            the cause of the new serialization exception.
+	 */
+	public SerializationException(String message, Throwable cause) {
+		super(message, cause);
+	}
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (SerializationExceptionTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

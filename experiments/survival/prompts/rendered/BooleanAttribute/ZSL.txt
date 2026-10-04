@@ -1,0 +1,21 @@
+As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (BooleanAttributeTest.java) to comprehensively test all methods in the following class named BooleanAttribute. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup.nodes;
+
+/**
+ * A boolean attribute that is written out without any value.
+ * @deprecated just use null values (vs empty string) for booleans.
+ */
+public class BooleanAttribute extends Attribute {
+    /**
+     * Create a new boolean attribute from unencoded (raw) key.
+     * @param key attribute key
+     */
+    public BooleanAttribute(String key) {
+        super(key, null);
+    }
+
+    @Override
+    protected boolean isBooleanAttribute() {
+        return true;
+    }
+}

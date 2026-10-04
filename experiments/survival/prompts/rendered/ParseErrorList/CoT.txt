@@ -1,0 +1,41 @@
+As a professional software tester who writes Java test methods, generate Junit 4 test cases to comprehensively test all methods in the following class named ParseErrorList by following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (ParseErrorListTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
+Here is the ParseErrorList class:
+package org.jsoup.parser;
+
+import java.util.ArrayList;
+
+/**
+ * A container for ParseErrors.
+ * 
+ * @author Jonathan Hedley
+ */
+public class ParseErrorList extends ArrayList<ParseError>{
+    private static final int INITIAL_CAPACITY = 16;
+    private final int maxSize;
+    
+    ParseErrorList(int initialCapacity, int maxSize) {
+        super(initialCapacity);
+        this.maxSize = maxSize;
+    }
+    
+    boolean canAddError() {
+        return size() < maxSize;
+    }
+
+    int getMaxSize() {
+        return maxSize;
+    }
+
+    public static ParseErrorList noTracking() {
+        return new ParseErrorList(0, 0);
+    }
+    
+    public static ParseErrorList tracking(int maxSize) {
+        return new ParseErrorList(INITIAL_CAPACITY, maxSize);
+    }
+}

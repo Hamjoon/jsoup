@@ -1,0 +1,1900 @@
+{
+  "techniques": [
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT"
+  ],
+  "classes": 52,
+  "prompts": 260,
+  "tokenizer": "cl100k_base",
+  "tokenizer_package": "tiktoken",
+  "tokenizer_version": "0.14.0",
+  "template_sha256": {
+    "CoT.txt": "d176f4276fb22664e80e318d6f2118181ee34b153a14ad548eb553e0c1efd50b",
+    "FSL.txt": "8ec872a158a61d4a0ea63591990a3cca35fcf9a8d32129a71ac63a1fe68fc99a",
+    "GToT.txt": "cd305c96c26e4497b65597b352fe36b84020cfe7e245269bb37008bbe7caba61",
+    "ToT.txt": "6cabd0f4020d024e933e1ea7a01ba833e12e47d6f4a90450dde0add5876d329b",
+    "ZSL.txt": "76f684228964c772d401a8cb44e8ccb0f3c2fb525caaf195f3ceb8bd21f7f4ef",
+    "fewshot_example.txt": "e85ca2d0f5041b8029a7319562c81df2c46882418f110b6f47d0c8b562317ae4"
+  },
+  "source_sha256": {
+    "HttpStatusException": "d50d56993e395776991dd7f81abded108c1d4b83ab4008f470b38eec83b2beac",
+    "Jsoup": "0e04c77c3b05a918588f1bf1b1d3510ca9c6ec1c1ebcd930d0f9517af13fefa5",
+    "SerializationException": "96e426ace0e719074fd26e67ca36bb2657050c133af49b1fd4fba3368e652c59",
+    "UncheckedIOException": "99589428ab8adb32babae86675e59e44c1365c7cbb5edee9d7e35cf2ba6e18d2",
+    "UnsupportedMimeTypeException": "90fdee5b36b5fb1b03d47a4ff374160cf91f3bd404bc043838cbbb235e301b9e",
+    "ChangeNotifyingArrayList": "c05a78a65ee75cabb0f6535987200c174ffeb39914cfb6170df91a8be9b0e233",
+    "DataUtil": "9d54ea68240977bf6a6a32a0df803f5d397d3c269aa4e69afe6782cdc5b47620",
+    "HttpConnection": "8afa87b62e15a287bf8eb0e440db4978ac18de61beb8e27872ca31b7335cdb55",
+    "StringUtil": "afebf3fb71cfec04ea145c5fab13fa55568781747d1f67e99a99cb92bf221187",
+    "Validate": "9231f01a4d4b0f3f47214c401ec9da483d5bf3308261ba3886802bac4750e244",
+    "W3CDom": "198877da312100f6fc02cc6bb2b02a825ca9c4342a5eca36ff4fe83ee1fd884a",
+    "ConstrainableInputStream": "fdbf8ac040911cf0806cacdbc6113d34ecaa1870632c375607577ee7fab0282e",
+    "Normalizer": "fc4cb9bbf9c4cbf0223d50c2622712c4ad0666fa3eafe0feebb4be091f21e84e",
+    "Attribute": "3918a0814fe94198e9fd2bf24d060d588243dcf2c38bdf7a396e3c24d9725a48",
+    "Attributes": "9b09d537b338318025c3cc03c15cc52675363106219ecb17f4b183b1f7f2912f",
+    "BooleanAttribute": "033a87d5eb09ef2c2e0c96a52813d8fc36948e61c26d1966567136fda6ae84c2",
+    "Comment": "644ea28b5a26da321bce9260dd3631168ea8ba7bb7a34fbf595c3bf698ad2afd",
+    "DataNode": "217adb97a4f6f954bf6c25a7668679ec97f1466b201fbb5a3b97378df2cf2e5a",
+    "Document": "804e5ddb8e73c82c48c4011603aeb50814f235038927f71de8af94d742877539",
+    "DocumentType": "15ec36eff426d57a3f1e238486d31ddd1aa1414720b2d0c2a59dd59c224393b2",
+    "Element": "e2f587447683a077f55b0433fc83acef5ffe05bf2ebd9ce9d528a0f7e4e40a8a",
+    "Entities": "d80c80143ab06fbaa74e9e015dbe4c294de21d5d785b208a94d1aa15cf79e812",
+    "FormElement": "30f2f45b83626739eaa57c85fe78c84dea9e6ff19a6ebe12079e416b09883b1a",
+    "LeafNode": "4fd8752a7fbd05222ebf831136e43127d30cf18789a77371958140dad780e3a5",
+    "Node": "7d764d5a4eb97ada5caa914e52c06ea0b3da8763e118cb868a938e2f411f7cbc",
+    "PseudoTextElement": "4cc3d16e8b4993a83bbb29dfed2c71be44ab93c74d63e00f622437a8e035cf30",
+    "TextNode": "6f5d963e962e6681287d1083c4f8fc31ec7d163c43f7ddca4a13535daeb7d1a0",
+    "XmlDeclaration": "de12d93bfadf95edf2c96d1968468126d36b8c35453a9d7cab287f923c8409b1",
+    "CharacterReader": "12918b05a8bc53fd6bd2b54deceb0faba5f868f47c5f8a776f03fe9d3b316904",
+    "HtmlTreeBuilder": "d9bcf640ab6617fbb40b5132949e24d4aaca725f479302ab1203ce279cf57c18",
+    "HtmlTreeBuilderState": "a4769cc47b744b72fcd960f3512eaa2cf7551c57c61b944c07ec21d9f2ae079b",
+    "ParseError": "362f4851b20039e27b83b41c5617123beb72791ffe713607d348ff1220267e2a",
+    "ParseErrorList": "1e230cfb7bd7fef8cde4ed6798f386c055d28a84695b166e46f04f950edddccc",
+    "ParseSettings": "bc73ab1e07653f2ee69b6e3fef71873b0a4a3dbedc3c51e581d890d2d6358916",
+    "Parser": "663ed96efec21d7c7a0c6e2abcacf729216adfc79c886e1ecd4efeca53ad96df",
+    "Tag": "425d35cc77ea134944d6d13627f4c4bfedb14ecc109c7f6e8cb9c9b704cac5e3",
+    "Token": "492433305df28de8bd806f03264748b383ae9ee5f0639d567f207bef8538fd56",
+    "TokenQueue": "6c7819c107c2a79b83bd48e5fc5595029d3c14820e9a86282996162ff3740a58",
+    "Tokeniser": "dcb251150b816723f8c592955a6c0ec64087efbc37f2b7759f090bccb5263c29",
+    "TokeniserState": "3e87061a6018a6f376af6c1e359e32da193718d41979a8f2916347fa56942790",
+    "TreeBuilder": "32105c9bba6d48f4b2c1ce16b94c8c8c51c8e2d9485b39b5e18156f97302d965",
+    "XmlTreeBuilder": "955584627037bb1120052e3e18bec89c960c3ec25f8ad590d5f6b0be901ba821",
+    "Cleaner": "8a7a0eb3cf913662137cbf3d9c39809da490de8691e09155ccebc7dcd922c609",
+    "Whitelist": "9742dd352a570b9141f2bbab7993e95d85678a4d244d8a0c3ba304927b91ec93",
+    "Collector": "839d210199cf363be0a74155ae8b9077c1a943dc558c3dae40e8b47523fde118",
+    "CombiningEvaluator": "78fa2fdd4b9e845ba1123042948211bf22ecb7b523ba51987d7b0de8542b3dd3",
+    "Elements": "b109f22f5a2bd11101f4fbca5b3efe6162bbb42cb70623a94fd0a3d7866e6e23",
+    "Evaluator": "63fa176e275a0bf7377ddb8df75d3151b8500f0ad3812f9eb1a3be0ec3246e64",
+    "NodeTraversor": "151713d1fbcc6eefc09cd719e16e76159faa758a427282d3c0e66ffe0ac24735",
+    "QueryParser": "6c2767022ff9bc8c818d8f5fb988ca98f979836fee5a7c063c2f9dbbc5998b99",
+    "Selector": "2156e1f54b07809405f022f878b0d6c931d8e689da7a895a945c15c592e0fc6e",
+    "StructuralEvaluator": "bee68df4f26823e6a909265de5f663c1cef27f6dcecbf637ee50518919854ea3"
+  },
+  "rendering": "Split only the original template on three placeholder tokens; join once; inserted text is never rescanned.",
+  "input_limit_applied": false,
+  "files": [
+    {
+      "class": "HttpStatusException",
+      "technique": "ZSL",
+      "path": "prompts/rendered/HttpStatusException/ZSL.txt",
+      "sha256": "dd931897c375312554f932edb3b305b4bc3c976e377c734cd7bd8bf4bf83251b",
+      "tokens": 194
+    },
+    {
+      "class": "HttpStatusException",
+      "technique": "FSL",
+      "path": "prompts/rendered/HttpStatusException/FSL.txt",
+      "sha256": "46ccd7b191b336cb9e594b27626cfd87a798daf7a6c5f414d367dee52178b31d",
+      "tokens": 587
+    },
+    {
+      "class": "HttpStatusException",
+      "technique": "CoT",
+      "path": "prompts/rendered/HttpStatusException/CoT.txt",
+      "sha256": "9ca30d26e78b9c656c9cca112fa116eebe80acf2b50243916837101450dda844",
+      "tokens": 299
+    },
+    {
+      "class": "HttpStatusException",
+      "technique": "ToT",
+      "path": "prompts/rendered/HttpStatusException/ToT.txt",
+      "sha256": "f4a142b24571e202e062bd41400ebab9f8cecf748d27fc1ee7530234bfbd7440",
+      "tokens": 258
+    },
+    {
+      "class": "HttpStatusException",
+      "technique": "GToT",
+      "path": "prompts/rendered/HttpStatusException/GToT.txt",
+      "sha256": "4e8ee879b823b5c72d0f57266fcf7cb214450ede042348f7028516cf1791d240",
+      "tokens": 381
+    },
+    {
+      "class": "Jsoup",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Jsoup/ZSL.txt",
+      "sha256": "9db3240493cd7fa3a97729069de670a9f9d8d962e3d79514ef1809fcafc5318b",
+      "tokens": 2474
+    },
+    {
+      "class": "Jsoup",
+      "technique": "FSL",
+      "path": "prompts/rendered/Jsoup/FSL.txt",
+      "sha256": "10b6e3689e9c25939c505ca6882ce5c3c8587cfa75101627b37b9daa65e48fc5",
+      "tokens": 2867
+    },
+    {
+      "class": "Jsoup",
+      "technique": "CoT",
+      "path": "prompts/rendered/Jsoup/CoT.txt",
+      "sha256": "321364f3510a5ce70c416a92a328f45f4a9ed50b795c452cb60f6c5592e37f0a",
+      "tokens": 2579
+    },
+    {
+      "class": "Jsoup",
+      "technique": "ToT",
+      "path": "prompts/rendered/Jsoup/ToT.txt",
+      "sha256": "e71263b6347f3a7ce5a056e167f2a6725c66ba77bdba9a8f97b9595253beb898",
+      "tokens": 2538
+    },
+    {
+      "class": "Jsoup",
+      "technique": "GToT",
+      "path": "prompts/rendered/Jsoup/GToT.txt",
+      "sha256": "af9f5ad9c5175b4b7f8c8d6cca1b72c633b81fdcc7888b56d64aff51efc11c27",
+      "tokens": 2661
+    },
+    {
+      "class": "SerializationException",
+      "technique": "ZSL",
+      "path": "prompts/rendered/SerializationException/ZSL.txt",
+      "sha256": "63c51e1e72689216a34088f61105eb379157f3c2a1f77e576b52bda255efdc41",
+      "tokens": 393
+    },
+    {
+      "class": "SerializationException",
+      "technique": "FSL",
+      "path": "prompts/rendered/SerializationException/FSL.txt",
+      "sha256": "81d1274b1b414825c30f739d964ddbd52a67680bdb40a9bfd8470863876ce16c",
+      "tokens": 786
+    },
+    {
+      "class": "SerializationException",
+      "technique": "CoT",
+      "path": "prompts/rendered/SerializationException/CoT.txt",
+      "sha256": "15165015ce3f2e1d02b0213a65e179dcdafccff56f078d4511d853c06dededf5",
+      "tokens": 498
+    },
+    {
+      "class": "SerializationException",
+      "technique": "ToT",
+      "path": "prompts/rendered/SerializationException/ToT.txt",
+      "sha256": "517b400457e2ff680a4380039479c0d0c320e389535fc25fd13f55478adbf602",
+      "tokens": 457
+    },
+    {
+      "class": "SerializationException",
+      "technique": "GToT",
+      "path": "prompts/rendered/SerializationException/GToT.txt",
+      "sha256": "296aa594f139e5c795809aca11c3da03bfaaaab5f7d84cb25ac62668c258dce0",
+      "tokens": 580
+    },
+    {
+      "class": "UncheckedIOException",
+      "technique": "ZSL",
+      "path": "prompts/rendered/UncheckedIOException/ZSL.txt",
+      "sha256": "9526ee76eb4e3dd14d067222f069c8b7beba5d68e7797bd860b6810c96fa3bf6",
+      "tokens": 116
+    },
+    {
+      "class": "UncheckedIOException",
+      "technique": "FSL",
+      "path": "prompts/rendered/UncheckedIOException/FSL.txt",
+      "sha256": "7fdded85c32232e54425ac3b56d28ca46c7f2795fecccfd3db0ae1e36bcab0e7",
+      "tokens": 509
+    },
+    {
+      "class": "UncheckedIOException",
+      "technique": "CoT",
+      "path": "prompts/rendered/UncheckedIOException/CoT.txt",
+      "sha256": "eec71c25f43b2c09d9bb90414941921ca1107c62bab02a45af2a154c4b7936da",
+      "tokens": 222
+    },
+    {
+      "class": "UncheckedIOException",
+      "technique": "ToT",
+      "path": "prompts/rendered/UncheckedIOException/ToT.txt",
+      "sha256": "2e85a76b1deff44fa90d2ebdcfde1a29758d38b894bff20a2dbdf1b38dfc2f44",
+      "tokens": 179
+    },
+    {
+      "class": "UncheckedIOException",
+      "technique": "GToT",
+      "path": "prompts/rendered/UncheckedIOException/GToT.txt",
+      "sha256": "64a1a287610f842750a779148f789cf4ee83adbb259aeeed8b397bf1d44e0ae5",
+      "tokens": 303
+    },
+    {
+      "class": "UnsupportedMimeTypeException",
+      "technique": "ZSL",
+      "path": "prompts/rendered/UnsupportedMimeTypeException/ZSL.txt",
+      "sha256": "908d1c97163243151e4e36299efaa578b6b2ce9c2ff531b4539002cdc5c45d98",
+      "tokens": 200
+    },
+    {
+      "class": "UnsupportedMimeTypeException",
+      "technique": "FSL",
+      "path": "prompts/rendered/UnsupportedMimeTypeException/FSL.txt",
+      "sha256": "5d6b47fac3ff06184017a7cd0cbbf8ae0f79287b937ce83782f81e17f588b408",
+      "tokens": 592
+    },
+    {
+      "class": "UnsupportedMimeTypeException",
+      "technique": "CoT",
+      "path": "prompts/rendered/UnsupportedMimeTypeException/CoT.txt",
+      "sha256": "f4d1f47d31f16dc9cc35149386e1bd73934659e95db8954d25b557706594a989",
+      "tokens": 306
+    },
+    {
+      "class": "UnsupportedMimeTypeException",
+      "technique": "ToT",
+      "path": "prompts/rendered/UnsupportedMimeTypeException/ToT.txt",
+      "sha256": "9fa0f00360dae18bfeccdb061af4e7d2449b03d540e3dafe55e89b141d9752f1",
+      "tokens": 263
+    },
+    {
+      "class": "UnsupportedMimeTypeException",
+      "technique": "GToT",
+      "path": "prompts/rendered/UnsupportedMimeTypeException/GToT.txt",
+      "sha256": "14305dd3f5bddcfdbd9de5be14792034012d9c3305e0c3c560505acd8a5e796b",
+      "tokens": 388
+    },
+    {
+      "class": "ChangeNotifyingArrayList",
+      "technique": "ZSL",
+      "path": "prompts/rendered/ChangeNotifyingArrayList/ZSL.txt",
+      "sha256": "501da87c1d7d405a265f9de9533074e16a804b9e39e4f10b213f092860138482",
+      "tokens": 449
+    },
+    {
+      "class": "ChangeNotifyingArrayList",
+      "technique": "FSL",
+      "path": "prompts/rendered/ChangeNotifyingArrayList/FSL.txt",
+      "sha256": "3c40816688baabe2c8240ecd0832409e9388434f54662a1b26ee1120b5eccea7",
+      "tokens": 840
+    },
+    {
+      "class": "ChangeNotifyingArrayList",
+      "technique": "CoT",
+      "path": "prompts/rendered/ChangeNotifyingArrayList/CoT.txt",
+      "sha256": "1c37318cff15484fe16e2c6a846c0b54397265104f277d0618fcd438e559e8cd",
+      "tokens": 556
+    },
+    {
+      "class": "ChangeNotifyingArrayList",
+      "technique": "ToT",
+      "path": "prompts/rendered/ChangeNotifyingArrayList/ToT.txt",
+      "sha256": "f6b3800fd4b18d1c3f3def63f29721d347d5392f33e2492de191cf74b42045f4",
+      "tokens": 511
+    },
+    {
+      "class": "ChangeNotifyingArrayList",
+      "technique": "GToT",
+      "path": "prompts/rendered/ChangeNotifyingArrayList/GToT.txt",
+      "sha256": "9ce63082a4585ae82ef15d84e558b800bbbe61b76beffc65cbf43e6ca99c9f93",
+      "tokens": 638
+    },
+    {
+      "class": "DataUtil",
+      "technique": "ZSL",
+      "path": "prompts/rendered/DataUtil/ZSL.txt",
+      "sha256": "383ff1909f46cf136b3f17906d30e9956a38d3727c1e8d5b1eaa62f982bffe37",
+      "tokens": 2563
+    },
+    {
+      "class": "DataUtil",
+      "technique": "FSL",
+      "path": "prompts/rendered/DataUtil/FSL.txt",
+      "sha256": "1bf10d14a47b6c54d0449c028e5e6b9694bee3c4a97d360c7090b53c6ebeb0e9",
+      "tokens": 2956
+    },
+    {
+      "class": "DataUtil",
+      "technique": "CoT",
+      "path": "prompts/rendered/DataUtil/CoT.txt",
+      "sha256": "7dd41e540390677accf5dc460219badd3257907c35950e5c0b27475ad14a8f5f",
+      "tokens": 2668
+    },
+    {
+      "class": "DataUtil",
+      "technique": "ToT",
+      "path": "prompts/rendered/DataUtil/ToT.txt",
+      "sha256": "6151fd38829bf10a0294a535838d8dd976bec58e77acd3b6cbca2852e7290e9c",
+      "tokens": 2627
+    },
+    {
+      "class": "DataUtil",
+      "technique": "GToT",
+      "path": "prompts/rendered/DataUtil/GToT.txt",
+      "sha256": "3909cb843889dbe4b06c667bc44d5b0a3c7aa81c7500708c9c3e388a18ddb920",
+      "tokens": 2750
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "ZSL",
+      "path": "prompts/rendered/HttpConnection/ZSL.txt",
+      "sha256": "87cc9b4b8d6ea83bb16dd7ae08949245befed563aa2fa5bd5c20542c495342ff",
+      "tokens": 8605
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "FSL",
+      "path": "prompts/rendered/HttpConnection/FSL.txt",
+      "sha256": "08961aa7d98ded00503eaa54be403cc97b1bdaca0f02b389313e4b15241fccbf",
+      "tokens": 8998
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "CoT",
+      "path": "prompts/rendered/HttpConnection/CoT.txt",
+      "sha256": "3880a7c0208e331e4caaab941abb079f884a817bb186b7484d07562b634bb329",
+      "tokens": 8710
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "ToT",
+      "path": "prompts/rendered/HttpConnection/ToT.txt",
+      "sha256": "ea8879e36564f7418402db5cf3eced0a7e9cae334db68a5b0690d59e74695d1a",
+      "tokens": 8669
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "GToT",
+      "path": "prompts/rendered/HttpConnection/GToT.txt",
+      "sha256": "5c2b68135c599a137b8693981ab5f3a67acb046c1de9979adedf350bc57f1971",
+      "tokens": 8792
+    },
+    {
+      "class": "StringUtil",
+      "technique": "ZSL",
+      "path": "prompts/rendered/StringUtil/ZSL.txt",
+      "sha256": "c67750639216517b2a4af9ff077ad5517968b7d46e7884a7def4dc15b5930802",
+      "tokens": 2125
+    },
+    {
+      "class": "StringUtil",
+      "technique": "FSL",
+      "path": "prompts/rendered/StringUtil/FSL.txt",
+      "sha256": "a9faae0796d827e1c9a4f30b1d75c7c7514a9bc9749e052ec05558f021172211",
+      "tokens": 2519
+    },
+    {
+      "class": "StringUtil",
+      "technique": "CoT",
+      "path": "prompts/rendered/StringUtil/CoT.txt",
+      "sha256": "cce5718f3b1e795dc9462e1999021a7dad84935c4f8adf3b230421e7adc34f75",
+      "tokens": 2229
+    },
+    {
+      "class": "StringUtil",
+      "technique": "ToT",
+      "path": "prompts/rendered/StringUtil/ToT.txt",
+      "sha256": "f36f504ef2c81e7ee4c8dc1335b88c59caedd523773b3880fa4b1c6890fbda27",
+      "tokens": 2190
+    },
+    {
+      "class": "StringUtil",
+      "technique": "GToT",
+      "path": "prompts/rendered/StringUtil/GToT.txt",
+      "sha256": "866b9b2e8e856427293b358b76a5671a6f1e09ac08b159e7f2f7ccc1a9019fd1",
+      "tokens": 2311
+    },
+    {
+      "class": "Validate",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Validate/ZSL.txt",
+      "sha256": "30b87ad590612bfdda22ef0de2acb061c66e52f8ddde06d90f2a37a4b09c4a78",
+      "tokens": 720
+    },
+    {
+      "class": "Validate",
+      "technique": "FSL",
+      "path": "prompts/rendered/Validate/FSL.txt",
+      "sha256": "eb4b789b3a951a7fe5c9bafab0afd76bacfd1c73435dd0dd20f6d74a87018702",
+      "tokens": 1114
+    },
+    {
+      "class": "Validate",
+      "technique": "CoT",
+      "path": "prompts/rendered/Validate/CoT.txt",
+      "sha256": "fffc9ec6b88b8e6127ebf090d701c4a5a6e8ec944ed44e594573296d96737136",
+      "tokens": 824
+    },
+    {
+      "class": "Validate",
+      "technique": "ToT",
+      "path": "prompts/rendered/Validate/ToT.txt",
+      "sha256": "45c19ab992e7088f68fae1901beee15815cc7b882c696797a42405c17f743944",
+      "tokens": 785
+    },
+    {
+      "class": "Validate",
+      "technique": "GToT",
+      "path": "prompts/rendered/Validate/GToT.txt",
+      "sha256": "a4d6fde315ec677ddd0b259424cdbb7db9e71f461e315697c7b02809b3b290a5",
+      "tokens": 906
+    },
+    {
+      "class": "W3CDom",
+      "technique": "ZSL",
+      "path": "prompts/rendered/W3CDom/ZSL.txt",
+      "sha256": "bfc2f61e6d66bac3f159345a159584cbaf12dd4d56766b0459799c8e1a2be260",
+      "tokens": 1418
+    },
+    {
+      "class": "W3CDom",
+      "technique": "FSL",
+      "path": "prompts/rendered/W3CDom/FSL.txt",
+      "sha256": "56720ddac1d80f0e37f586a879f75dc0337f1498c628d84660496a4fb4f17a99",
+      "tokens": 1809
+    },
+    {
+      "class": "W3CDom",
+      "technique": "CoT",
+      "path": "prompts/rendered/W3CDom/CoT.txt",
+      "sha256": "f83c31ab6659f683676072f83bb5746a14b72971f36d480991d865e8ce2f6cf2",
+      "tokens": 1525
+    },
+    {
+      "class": "W3CDom",
+      "technique": "ToT",
+      "path": "prompts/rendered/W3CDom/ToT.txt",
+      "sha256": "1813ffcb9f489ae1507090ee5d70011b5339f9a637c219f73e2c0b92e20e0551",
+      "tokens": 1480
+    },
+    {
+      "class": "W3CDom",
+      "technique": "GToT",
+      "path": "prompts/rendered/W3CDom/GToT.txt",
+      "sha256": "17e9a745b1a64471c35eb3d1c761428a619c55aa2df6a0fa6c7ef96403d277fb",
+      "tokens": 1607
+    },
+    {
+      "class": "ConstrainableInputStream",
+      "technique": "ZSL",
+      "path": "prompts/rendered/ConstrainableInputStream/ZSL.txt",
+      "sha256": "e3939f82441ba48cb4372c4ec40dbb5700d13886d4ff525e0b5c14999e39ea13",
+      "tokens": 954
+    },
+    {
+      "class": "ConstrainableInputStream",
+      "technique": "FSL",
+      "path": "prompts/rendered/ConstrainableInputStream/FSL.txt",
+      "sha256": "0dbf40093bbbd057f935622ed929cb4fbc3f9ab12d45cf67c1b3d436a991fefd",
+      "tokens": 1345
+    },
+    {
+      "class": "ConstrainableInputStream",
+      "technique": "CoT",
+      "path": "prompts/rendered/ConstrainableInputStream/CoT.txt",
+      "sha256": "7c446b341d462fc851d9bf3bf9ea06a261e7e9223d1db7f37aaa216d6e041044",
+      "tokens": 1061
+    },
+    {
+      "class": "ConstrainableInputStream",
+      "technique": "ToT",
+      "path": "prompts/rendered/ConstrainableInputStream/ToT.txt",
+      "sha256": "20107f2322e24014009b4ab49b856e85c97fe0a1eb390414d6238fa5fa6ed6f5",
+      "tokens": 1016
+    },
+    {
+      "class": "ConstrainableInputStream",
+      "technique": "GToT",
+      "path": "prompts/rendered/ConstrainableInputStream/GToT.txt",
+      "sha256": "d6e78d9c549e89370489ed2cd8209957c2b2cf275d801f9717a33a4bbcf9e3c0",
+      "tokens": 1143
+    },
+    {
+      "class": "Normalizer",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Normalizer/ZSL.txt",
+      "sha256": "3695facb06dbe76c56525f2fd4062212bf847d3885b1fc1d3a5900e6a0299e41",
+      "tokens": 152
+    },
+    {
+      "class": "Normalizer",
+      "technique": "FSL",
+      "path": "prompts/rendered/Normalizer/FSL.txt",
+      "sha256": "1341432852d200a337dc086b324926e1c4c5ebd8233d6f52fc2bf889a6f859d0",
+      "tokens": 545
+    },
+    {
+      "class": "Normalizer",
+      "technique": "CoT",
+      "path": "prompts/rendered/Normalizer/CoT.txt",
+      "sha256": "8401404dea6b427a3712549a2e116d9129e067dd393a12e170c1190e41f25a18",
+      "tokens": 257
+    },
+    {
+      "class": "Normalizer",
+      "technique": "ToT",
+      "path": "prompts/rendered/Normalizer/ToT.txt",
+      "sha256": "9aa69617e08e870d9b5b0c02a2e5757682ec5bd61ea781c266443ea8a39ee428",
+      "tokens": 216
+    },
+    {
+      "class": "Normalizer",
+      "technique": "GToT",
+      "path": "prompts/rendered/Normalizer/GToT.txt",
+      "sha256": "bf3ef12a6cf733b8efa70b570050936057d41d7871bb18577dee49102542cb83",
+      "tokens": 339
+    },
+    {
+      "class": "Attribute",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Attribute/ZSL.txt",
+      "sha256": "842322fbd3ca5ca54d3b4c408fc99098f16c331ae3d8aa1eaf5f4aed404ebc17",
+      "tokens": 1535
+    },
+    {
+      "class": "Attribute",
+      "technique": "FSL",
+      "path": "prompts/rendered/Attribute/FSL.txt",
+      "sha256": "f69fde2026ea169d0b85cd188ae42bdc4f58aabbcc41aa4931dead41094ba7ad",
+      "tokens": 1929
+    },
+    {
+      "class": "Attribute",
+      "technique": "CoT",
+      "path": "prompts/rendered/Attribute/CoT.txt",
+      "sha256": "495bce671a5b820574b51976657a62290554b050c4493f8c5673070517d01367",
+      "tokens": 1639
+    },
+    {
+      "class": "Attribute",
+      "technique": "ToT",
+      "path": "prompts/rendered/Attribute/ToT.txt",
+      "sha256": "f3ee7b530d06c750db4eaae96c4bb3ca4c7849e09681fcfdf9c66f3ec0c388e3",
+      "tokens": 1600
+    },
+    {
+      "class": "Attribute",
+      "technique": "GToT",
+      "path": "prompts/rendered/Attribute/GToT.txt",
+      "sha256": "2460f7feff8e17175f8dfbf5862da43b51dcdf73e98e92be331b6d889440142d",
+      "tokens": 1721
+    },
+    {
+      "class": "Attributes",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Attributes/ZSL.txt",
+      "sha256": "6e3f2f321e84ee2a57c16b2138723303466c366eb0edae95caa87b686dfc81c2",
+      "tokens": 2940
+    },
+    {
+      "class": "Attributes",
+      "technique": "FSL",
+      "path": "prompts/rendered/Attributes/FSL.txt",
+      "sha256": "78766b9af6a8ee4a55e7c80af5d78d8c7f3e6beacf23f448a7889527b4018005",
+      "tokens": 3334
+    },
+    {
+      "class": "Attributes",
+      "technique": "CoT",
+      "path": "prompts/rendered/Attributes/CoT.txt",
+      "sha256": "ba3f268e7ee82cca6f4e4b48423a05af94db6cf3681c17a85bf10be13bd75ae1",
+      "tokens": 3044
+    },
+    {
+      "class": "Attributes",
+      "technique": "ToT",
+      "path": "prompts/rendered/Attributes/ToT.txt",
+      "sha256": "3159b8bec71ea7e08198ebb45b22acdfe7acf031020130bb72d5d807567db7ea",
+      "tokens": 3005
+    },
+    {
+      "class": "Attributes",
+      "technique": "GToT",
+      "path": "prompts/rendered/Attributes/GToT.txt",
+      "sha256": "9249a22e977ee4b9be0bd0276c0045b5a823b63a4f642a6511cc392f93828fcf",
+      "tokens": 3126
+    },
+    {
+      "class": "BooleanAttribute",
+      "technique": "ZSL",
+      "path": "prompts/rendered/BooleanAttribute/ZSL.txt",
+      "sha256": "f64d41bbe014cd0dfd7ab19a2aeb8554b920c52e8080fa2e7be2ac56c624bbda",
+      "tokens": 168
+    },
+    {
+      "class": "BooleanAttribute",
+      "technique": "FSL",
+      "path": "prompts/rendered/BooleanAttribute/FSL.txt",
+      "sha256": "cbdad4b11430ddfe028a49fc3cc9b054ee8768fe5d2396b60c720d1eca6a34ee",
+      "tokens": 561
+    },
+    {
+      "class": "BooleanAttribute",
+      "technique": "CoT",
+      "path": "prompts/rendered/BooleanAttribute/CoT.txt",
+      "sha256": "5b1cda08c1832583dd1436e536739ad0216c57c6bced4c34731ded1cc539da72",
+      "tokens": 273
+    },
+    {
+      "class": "BooleanAttribute",
+      "technique": "ToT",
+      "path": "prompts/rendered/BooleanAttribute/ToT.txt",
+      "sha256": "67009ec22c4eaab81ad6ca78ba766187d03bfb00e3d002d83fade846594ec9b8",
+      "tokens": 232
+    },
+    {
+      "class": "BooleanAttribute",
+      "technique": "GToT",
+      "path": "prompts/rendered/BooleanAttribute/GToT.txt",
+      "sha256": "8f2bb744937b125321f15be744cf02ac9c063824d88e5a9f854ff9af01b731de",
+      "tokens": 355
+    },
+    {
+      "class": "Comment",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Comment/ZSL.txt",
+      "sha256": "0e4f59e9134f40cadfcf318649d2759e97b6bfec205f7769f2127902db0fb845",
+      "tokens": 339
+    },
+    {
+      "class": "Comment",
+      "technique": "FSL",
+      "path": "prompts/rendered/Comment/FSL.txt",
+      "sha256": "005f42f848321a7f38af01cb09252b95a7daa5d53f780e297b56cf5394a2f60b",
+      "tokens": 733
+    },
+    {
+      "class": "Comment",
+      "technique": "CoT",
+      "path": "prompts/rendered/Comment/CoT.txt",
+      "sha256": "b0c1ed52e493af46261e840c04ec641f34e2e672ae3301ed3d3495002e1b0f10",
+      "tokens": 443
+    },
+    {
+      "class": "Comment",
+      "technique": "ToT",
+      "path": "prompts/rendered/Comment/ToT.txt",
+      "sha256": "463988fe70569b44926cd3a5a52b43a7b6ab2f39f40563f19206251f2fa114e8",
+      "tokens": 404
+    },
+    {
+      "class": "Comment",
+      "technique": "GToT",
+      "path": "prompts/rendered/Comment/GToT.txt",
+      "sha256": "2776bac8a9c1b89470b4ed87904ead92edbefb20f177b468df993963bc6377b7",
+      "tokens": 525
+    },
+    {
+      "class": "DataNode",
+      "technique": "ZSL",
+      "path": "prompts/rendered/DataNode/ZSL.txt",
+      "sha256": "3f539765b9ffd65bc7e943f2163a96561615bba967fc35c657723142b22da3c9",
+      "tokens": 489
+    },
+    {
+      "class": "DataNode",
+      "technique": "FSL",
+      "path": "prompts/rendered/DataNode/FSL.txt",
+      "sha256": "476836e587488981d11a4007d463f53a66c55ff2d652498480b71d472c84560d",
+      "tokens": 882
+    },
+    {
+      "class": "DataNode",
+      "technique": "CoT",
+      "path": "prompts/rendered/DataNode/CoT.txt",
+      "sha256": "9fb4d464d60348a28bd46a56014007617041be79d1724bdeb63c4384d842a110",
+      "tokens": 594
+    },
+    {
+      "class": "DataNode",
+      "technique": "ToT",
+      "path": "prompts/rendered/DataNode/ToT.txt",
+      "sha256": "b5fc8791b73bf609b4ed3265af531c010b7adb31eb4e813e20f68970bbbfcdd4",
+      "tokens": 553
+    },
+    {
+      "class": "DataNode",
+      "technique": "GToT",
+      "path": "prompts/rendered/DataNode/GToT.txt",
+      "sha256": "2062c7b0e835cbb8c64a5280b1fc0b8e3f7b87e61c8b85936e41837e8a229679",
+      "tokens": 676
+    },
+    {
+      "class": "Document",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Document/ZSL.txt",
+      "sha256": "013700646c380154ee3b46fe588679e6635c490556f3d826f70562c3c4d53ec9",
+      "tokens": 4202
+    },
+    {
+      "class": "Document",
+      "technique": "FSL",
+      "path": "prompts/rendered/Document/FSL.txt",
+      "sha256": "11ff5a3a0fbe1b4133683f5419f7c426219d3ba8cdd08ce59b94d09d5de29c7f",
+      "tokens": 4596
+    },
+    {
+      "class": "Document",
+      "technique": "CoT",
+      "path": "prompts/rendered/Document/CoT.txt",
+      "sha256": "e29fd7ace77fb0ef1502f1f43407b4c4b79a67ecb396e162f3757302e90744d0",
+      "tokens": 4306
+    },
+    {
+      "class": "Document",
+      "technique": "ToT",
+      "path": "prompts/rendered/Document/ToT.txt",
+      "sha256": "11aae86d5a8900d22e7d2838d56014376eed5b50a26e1df11768c6f1ff44747a",
+      "tokens": 4267
+    },
+    {
+      "class": "Document",
+      "technique": "GToT",
+      "path": "prompts/rendered/Document/GToT.txt",
+      "sha256": "88f022d3faa63a5e0530523279a09f3c140bec35f8764aaab085dc17ef32394d",
+      "tokens": 4388
+    },
+    {
+      "class": "DocumentType",
+      "technique": "ZSL",
+      "path": "prompts/rendered/DocumentType/ZSL.txt",
+      "sha256": "99eeff051e1a009ed9da6591ed4004d97f3846f8071e85c6c5f8a16d269b0905",
+      "tokens": 885
+    },
+    {
+      "class": "DocumentType",
+      "technique": "FSL",
+      "path": "prompts/rendered/DocumentType/FSL.txt",
+      "sha256": "3bd8864baa4ebcd28fb503d17f97acdd78c0eca1fba996586f5e5751a848c46f",
+      "tokens": 1278
+    },
+    {
+      "class": "DocumentType",
+      "technique": "CoT",
+      "path": "prompts/rendered/DocumentType/CoT.txt",
+      "sha256": "75cd5696b40da8903ff2fbe7941c98d28284c3ef75f51a47a7022a85fa3c7504",
+      "tokens": 990
+    },
+    {
+      "class": "DocumentType",
+      "technique": "ToT",
+      "path": "prompts/rendered/DocumentType/ToT.txt",
+      "sha256": "e501ceb26643b50f3952ec9d5344ac7d37261f5f847000666f20f5a235e96d3c",
+      "tokens": 949
+    },
+    {
+      "class": "DocumentType",
+      "technique": "GToT",
+      "path": "prompts/rendered/DocumentType/GToT.txt",
+      "sha256": "5b3db7934e9486e48f01a0caaadbf6eaf4e1f19c33129cf0fb5378dc62c8d664",
+      "tokens": 1072
+    },
+    {
+      "class": "Element",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Element/ZSL.txt",
+      "sha256": "a241eae96be27e657aa1cd25e0ddb4e59f6be4f85f975069e955744f5b93aeb2",
+      "tokens": 11411
+    },
+    {
+      "class": "Element",
+      "technique": "FSL",
+      "path": "prompts/rendered/Element/FSL.txt",
+      "sha256": "39248733e8f5967dafa2c94790457b04827d4b63b89688930f7cabb555ebb35a",
+      "tokens": 11805
+    },
+    {
+      "class": "Element",
+      "technique": "CoT",
+      "path": "prompts/rendered/Element/CoT.txt",
+      "sha256": "1e35b4337f0dd294f128f1e3be631cc1537d6afb2d217119a5a165c66b72bff9",
+      "tokens": 11515
+    },
+    {
+      "class": "Element",
+      "technique": "ToT",
+      "path": "prompts/rendered/Element/ToT.txt",
+      "sha256": "cf463ee8cf7954a736e84de94ce61defb9c5a268b76af43d4574377c8afad696",
+      "tokens": 11476
+    },
+    {
+      "class": "Element",
+      "technique": "GToT",
+      "path": "prompts/rendered/Element/GToT.txt",
+      "sha256": "1309b1b4fb51b192fd7f897e70632e31d4db438707872b92d40762565ee44597",
+      "tokens": 11597
+    },
+    {
+      "class": "Entities",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Entities/ZSL.txt",
+      "sha256": "ffdccaba34c10aefa8eaba04a307aecb5dfa613c19cd2722d137bd5160e49e86",
+      "tokens": 2842
+    },
+    {
+      "class": "Entities",
+      "technique": "FSL",
+      "path": "prompts/rendered/Entities/FSL.txt",
+      "sha256": "54bb85b96e0129aa6ae8a1b9ded7801add45a759e842330e62477f7715535da9",
+      "tokens": 3236
+    },
+    {
+      "class": "Entities",
+      "technique": "CoT",
+      "path": "prompts/rendered/Entities/CoT.txt",
+      "sha256": "ead5200e0eb908d1fa384381f6fac0f5f600a99939c29de5c98262fe7c4bbe63",
+      "tokens": 2946
+    },
+    {
+      "class": "Entities",
+      "technique": "ToT",
+      "path": "prompts/rendered/Entities/ToT.txt",
+      "sha256": "f868fe3cd77f695c13fadb7e86bb6353c96fe30e5489202ccef61be2ca55fe10",
+      "tokens": 2907
+    },
+    {
+      "class": "Entities",
+      "technique": "GToT",
+      "path": "prompts/rendered/Entities/GToT.txt",
+      "sha256": "f9e486ef08711d678bfeebfa1b0ba2755e459337587ea1fd0b9a319af01ad9fc",
+      "tokens": 3028
+    },
+    {
+      "class": "FormElement",
+      "technique": "ZSL",
+      "path": "prompts/rendered/FormElement/ZSL.txt",
+      "sha256": "98f902f6b2c34305045e3c6f63baaeed8fa41274c2fa392a82bfbe05edcec9ca",
+      "tokens": 921
+    },
+    {
+      "class": "FormElement",
+      "technique": "FSL",
+      "path": "prompts/rendered/FormElement/FSL.txt",
+      "sha256": "0ad764705449473bac298c1a947f5280a0f2f5ecd995256a363449c367144aa4",
+      "tokens": 1314
+    },
+    {
+      "class": "FormElement",
+      "technique": "CoT",
+      "path": "prompts/rendered/FormElement/CoT.txt",
+      "sha256": "068f1faceeb2ce39d7dea2ed8596298377cd61ee669f03be5bfb332f3f18e00c",
+      "tokens": 1026
+    },
+    {
+      "class": "FormElement",
+      "technique": "ToT",
+      "path": "prompts/rendered/FormElement/ToT.txt",
+      "sha256": "912f6892d19b963448ec054f9ce9be9e92da046e96dc45d61b0071a7da5e37ac",
+      "tokens": 985
+    },
+    {
+      "class": "FormElement",
+      "technique": "GToT",
+      "path": "prompts/rendered/FormElement/GToT.txt",
+      "sha256": "0385de2fb337dafe3768ffe1143bb4759113b3573a2fe288b256e42e9f8f1705",
+      "tokens": 1108
+    },
+    {
+      "class": "LeafNode",
+      "technique": "ZSL",
+      "path": "prompts/rendered/LeafNode/ZSL.txt",
+      "sha256": "8eb8e78f8245f7be57d3cfeec2b8a85ef257047ebe79d343d7999c500e329b7e",
+      "tokens": 521
+    },
+    {
+      "class": "LeafNode",
+      "technique": "FSL",
+      "path": "prompts/rendered/LeafNode/FSL.txt",
+      "sha256": "25c88085805853080e22e8a8f5453dfd38fb816e763aff07e714c88e72288eaa",
+      "tokens": 914
+    },
+    {
+      "class": "LeafNode",
+      "technique": "CoT",
+      "path": "prompts/rendered/LeafNode/CoT.txt",
+      "sha256": "fa72aeb61c31c2f960ad381c2b2c411a3972710171b946e0fd6d5887a9e6fe97",
+      "tokens": 626
+    },
+    {
+      "class": "LeafNode",
+      "technique": "ToT",
+      "path": "prompts/rendered/LeafNode/ToT.txt",
+      "sha256": "655db0f1811aac3d8b65823d1faac410e40de0251995ca4c9d6634dd42e2411c",
+      "tokens": 585
+    },
+    {
+      "class": "LeafNode",
+      "technique": "GToT",
+      "path": "prompts/rendered/LeafNode/GToT.txt",
+      "sha256": "cb5d3cab2bcb38d40c5b7d5646bd5f3c1d570c4d79570a77a59f9e43997a3d96",
+      "tokens": 708
+    },
+    {
+      "class": "Node",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Node/ZSL.txt",
+      "sha256": "9e50428688e83b673449e376f0d6fdf5fc1286b0aeeb056f02088ae930534e2b",
+      "tokens": 5312
+    },
+    {
+      "class": "Node",
+      "technique": "FSL",
+      "path": "prompts/rendered/Node/FSL.txt",
+      "sha256": "1897a2a5f9967cc3cdd1d7bd48a292b375c41baf1cab424406be74889f19e474",
+      "tokens": 5706
+    },
+    {
+      "class": "Node",
+      "technique": "CoT",
+      "path": "prompts/rendered/Node/CoT.txt",
+      "sha256": "cded9adecd05e1726a90f1f12176f8f71350558953305f4168fc6441665c37e6",
+      "tokens": 5416
+    },
+    {
+      "class": "Node",
+      "technique": "ToT",
+      "path": "prompts/rendered/Node/ToT.txt",
+      "sha256": "755c40f65d76b3cf814dddfdd6519573a8b256dd70089d9c3113d67712e8acf9",
+      "tokens": 5377
+    },
+    {
+      "class": "Node",
+      "technique": "GToT",
+      "path": "prompts/rendered/Node/GToT.txt",
+      "sha256": "7559d73353bd9b5aa2f62a9a5c6860f95f4bcd99a555012d077a10f9d04dfd54",
+      "tokens": 5498
+    },
+    {
+      "class": "PseudoTextElement",
+      "technique": "ZSL",
+      "path": "prompts/rendered/PseudoTextElement/ZSL.txt",
+      "sha256": "8ed1620e5481c54630c7173e66ea59dec711885ed603b050246d9b26fd9fd27c",
+      "tokens": 219
+    },
+    {
+      "class": "PseudoTextElement",
+      "technique": "FSL",
+      "path": "prompts/rendered/PseudoTextElement/FSL.txt",
+      "sha256": "a0327d0d122d7c74d28e5d556cc73c9aa29a0b7fe46566743c95e263e79e99e2",
+      "tokens": 610
+    },
+    {
+      "class": "PseudoTextElement",
+      "technique": "CoT",
+      "path": "prompts/rendered/PseudoTextElement/CoT.txt",
+      "sha256": "7507483a837a1b6840519db4bada180cc8444390ae6c6186b6ff4d23b56ed8f7",
+      "tokens": 326
+    },
+    {
+      "class": "PseudoTextElement",
+      "technique": "ToT",
+      "path": "prompts/rendered/PseudoTextElement/ToT.txt",
+      "sha256": "50f13e3f1bd3da191ab585e08ce2839863142f14ee76e2bba0a192e28b24c192",
+      "tokens": 281
+    },
+    {
+      "class": "PseudoTextElement",
+      "technique": "GToT",
+      "path": "prompts/rendered/PseudoTextElement/GToT.txt",
+      "sha256": "36d5ec4a4a62a2eb97f3238c7bb8372b4df61c3a9457797c6f71cdb304f14665",
+      "tokens": 408
+    },
+    {
+      "class": "TextNode",
+      "technique": "ZSL",
+      "path": "prompts/rendered/TextNode/ZSL.txt",
+      "sha256": "78f41fa4618ef93dee9211ecfc6f88dc364bdd1d83b44e70c71c3f6996c25282",
+      "tokens": 1139
+    },
+    {
+      "class": "TextNode",
+      "technique": "FSL",
+      "path": "prompts/rendered/TextNode/FSL.txt",
+      "sha256": "0d158d0b80689bc0bb6f552e350d3aa4a3bd0237d4f94f591b85a91d6a4ec058",
+      "tokens": 1533
+    },
+    {
+      "class": "TextNode",
+      "technique": "CoT",
+      "path": "prompts/rendered/TextNode/CoT.txt",
+      "sha256": "e51b9dc2fd313ad15eefbab3036482539f27174546705f5bb17455985e0b5744",
+      "tokens": 1244
+    },
+    {
+      "class": "TextNode",
+      "technique": "ToT",
+      "path": "prompts/rendered/TextNode/ToT.txt",
+      "sha256": "98437af057525277134ce44cf3d14d1b2a3c25d70180ecc24c2355c60c25c972",
+      "tokens": 1203
+    },
+    {
+      "class": "TextNode",
+      "technique": "GToT",
+      "path": "prompts/rendered/TextNode/GToT.txt",
+      "sha256": "0d952ce0d27f99ede408eb51b7ca58d5dd37a8b153e4f8d1cf9af24709397350",
+      "tokens": 1325
+    },
+    {
+      "class": "XmlDeclaration",
+      "technique": "ZSL",
+      "path": "prompts/rendered/XmlDeclaration/ZSL.txt",
+      "sha256": "521c86a45c3b4022a2870c6818006af371ebf1309c41ecec85d4dc26cea867d3",
+      "tokens": 622
+    },
+    {
+      "class": "XmlDeclaration",
+      "technique": "FSL",
+      "path": "prompts/rendered/XmlDeclaration/FSL.txt",
+      "sha256": "ece21f30481543d7b689c00b51b62bfcecba2c3b2f9f643045fd0fc8e4345d3e",
+      "tokens": 1015
+    },
+    {
+      "class": "XmlDeclaration",
+      "technique": "CoT",
+      "path": "prompts/rendered/XmlDeclaration/CoT.txt",
+      "sha256": "187ddd174427574124ff5108a4492356b8ce11ebd1678f56b818343ae8661093",
+      "tokens": 727
+    },
+    {
+      "class": "XmlDeclaration",
+      "technique": "ToT",
+      "path": "prompts/rendered/XmlDeclaration/ToT.txt",
+      "sha256": "6c54c183e7cdc8e5ce0bf2f3e115c7951e22508f2906ff59909513890cb3ece5",
+      "tokens": 686
+    },
+    {
+      "class": "XmlDeclaration",
+      "technique": "GToT",
+      "path": "prompts/rendered/XmlDeclaration/GToT.txt",
+      "sha256": "ac582866625445f7351d31c23699b0b55bba80163d80c95b198e411f347c4fd2",
+      "tokens": 809
+    },
+    {
+      "class": "CharacterReader",
+      "technique": "ZSL",
+      "path": "prompts/rendered/CharacterReader/ZSL.txt",
+      "sha256": "de4e8b816d6ea19c15d5c48b26ec4acc8e6f18dd0eb64d9c52f1d311efd4c8ee",
+      "tokens": 3321
+    },
+    {
+      "class": "CharacterReader",
+      "technique": "FSL",
+      "path": "prompts/rendered/CharacterReader/FSL.txt",
+      "sha256": "00eb116d19a2420b9bf73af378bc582028001244d7184f1045bc9cb6aaf1d3b5",
+      "tokens": 3714
+    },
+    {
+      "class": "CharacterReader",
+      "technique": "CoT",
+      "path": "prompts/rendered/CharacterReader/CoT.txt",
+      "sha256": "9b4dcd9faa222a078e0cedbcd00dbe23df618b8cdf883b91943106adea51f4d7",
+      "tokens": 3426
+    },
+    {
+      "class": "CharacterReader",
+      "technique": "ToT",
+      "path": "prompts/rendered/CharacterReader/ToT.txt",
+      "sha256": "679babc84c09c6e3cf6ccba12a1c282005a5cd4528d9174cc725b3e791d85753",
+      "tokens": 3385
+    },
+    {
+      "class": "CharacterReader",
+      "technique": "GToT",
+      "path": "prompts/rendered/CharacterReader/GToT.txt",
+      "sha256": "c9f2595210893bfe424109296dbadeee63ecd6606dc0c12fc05d86dc57ad45cf",
+      "tokens": 3508
+    },
+    {
+      "class": "HtmlTreeBuilder",
+      "technique": "ZSL",
+      "path": "prompts/rendered/HtmlTreeBuilder/ZSL.txt",
+      "sha256": "6b74c12a43ee899ec86e400da3bc7b93be8d768600577f1b16335cd2d08d2e65",
+      "tokens": 5662
+    },
+    {
+      "class": "HtmlTreeBuilder",
+      "technique": "FSL",
+      "path": "prompts/rendered/HtmlTreeBuilder/FSL.txt",
+      "sha256": "9854b318dedb390c65057d5b5e0d4986194d99814cb5daabc0feefc39a8244fc",
+      "tokens": 6054
+    },
+    {
+      "class": "HtmlTreeBuilder",
+      "technique": "CoT",
+      "path": "prompts/rendered/HtmlTreeBuilder/CoT.txt",
+      "sha256": "f7e61aeae4289e0b5e310af8bd851fd4d49177e67b318aabd55e02c74c2caa7c",
+      "tokens": 5768
+    },
+    {
+      "class": "HtmlTreeBuilder",
+      "technique": "ToT",
+      "path": "prompts/rendered/HtmlTreeBuilder/ToT.txt",
+      "sha256": "d1f5637c52d3246e382fce4e9b746a21fa91f21919508ef2e54f4af7e7223d5a",
+      "tokens": 5725
+    },
+    {
+      "class": "HtmlTreeBuilder",
+      "technique": "GToT",
+      "path": "prompts/rendered/HtmlTreeBuilder/GToT.txt",
+      "sha256": "8915a5081f6d84ae6b2cd5d2bad83d129ea29a0525992273b3a491e3d3ef9855",
+      "tokens": 5850
+    },
+    {
+      "class": "HtmlTreeBuilderState",
+      "technique": "ZSL",
+      "path": "prompts/rendered/HtmlTreeBuilderState/ZSL.txt",
+      "sha256": "d0924843807234857314bc039cbbdc375aefab55aaec83ce0bae4126a4d2c76f",
+      "tokens": 12787
+    },
+    {
+      "class": "HtmlTreeBuilderState",
+      "technique": "FSL",
+      "path": "prompts/rendered/HtmlTreeBuilderState/FSL.txt",
+      "sha256": "edbee707d26776240b44ba0d00048ceedd74808660911d07c0c3e64cf9750ae5",
+      "tokens": 13178
+    },
+    {
+      "class": "HtmlTreeBuilderState",
+      "technique": "CoT",
+      "path": "prompts/rendered/HtmlTreeBuilderState/CoT.txt",
+      "sha256": "fc20b28b110e4df6c6af95c3e276d5b4a3fc40d0ffcc6a6e418ef4f16094e6f8",
+      "tokens": 12894
+    },
+    {
+      "class": "HtmlTreeBuilderState",
+      "technique": "ToT",
+      "path": "prompts/rendered/HtmlTreeBuilderState/ToT.txt",
+      "sha256": "52f632936ddf8ad931ce59df2c85c6a3ffa0d03ad6f5e9dc0a47e84945ed42b0",
+      "tokens": 12849
+    },
+    {
+      "class": "HtmlTreeBuilderState",
+      "technique": "GToT",
+      "path": "prompts/rendered/HtmlTreeBuilderState/GToT.txt",
+      "sha256": "afd9a39a05650bf53c8c5a84b9edfc3981ee9df714e5c6c62630e29b20c470ef",
+      "tokens": 12976
+    },
+    {
+      "class": "ParseError",
+      "technique": "ZSL",
+      "path": "prompts/rendered/ParseError/ZSL.txt",
+      "sha256": "14294db9ffe54abf5723a135fa7fef8144b2fa789f6b8a1cf0e96610436eb13b",
+      "tokens": 258
+    },
+    {
+      "class": "ParseError",
+      "technique": "FSL",
+      "path": "prompts/rendered/ParseError/FSL.txt",
+      "sha256": "fff3095023d4ffbe5dd866334f747e6c3fa98f2a598ed64e9683fb9a6c55e085",
+      "tokens": 651
+    },
+    {
+      "class": "ParseError",
+      "technique": "CoT",
+      "path": "prompts/rendered/ParseError/CoT.txt",
+      "sha256": "3b42c3687fbe5ec220ef1c092f2c72ae0128c82acd776c3537dc6b55962e1207",
+      "tokens": 363
+    },
+    {
+      "class": "ParseError",
+      "technique": "ToT",
+      "path": "prompts/rendered/ParseError/ToT.txt",
+      "sha256": "3ca96f413d25a5ea17e823a60f316db23eacfcc1bfb174eff17b1b67d3cb1329",
+      "tokens": 322
+    },
+    {
+      "class": "ParseError",
+      "technique": "GToT",
+      "path": "prompts/rendered/ParseError/GToT.txt",
+      "sha256": "72709fc06cb0e0bf9d5bb1340749d4163da083d6a632b4fb92d84004e294b5fe",
+      "tokens": 445
+    },
+    {
+      "class": "ParseErrorList",
+      "technique": "ZSL",
+      "path": "prompts/rendered/ParseErrorList/ZSL.txt",
+      "sha256": "f1e663ca8adc39400c0435aae45c27321316d432819cf7a680b77bdaf9f29572",
+      "tokens": 230
+    },
+    {
+      "class": "ParseErrorList",
+      "technique": "FSL",
+      "path": "prompts/rendered/ParseErrorList/FSL.txt",
+      "sha256": "f3f50497f1dc0e7dbfd97fee0328ed4467f06e5bfa4f31698ded43ab513f80f4",
+      "tokens": 622
+    },
+    {
+      "class": "ParseErrorList",
+      "technique": "CoT",
+      "path": "prompts/rendered/ParseErrorList/CoT.txt",
+      "sha256": "b7195337b17914cf2390c7374a3c8db9b01e19612bdd7b4e6e49171a644e707d",
+      "tokens": 336
+    },
+    {
+      "class": "ParseErrorList",
+      "technique": "ToT",
+      "path": "prompts/rendered/ParseErrorList/ToT.txt",
+      "sha256": "e8265184f78a07adb5bd70fde929db50d6996e207ad517b9227f751d100c1d7a",
+      "tokens": 293
+    },
+    {
+      "class": "ParseErrorList",
+      "technique": "GToT",
+      "path": "prompts/rendered/ParseErrorList/GToT.txt",
+      "sha256": "4b6751800612705e0b20f615f22555ea0542cee9fcb9382803eab415e394a209",
+      "tokens": 418
+    },
+    {
+      "class": "ParseSettings",
+      "technique": "ZSL",
+      "path": "prompts/rendered/ParseSettings/ZSL.txt",
+      "sha256": "140d023bb5f1950888c8454750663060162d9ad5d0fb5d9408749e0f7c66e491",
+      "tokens": 357
+    },
+    {
+      "class": "ParseSettings",
+      "technique": "FSL",
+      "path": "prompts/rendered/ParseSettings/FSL.txt",
+      "sha256": "3799c87eb06754c1910bbc743e435ecb271b811fe6324243e0017e6d00243af3",
+      "tokens": 750
+    },
+    {
+      "class": "ParseSettings",
+      "technique": "CoT",
+      "path": "prompts/rendered/ParseSettings/CoT.txt",
+      "sha256": "2d03a9678b1c0332d9fbd87aa6aab960f4f5fbc28eed11c691b0ae9b5b2f7f3d",
+      "tokens": 462
+    },
+    {
+      "class": "ParseSettings",
+      "technique": "ToT",
+      "path": "prompts/rendered/ParseSettings/ToT.txt",
+      "sha256": "be99ebe001d055f7fae0149bc5f1c198130a113d16f0ded321c367c58754846f",
+      "tokens": 421
+    },
+    {
+      "class": "ParseSettings",
+      "technique": "GToT",
+      "path": "prompts/rendered/ParseSettings/GToT.txt",
+      "sha256": "552051e62ac5b7e71ea6b9a5d66780ae177093ed46e7cc51d2321c342f9d5e84",
+      "tokens": 544
+    },
+    {
+      "class": "Parser",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Parser/ZSL.txt",
+      "sha256": "31214e5878dd58c8ae26e3b4587b93d12e209ad08065108bb4269ea2fa7b4903",
+      "tokens": 1852
+    },
+    {
+      "class": "Parser",
+      "technique": "FSL",
+      "path": "prompts/rendered/Parser/FSL.txt",
+      "sha256": "965cfbaf1cebce38fd0d448915ca8d65a1eb85305203b89e6f99ae9c7452cbe0",
+      "tokens": 2246
+    },
+    {
+      "class": "Parser",
+      "technique": "CoT",
+      "path": "prompts/rendered/Parser/CoT.txt",
+      "sha256": "77550f05140e903a6f1b01f75d654300795ebf876b932d6f6552c8668184b6c9",
+      "tokens": 1956
+    },
+    {
+      "class": "Parser",
+      "technique": "ToT",
+      "path": "prompts/rendered/Parser/ToT.txt",
+      "sha256": "7043026fb1fcad2bcce395cf88fa7fc1d5e02bdfa947f5daead4fc027edcb83c",
+      "tokens": 1917
+    },
+    {
+      "class": "Parser",
+      "technique": "GToT",
+      "path": "prompts/rendered/Parser/GToT.txt",
+      "sha256": "da894797c2a24655254676b749b9f716d115f51796e3687eab22bb10ac41fcd0",
+      "tokens": 2038
+    },
+    {
+      "class": "Tag",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Tag/ZSL.txt",
+      "sha256": "6ff0c1728840835078b586c2af62e50c8bd020aa7b66bcfc21fa7118fc367b49",
+      "tokens": 2699
+    },
+    {
+      "class": "Tag",
+      "technique": "FSL",
+      "path": "prompts/rendered/Tag/FSL.txt",
+      "sha256": "57b2d85531c9e1b82233ed6f524d39e13b17dfa9693cc5e975cc6e90d626b0b7",
+      "tokens": 3093
+    },
+    {
+      "class": "Tag",
+      "technique": "CoT",
+      "path": "prompts/rendered/Tag/CoT.txt",
+      "sha256": "05814bb145ac3c707389c02e95beaf43e4d608d883e3b6a3562bfd98cc3d478d",
+      "tokens": 2803
+    },
+    {
+      "class": "Tag",
+      "technique": "ToT",
+      "path": "prompts/rendered/Tag/ToT.txt",
+      "sha256": "2fb5bbc401e58db54ed7b87b8d5abdf7dd50c4878e589d915620f9e5d6e5a492",
+      "tokens": 2764
+    },
+    {
+      "class": "Tag",
+      "technique": "GToT",
+      "path": "prompts/rendered/Tag/GToT.txt",
+      "sha256": "aed5506786a42bbd3185bb757a90597c218420a61ce245d4514439befdc436c1",
+      "tokens": 2885
+    },
+    {
+      "class": "Token",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Token/ZSL.txt",
+      "sha256": "d847a9d6ffb122b830b3522956e71ae1d740bff2248bf4707f61a2ec91e520e2",
+      "tokens": 1990
+    },
+    {
+      "class": "Token",
+      "technique": "FSL",
+      "path": "prompts/rendered/Token/FSL.txt",
+      "sha256": "51d1fa29e5fbd3df4137b7f837d4bfd2304243c60bc71899ee684d054f628130",
+      "tokens": 2384
+    },
+    {
+      "class": "Token",
+      "technique": "CoT",
+      "path": "prompts/rendered/Token/CoT.txt",
+      "sha256": "a15ab33abbde9ca1e747e5fb2c0addaa4bcfbc36346d7972cc3bd50cb10de003",
+      "tokens": 2094
+    },
+    {
+      "class": "Token",
+      "technique": "ToT",
+      "path": "prompts/rendered/Token/ToT.txt",
+      "sha256": "4c1c2575e1d8c91f1c3d3252541f57961426c83ab8fcb3f3f2f19af3c0146c6c",
+      "tokens": 2055
+    },
+    {
+      "class": "Token",
+      "technique": "GToT",
+      "path": "prompts/rendered/Token/GToT.txt",
+      "sha256": "e8945322fde2cad6926275879ae299340b82d1cc10d394ac54134c57fa669954",
+      "tokens": 2176
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "ZSL",
+      "path": "prompts/rendered/TokenQueue/ZSL.txt",
+      "sha256": "9afb437812a2d5de4cff98d2f318c74446e24f0fd416e90ea93cbd2fece9ba4a",
+      "tokens": 2782
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "FSL",
+      "path": "prompts/rendered/TokenQueue/FSL.txt",
+      "sha256": "f7a9028d0b35aaabea90d429e9b78cc9a7d56a128d964defe5d5a02675cb03b5",
+      "tokens": 3175
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "CoT",
+      "path": "prompts/rendered/TokenQueue/CoT.txt",
+      "sha256": "0282238681b6392a781ce4fa559f76114c5210d45cfae6154faaeb6bdf8d5a50",
+      "tokens": 2887
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "ToT",
+      "path": "prompts/rendered/TokenQueue/ToT.txt",
+      "sha256": "2ba09840d809552c15bcb2c7c0592c9fbd7a3d659de200bfbbe34e30133d81be",
+      "tokens": 2846
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "GToT",
+      "path": "prompts/rendered/TokenQueue/GToT.txt",
+      "sha256": "0d01f69a2acb59144ed015ac00deef248c2390eb8f3702f07ca23c0cb9d2d3d5",
+      "tokens": 2969
+    },
+    {
+      "class": "Tokeniser",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Tokeniser/ZSL.txt",
+      "sha256": "4f14f6c6e0e3c0b3e950a1d3439b8874cbe0a82d53128cb5f1f6e0bb08156a0a",
+      "tokens": 2162
+    },
+    {
+      "class": "Tokeniser",
+      "technique": "FSL",
+      "path": "prompts/rendered/Tokeniser/FSL.txt",
+      "sha256": "e13273b00fd1c10aa80a49f6c3ed06c21b96ef62a7fa15706a58b45ac831cb16",
+      "tokens": 2555
+    },
+    {
+      "class": "Tokeniser",
+      "technique": "CoT",
+      "path": "prompts/rendered/Tokeniser/CoT.txt",
+      "sha256": "de0a43534495ed1c68268d1dc723ca2728b2c661a6bd817fbfc65761aaa93588",
+      "tokens": 2267
+    },
+    {
+      "class": "Tokeniser",
+      "technique": "ToT",
+      "path": "prompts/rendered/Tokeniser/ToT.txt",
+      "sha256": "87cd057127df7de5bea43f36b7f76c8aec4d473d56c82610661b57fb45d5dcf7",
+      "tokens": 2226
+    },
+    {
+      "class": "Tokeniser",
+      "technique": "GToT",
+      "path": "prompts/rendered/Tokeniser/GToT.txt",
+      "sha256": "d62019627a180eb16355c7ac374a6ce63e9a311fb912f7a56c9a66a3eb5e43e5",
+      "tokens": 2349
+    },
+    {
+      "class": "TokeniserState",
+      "technique": "ZSL",
+      "path": "prompts/rendered/TokeniserState/ZSL.txt",
+      "sha256": "9a766e725618e9a79041ec285617f4eba7d5eed0f17ab9bd8672a18c3165b9b4",
+      "tokens": 10403
+    },
+    {
+      "class": "TokeniserState",
+      "technique": "FSL",
+      "path": "prompts/rendered/TokeniserState/FSL.txt",
+      "sha256": "b132c7e2175e368d9340468c6a1f1e095e815c4143d11ee1d4e88816858143d8",
+      "tokens": 10795
+    },
+    {
+      "class": "TokeniserState",
+      "technique": "CoT",
+      "path": "prompts/rendered/TokeniserState/CoT.txt",
+      "sha256": "80516ab5206d417c6919495b9914bd6a5ba8c3409af1668f05a34362e9a60b01",
+      "tokens": 10509
+    },
+    {
+      "class": "TokeniserState",
+      "technique": "ToT",
+      "path": "prompts/rendered/TokeniserState/ToT.txt",
+      "sha256": "fdcec5ee9cd4d15ee3982f7e4fee7a007a5a70f35c4827e71ae46b622cbea3cb",
+      "tokens": 10466
+    },
+    {
+      "class": "TokeniserState",
+      "technique": "GToT",
+      "path": "prompts/rendered/TokeniserState/GToT.txt",
+      "sha256": "9f5a428bda1a181d9e0727d0caef4d73daf5076b00b292c49a75de617503e9e4",
+      "tokens": 10591
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "ZSL",
+      "path": "prompts/rendered/TreeBuilder/ZSL.txt",
+      "sha256": "87997b6feb7884a40d303572626896595dd72a7f82a758e066761c517edb4f16",
+      "tokens": 659
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "FSL",
+      "path": "prompts/rendered/TreeBuilder/FSL.txt",
+      "sha256": "705e97845dbef642debd312fd12931dbbea62d129b0be6af7b77fde44f2cb4c1",
+      "tokens": 1052
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "CoT",
+      "path": "prompts/rendered/TreeBuilder/CoT.txt",
+      "sha256": "a948aa174572eb143f807e0001486de136451e0c1bb26282536b5e3f912f7942",
+      "tokens": 764
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "ToT",
+      "path": "prompts/rendered/TreeBuilder/ToT.txt",
+      "sha256": "f62e7197181635083235e2e25190e487cb00d36418e3ea109b9b55fea7f1907a",
+      "tokens": 723
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "GToT",
+      "path": "prompts/rendered/TreeBuilder/GToT.txt",
+      "sha256": "38eba91a3fd7768ef413f1b8c0d378b0ed2f1cb3953f566bd26ae79e9b72dea0",
+      "tokens": 846
+    },
+    {
+      "class": "XmlTreeBuilder",
+      "technique": "ZSL",
+      "path": "prompts/rendered/XmlTreeBuilder/ZSL.txt",
+      "sha256": "d609c8e80cd0a18f5cc24528a8a1e99c696cae3e51f0acb426e65ebebb1eb261",
+      "tokens": 1150
+    },
+    {
+      "class": "XmlTreeBuilder",
+      "technique": "FSL",
+      "path": "prompts/rendered/XmlTreeBuilder/FSL.txt",
+      "sha256": "1206dccb5e6cf40b6ee6b2d9247d21a18855cb273240154a8ba9c3c21cd9a5ae",
+      "tokens": 1542
+    },
+    {
+      "class": "XmlTreeBuilder",
+      "technique": "CoT",
+      "path": "prompts/rendered/XmlTreeBuilder/CoT.txt",
+      "sha256": "3bd584cbafec8edfc505e9b4a7af3e399279b185aefe2e85c55a5afd81261776",
+      "tokens": 1256
+    },
+    {
+      "class": "XmlTreeBuilder",
+      "technique": "ToT",
+      "path": "prompts/rendered/XmlTreeBuilder/ToT.txt",
+      "sha256": "6982dbf1126a4d4e8a8a7d99ffc7fc10f787827d1f7d3a8c04003cca66cfd2f5",
+      "tokens": 1213
+    },
+    {
+      "class": "XmlTreeBuilder",
+      "technique": "GToT",
+      "path": "prompts/rendered/XmlTreeBuilder/GToT.txt",
+      "sha256": "ae02a98f3b2930a18738b18ec3709a38a1a3fa18f5a35238fe4d6cdedb2fdf92",
+      "tokens": 1338
+    },
+    {
+      "class": "Cleaner",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Cleaner/ZSL.txt",
+      "sha256": "a4c3de5892543e13f4601898303095f8446d3035168c2d07dc06d64a00a67786",
+      "tokens": 1525
+    },
+    {
+      "class": "Cleaner",
+      "technique": "FSL",
+      "path": "prompts/rendered/Cleaner/FSL.txt",
+      "sha256": "b4db77948c2fcec61c90089b5f6bfc57e70666b51f350288f95dbed32fa2611f",
+      "tokens": 1918
+    },
+    {
+      "class": "Cleaner",
+      "technique": "CoT",
+      "path": "prompts/rendered/Cleaner/CoT.txt",
+      "sha256": "a3c3dd02615acf7392fe302de78cc2a3934196c826f9e00898e189ad3ae74ee8",
+      "tokens": 1629
+    },
+    {
+      "class": "Cleaner",
+      "technique": "ToT",
+      "path": "prompts/rendered/Cleaner/ToT.txt",
+      "sha256": "b10ced4ac5ef118bdfee11ae6de18b90ed1a6ea699915d3c9ba826d47528e0ab",
+      "tokens": 1590
+    },
+    {
+      "class": "Cleaner",
+      "technique": "GToT",
+      "path": "prompts/rendered/Cleaner/GToT.txt",
+      "sha256": "21bbf08783fc2e52f14513741cc66f4f19e8a547f95ef0e2b9ce401d889b1ac9",
+      "tokens": 1712
+    },
+    {
+      "class": "Whitelist",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Whitelist/ZSL.txt",
+      "sha256": "7beec1f5e940d56ee7de7f071deef1088e2aa9b12830efadd70b805d391b101d",
+      "tokens": 5459
+    },
+    {
+      "class": "Whitelist",
+      "technique": "FSL",
+      "path": "prompts/rendered/Whitelist/FSL.txt",
+      "sha256": "72da22e23213b6a4044aa9e77922ecfaa6eaab1dfdb26331ef60bf9d371c9e87",
+      "tokens": 5852
+    },
+    {
+      "class": "Whitelist",
+      "technique": "CoT",
+      "path": "prompts/rendered/Whitelist/CoT.txt",
+      "sha256": "7b7fc6358067ded5f4e75c0919c2328706fe5bd94a048e8df8860ff0e861fe1e",
+      "tokens": 5564
+    },
+    {
+      "class": "Whitelist",
+      "technique": "ToT",
+      "path": "prompts/rendered/Whitelist/ToT.txt",
+      "sha256": "6a9f75e1b8e5005ec4925b23ac372d00575005e1b223bd0a68768bb8a0122617",
+      "tokens": 5523
+    },
+    {
+      "class": "Whitelist",
+      "technique": "GToT",
+      "path": "prompts/rendered/Whitelist/GToT.txt",
+      "sha256": "8701b902a34941e2c346ee433789be9b57cbb9b1c4fc20bc50e3adf939aa21a0",
+      "tokens": 5646
+    },
+    {
+      "class": "Collector",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Collector/ZSL.txt",
+      "sha256": "eb2b3c3775e159de6ad73fe37e51ac1aa8c58249bcf828a73d10c00f9db15d5b",
+      "tokens": 556
+    },
+    {
+      "class": "Collector",
+      "technique": "FSL",
+      "path": "prompts/rendered/Collector/FSL.txt",
+      "sha256": "2b91c95008a8c57032b6a70dd79df21d3e088b7868e9313a88254dd9c48cef30",
+      "tokens": 950
+    },
+    {
+      "class": "Collector",
+      "technique": "CoT",
+      "path": "prompts/rendered/Collector/CoT.txt",
+      "sha256": "f666194fd203ebedc0840d017a8cecfd479496a65e0e7d25cf9225fd0480b629",
+      "tokens": 660
+    },
+    {
+      "class": "Collector",
+      "technique": "ToT",
+      "path": "prompts/rendered/Collector/ToT.txt",
+      "sha256": "78f2395bf367b9f7b612842f8bef85b7ba0060d962231d5539105f04fb6b444c",
+      "tokens": 621
+    },
+    {
+      "class": "Collector",
+      "technique": "GToT",
+      "path": "prompts/rendered/Collector/GToT.txt",
+      "sha256": "ececb4a884c3737535984ec1fd96a833db6f0f0be7da90df756f1c76299891f1",
+      "tokens": 742
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "ZSL",
+      "path": "prompts/rendered/CombiningEvaluator/ZSL.txt",
+      "sha256": "9afacfe4622995be8ab6953969155b65949c582487292dbdb9a7bca1f7402e83",
+      "tokens": 666
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "FSL",
+      "path": "prompts/rendered/CombiningEvaluator/FSL.txt",
+      "sha256": "c1216bcc5fc1ea83e16516d14dbf0e7d9d816ba1fac043509b1cf0c4b7d3c636",
+      "tokens": 1058
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "CoT",
+      "path": "prompts/rendered/CombiningEvaluator/CoT.txt",
+      "sha256": "c5417a0424f1b92616c563b57c082eb9da53de70d5eae75492fb052bc8d2ee6e",
+      "tokens": 772
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "ToT",
+      "path": "prompts/rendered/CombiningEvaluator/ToT.txt",
+      "sha256": "887f6cc34be2ce23b63b42e88849cf849eba8dc0e0fe694f72f79ce3113c19b2",
+      "tokens": 729
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "GToT",
+      "path": "prompts/rendered/CombiningEvaluator/GToT.txt",
+      "sha256": "7c0c9bfe49df03e6d10aa2a36555b9dedfb663669b7ac6a741bab49f6470b97d",
+      "tokens": 854
+    },
+    {
+      "class": "Elements",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Elements/ZSL.txt",
+      "sha256": "6e0c84684893d24e29cb20f7064442b2e7fdc90235fe559780848aade225951e",
+      "tokens": 4557
+    },
+    {
+      "class": "Elements",
+      "technique": "FSL",
+      "path": "prompts/rendered/Elements/FSL.txt",
+      "sha256": "d06a3348ace858394e29b05db74831a008e606de6efc8a5a1c679914ea1ee5f7",
+      "tokens": 4951
+    },
+    {
+      "class": "Elements",
+      "technique": "CoT",
+      "path": "prompts/rendered/Elements/CoT.txt",
+      "sha256": "698840795451ca8cc4dee70f8c3c4f982165753cd07b2875e9267cfdc8a50d15",
+      "tokens": 4661
+    },
+    {
+      "class": "Elements",
+      "technique": "ToT",
+      "path": "prompts/rendered/Elements/ToT.txt",
+      "sha256": "9a971ba8a3a586a96ac8b87938b50cc5cf531a9493bf9c6976f5b1ef6ebfb089",
+      "tokens": 4622
+    },
+    {
+      "class": "Elements",
+      "technique": "GToT",
+      "path": "prompts/rendered/Elements/GToT.txt",
+      "sha256": "1cdc61a699e00f5449f58012d1a5a57165808883eac0aa85ace1fd499e2e5e90",
+      "tokens": 4743
+    },
+    {
+      "class": "Evaluator",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Evaluator/ZSL.txt",
+      "sha256": "066cf3acd7de2cb2f219a462be8a416624a09fec40d1f4a303d7327ff9b0cef3",
+      "tokens": 4284
+    },
+    {
+      "class": "Evaluator",
+      "technique": "FSL",
+      "path": "prompts/rendered/Evaluator/FSL.txt",
+      "sha256": "485cea25fa25f9fdb1c656ea8dc2b1a52d2e21ab9ecee5e88622b673332b7bbb",
+      "tokens": 4678
+    },
+    {
+      "class": "Evaluator",
+      "technique": "CoT",
+      "path": "prompts/rendered/Evaluator/CoT.txt",
+      "sha256": "68b25309fa4a8f5cea3477ed59d40c1447326620c260c8eab6f9580191ce13a0",
+      "tokens": 4389
+    },
+    {
+      "class": "Evaluator",
+      "technique": "ToT",
+      "path": "prompts/rendered/Evaluator/ToT.txt",
+      "sha256": "4320902bb8f7a15850ca6550fb9b577600244fd4412f7b65e89c3d5686bc4512",
+      "tokens": 4348
+    },
+    {
+      "class": "Evaluator",
+      "technique": "GToT",
+      "path": "prompts/rendered/Evaluator/GToT.txt",
+      "sha256": "b425f48cfb54876efe8be4448137f8e934d2c89a7773a08d822821dbec830529",
+      "tokens": 4470
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "ZSL",
+      "path": "prompts/rendered/NodeTraversor/ZSL.txt",
+      "sha256": "c499f0e96b5ab1e00391712d33f31ba7232e132f43f037a5bce86fc3de97187a",
+      "tokens": 1072
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "FSL",
+      "path": "prompts/rendered/NodeTraversor/FSL.txt",
+      "sha256": "89ae550a213c2f7b857a184021e35933d9013ae48cd2ae6d1c48c7e492d4178a",
+      "tokens": 1463
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "CoT",
+      "path": "prompts/rendered/NodeTraversor/CoT.txt",
+      "sha256": "ddc1a220d2c830a4ce5ef5a28467508e8bed009d0296be989a9c158f2ed904af",
+      "tokens": 1179
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "ToT",
+      "path": "prompts/rendered/NodeTraversor/ToT.txt",
+      "sha256": "688299196031a2eee01572cbf7d8165a1e54047e157fa1025a9e60a5f5fec7e3",
+      "tokens": 1134
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "GToT",
+      "path": "prompts/rendered/NodeTraversor/GToT.txt",
+      "sha256": "aa91af46cd9784c16b4a02924ae7068b75d1ee2b7918b9882161240086f0df6e",
+      "tokens": 1261
+    },
+    {
+      "class": "QueryParser",
+      "technique": "ZSL",
+      "path": "prompts/rendered/QueryParser/ZSL.txt",
+      "sha256": "311bf501594e0cdcb3d72dd56d35e5f0531534d4eba305fc4421293438937315",
+      "tokens": 3238
+    },
+    {
+      "class": "QueryParser",
+      "technique": "FSL",
+      "path": "prompts/rendered/QueryParser/FSL.txt",
+      "sha256": "e257ff97a5faa2b844aec71e79582a763e58a219be671e4252954c3084569b80",
+      "tokens": 3631
+    },
+    {
+      "class": "QueryParser",
+      "technique": "CoT",
+      "path": "prompts/rendered/QueryParser/CoT.txt",
+      "sha256": "325698695d5f63b91953bcbd3e727f7d71f5827cb2931d58689a84c6914e8ad4",
+      "tokens": 3343
+    },
+    {
+      "class": "QueryParser",
+      "technique": "ToT",
+      "path": "prompts/rendered/QueryParser/ToT.txt",
+      "sha256": "adf74e3cac36d7fa029f8d82d9a7be49faf576e32eeb59bc8d5f8a40fcbf8976",
+      "tokens": 3302
+    },
+    {
+      "class": "QueryParser",
+      "technique": "GToT",
+      "path": "prompts/rendered/QueryParser/GToT.txt",
+      "sha256": "d253b2718d91cadf3cdf39d286edcc7e3a16b56494f9e3524264b66033884b90",
+      "tokens": 3425
+    },
+    {
+      "class": "Selector",
+      "technique": "ZSL",
+      "path": "prompts/rendered/Selector/ZSL.txt",
+      "sha256": "c37fa239c7b3d4d2859f5c5a7a93bb8f5b12cf63daad4a7b01de8ae54b2e1119",
+      "tokens": 4064
+    },
+    {
+      "class": "Selector",
+      "technique": "FSL",
+      "path": "prompts/rendered/Selector/FSL.txt",
+      "sha256": "6dd0f6aa20abc62ac41fe66f124d0fbf12ca5c6de7b198640f63bc2945d290d3",
+      "tokens": 4458
+    },
+    {
+      "class": "Selector",
+      "technique": "CoT",
+      "path": "prompts/rendered/Selector/CoT.txt",
+      "sha256": "ffdec53aa33cb602405f17ff07bfb0ee80281e3eb7f77ad5f5845fa587e1781c",
+      "tokens": 4168
+    },
+    {
+      "class": "Selector",
+      "technique": "ToT",
+      "path": "prompts/rendered/Selector/ToT.txt",
+      "sha256": "3e228f1c14c6ab3331640faac16c0515420f136b21f9f83e266dfa4e9b7af30d",
+      "tokens": 4129
+    },
+    {
+      "class": "Selector",
+      "technique": "GToT",
+      "path": "prompts/rendered/Selector/GToT.txt",
+      "sha256": "f0d5a0d76aaec7047d929a9417b63a81c4c586eca46c26cbe47df32c82fc1285",
+      "tokens": 4250
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "ZSL",
+      "path": "prompts/rendered/StructuralEvaluator/ZSL.txt",
+      "sha256": "26eff8514433ac220102cfaa864f58bcb26888ebd2fa369f8f23ff7f642dd2e3",
+      "tokens": 732
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "FSL",
+      "path": "prompts/rendered/StructuralEvaluator/FSL.txt",
+      "sha256": "122a6e9d0be20d44aba20cf99ae26d281c7a727b3f338bbfe6036f55e1858b3b",
+      "tokens": 1124
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "CoT",
+      "path": "prompts/rendered/StructuralEvaluator/CoT.txt",
+      "sha256": "a349be40466f057900d24d1a1771a4d28998a553a90171347ee026288826ab8d",
+      "tokens": 837
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "ToT",
+      "path": "prompts/rendered/StructuralEvaluator/ToT.txt",
+      "sha256": "20e386549712fb7e004fbb473b716e7d61a6a5509d416552c044806c746de1d9",
+      "tokens": 796
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "GToT",
+      "path": "prompts/rendered/StructuralEvaluator/GToT.txt",
+      "sha256": "5a6d0544efa292ed2f9ff53ddbb8c4394ba5b556818a3894d1c1448570a15fdc",
+      "tokens": 920
+    }
+  ]
+}

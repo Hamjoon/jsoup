@@ -1,0 +1,11 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.7,
+  "max_tokens": 16384,
+  "messages": [
+    {
+      "role": "user",
+      "content": "As a professional software tester who writes Java test methods, generate a complete Junit 4 test file (UncheckedIOExceptionTest.java) to comprehensively test all methods in the following class named UncheckedIOException. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:\npackage org.jsoup;\n\nimport java.io.IOException;\n\npublic class UncheckedIOException extends Error {\n    public UncheckedIOException(IOException cause) {\n        super(cause);\n    }\n\n    public IOException ioException() {\n        return (IOException) getCause();\n    }\n}\n"
+    }
+  ]
+}

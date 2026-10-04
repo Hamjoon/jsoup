@@ -1,0 +1,48 @@
+{
+  "observed_inventory": {
+    "files": 66,
+    "cuts": 52,
+    "abstract_cuts": 8
+  },
+  "expected_inventory": {
+    "files": 66,
+    "cuts": 52,
+    "abstract_cuts": 7
+  },
+  "abstract_classes": [
+    "org.jsoup.helper.ChangeNotifyingArrayList",
+    "org.jsoup.nodes.LeafNode",
+    "org.jsoup.nodes.Node",
+    "org.jsoup.parser.Token",
+    "org.jsoup.parser.TreeBuilder",
+    "org.jsoup.select.CombiningEvaluator",
+    "org.jsoup.select.Evaluator",
+    "org.jsoup.select.StructuralEvaluator"
+  ],
+  "exclusions": {
+    "interface": 3,
+    "examples": 3,
+    "package-info": 7,
+    "entities-data": 1
+  },
+  "source_path_absence_classes": 6,
+  "unexpected_presence_classes": 4,
+  "rendered_prompts": 260,
+  "model": "openai/gpt-oss-120b",
+  "model_listed": true,
+  "probe_status": "ok",
+  "generation_started": false,
+  "deviations": [
+    "The observed abstract CUT count differs from the expected count; the selected CUT count and generation-call design are unchanged.",
+    "Additional CUT source paths become absent at later releases; the observed presence matrix is retained under the explicit report-and-continue instruction.",
+    "The first inventory-script version made the abstract-count mismatch fatal. This local check was corrected to follow the Step 10 report-and-continue instruction, and inventory was rerun; source data and selection were unchanged.",
+    "Prompt rendering substitutes the three original template placeholder tokens in a single split/join operation. Inserted source and example text is never rescanned.",
+    "The probe sends max_tokens exactly as specified by the request body; no input-length exclusion or truncation is applied."
+  ],
+  "stage_seconds": {
+    "copy": 0.041,
+    "inventory": 2.714,
+    "render": 2.856,
+    "probe": 3.27
+  }
+}

@@ -1,0 +1,174 @@
+As a professional software tester who writes Java test methods, consider the following examples:
+//Example Java Class:
+package org.apache.commons.cli;
+
+final class Util {
+
+    static final String[] EMPTY_STRING_ARRAY = {};
+
+    static String stripLeadingAndTrailingQuotes(String str) {
+        final int length = str.length();
+        if (length > 1 && str.startsWith(""") && str.endsWith(""") && str.substring(1, length - 1).indexOf('"') == -1) {
+            str = str.substring(1, length - 1);
+        }
+
+        return str;
+    }
+
+    static String stripLeadingHyphens(final String str) {
+        if (str == null) {
+            return null;
+        }
+        if (str.startsWith("--")) {
+            return str.substring(2);
+        }
+        if (str.startsWith("-")) {
+            return str.substring(1);
+        }
+
+        return str;
+    }
+}
+
+
+//Corresponding JUnit 4 Test Cases:
+package org.apache.commons.cli;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+public class UtilTest {
+    @Test
+    public void testStripLeadingAndTrailingQuotes() {
+        assertEquals("foo", Util.stripLeadingAndTrailingQuotes(""foo""));
+        assertEquals("foo "bar"", Util.stripLeadingAndTrailingQuotes("foo "bar""));
+        assertEquals(""foo" bar", Util.stripLeadingAndTrailingQuotes(""foo" bar"));
+        assertEquals(""foo" and "bar"", Util.stripLeadingAndTrailingQuotes(""foo" and "bar""));
+        assertEquals(""", Util.stripLeadingAndTrailingQuotes("""));
+    }
+
+    @Test
+    public void testStripLeadingHyphens() {
+        assertEquals("f", Util.stripLeadingHyphens("-f"));
+        assertEquals("foo", Util.stripLeadingHyphens("--foo"));
+        assertEquals("-foo", Util.stripLeadingHyphens("---foo"));
+        assertNull(Util.stripLeadingHyphens(null));
+    }
+}
+        
+Now, generate JUnit 4 test cases to comprehensively test all methods in the following class named Validate. Your output file must start with ###Test START## and finish with ###Test END##. Here is the source code:
+package org.jsoup.helper;
+
+/**
+ * Simple validation methods. Designed for jsoup internal use
+ */
+public final class Validate {
+    
+    private Validate() {}
+
+    /**
+     * Validates that the object is not null
+     * @param obj object to test
+     */
+    public static void notNull(Object obj) {
+        if (obj == null)
+            throw new IllegalArgumentException("Object must not be null");
+    }
+
+    /**
+     * Validates that the object is not null
+     * @param obj object to test
+     * @param msg message to output if validation fails
+     */
+    public static void notNull(Object obj, String msg) {
+        if (obj == null)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the value is true
+     * @param val object to test
+     */
+    public static void isTrue(boolean val) {
+        if (!val)
+            throw new IllegalArgumentException("Must be true");
+    }
+
+    /**
+     * Validates that the value is true
+     * @param val object to test
+     * @param msg message to output if validation fails
+     */
+    public static void isTrue(boolean val, String msg) {
+        if (!val)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the value is false
+     * @param val object to test
+     */
+    public static void isFalse(boolean val) {
+        if (val)
+            throw new IllegalArgumentException("Must be false");
+    }
+
+    /**
+     * Validates that the value is false
+     * @param val object to test
+     * @param msg message to output if validation fails
+     */
+    public static void isFalse(boolean val, String msg) {
+        if (val)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the array contains no null elements
+     * @param objects the array to test
+     */
+    public static void noNullElements(Object[] objects) {
+        noNullElements(objects, "Array must not contain any null objects");
+    }
+
+    /**
+     * Validates that the array contains no null elements
+     * @param objects the array to test
+     * @param msg message to output if validation fails
+     */
+    public static void noNullElements(Object[] objects, String msg) {
+        for (Object obj : objects)
+            if (obj == null)
+                throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the string is not empty
+     * @param string the string to test
+     */
+    public static void notEmpty(String string) {
+        if (string == null || string.length() == 0)
+            throw new IllegalArgumentException("String must not be empty");
+    }
+
+    /**
+     * Validates that the string is not empty
+     * @param string the string to test
+     * @param msg message to output if validation fails
+     */
+    public static void notEmpty(String string, String msg) {
+        if (string == null || string.length() == 0)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     Cause a failure.
+     @param msg message to output.
+     */
+    public static void fail(String msg) {
+        throw new IllegalArgumentException(msg);
+    }
+}
+.

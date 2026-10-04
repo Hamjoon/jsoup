@@ -1,0 +1,28 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup.nodes;
+
+import org.jsoup.parser.Tag;
+
+import java.io.IOException;
+
+/**
+ * Represents a {@link TextNode} as an {@link Element}, to enable text nodes to be selected with
+ * the {@link org.jsoup.select.Selector} {@code :matchText} syntax.
+ */
+public class PseudoTextElement extends Element {
+
+    public PseudoTextElement(Tag tag, String baseUri, Attributes attributes) {
+        super(tag, baseUri, attributes);
+    }
+
+    @Override
+    void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+    }
+
+    @Override
+    void outerHtmlTail(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (PseudoTextElementTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

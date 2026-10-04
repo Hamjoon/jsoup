@@ -1,0 +1,9 @@
+{
+  "copied_files_checked": 8,
+  "prompts_checked": 260,
+  "baseline_cut_sources_checked": 52,
+  "probe_content_verbatim": true,
+  "probe_request_valid": true,
+  "imported_library_functions_available": true,
+  "checks_passed": true
+}

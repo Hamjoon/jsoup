@@ -1,0 +1,121 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class.To comprehensively test all methods in the following class named Validate they must following these steps:
+- Extract and list all the public methods including their signatures
+- For each methods, generate a basic JUnit 4 test case that checks the method's functionality
+- Given the source code of the class and the listed methods, identify potential edge cases and exception handling scenarios that should be tested
+- Generate JUnit 4 test cases that specifically test for the identified edge cases and exceptions
+- Merge all the individual test cases into a complete JUnit 4 test file (ValidateTest.java) for the given Java class.All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup.helper;
+
+/**
+ * Simple validation methods. Designed for jsoup internal use
+ */
+public final class Validate {
+    
+    private Validate() {}
+
+    /**
+     * Validates that the object is not null
+     * @param obj object to test
+     */
+    public static void notNull(Object obj) {
+        if (obj == null)
+            throw new IllegalArgumentException("Object must not be null");
+    }
+
+    /**
+     * Validates that the object is not null
+     * @param obj object to test
+     * @param msg message to output if validation fails
+     */
+    public static void notNull(Object obj, String msg) {
+        if (obj == null)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the value is true
+     * @param val object to test
+     */
+    public static void isTrue(boolean val) {
+        if (!val)
+            throw new IllegalArgumentException("Must be true");
+    }
+
+    /**
+     * Validates that the value is true
+     * @param val object to test
+     * @param msg message to output if validation fails
+     */
+    public static void isTrue(boolean val, String msg) {
+        if (!val)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the value is false
+     * @param val object to test
+     */
+    public static void isFalse(boolean val) {
+        if (val)
+            throw new IllegalArgumentException("Must be false");
+    }
+
+    /**
+     * Validates that the value is false
+     * @param val object to test
+     * @param msg message to output if validation fails
+     */
+    public static void isFalse(boolean val, String msg) {
+        if (val)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the array contains no null elements
+     * @param objects the array to test
+     */
+    public static void noNullElements(Object[] objects) {
+        noNullElements(objects, "Array must not contain any null objects");
+    }
+
+    /**
+     * Validates that the array contains no null elements
+     * @param objects the array to test
+     * @param msg message to output if validation fails
+     */
+    public static void noNullElements(Object[] objects, String msg) {
+        for (Object obj : objects)
+            if (obj == null)
+                throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     * Validates that the string is not empty
+     * @param string the string to test
+     */
+    public static void notEmpty(String string) {
+        if (string == null || string.length() == 0)
+            throw new IllegalArgumentException("String must not be empty");
+    }
+
+    /**
+     * Validates that the string is not empty
+     * @param string the string to test
+     * @param msg message to output if validation fails
+     */
+    public static void notEmpty(String string, String msg) {
+        if (string == null || string.length() == 0)
+            throw new IllegalArgumentException(msg);
+    }
+
+    /**
+     Cause a failure.
+     @param msg message to output.
+     */
+    public static void fail(String msg) {
+        throw new IllegalArgumentException(msg);
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (ValidateTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##

@@ -1,0 +1,38 @@
+Imagine three different experts in software testing who are tasked with developing comprehensive JUnit 4 test cases for the following Java class. All experts will propose one test cases for each method, share it with the group, and then proceed to the next step. If any expert realizes they're wrong at any point, they leave.
+The Java class is:
+package org.jsoup.parser;
+
+import java.util.ArrayList;
+
+/**
+ * A container for ParseErrors.
+ * 
+ * @author Jonathan Hedley
+ */
+public class ParseErrorList extends ArrayList<ParseError>{
+    private static final int INITIAL_CAPACITY = 16;
+    private final int maxSize;
+    
+    ParseErrorList(int initialCapacity, int maxSize) {
+        super(initialCapacity);
+        this.maxSize = maxSize;
+    }
+    
+    boolean canAddError() {
+        return size() < maxSize;
+    }
+
+    int getMaxSize() {
+        return maxSize;
+    }
+
+    public static ParseErrorList noTracking() {
+        return new ParseErrorList(0, 0);
+    }
+    
+    public static ParseErrorList tracking(int maxSize) {
+        return new ParseErrorList(INITIAL_CAPACITY, maxSize);
+    }
+}
+
+At the end they must propose one complete (including typical use cases, edge cases, and error scenarios) JUnit 4 test file (ParseErrorListTest.java) for the given Java class. The complete JUnit test file must start with ###Test START## and finish with ###Test END##
