@@ -1,0 +1,77 @@
+{
+  "baseline_denominator": 594,
+  "later_releases": 26,
+  "final_release": "jsoup-1.23.2",
+  "final_survived": 187,
+  "final_survival_rate": "0.3148",
+  "final_point_pass": 187,
+  "flaky_events": 0,
+  "first_break_counts": {
+    "compile-fail": 373,
+    "fail": 33,
+    "survived": 187,
+    "error": 1
+  },
+  "stage_times": [
+    {
+      "stage": "Release builds and frozen dependency download",
+      "seconds": 203.731
+    },
+    {
+      "stage": "Baseline compilation",
+      "seconds": 10.545
+    },
+    {
+      "stage": "Baseline run 1",
+      "seconds": 10.164
+    },
+    {
+      "stage": "Baseline run 2",
+      "seconds": 9.263
+    },
+    {
+      "stage": "Baseline run 3",
+      "seconds": 8.727
+    },
+    {
+      "stage": "Later releases (compile, run, rerun, orchestration)",
+      "seconds": 476.807
+    },
+    {
+      "stage": "Later compilation component",
+      "seconds": 273.293
+    },
+    {
+      "stage": "Later initial-run component",
+      "seconds": 153.028
+    },
+    {
+      "stage": "Survival and first-break analysis",
+      "seconds": 0.027
+    },
+    {
+      "stage": "Source and protocol verification",
+      "seconds": 2.155
+    },
+    {
+      "stage": "Initial final-report generation",
+      "seconds": 0.005
+    }
+  ],
+  "deviations": [
+    "Gary clarified that compile-fail is a file-level dev_compile.py outcome; the copied wrapper adds only not-run.",
+    "Gary corrected the inventory expectations to the observed counts; integration includes its servlets subpackage.",
+    "Gary authorized dev_run.py to inventory the class-level ignored methods of ConstrainableInputStreamTest and record ignored without executing them at every release; the expected ignored count was corrected.",
+    "The interrupted baseline attempt was preserved separately and excluded; all measured baseline runs were restarted in full after the ignore correction.",
+    "The production-class map records observed top-level Java-file counts (excluding package-info, including examples), as permitted by the instruction to record what is found.",
+    "The quiet Maven build logs did not contain obsolete/deprecated source-level warnings; warning flags reflect recorded output.",
+    "Unrecovered reruns retain their initial fail/error status; raw rerun outcomes are preserved. Flaky markers identify only fail/error methods that passed the one rerun.",
+    "Compile-error counts count distinct javac diagnostic lines from each file at its first compile-fail break, rather than weighting them by the number of methods in that file.",
+    "Wall time for initial branch/tag setup, Docker image construction, tool copying, and review pauses was not recorded; no retrospective estimates are supplied."
+  ],
+  "open_questions": [
+    "Part 1 is complete and awaits review; the LLM track is reserved for Part 2."
+  ],
+  "branch_pushed": false,
+  "source_and_tools_unchanged": true
+}
