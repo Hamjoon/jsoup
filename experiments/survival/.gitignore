@@ -13,3 +13,4 @@ docs/*.html
 docs/*meeting-memo*
 .DS_Store
 __pycache__/
+results/part2-baseline-before-jsoup-extractor/
