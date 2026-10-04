@@ -13,6 +13,8 @@
   },
   "compile_failure_files_at_first_break": 17,
   "javac_error_lines": 181,
-  "seconds": 0.027,
-  "assertions_passed": true
+  "seconds": 0.055,
+  "assertions_passed": true,
+  "compile_fail_cut_removed_methods": 270,
+  "removed_symbol_rows": 270
 }

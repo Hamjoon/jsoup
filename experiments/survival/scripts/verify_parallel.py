@@ -2,13 +2,11 @@
 """Check every completed release against isolated sequential compilation/execution."""
 import hashlib
 import json
-import re
 import subprocess
 import time
 from dev_common import EXP, write_json
 from dev_later import write_csv
 from llm_common import files,source,classpath,fqcn
-from llm_run import run_file
 from run_class import run_class
 from survival_common import releases
 

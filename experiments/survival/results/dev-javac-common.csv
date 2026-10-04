@@ -1,24 +1,20 @@
-message,count,first_tag,test_class,diagnostic
-"cannot find symbol
-  symbol:   variable StringUtil",47,jsoup-1.12.1,org.jsoup.helper.StringUtilTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/helper/StringUtilTest.java:16: error: cannot find symbol
+symbol,count,first_tag,test_class,diagnostic
+variable StringUtil,47,jsoup-1.12.1,org.jsoup.helper.StringUtilTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/helper/StringUtilTest.java:16: error: cannot find symbol
         assertEquals("""", StringUtil.join(Arrays.asList(""""), "" ""));
                          ^
   symbol:   variable StringUtil
   location: class StringUtilTest"
-"cannot find symbol
-  symbol:   variable Whitelist",47,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/safety/CleanerTest.java:23: error: cannot find symbol
+variable Whitelist,47,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/safety/CleanerTest.java:23: error: cannot find symbol
         String cleanHtml = Jsoup.clean(h, Whitelist.simpleText());
                                           ^
   symbol:   variable Whitelist
   location: class CleanerTest"
-"cannot find symbol
-  symbol:   method resolve(String,String)",14,jsoup-1.12.1,org.jsoup.helper.StringUtilTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/helper/StringUtilTest.java:87: error: cannot find symbol
+"method resolve(String,String)",14,jsoup-1.12.1,org.jsoup.helper.StringUtilTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/helper/StringUtilTest.java:87: error: cannot find symbol
         assertEquals(""http://example.com/one/two?three"", resolve(""http://example.com"", ""./one/two?three""));
                                                          ^
   symbol:   method resolve(String,String)
   location: class StringUtilTest"
-"cannot find symbol
-  symbol:   variable maxBufferLen",13,jsoup-1.18.2,org.jsoup.parser.TokeniserTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/parser/TokeniserTest.java:29: error: cannot find symbol
+variable maxBufferLen,13,jsoup-1.18.2,org.jsoup.parser.TokeniserTest,"/work/experiments/survival/checkouts/jsoup-1.11.2/src/test/java/org/jsoup/parser/TokeniserTest.java:29: error: cannot find symbol
             final int charsToFillBuffer = maxBufferLen - preamble.length();
                                           ^
   symbol:   variable maxBufferLen

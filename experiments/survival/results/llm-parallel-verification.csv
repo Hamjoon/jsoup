@@ -1,0 +1,8 @@
+tag,parallel_workers,sequential_workers,files_checked,absent_files_checked,compiled_files_checked,run_files_checked,methods_checked,identical,seconds
+jsoup-1.11.3,4,1,260,0,128,128,2226,True,161.84
+jsoup-1.12.1,4,1,255,5,120,120,2020,True,162.926
+jsoup-1.12.2,4,1,255,5,122,122,2059,True,174.384
+jsoup-1.13.1,4,1,250,10,88,88,1528,True,145.554
+jsoup-1.14.1,4,1,250,10,88,88,1528,True,130.262
+jsoup-1.14.2,4,1,250,10,88,88,1528,True,100.5
+jsoup-1.14.3,4,1,250,10,86,86,1469,True,100.677

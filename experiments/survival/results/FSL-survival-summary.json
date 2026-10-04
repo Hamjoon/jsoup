@@ -1,0 +1,18 @@
+{
+  "releases": 26,
+  "minor_lines": 13,
+  "denominator": 381,
+  "final_survived": 76,
+  "final_survival_rate": "0.1995",
+  "final_point_pass": 77,
+  "first_break_counts": {
+    "compile-fail": 217,
+    "absent": 65,
+    "fail": 23,
+    "survived": 76
+  },
+  "compile_failure_files_at_first_break": 18,
+  "javac_error_lines": 78,
+  "seconds": 0.02,
+  "assertions_passed": true
+}

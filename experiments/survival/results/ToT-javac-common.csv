@@ -1,0 +1,21 @@
+symbol,count,first_tag,test_class,diagnostic
+class Whitelist,6,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/generated/Cleaner/ToT/CleanerTest.java:37: error: cannot find symbol
+    private static Whitelist simpleWhitelist() {
+                   ^
+  symbol:   class Whitelist
+  location: class CleanerTest"
+variable Whitelist,6,jsoup-1.15.1,org.jsoup.JsoupTest,"/work/experiments/survival/generated/Jsoup/ToT/JsoupTest.java:146: error: cannot find symbol
+        String clean = Jsoup.clean(dirty, Whitelist.basic());
+                                          ^
+  symbol:   variable Whitelist
+  location: class JsoupTest"
+method peek(),6,jsoup-1.15.1,org.jsoup.parser.TokenQueueTest,"/work/experiments/survival/generated/TokenQueue/ToT/TokenQueueTest.java:31: error: cannot find symbol
+        assertEquals(""Peek on empty should return 0 char"", 0, tq.peek());
+                                                                ^
+  symbol:   method peek()
+  location: variable tq of type TokenQueue"
+method matchesStartTag(),3,jsoup-1.15.1,org.jsoup.parser.TokenQueueTest,"/work/experiments/survival/generated/TokenQueue/ToT/TokenQueueTest.java:71: error: cannot find symbol
+        assertTrue(tq.matchesStartTag());
+                     ^
+  symbol:   method matchesStartTag()
+  location: variable tq of type TokenQueue"

@@ -1,0 +1,21 @@
+symbol,count,first_tag,test_class,diagnostic
+variable Whitelist,21,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/generated/Cleaner/FSL/CleanerTest.java:54: error: cannot find symbol
+        Cleaner cleaner = new Cleaner(Whitelist.none());
+                                      ^
+  symbol:   variable Whitelist
+  location: class CleanerTest"
+class Whitelist,15,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/generated/Cleaner/FSL/CleanerTest.java:70: error: cannot find symbol
+        Whitelist wl = Whitelist.basic();               // allows <a href>, <p>, <b>, etc.
+        ^
+  symbol:   class Whitelist
+  location: class CleanerTest"
+method peek(),4,jsoup-1.15.1,org.jsoup.parser.TokenQueueTest,"/work/experiments/survival/generated/TokenQueue/FSL/TokenQueueTest.java:19: error: cannot find symbol
+        assertEquals(0, tq.peek());
+                          ^
+  symbol:   method peek()
+  location: variable tq of type TokenQueue"
+method matchesStartTag(),4,jsoup-1.15.1,org.jsoup.parser.TokenQueueTest,"/work/experiments/survival/generated/TokenQueue/FSL/TokenQueueTest.java:70: error: cannot find symbol
+        assertTrue(tq1.matchesStartTag());
+                      ^
+  symbol:   method matchesStartTag()
+  location: variable tq1 of type TokenQueue"

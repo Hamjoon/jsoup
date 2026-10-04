@@ -59,8 +59,12 @@ def main():
     protected=json.loads((snapshot/'protected-files.json').read_text())
     coverage_aggregates={g+suffix for g in [*TECHS,'pooled','Dev'] for suffix in ['.merged.exec','.xml','.csv','.merge.log','.report.log']}
     retained=[]
+    ignored_metadata=[]
     for row in protected:
         path=EXP/row['file']
+        if path.name=='.DS_Store':
+            ignored_metadata.append(row['file'])
+            continue
         if path.name=='run-summary.json' or ('/coverage/' in row['file'] and path.name in coverage_aggregates):
             continue
         assert hashlib.sha256(path.read_bytes()).hexdigest()==row['sha256'], 'Accepted artifact changed: '+row['file']
@@ -113,7 +117,8 @@ def main():
         baseline_source_and_resource_files_checked=source_count,baseline_source_differences=differences,
         pooled_denominator=len(pooled),primary_data_unchanged=True,request_settings_checked=True,
         only_authorized_non_http_reissue=True,denominator_checks_passed=True,llm_classpaths_isolated=True,
-        accepted_artifacts_checked=len(retained),accepted_artifacts_unchanged=True,extractor_single_line_diff_verified=True)
+        accepted_artifacts_checked=len(retained),accepted_artifacts_unchanged=True,extractor_single_line_diff_verified=True,
+        ignored_os_metadata=ignored_metadata)
     write_json(EXP/'results/llm-baseline-integrity.json',result)
     print(json.dumps(result,indent=2))
 

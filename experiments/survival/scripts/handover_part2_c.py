@@ -36,6 +36,7 @@ def main():
         'First-break compile-fail methods receive own/sibling attribution from their frozen source body ranges. The lenient view rechecks attribution at every later compile-fail cell, then applies cumulative survival; it does not permanently pardon a sibling first break.',
         'The developer removed-CUT sub-count matches whole-word CUT names in javac error headers and symbol/location details at each method’s first-break file. Source-code excerpts are excluded. All affected methods retain compile-fail; CSV rows may name multiple symbols, while the summary counts distinct methods.',
         'New listings from files that failed compilation at t are reported separately from missing baseline methods and never enlarge the fixed denominator.',
+        'The baseline preservation audit initially flagged Finder-modified .DS_Store files, which the review snapshot had inadvertently included. OS metadata is now explicitly excluded and listed separately; all experimental artifacts remain hash-checked.',
         'The initial multi-file analysis patch was rejected before edits because it attempted two operations on one path; the patch was split and applied. No measured data changed.'
     ]
     report=dict(final=final,stage_seconds=stages,removed_cut_compile_fail_methods=summaries['dev']['compile_fail_cut_removed_methods'],

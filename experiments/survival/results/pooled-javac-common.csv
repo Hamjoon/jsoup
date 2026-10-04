@@ -1,0 +1,21 @@
+symbol,count,first_tag,test_class,diagnostic
+class ImmediateParent,31,jsoup-1.18.1,org.jsoup.select.StructuralEvaluatorTest,"/work/experiments/survival/generated/StructuralEvaluator/CoT/StructuralEvaluatorTest.java:262: error: cannot find symbol
+        StructuralEvaluator.ImmediateParent ipEval = new StructuralEvaluator.ImmediateParent(new TagEvaluator(""div""));
+                           ^
+  symbol:   class ImmediateParent
+  location: class StructuralEvaluator"
+variable Whitelist,29,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/generated/Cleaner/CoT/CleanerTest.java:42: error: cannot find symbol
+        basicWhitelist = Whitelist.basic();          // allows <a href>, <p>, <b>, <i>, …
+                         ^
+  symbol:   variable Whitelist
+  location: class CleanerTest"
+class Whitelist,25,jsoup-1.15.1,org.jsoup.safety.CleanerTest,"/work/experiments/survival/generated/Cleaner/CoT/CleanerTest.java:36: error: cannot find symbol
+    private Whitelist basicWhitelist;
+            ^
+  symbol:   class Whitelist
+  location: class CleanerTest"
+method peek(),18,jsoup-1.15.1,org.jsoup.parser.TokenQueueTest,"/work/experiments/survival/generated/TokenQueue/CoT/TokenQueueTest.java:70: error: cannot find symbol
+        assertEquals(0, tq.peek());
+                          ^
+  symbol:   method peek()
+  location: variable tq of type TokenQueue"

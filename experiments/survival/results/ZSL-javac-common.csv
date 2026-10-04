@@ -1,0 +1,21 @@
+symbol,count,first_tag,test_class,diagnostic
+method normalise(),9,jsoup-1.16.2,org.jsoup.nodes.DocumentTest,"/work/experiments/survival/generated/Document/ZSL/DocumentTest.java:72: error: cannot find symbol
+        doc.normalise();
+           ^
+  symbol:   method normalise()
+  location: variable doc of type Document"
+class ImmediateParent,8,jsoup-1.18.1,org.jsoup.select.StructuralEvaluatorTest,"/work/experiments/survival/generated/StructuralEvaluator/ZSL/StructuralEvaluatorTest.java:217: error: cannot find symbol
+        StructuralEvaluator.ImmediateParent ip = new StructuralEvaluator.ImmediateParent(divEval);
+                           ^
+  symbol:   class ImmediateParent
+  location: class StructuralEvaluator"
+method getCharacterByName(String),4,jsoup-1.13.1,org.jsoup.nodes.EntitiesTest,"/work/experiments/survival/generated/Entities/ZSL/EntitiesTest.java:46: error: cannot find symbol
+        assertEquals('<', (char) Entities.getCharacterByName(""lt""));
+                                         ^
+  symbol:   method getCharacterByName(String)
+  location: class Entities"
+method peek(),4,jsoup-1.15.1,org.jsoup.parser.TokenQueueTest,"/work/experiments/survival/generated/TokenQueue/ZSL/TokenQueueTest.java:14: error: cannot find symbol
+        assertEquals(0, tq.peek());
+                          ^
+  symbol:   method peek()
+  location: variable tq of type TokenQueue"

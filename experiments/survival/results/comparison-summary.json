@@ -1,0 +1,28 @@
+{
+  "groups": [
+    "dev",
+    "pooled",
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT"
+  ],
+  "minor_rows": 13,
+  "matched_samples": 100,
+  "matched_seed": 20261004,
+  "matched_size": 594,
+  "matched_final": {
+    "tag": "jsoup-1.23.2",
+    "days_since_t": "3202",
+    "denominator": 594,
+    "samples": 100,
+    "seed": 20261004,
+    "mean_survived": "137.800",
+    "min_survived": 119,
+    "max_survived": 162,
+    "mean_survival_rate": "0.231987"
+  },
+  "seconds": 0.176,
+  "all_table_assertions_passed": true
+}

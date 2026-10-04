@@ -1,0 +1,20 @@
+symbol,count,first_tag,test_class,diagnostic
+class ImmediateParent,8,jsoup-1.18.1,org.jsoup.select.StructuralEvaluatorTest,"/work/experiments/survival/generated/StructuralEvaluator/GToT/StructuralEvaluatorTest.java:205: error: cannot find symbol
+        StructuralEvaluator.ImmediateParent evaluator = new StructuralEvaluator.ImmediateParent(new TagEvaluator(""li""));
+                           ^
+  symbol:   class ImmediateParent
+  location: class StructuralEvaluator"
+constructor DocumentType in class DocumentType cannot be applied to given types;,3,jsoup-1.13.1,org.jsoup.nodes.DocumentTypeTest,"/work/experiments/survival/generated/DocumentType/GToT/DocumentTypeTest.java:73: error: constructor DocumentType in class DocumentType cannot be applied to given types;
+        DocumentType dt = new DocumentType(null, null, null, null);
+                          ^
+  required: String,String,String
+  found: <null>,<null>,<null>,<null>
+  reason: actual and formal argument lists differ in length"
+method getCharacterByName(String),3,jsoup-1.13.1,org.jsoup.nodes.EntitiesTest,"/work/experiments/survival/generated/Entities/GToT/EntitiesTest.java:83: error: cannot find symbol
+        assertEquals(Character.valueOf('<'), Entities.getCharacterByName(""lt""));
+                                                     ^
+  symbol:   method getCharacterByName(String)
+  location: class Entities"
+incompatible types: UncheckedIOException cannot be converted to Error,2,jsoup-1.11.3,org.jsoup.UncheckedIOExceptionTest,"/work/experiments/survival/generated/UncheckedIOException/GToT/UncheckedIOExceptionTest.java:36: error: incompatible types: UncheckedIOException cannot be converted to Error
+        assertTrue(""UncheckedIOException must be an Error"", ue instanceof Error);
+                                                            ^"

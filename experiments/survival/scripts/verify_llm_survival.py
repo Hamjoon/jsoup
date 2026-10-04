@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Audit release absence, classpaths, rerun selection, frozen rows and denominators."""
-from collections import Counter
-import hashlib
 import json
 import time
-from dev_common import BASELINE, EXP, write_json
+from dev_common import EXP, write_json
 from llm_common import files,source
 from survival_common import GROUPS, read_csv, releases, matrix, key
 
