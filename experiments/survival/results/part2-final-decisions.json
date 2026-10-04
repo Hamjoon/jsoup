@@ -1,0 +1,15 @@
+{
+  "accepted_denominators": {"dev": 594, "pooled": 1862, "ZSL": 342, "FSL": 381, "CoT": 427, "ToT": 345, "GToT": 465},
+  "authorized_steps": [17, 18, 19],
+  "maximum_workers_per_release_phase": 4,
+  "compilation_finishes_before_execution": true,
+  "parallel_results_must_match_sequential": true,
+  "developer_removed_cut_subcount": {
+    "symbols": ["StringUtil", "BooleanAttribute", "Whitelist", "ConstrainableInputStream", "UncheckedIOException", "ChangeNotifyingArrayList"],
+    "scope": "First-break compile-fail file diagnostics naming a disappeared CUT; count distinct methods without changing their status",
+    "detail_file": "results/dev-compile-fail-cut-removed.csv",
+    "summary_file": "results/dev-first-break-summary.csv"
+  },
+  "stop_at": "docs/handover-part2-c.md",
+  "push_authorized": false
+}
