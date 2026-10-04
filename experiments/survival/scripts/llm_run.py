@@ -14,15 +14,16 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--release',required=True)
     parser.add_argument('--run',required=True,type=int,choices=[1,2,3])
+    parser.add_argument('--add-new',action='store_true',help='Run only new compiled files; preserve prior per-file results')
     args=parser.parse_args()
     tag=args.release
     root=EXP/'llm'/tag
     folder=root/f'run{args.run}'
-    if folder.exists():
+    if folder.exists() and not args.add_new:
         raise SystemExit('STOP: run output exists; inspect before overwriting')
     if tag==BASELINE and args.run>1:
         assert json.loads((root/f'run{args.run-1}'/'run-summary.json').read_text())['complete']
-    folder.mkdir(parents=True)
+    folder.mkdir(parents=True,exist_ok=args.add_new)
     start=time.monotonic()
     compiled=json.loads((root/'compile-summary.json').read_text())
     extracted={(r['class'],r['technique']):r for r in files()}
@@ -31,6 +32,16 @@ def main():
     measured=0
     listed=0
     classes=0
+    previous=None
+    if args.add_new:
+        assert tag==BASELINE
+        previous=json.loads((folder/'run-summary.json').read_text())
+        assert previous['complete']
+        counts.update(previous['counts'])
+        listing_failures.extend(previous['listing_failures'])
+        measured=previous['methods_measured']
+        listed=previous['methods_listed']
+        classes=previous['files_run']
     for status in compiled['files_ledger']:
         if status['status']!='compiled':
             continue
@@ -38,6 +49,8 @@ def main():
         source(row)
         name=fqcn(row)
         output=folder/f"{row['class']}.{row['technique']}.json"
+        if args.add_new and output.with_suffix('.summary.json').exists():
+            continue
         try:
             summary=run_class(name,classpath(tag,row['class'],row['technique']),output,
                               timeout_ms=30000,working_directory=EXP/'checkouts'/tag)
@@ -68,6 +81,10 @@ def main():
     result=dict(tag=tag,run=args.run,complete=True,files_run=classes,methods_measured=measured,
                 methods_listed=listed,counts=dict(counts),listing_failures=listing_failures,
                 seconds=round(time.monotonic()-start,3))
+    if previous:
+        result['incremental_seconds']=result['seconds']
+        result['seconds']+=previous['seconds']
+        result['new_files_run']=classes-previous['files_run']
     write_json(folder/'run-summary.json',result)
     if tag==BASELINE:
         write_json(EXP/'results'/f'llm-t-run{args.run}.json',result)

@@ -1,20 +1,20 @@
 {
   "tag": "jsoup-1.11.2",
-  "files": 175,
-  "compiled": 94,
-  "compile_fail": 81,
+  "files": 260,
+  "compiled": 131,
+  "compile_fail": 129,
   "absent": 0,
   "error_categories": {
-    "PAI": 81,
-    "IT": 105,
-    "CFS": 834,
-    "other": 86,
+    "PAI": 89,
+    "IT": 182,
+    "CFS": 1091,
+    "other": 168,
     "UE": 11,
-    "PDNE": 19,
-    "CAM": 31,
+    "PDNE": 32,
+    "CAM": 47,
     "SCI": 1
   },
-  "seconds": 47.353,
+  "seconds": 72.861,
   "files_ledger": [
     {
       "class": "Attribute",
@@ -1415,6 +1415,688 @@
       "error_count": 5,
       "status": "compile-fail",
       "file": "generated/XmlTreeBuilder/GToT/XmlTreeBuilderTest.java"
+    },
+    {
+      "class": "Cleaner",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Cleaner/ZSL/CleanerTest.java"
+    },
+    {
+      "class": "Cleaner",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Cleaner/FSL/CleanerTest.java"
+    },
+    {
+      "class": "Cleaner",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Cleaner/CoT/CleanerTest.java"
+    },
+    {
+      "class": "Cleaner",
+      "technique": "ToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Cleaner/ToT/CleanerTest.java"
+    },
+    {
+      "class": "Cleaner",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/Cleaner/GToT/CleanerTest.java"
+    },
+    {
+      "class": "Collector",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 6,
+      "status": "compile-fail",
+      "file": "generated/Collector/ZSL/CollectorTest.java"
+    },
+    {
+      "class": "Collector",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 15,
+      "status": "compile-fail",
+      "file": "generated/Collector/FSL/CollectorTest.java"
+    },
+    {
+      "class": "Collector",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 17,
+      "status": "compile-fail",
+      "file": "generated/Collector/CoT/CollectorTest.java"
+    },
+    {
+      "class": "Collector",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 19,
+      "status": "compile-fail",
+      "file": "generated/Collector/ToT/CollectorTest.java"
+    },
+    {
+      "class": "Collector",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 10,
+      "status": "compile-fail",
+      "file": "generated/Collector/GToT/CollectorTest.java"
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/CombiningEvaluator/FSL/CombiningEvaluatorTest.java"
+    },
+    {
+      "class": "CombiningEvaluator",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 22,
+      "status": "compile-fail",
+      "file": "generated/CombiningEvaluator/CoT/CombiningEvaluatorTest.java"
+    },
+    {
+      "class": "DataNode",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/DataNode/FSL/DataNodeTest.java"
+    },
+    {
+      "class": "DataNode",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/DataNode/CoT/DataNodeTest.java"
+    },
+    {
+      "class": "DataNode",
+      "technique": "GToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/DataNode/GToT/DataNodeTest.java"
+    },
+    {
+      "class": "DataUtil",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/DataUtil/ZSL/DataUtilTest.java"
+    },
+    {
+      "class": "DataUtil",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/DataUtil/FSL/DataUtilTest.java"
+    },
+    {
+      "class": "DataUtil",
+      "technique": "ToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/DataUtil/ToT/DataUtilTest.java"
+    },
+    {
+      "class": "DataUtil",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/DataUtil/GToT/DataUtilTest.java"
+    },
+    {
+      "class": "Document",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Document/ZSL/DocumentTest.java"
+    },
+    {
+      "class": "Document",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 3,
+      "status": "compile-fail",
+      "file": "generated/Document/FSL/DocumentTest.java"
+    },
+    {
+      "class": "Document",
+      "technique": "GToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Document/GToT/DocumentTest.java"
+    },
+    {
+      "class": "Element",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Element/ZSL/ElementTest.java"
+    },
+    {
+      "class": "Element",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Element/FSL/ElementTest.java"
+    },
+    {
+      "class": "Element",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 29,
+      "status": "compile-fail",
+      "file": "generated/Element/CoT/ElementTest.java"
+    },
+    {
+      "class": "Element",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 4,
+      "status": "compile-fail",
+      "file": "generated/Element/ToT/ElementTest.java"
+    },
+    {
+      "class": "Element",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 18,
+      "status": "compile-fail",
+      "file": "generated/Element/GToT/ElementTest.java"
+    },
+    {
+      "class": "Elements",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/Elements/ZSL/ElementsTest.java"
+    },
+    {
+      "class": "Elements",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Elements/FSL/ElementsTest.java"
+    },
+    {
+      "class": "Elements",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/Elements/CoT/ElementsTest.java"
+    },
+    {
+      "class": "Elements",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/Elements/ToT/ElementsTest.java"
+    },
+    {
+      "class": "Elements",
+      "technique": "GToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Elements/GToT/ElementsTest.java"
+    },
+    {
+      "class": "Entities",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Entities/ZSL/EntitiesTest.java"
+    },
+    {
+      "class": "Entities",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Entities/FSL/EntitiesTest.java"
+    },
+    {
+      "class": "Evaluator",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Evaluator/ZSL/EvaluatorTest.java"
+    },
+    {
+      "class": "Evaluator",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/Evaluator/FSL/EvaluatorTest.java"
+    },
+    {
+      "class": "Evaluator",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Evaluator/CoT/EvaluatorTest.java"
+    },
+    {
+      "class": "Evaluator",
+      "technique": "ToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Evaluator/ToT/EvaluatorTest.java"
+    },
+    {
+      "class": "Evaluator",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 9,
+      "status": "compile-fail",
+      "file": "generated/Evaluator/GToT/EvaluatorTest.java"
+    },
+    {
+      "class": "FormElement",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/FormElement/GToT/FormElementTest.java"
+    },
+    {
+      "class": "HtmlTreeBuilderState",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 7,
+      "status": "compile-fail",
+      "file": "generated/HtmlTreeBuilderState/ToT/HtmlTreeBuilderStateTest.java"
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 13,
+      "status": "compile-fail",
+      "file": "generated/HttpConnection/ZSL/HttpConnectionTest.java"
+    },
+    {
+      "class": "HttpConnection",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 4,
+      "status": "compile-fail",
+      "file": "generated/HttpConnection/ToT/HttpConnectionTest.java"
+    },
+    {
+      "class": "Jsoup",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 16,
+      "status": "compile-fail",
+      "file": "generated/Jsoup/ZSL/JsoupTest.java"
+    },
+    {
+      "class": "Jsoup",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Jsoup/FSL/JsoupTest.java"
+    },
+    {
+      "class": "Jsoup",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Jsoup/CoT/JsoupTest.java"
+    },
+    {
+      "class": "Jsoup",
+      "technique": "ToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Jsoup/ToT/JsoupTest.java"
+    },
+    {
+      "class": "Jsoup",
+      "technique": "GToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Jsoup/GToT/JsoupTest.java"
+    },
+    {
+      "class": "Node",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/Node/ZSL/NodeTest.java"
+    },
+    {
+      "class": "Node",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 3,
+      "status": "compile-fail",
+      "file": "generated/Node/FSL/NodeTest.java"
+    },
+    {
+      "class": "Node",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/Node/ToT/NodeTest.java"
+    },
+    {
+      "class": "Node",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/Node/GToT/NodeTest.java"
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/NodeTraversor/CoT/NodeTraversorTest.java"
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 15,
+      "status": "compile-fail",
+      "file": "generated/NodeTraversor/ToT/NodeTraversorTest.java"
+    },
+    {
+      "class": "NodeTraversor",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/NodeTraversor/GToT/NodeTraversorTest.java"
+    },
+    {
+      "class": "ParseError",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/ParseError/ZSL/ParseErrorTest.java"
+    },
+    {
+      "class": "Parser",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 36,
+      "status": "compile-fail",
+      "file": "generated/Parser/ZSL/ParserTest.java"
+    },
+    {
+      "class": "Parser",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 6,
+      "status": "compile-fail",
+      "file": "generated/Parser/FSL/ParserTest.java"
+    },
+    {
+      "class": "Parser",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Parser/CoT/ParserTest.java"
+    },
+    {
+      "class": "Parser",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 48,
+      "status": "compile-fail",
+      "file": "generated/Parser/ToT/ParserTest.java"
+    },
+    {
+      "class": "Parser",
+      "technique": "GToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/Parser/GToT/ParserTest.java"
+    },
+    {
+      "class": "QueryParser",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 41,
+      "status": "compile-fail",
+      "file": "generated/QueryParser/ToT/QueryParserTest.java"
+    },
+    {
+      "class": "Selector",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/Selector/ZSL/SelectorTest.java"
+    },
+    {
+      "class": "Selector",
+      "technique": "FSL",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/Selector/FSL/SelectorTest.java"
+    },
+    {
+      "class": "Selector",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 4,
+      "status": "compile-fail",
+      "file": "generated/Selector/CoT/SelectorTest.java"
+    },
+    {
+      "class": "Selector",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 5,
+      "status": "compile-fail",
+      "file": "generated/Selector/ToT/SelectorTest.java"
+    },
+    {
+      "class": "Selector",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 2,
+      "status": "compile-fail",
+      "file": "generated/Selector/GToT/SelectorTest.java"
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/StructuralEvaluator/ZSL/StructuralEvaluatorTest.java"
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/StructuralEvaluator/FSL/StructuralEvaluatorTest.java"
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/StructuralEvaluator/CoT/StructuralEvaluatorTest.java"
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 15,
+      "status": "compile-fail",
+      "file": "generated/StructuralEvaluator/ToT/StructuralEvaluatorTest.java"
+    },
+    {
+      "class": "StructuralEvaluator",
+      "technique": "GToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/StructuralEvaluator/GToT/StructuralEvaluatorTest.java"
+    },
+    {
+      "class": "TextNode",
+      "technique": "ZSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/TextNode/ZSL/TextNodeTest.java"
+    },
+    {
+      "class": "TextNode",
+      "technique": "ToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/TextNode/ToT/TextNodeTest.java"
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "ToT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/TokenQueue/ToT/TokenQueueTest.java"
+    },
+    {
+      "class": "TokenQueue",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/TokenQueue/GToT/TokenQueueTest.java"
+    },
+    {
+      "class": "TokeniserState",
+      "technique": "CoT",
+      "exit": 1,
+      "error_count": 10,
+      "status": "compile-fail",
+      "file": "generated/TokeniserState/CoT/TokeniserStateTest.java"
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 12,
+      "status": "compile-fail",
+      "file": "generated/TreeBuilder/ZSL/TreeBuilderTest.java"
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 3,
+      "status": "compile-fail",
+      "file": "generated/TreeBuilder/ToT/TreeBuilderTest.java"
+    },
+    {
+      "class": "TreeBuilder",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 10,
+      "status": "compile-fail",
+      "file": "generated/TreeBuilder/GToT/TreeBuilderTest.java"
+    },
+    {
+      "class": "W3CDom",
+      "technique": "ZSL",
+      "exit": 1,
+      "error_count": 1,
+      "status": "compile-fail",
+      "file": "generated/W3CDom/ZSL/W3CDomTest.java"
+    },
+    {
+      "class": "W3CDom",
+      "technique": "FSL",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/W3CDom/FSL/W3CDomTest.java"
+    },
+    {
+      "class": "W3CDom",
+      "technique": "CoT",
+      "exit": 0,
+      "error_count": 0,
+      "status": "compiled",
+      "file": "generated/W3CDom/CoT/W3CDomTest.java"
+    },
+    {
+      "class": "W3CDom",
+      "technique": "ToT",
+      "exit": 1,
+      "error_count": 18,
+      "status": "compile-fail",
+      "file": "generated/W3CDom/ToT/W3CDomTest.java"
+    },
+    {
+      "class": "W3CDom",
+      "technique": "GToT",
+      "exit": 1,
+      "error_count": 9,
+      "status": "compile-fail",
+      "file": "generated/W3CDom/GToT/W3CDomTest.java"
     }
-  ]
+  ],
+  "incremental_seconds": 25.508,
+  "new_files": 85
 }

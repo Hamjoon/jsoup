@@ -2,79 +2,79 @@
   "groups": {
     "ZSL": {
       "files_generated": 52,
-      "files_extracted": 34,
-      "files_compiled": 17,
-      "methods_listed": 247,
-      "source_methods": 247,
-      "pass_in_all_three": 220,
+      "files_extracted": 52,
+      "files_compiled": 26,
+      "methods_listed": 392,
+      "source_methods": 392,
+      "pass_in_all_three": 342,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 220
+      "denominator": 342
     },
     "FSL": {
       "files_generated": 52,
-      "files_extracted": 36,
-      "files_compiled": 21,
-      "methods_listed": 300,
-      "source_methods": 300,
-      "pass_in_all_three": 263,
+      "files_extracted": 52,
+      "files_compiled": 30,
+      "methods_listed": 444,
+      "source_methods": 444,
+      "pass_in_all_three": 381,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 263
+      "denominator": 381
     },
     "CoT": {
       "files_generated": 52,
-      "files_extracted": 38,
-      "files_compiled": 19,
-      "methods_listed": 305,
-      "source_methods": 305,
-      "pass_in_all_three": 280,
+      "files_extracted": 52,
+      "files_compiled": 26,
+      "methods_listed": 481,
+      "source_methods": 481,
+      "pass_in_all_three": 427,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 280
+      "denominator": 427
     },
     "ToT": {
       "files_generated": 52,
-      "files_extracted": 33,
-      "files_compiled": 17,
-      "methods_listed": 258,
-      "source_methods": 258,
-      "pass_in_all_three": 232,
+      "files_extracted": 52,
+      "files_compiled": 23,
+      "methods_listed": 391,
+      "source_methods": 391,
+      "pass_in_all_three": 346,
       "flaky": 0,
       "duplicates_removed": 1,
       "duplicate_name_methods": 0,
-      "denominator": 231
+      "denominator": 345
     },
     "GToT": {
       "files_generated": 52,
-      "files_extracted": 34,
-      "files_compiled": 20,
-      "methods_listed": 358,
-      "source_methods": 358,
-      "pass_in_all_three": 320,
+      "files_extracted": 52,
+      "files_compiled": 26,
+      "methods_listed": 535,
+      "source_methods": 535,
+      "pass_in_all_three": 465,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 320
+      "denominator": 465
     },
     "pooled": {
       "files_generated": 260,
-      "files_extracted": 175,
-      "files_compiled": 94,
-      "methods_listed": 1468,
-      "source_methods": 1468,
-      "pass_in_all_three": 1315,
+      "files_extracted": 260,
+      "files_compiled": 131,
+      "methods_listed": 2243,
+      "source_methods": 2243,
+      "pass_in_all_three": 1961,
       "flaky": 0,
-      "duplicates_removed": 91,
+      "duplicates_removed": 99,
       "duplicate_name_methods": 0,
-      "denominator": 1224
+      "denominator": 1862
     }
   },
   "comparison": {
-    "pooled_denominator": 1224,
+    "pooled_denominator": 1862,
     "developer_denominator": 594,
     "pooled_below_developer": false
   },
@@ -88,5 +88,5 @@
     "source order"
   ],
   "unmatched_identities": [],
-  "seconds": 0.337
+  "seconds": 0.94
 }

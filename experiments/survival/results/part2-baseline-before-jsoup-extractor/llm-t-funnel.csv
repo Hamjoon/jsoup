@@ -1,0 +1,7 @@
+group,files_generated,files_extracted,files_compiled,methods_listed,source_methods,pass_in_all_three,flaky,duplicates_removed,duplicate_name_methods,denominator
+ZSL,52,34,17,247,247,220,0,0,0,220
+FSL,52,36,21,300,300,263,0,0,0,263
+CoT,52,38,19,305,305,280,0,0,0,280
+ToT,52,33,17,258,258,232,0,1,0,231
+GToT,52,34,20,358,358,320,0,0,0,320
+pooled,260,175,94,1468,1468,1315,0,91,0,1224

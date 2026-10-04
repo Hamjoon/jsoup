@@ -20,10 +20,10 @@ def distribution(values):
     return dict(count=len(values),min=min(values),median=statistics.median(values),max=max(values),total=sum(values)) if values else dict(count=0,total=0)
 
 
-def generate_one(cut,tech,key,prompt_hash):
+def generate_one(cut,tech,key,prompt_hash,authorized_attempt=None):
     name=cut['class']
     root=EXP/'runs'/name/tech
-    if root.exists():
+    if root.exists() and authorized_attempt is None:
         raise RuntimeError('Refuse issuing another call for existing generation directory: '+str(root))
     prompt_path=EXP/'prompts/rendered'/name/f'{tech}.txt'
     prompt=prompt_path.read_bytes().decode('utf-8')
@@ -31,7 +31,9 @@ def generate_one(cut,tech,key,prompt_hash):
     body=dict(model=MODEL,temperature=0.7,max_tokens=16384,messages=[dict(role='user',content=prompt)])
     total_start=time.monotonic()
     attempts=[]
-    for attempt in range(1,5):
+    first=authorized_attempt or 1
+    last=first if authorized_attempt is not None else 4
+    for attempt in range(first,last+1):
         folder=root if attempt==1 else root/f'attempt-{attempt}'
         folder.mkdir(parents=True)
         write_json(folder/'request.json',body)
@@ -77,7 +79,7 @@ def generate_one(cut,tech,key,prompt_hash):
             cut=name,technique=tech,prompt_sha256=prompt_hash,response_sha256=hashlib.sha256(text.encode()).hexdigest())
         write_json(folder/'run.json',record)
         attempts.append(record)
-        if status=='http-error' and attempt<4:
+        if status=='http-error' and attempt<last:
             time.sleep(10)
             continue
         return dict(**{'class':name},technique=tech,status=status,finish_reason=record['finish_reason'],

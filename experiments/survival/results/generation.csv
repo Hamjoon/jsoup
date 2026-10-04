@@ -78,7 +78,7 @@ Elements,ZSL,ok,stop,4672,2897,561,13.379,1,13.382,runs/Elements/ZSL/response.md
 Elements,FSL,ok,stop,5070,3565,731,17.136,1,17.137,runs/Elements/FSL/response.md,runs/Elements/FSL/run.json,13828,Parasail,5070,3565,731
 Elements,CoT,ok,stop,4761,4606,1381,108.613,1,108.615,runs/Elements/CoT/response.md,runs/Elements/CoT/run.json,16893,DeepInfra,4761,4606,1381
 Elements,ToT,ok,stop,4734,4287,608,144.594,1,144.599,runs/Elements/ToT/response.md,runs/Elements/ToT/run.json,18246,Mancer 2,4734,4287,608
-Elements,GToT,ok,error,5477,2917,743,225.973,1,225.975,runs/Elements/GToT/response.md,runs/Elements/GToT/run.json,8463,DekaLLM,5477,2917,743
+Elements,GToT,ok,stop,4855,7445,718,446.862,2,672.838,runs/Elements/GToT/attempt-2/response.md,runs/Elements/GToT/attempt-2/run.json,28458,DekaLLM,10332,10362,1461
 Entities,ZSL,ok,stop,2914,3121,1201,31.887,1,31.888,runs/Entities/ZSL/response.md,runs/Entities/ZSL/run.json,8835,DeepInfra,2914,3121,1201
 Entities,FSL,ok,stop,3314,2921,990,27.181,1,27.182,runs/Entities/FSL/response.md,runs/Entities/FSL/run.json,9580,Novita,3314,2921,990
 Entities,CoT,ok,stop,3031,3240,662,189.037,1,189.038,runs/Entities/CoT/response.md,runs/Entities/CoT/run.json,12254,DekaLLM,3031,3240,662

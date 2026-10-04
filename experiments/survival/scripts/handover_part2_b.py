@@ -51,14 +51,24 @@ def main():
     write_csv(RESULTS/'llm-flaky-t.csv',flaky,['class','technique','test_class','method','run1','run2','run3'])
     comparison=baseline['comparison']
     coverage=load('coverage-t-summary.json')
+    revision=load('jsoup-extractor-revision.json')
+    previous=load('part2-baseline-before-jsoup-extractor/llm-t-summary.json')
+    revision['new_files_extracted']=load('extraction-timing.json')['new_files']
+    revision['new_files_compiled']=compiled['compiled']-previous['groups']['pooled']['files_compiled']
+    revision['denominator_change']=dict(previous=previous['groups']['pooled']['denominator'],
+        revised=comparison['pooled_denominator'],increase=comparison['pooled_denominator']-previous['groups']['pooled']['denominator'])
+    revision['mechanical_fixes']=['Incremental compile initially stopped before compiling any file because the new JSON ledger reader lacked its json import; the import was added and the command rerun.',
+        'A read-only extractor preview needed scripts added to Python import search path; no data changed.']
+    write_json(RESULTS/'jsoup-extractor-revision.json',revision)
     stages=dict(generation=generation['seconds'],extraction=load('extraction-timing.json')['seconds'],
         compilation=compiled['seconds'],deduplication=baseline['seconds'],coverage=coverage['seconds'])
     stages.update({f'run{k}':load(f'llm-t-run{k}.json')['seconds'] for k in [1,2,3]})
     deviations=[
         'Gary accepted the observed abstract CUT count and all source-path absence cases; the accepted presence matrix will be used unchanged.',
         'All primary prompt, response, and generated-source bytes are protected from Git newline normalization with experiment-local attributes.',
-        'Only HTTP errors are retried. Every attempt is retained; extraction uses the final selected attempt recorded in the generation ledger.',
-        'Materialization follows the unchanged extractor CSR-v2 acceptance, including its HTML-detection flag. HTML-looking text can be flagged even inside Java string literals; no extraction or source repair was applied.',
+        'The original generation retained every response without non-HTTP retries. Gary subsequently authorized exactly one reissue of Elements/GToT after its finish_reason=error; attempt-2 is preserved and selected for extraction. This is not a second generation round.',
+        'Gary authorized extract_jsoup.py, a copy of unchanged extract_v2.py with only HTML detection changed from comment-masked text to comment-and-literal-masked code. The exact diff and hashes are in tools/ORIGIN.md. Generated Java bytes are not repaired.',
+        'Previously extracted files and per-file compile/run/coverage artifacts remain byte-identical. Only newly extracted files were compiled and run. Previous aggregate results and the prior handover are archived in results/part2-baseline-before-jsoup-extractor; aggregate totals and pooled deduplication flags are recomputed for the expanded set.',
         'Listing failures retain the original wrapper output and a separate source-inventoried JUnitListingFailure record; their methods are not denominator-eligible.',
         'Deduplication representatives are selected from compiled-file source methods in the fixed technique/source order before intersection with all-three-pass. Flags and source-body hashes remain separate from run status.',
         'Coverage executes complete compiled LLM classes and the whole developer suite. It is supplementary coverage, not a measurement limited to deduplicated denominator methods; JaCoCo XML source-file counters accompany its requested CSV reports.',
@@ -67,18 +77,21 @@ def main():
     report=dict(comparison=comparison,generation=generation,groups=baseline['groups'],
         coverage_failures=len(coverage['failures']),stage_seconds=stages,deviations=deviations,
         generation_complete=True,later_release_llm_execution_started=False,branch_pushed=False)
+    report['authorized_revision']=revision
     write_json(RESULTS/'part2-baseline-summary.json',report)
     text=''
     if comparison['pooled_below_developer']:
         text+=f"Pooled LLM denominator {comparison['pooled_denominator']} is below developer denominator {comparison['developer_denominator']}; a second round requires Gary’s decision.\n\n"
     text+='# LLM baseline and denominator handover\n\n'
     text+='Generation and baseline evaluation are complete. This is the required denominator review stop; no later-release LLM execution or second generation round has started.\n\n'
+    text+='## Authorized extraction revision and single reissue\n\n```json\n'+json.dumps(revision,indent=2)+'\n```\n\n'
     text+='## Generation summary\n\n```json\n'+json.dumps(generation,indent=2)+'\n```\n'
     unusual=[{k:r[k] for k in ['class','technique','finish_reason','status','attempts']} for r in calls if r['finish_reason']!='stop']
     if unusual:
         text+='\nResponses with a non-stop finish (content preserved; well-formed responses were not retried):\n\n'+table(unusual,[('CUT','class'),('Technique','technique'),('Finish','finish_reason'),('Status','status'),('Attempts','attempts')])
     text+='\n## Token distributions\n\n'+table(distributions,[('Technique','technique'),('Metric','metric'),('Reported','reported'),('Min','min'),('Median','median'),('Max','max'),('Total','total')])
     text+='\nReasoning tokens are a reported subset of completion usage and are not added again to completion totals. Missing usage fields are omitted from distributions, rather than imputed.\n'
+    text+='\nToken distributions describe the selected responses; total token usage includes every retained attempt, including the original Elements/GToT error finish and its authorized reissue.\n'
     text+='\n## Extraction\n\n'+table(extraction,[('Technique','technique'),('Responses','responses'),('MSR','msr'),('CSR v2','csr'),('Extracted','extracted'),('No class','no_class'),('HTML flagged','html_flagged')])
     text+='\n## Baseline compilation\n\n'+table(compile_table,[('Technique','technique'),('Extracted files','files'),('Compiled','compiled'),('Compile fail','compile_fail'),('Error lines','error_lines')])
     text+='\nCompiler error categories:\n\n'+table(categories,[('Category','category'),('Diagnostic lines','count')])

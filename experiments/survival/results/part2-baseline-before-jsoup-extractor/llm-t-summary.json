@@ -1,0 +1,92 @@
+{
+  "groups": {
+    "ZSL": {
+      "files_generated": 52,
+      "files_extracted": 34,
+      "files_compiled": 17,
+      "methods_listed": 247,
+      "source_methods": 247,
+      "pass_in_all_three": 220,
+      "flaky": 0,
+      "duplicates_removed": 0,
+      "duplicate_name_methods": 0,
+      "denominator": 220
+    },
+    "FSL": {
+      "files_generated": 52,
+      "files_extracted": 36,
+      "files_compiled": 21,
+      "methods_listed": 300,
+      "source_methods": 300,
+      "pass_in_all_three": 263,
+      "flaky": 0,
+      "duplicates_removed": 0,
+      "duplicate_name_methods": 0,
+      "denominator": 263
+    },
+    "CoT": {
+      "files_generated": 52,
+      "files_extracted": 38,
+      "files_compiled": 19,
+      "methods_listed": 305,
+      "source_methods": 305,
+      "pass_in_all_three": 280,
+      "flaky": 0,
+      "duplicates_removed": 0,
+      "duplicate_name_methods": 0,
+      "denominator": 280
+    },
+    "ToT": {
+      "files_generated": 52,
+      "files_extracted": 33,
+      "files_compiled": 17,
+      "methods_listed": 258,
+      "source_methods": 258,
+      "pass_in_all_three": 232,
+      "flaky": 0,
+      "duplicates_removed": 1,
+      "duplicate_name_methods": 0,
+      "denominator": 231
+    },
+    "GToT": {
+      "files_generated": 52,
+      "files_extracted": 34,
+      "files_compiled": 20,
+      "methods_listed": 358,
+      "source_methods": 358,
+      "pass_in_all_three": 320,
+      "flaky": 0,
+      "duplicates_removed": 0,
+      "duplicate_name_methods": 0,
+      "denominator": 320
+    },
+    "pooled": {
+      "files_generated": 260,
+      "files_extracted": 175,
+      "files_compiled": 94,
+      "methods_listed": 1468,
+      "source_methods": 1468,
+      "pass_in_all_three": 1315,
+      "flaky": 0,
+      "duplicates_removed": 91,
+      "duplicate_name_methods": 0,
+      "denominator": 1224
+    }
+  },
+  "comparison": {
+    "pooled_denominator": 1224,
+    "developer_denominator": 594,
+    "pooled_below_developer": false
+  },
+  "duplicate_scope": "CUT and whitespace-stripped body hash across compiled-file source methods; first representative chosen before intersecting with all-three-pass",
+  "representative_order": [
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT",
+    "source order"
+  ],
+  "unmatched_identities": [],
+  "seconds": 0.337
+}

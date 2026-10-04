@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply unchanged extract_v2; materialize its accepted source bytes only."""
+"""Apply the authorized jsoup extractor to rejections; retain accepted files."""
 from collections import Counter
 import csv
 import hashlib
@@ -8,7 +8,7 @@ import re
 import time
 from dev_common import EXP, write_json
 from dev_later import write_csv
-from extract_v2 import extract, TECHS
+from extract_jsoup import extract, TECHS
 from handover_a import table
 
 
@@ -16,8 +16,16 @@ def main():
     start=time.monotonic()
     calls=list(csv.DictReader((EXP/'results/generation.csv').open()))
     assert len(calls)==260 and all(r['status']=='ok' for r in calls)
+    previous={(r['class'],r['technique']):r for r in csv.DictReader((EXP/'results/extraction.csv').open())}
     rows=[]
+    added=0
     for call in calls:
+        old=previous[(call['class'],call['technique'])]
+        if old['status']=='extracted':
+            assert hashlib.sha256((EXP/old['file']).read_bytes()).hexdigest()==old['sha256']
+            assert old['response_path']==call['response_path']
+            rows.append(old)
+            continue
         text=(EXP/call['response_path']).read_bytes().decode('utf-8')
         result=extract(text)
         selected=result['combine_v2']
@@ -27,6 +35,7 @@ def main():
         data=selected.encode('utf-8')
         path=''
         if status=='extracted':
+            added+=1
             output=EXP/'generated'/call['class']/call['technique']/f'{name}.java'
             output.parent.mkdir(parents=True,exist_ok=True)
             if output.exists():
@@ -44,14 +53,16 @@ def main():
     summary=[]
     for tech in TECHS:
         group=[r for r in rows if r['technique']==tech]
-        summary.append(dict(technique=tech,responses=len(group),msr=sum(r['msr_detected'] for r in group),
-            csr=sum(r['csr_v2'] for r in group),extracted=sum(r['status']=='extracted' for r in group),
-            no_class=sum(r['status']=='no-class' for r in group),html_flagged=sum(r['html_detected'] for r in group)))
+        summary.append(dict(technique=tech,responses=len(group),msr=sum(int(r['msr_detected']) for r in group),
+            csr=sum(int(r['csr_v2']) for r in group),extracted=sum(r['status']=='extracted' for r in group),
+            no_class=sum(r['status']=='no-class' for r in group),html_flagged=sum(int(r['html_detected']) for r in group)))
     write_csv(EXP/'results/extraction-summary.csv',summary,list(summary[0]))
     (EXP/'results/extraction-summary.md').write_text(table(summary,[('Technique','technique'),('Responses','responses'),('MSR','msr'),('CSR v2','csr'),('Extracted','extracted'),('No class','no_class'),('HTML flagged','html_flagged')]))
-    write_json(EXP/'results/extraction-timing.json',dict(seconds=round(time.monotonic()-start,3),
+    elapsed=round(time.monotonic()-start,3)
+    prior=json.loads((EXP/'results/extraction-timing.json').read_text())
+    write_json(EXP/'results/extraction-timing.json',dict(seconds=prior['seconds']+elapsed,incremental_seconds=elapsed,new_files=added,
         files_materialized=sum(r['status']=='extracted' for r in rows),rejection_statuses=dict(Counter(r['status'] for r in rows)),
-        note='Materialization follows unchanged extract_v2 csr_v2 acceptance, including its HTML-detection flag; no source repair.'))
+        note='Existing accepted rows/files retained unchanged; previously rejected responses use authorized extract_jsoup with comment/literal-masked HTML detection.'))
     print(json.dumps(summary,indent=2))
 
 

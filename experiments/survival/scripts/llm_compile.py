@@ -3,6 +3,7 @@
 from collections import Counter
 import argparse
 import csv
+import json
 import re
 import subprocess
 import time
@@ -14,17 +15,28 @@ from llm_common import files,source,classpath,error_category
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--release',required=True)
+    parser.add_argument('--add-new',action='store_true',help='Retain existing per-file results and compile only new extracted files')
     args=parser.parse_args()
     tag=args.release
     root=EXP/'llm'/tag
-    if (root/'compile-summary.json').exists():
+    if (root/'compile-summary.json').exists() and not args.add_new:
         raise SystemExit('STOP: compile summary already exists; inspect before overwriting')
     start=time.monotonic()
     rows=[]
     diagnostics=[]
+    previous=None
+    if args.add_new:
+        assert tag==BASELINE
+        previous=json.loads((root/'compile-summary.json').read_text())
+        rows.extend(previous['files_ledger'])
+        diagnostics.extend(csv.DictReader((EXP/'results/llm-compile-t-errors.csv').open()))
+    known={(r['class'],r['technique']) for r in rows}
     presence={r['class']:r for r in csv.DictReader((EXP/'results/cut-presence.csv').open())}
     for row in files():
         name,tech=row['class'],row['technique']
+        if (name,tech) in known:
+            source(row)
+            continue
         if tag!=BASELINE and presence[name][tag]=='0':
             rows.append(dict(**{'class':name},technique=tech,exit='',error_count=0,status='absent',file=row['file']))
             continue
@@ -50,6 +62,10 @@ def main():
     summary=dict(tag=tag,files=len(rows),compiled=sum(r['status']=='compiled' for r in rows),
         compile_fail=sum(r['status']=='compile-fail' for r in rows),absent=sum(r['status']=='absent' for r in rows),
         error_categories=dict(Counter(r['category'] for r in diagnostics)),seconds=round(time.monotonic()-start,3),files_ledger=rows)
+    if previous:
+        summary['incremental_seconds']=summary['seconds']
+        summary['seconds']+=previous['seconds']
+        summary['new_files']=len(rows)-previous['files']
     write_json(root/'compile-summary.json',summary)
     if tag==BASELINE:
         write_csv(EXP/'results/llm-compile-t.csv',rows,['class','technique','exit','error_count','status','file'])

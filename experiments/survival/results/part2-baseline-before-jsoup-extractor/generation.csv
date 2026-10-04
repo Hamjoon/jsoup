@@ -1,0 +1,261 @@
+class,technique,status,finish_reason,prompt_tokens,completion_tokens,reasoning_tokens,latency,attempts,total_seconds,response_path,run_path,content_bytes,provider,all_attempt_prompt_tokens,all_attempt_completion_tokens,all_attempt_reasoning_tokens
+Attribute,ZSL,ok,stop,1632,2556,799,135.185,1,135.187,runs/Attribute/ZSL/response.md,runs/Attribute/ZSL/run.json,8049,DekaLLM,1632,2556,799
+Attribute,FSL,ok,stop,2019,2685,896,40.897,1,40.9,runs/Attribute/FSL/response.md,runs/Attribute/FSL/run.json,9063,DeepInfra,2019,2685,896
+Attribute,CoT,ok,stop,1736,2314,904,11.603,1,11.606,runs/Attribute/CoT/response.md,runs/Attribute/CoT/run.json,7938,Crusoe,1736,2314,904
+Attribute,ToT,ok,stop,1698,2966,763,12.791,1,12.802,runs/Attribute/ToT/response.md,runs/Attribute/ToT/run.json,12099,Novita,1698,2966,763
+Attribute,GToT,ok,stop,1817,4483,1092,16.598,1,16.6,runs/Attribute/GToT/response.md,runs/Attribute/GToT/run.json,17010,Crusoe,1817,4483,1092
+Attributes,ZSL,ok,stop,3076,2320,375,87.823,1,87.826,runs/Attributes/ZSL/response.md,runs/Attributes/ZSL/run.json,8829,DekaLLM,3076,2320,375
+Attributes,FSL,ok,stop,3476,2691,725,66.613,1,66.616,runs/Attributes/FSL/response.md,runs/Attributes/FSL/run.json,8762,CoreWeave,3476,2691,725
+Attributes,CoT,ok,stop,3180,3432,507,62.981,1,62.982,runs/Attributes/CoT/response.md,runs/Attributes/CoT/run.json,13406,CoreWeave,3180,3432,507
+Attributes,ToT,ok,stop,3140,2992,605,178.138,1,178.141,runs/Attributes/ToT/response.md,runs/Attributes/ToT/run.json,11638,DekaLLM,3140,2992,605
+Attributes,GToT,ok,stop,3261,3403,721,184.641,1,184.642,runs/Attributes/GToT/response.md,runs/Attributes/GToT/run.json,13132,DekaLLM,3261,3403,721
+BooleanAttribute,ZSL,ok,stop,223,1295,389,16.77,1,16.772,runs/BooleanAttribute/ZSL/response.md,runs/BooleanAttribute/ZSL/run.json,4660,DeepInfra,223,1295,389
+BooleanAttribute,FSL,ok,stop,635,1432,0,12.273,1,12.274,runs/BooleanAttribute/FSL/response.md,runs/BooleanAttribute/FSL/run.json,3795,AkashML,635,1432,0
+BooleanAttribute,CoT,ok,stop,328,1523,590,17.297,1,17.299,runs/BooleanAttribute/CoT/response.md,runs/BooleanAttribute/CoT/run.json,5204,DeepInfra,328,1523,590
+BooleanAttribute,ToT,ok,stop,299,1201,337,64.067,1,64.069,runs/BooleanAttribute/ToT/response.md,runs/BooleanAttribute/ToT/run.json,3990,DekaLLM,299,1201,337
+BooleanAttribute,GToT,ok,stop,422,1480,362,10.681,1,10.683,runs/BooleanAttribute/GToT/response.md,runs/BooleanAttribute/GToT/run.json,5957,Parasail,422,1480,362
+ChangeNotifyingArrayList,ZSL,ok,stop,527,2150,551,8.537,1,8.539,runs/ChangeNotifyingArrayList/ZSL/response.md,runs/ChangeNotifyingArrayList/ZSL/run.json,7114,Crusoe,527,2150,551
+ChangeNotifyingArrayList,FSL,ok,stop,923,2065,604,13.643,1,13.646,runs/ChangeNotifyingArrayList/FSL/response.md,runs/ChangeNotifyingArrayList/FSL/run.json,6639,Mancer 2,923,2065,604
+ChangeNotifyingArrayList,CoT,ok,stop,635,3330,1080,14.502,1,14.504,runs/ChangeNotifyingArrayList/CoT/response.md,runs/ChangeNotifyingArrayList/CoT/run.json,10566,Crusoe,635,3330,1080
+ChangeNotifyingArrayList,ToT,ok,stop,587,2875,625,64.844,1,64.847,runs/ChangeNotifyingArrayList/ToT/response.md,runs/ChangeNotifyingArrayList/ToT/run.json,10212,CoreWeave,587,2875,625
+ChangeNotifyingArrayList,GToT,ok,stop,716,2652,763,16.977,1,16.98,runs/ChangeNotifyingArrayList/GToT/response.md,runs/ChangeNotifyingArrayList/GToT/run.json,9208,AkashML,716,2652,763
+CharacterReader,ZSL,ok,stop,3428,3521,1358,50.622,1,50.624,runs/CharacterReader/ZSL/response.md,runs/CharacterReader/ZSL/run.json,9770,Mancer 2,3428,3521,1358
+CharacterReader,FSL,ok,stop,3814,2406,835,33.31,1,33.312,runs/CharacterReader/FSL/response.md,runs/CharacterReader/FSL/run.json,7444,DeepInfra,3814,2406,835
+CharacterReader,CoT,ok,stop,3535,2447,762,15.406,1,15.408,runs/CharacterReader/CoT/response.md,runs/CharacterReader/CoT/run.json,8880,Novita,3535,2447,762
+CharacterReader,ToT,ok,stop,3491,4226,465,137.057,1,137.06,runs/CharacterReader/ToT/response.md,runs/CharacterReader/ToT/run.json,18587,CoreWeave,3491,4226,465
+CharacterReader,GToT,ok,stop,3614,4353,1022,114.525,1,114.527,runs/CharacterReader/GToT/response.md,runs/CharacterReader/GToT/run.json,14857,CoreWeave,3614,4353,1022
+Cleaner,ZSL,ok,stop,1599,2980,1449,49.098,1,49.101,runs/Cleaner/ZSL/response.md,runs/Cleaner/ZSL/run.json,6587,CoreWeave,1599,2980,1449
+Cleaner,FSL,ok,stop,1999,2876,959,13.037,1,13.039,runs/Cleaner/FSL/response.md,runs/Cleaner/FSL/run.json,10016,Crusoe,1999,2876,959
+Cleaner,CoT,ok,stop,1703,2576,691,146.963,1,146.964,runs/Cleaner/CoT/response.md,runs/Cleaner/CoT/run.json,8789,DekaLLM,1703,2576,691
+Cleaner,ToT,ok,stop,1665,2766,621,19.074,1,19.076,runs/Cleaner/ToT/response.md,runs/Cleaner/ToT/run.json,10765,Novita,1665,2766,621
+Cleaner,GToT,ok,stop,1784,2429,538,6.126,1,6.129,runs/Cleaner/GToT/response.md,runs/Cleaner/GToT/run.json,9406,Amazon Bedrock,1784,2429,538
+Collector,ZSL,ok,stop,621,2375,839,25.658,1,25.661,runs/Collector/ZSL/response.md,runs/Collector/ZSL/run.json,8618,Mancer 2,621,2375,839
+Collector,FSL,ok,stop,1021,2148,0,23.262,1,23.264,runs/Collector/FSL/response.md,runs/Collector/FSL/run.json,6803,AkashML,1021,2148,0
+Collector,CoT,ok,stop,725,2349,555,75.993,1,75.997,runs/Collector/CoT/response.md,runs/Collector/CoT/run.json,8973,CoreWeave,725,2349,555
+Collector,ToT,ok,stop,685,2401,401,135.724,1,135.726,runs/Collector/ToT/response.md,runs/Collector/ToT/run.json,10155,DekaLLM,685,2401,401
+Collector,GToT,ok,stop,793,3047,1625,114.249,1,114.25,runs/Collector/GToT/response.md,runs/Collector/GToT/run.json,7119,DeepInfra,793,3047,1625
+CombiningEvaluator,ZSL,ok,stop,733,2672,784,51.224,1,51.226,runs/CombiningEvaluator/ZSL/response.md,runs/CombiningEvaluator/ZSL/run.json,9103,CoreWeave,733,2672,784
+CombiningEvaluator,FSL,ok,stop,1131,2690,801,16.917,1,16.921,runs/CombiningEvaluator/FSL/response.md,runs/CombiningEvaluator/FSL/run.json,9620,Parasail,1131,2690,801
+CombiningEvaluator,CoT,ok,stop,838,2833,888,94.356,1,94.357,runs/CombiningEvaluator/CoT/response.md,runs/CombiningEvaluator/CoT/run.json,9742,CoreWeave,838,2833,888
+CombiningEvaluator,ToT,ok,stop,783,2193,652,65.131,1,65.132,runs/CombiningEvaluator/ToT/response.md,runs/CombiningEvaluator/ToT/run.json,8141,DeepInfra,783,2193,652
+CombiningEvaluator,GToT,ok,stop,922,2526,633,12.628,1,12.629,runs/CombiningEvaluator/GToT/response.md,runs/CombiningEvaluator/GToT/run.json,10401,Novita,922,2526,633
+Comment,ZSL,ok,stop,409,1670,659,10.649,1,10.651,runs/Comment/ZSL/response.md,runs/Comment/ZSL/run.json,5135,Mancer 2,409,1670,659
+Comment,FSL,ok,stop,809,1953,0,16.774,1,16.775,runs/Comment/FSL/response.md,runs/Comment/FSL/run.json,3781,AkashML,809,1953,0
+Comment,CoT,ok,stop,513,2093,0,18.485,1,18.487,runs/Comment/CoT/response.md,runs/Comment/CoT/run.json,6455,AkashML,513,2093,0
+Comment,ToT,ok,stop,460,1905,457,30.178,1,30.18,runs/Comment/ToT/response.md,runs/Comment/ToT/run.json,6864,Novita,460,1905,457
+Comment,GToT,ok,stop,581,2186,729,41.063,1,41.065,runs/Comment/GToT/response.md,runs/Comment/GToT/run.json,8154,DeepInfra,581,2186,729
+ConstrainableInputStream,ZSL,ok,stop,1075,3248,1289,13.68,1,13.682,runs/ConstrainableInputStream/ZSL/response.md,runs/ConstrainableInputStream/ZSL/run.json,9835,Crusoe,1075,3248,1289
+ConstrainableInputStream,FSL,ok,stop,1471,3252,697,82.847,1,82.849,runs/ConstrainableInputStream/FSL/response.md,runs/ConstrainableInputStream/FSL/run.json,12119,CoreWeave,1471,3252,697
+ConstrainableInputStream,CoT,ok,stop,1183,3619,0,35.173,1,35.175,runs/ConstrainableInputStream/CoT/response.md,runs/ConstrainableInputStream/CoT/run.json,11620,AkashML,1183,3619,0
+ConstrainableInputStream,ToT,ok,stop,1135,3210,420,64.987,1,64.989,runs/ConstrainableInputStream/ToT/response.md,runs/ConstrainableInputStream/ToT/run.json,13133,CoreWeave,1135,3210,420
+ConstrainableInputStream,GToT,ok,stop,1264,3327,1039,169.58,1,169.583,runs/ConstrainableInputStream/GToT/response.md,runs/ConstrainableInputStream/GToT/run.json,10171,DekaLLM,1264,3327,1039
+DataNode,ZSL,ok,stop,559,1826,718,48.853,1,48.855,runs/DataNode/ZSL/response.md,runs/DataNode/ZSL/run.json,4753,CoreWeave,559,1826,718
+DataNode,FSL,ok,stop,958,1790,581,10.713,1,10.715,runs/DataNode/FSL/response.md,runs/DataNode/FSL/run.json,5787,AkashML,958,1790,581
+DataNode,CoT,ok,stop,664,1847,0,15.293,1,15.295,runs/DataNode/CoT/response.md,runs/DataNode/CoT/run.json,5875,AkashML,664,1847,0
+DataNode,ToT,ok,stop,622,1615,0,10.393,1,10.395,runs/DataNode/ToT/response.md,runs/DataNode/ToT/run.json,5524,AkashML,622,1615,0
+DataNode,GToT,ok,stop,732,2630,604,35.551,1,35.553,runs/DataNode/GToT/response.md,runs/DataNode/GToT/run.json,9051,DeepInfra,732,2630,604
+DataUtil,ZSL,ok,stop,2705,3319,1294,47.929,1,47.931,runs/DataUtil/ZSL/response.md,runs/DataUtil/ZSL/run.json,8689,CoreWeave,2705,3319,1294
+DataUtil,FSL,ok,stop,3091,3186,951,44.692,1,44.694,runs/DataUtil/FSL/response.md,runs/DataUtil/FSL/run.json,11674,DeepInfra,3091,3186,951
+DataUtil,CoT,ok,stop,2812,3220,1476,19.53,1,19.533,runs/DataUtil/CoT/response.md,runs/DataUtil/CoT/run.json,9694,Novita,2812,3220,1476
+DataUtil,ToT,ok,stop,2768,3688,0,39.397,1,39.398,runs/DataUtil/ToT/response.md,runs/DataUtil/ToT/run.json,12698,AkashML,2768,3688,0
+DataUtil,GToT,ok,stop,2891,3091,781,64.807,1,64.809,runs/DataUtil/GToT/response.md,runs/DataUtil/GToT/run.json,10563,CoreWeave,2891,3091,781
+Document,ZSL,ok,stop,4319,3479,0,29.462,1,29.464,runs/Document/ZSL/response.md,runs/Document/ZSL/run.json,11070,AkashML,4319,3479,0
+Document,FSL,ok,stop,4719,3808,713,24.432,1,24.435,runs/Document/FSL/response.md,runs/Document/FSL/run.json,15506,Mancer 2,4719,3808,713
+Document,CoT,ok,stop,4423,4916,969,134.841,1,134.842,runs/Document/CoT/response.md,runs/Document/CoT/run.json,17485,CoreWeave,4423,4916,969
+Document,ToT,ok,stop,4370,3901,1098,65.498,1,65.499,runs/Document/ToT/response.md,runs/Document/ToT/run.json,15484,DeepInfra,4370,3901,1098
+Document,GToT,ok,stop,4504,2589,588,16.508,1,16.51,runs/Document/GToT/response.md,runs/Document/GToT/run.json,11110,Mancer 2,4504,2589,588
+DocumentType,ZSL,ok,stop,956,2477,806,58.091,1,58.093,runs/DocumentType/ZSL/response.md,runs/DocumentType/ZSL/run.json,7308,CoreWeave,956,2477,806
+DocumentType,FSL,ok,stop,1359,2852,1039,6.537,1,6.539,runs/DocumentType/FSL/response.md,runs/DocumentType/FSL/run.json,7965,Groq,1359,2852,1039
+DocumentType,CoT,ok,stop,1061,2626,500,67.662,1,67.665,runs/DocumentType/CoT/response.md,runs/DocumentType/CoT/run.json,9836,CoreWeave,1061,2626,500
+DocumentType,ToT,ok,stop,1019,2389,502,38.793,1,38.794,runs/DocumentType/ToT/response.md,runs/DocumentType/ToT/run.json,8553,CoreWeave,1019,2389,502
+DocumentType,GToT,ok,stop,1142,3945,1684,7.665,1,7.667,runs/DocumentType/GToT/response.md,runs/DocumentType/GToT/run.json,10337,Mara,1142,3945,1684
+Element,ZSL,ok,stop,11718,3631,1278,47.62,1,47.621,runs/Element/ZSL/response.md,runs/Element/ZSL/run.json,12017,Mancer 2,11718,3631,1278
+Element,FSL,ok,stop,12120,4535,654,26.803,1,26.805,runs/Element/FSL/response.md,runs/Element/FSL/run.json,17067,Novita,12120,4535,654
+Element,CoT,ok,stop,11822,10465,980,156.531,1,156.532,runs/Element/CoT/response.md,runs/Element/CoT/run.json,40730,Mancer 2,11822,10465,980
+Element,ToT,ok,stop,11782,5161,1031,20.293,1,20.295,runs/Element/ToT/response.md,runs/Element/ToT/run.json,20724,Crusoe,11782,5161,1031
+Element,GToT,ok,stop,11903,6313,321,3.698,1,3.7,runs/Element/GToT/response.md,runs/Element/GToT/run.json,25287,Cerebras,11903,6313,321
+Elements,ZSL,ok,stop,4672,2897,561,13.379,1,13.382,runs/Elements/ZSL/response.md,runs/Elements/ZSL/run.json,10537,Novita,4672,2897,561
+Elements,FSL,ok,stop,5070,3565,731,17.136,1,17.137,runs/Elements/FSL/response.md,runs/Elements/FSL/run.json,13828,Parasail,5070,3565,731
+Elements,CoT,ok,stop,4761,4606,1381,108.613,1,108.615,runs/Elements/CoT/response.md,runs/Elements/CoT/run.json,16893,DeepInfra,4761,4606,1381
+Elements,ToT,ok,stop,4734,4287,608,144.594,1,144.599,runs/Elements/ToT/response.md,runs/Elements/ToT/run.json,18246,Mancer 2,4734,4287,608
+Elements,GToT,ok,error,5477,2917,743,225.973,1,225.975,runs/Elements/GToT/response.md,runs/Elements/GToT/run.json,8463,DekaLLM,5477,2917,743
+Entities,ZSL,ok,stop,2914,3121,1201,31.887,1,31.888,runs/Entities/ZSL/response.md,runs/Entities/ZSL/run.json,8835,DeepInfra,2914,3121,1201
+Entities,FSL,ok,stop,3314,2921,990,27.181,1,27.182,runs/Entities/FSL/response.md,runs/Entities/FSL/run.json,9580,Novita,3314,2921,990
+Entities,CoT,ok,stop,3031,3240,662,189.037,1,189.038,runs/Entities/CoT/response.md,runs/Entities/CoT/run.json,12254,DekaLLM,3031,3240,662
+Entities,ToT,ok,stop,2993,3365,717,23.865,1,23.867,runs/Entities/ToT/response.md,runs/Entities/ToT/run.json,13136,Novita,2993,3365,717
+Entities,GToT,ok,stop,3112,3374,748,83.99,1,83.992,runs/Entities/GToT/response.md,runs/Entities/GToT/run.json,12298,CoreWeave,3112,3374,748
+Evaluator,ZSL,ok,stop,4438,3890,722,72.087,1,72.091,runs/Evaluator/ZSL/response.md,runs/Evaluator/ZSL/run.json,13430,CoreWeave,4438,3890,722
+Evaluator,FSL,ok,stop,4838,5258,836,41.585,1,41.588,runs/Evaluator/FSL/response.md,runs/Evaluator/FSL/run.json,17780,Parasail,4838,5258,836
+Evaluator,CoT,ok,stop,4543,6147,601,180.781,1,180.783,runs/Evaluator/CoT/response.md,runs/Evaluator/CoT/run.json,27171,CoreWeave,4543,6147,601
+Evaluator,ToT,ok,stop,4501,5107,686,41.634,1,41.636,runs/Evaluator/ToT/response.md,runs/Evaluator/ToT/run.json,21098,Mancer 2,4501,5107,686
+Evaluator,GToT,ok,stop,4623,3725,364,190.234,1,190.236,runs/Evaluator/GToT/response.md,runs/Evaluator/GToT/run.json,15863,DekaLLM,4623,3725,364
+FormElement,ZSL,ok,stop,1003,3076,0,17.813,1,17.814,runs/FormElement/ZSL/response.md,runs/FormElement/ZSL/run.json,9635,AkashML,1003,3076,0
+FormElement,FSL,ok,stop,1402,2344,0,14.077,1,14.079,runs/FormElement/FSL/response.md,runs/FormElement/FSL/run.json,8343,AkashML,1402,2344,0
+FormElement,CoT,ok,stop,1108,3884,572,17.781,1,17.783,runs/FormElement/CoT/response.md,runs/FormElement/CoT/run.json,16697,Mancer 2,1108,3884,572
+FormElement,ToT,ok,stop,1068,3515,651,16.65,1,16.651,runs/FormElement/ToT/response.md,runs/FormElement/ToT/run.json,14442,Phala,1068,3515,651
+FormElement,GToT,ok,stop,1189,3747,0,28.064,1,28.066,runs/FormElement/GToT/response.md,runs/FormElement/GToT/run.json,12918,AkashML,1189,3747,0
+HtmlTreeBuilder,ZSL,ok,stop,5784,4879,923,74.836,1,74.838,runs/HtmlTreeBuilder/ZSL/response.md,runs/HtmlTreeBuilder/ZSL/run.json,19638,Novita,5784,4879,923
+HtmlTreeBuilder,FSL,ok,stop,6195,4940,1509,30.575,1,30.578,runs/HtmlTreeBuilder/FSL/response.md,runs/HtmlTreeBuilder/FSL/run.json,18155,Mancer 2,6195,4940,1509
+HtmlTreeBuilder,CoT,ok,stop,5903,5186,1511,32.732,1,32.734,runs/HtmlTreeBuilder/CoT/response.md,runs/HtmlTreeBuilder/CoT/run.json,18522,AkashML,5903,5186,1511
+HtmlTreeBuilder,ToT,ok,stop,5859,5727,874,166.625,1,166.629,runs/HtmlTreeBuilder/ToT/response.md,runs/HtmlTreeBuilder/ToT/run.json,23073,CoreWeave,5859,5727,874
+HtmlTreeBuilder,GToT,ok,stop,5984,6417,2892,22.976,1,22.979,runs/HtmlTreeBuilder/GToT/response.md,runs/HtmlTreeBuilder/GToT/run.json,19768,Crusoe,5984,6417,2892
+HtmlTreeBuilderState,ZSL,ok,stop,12987,7700,3128,57.191,1,57.194,runs/HtmlTreeBuilderState/ZSL/response.md,runs/HtmlTreeBuilderState/ZSL/run.json,24185,Mancer 2,12987,7700,3128
+HtmlTreeBuilderState,FSL,ok,stop,13384,5555,688,159.418,1,159.422,runs/HtmlTreeBuilderState/FSL/response.md,runs/HtmlTreeBuilderState/FSL/run.json,23957,CoreWeave,13384,5555,688
+HtmlTreeBuilderState,CoT,ok,stop,13094,5185,696,35.833,1,35.835,runs/HtmlTreeBuilderState/CoT/response.md,runs/HtmlTreeBuilderState/CoT/run.json,23018,AkashML,13094,5185,696
+HtmlTreeBuilderState,ToT,ok,stop,13035,2741,513,39.08,1,39.082,runs/HtmlTreeBuilderState/ToT/response.md,runs/HtmlTreeBuilderState/ToT/run.json,10117,DeepInfra,13035,2741,513
+HtmlTreeBuilderState,GToT,ok,stop,13175,3704,692,182.437,1,182.438,runs/HtmlTreeBuilderState/GToT/response.md,runs/HtmlTreeBuilderState/GToT/run.json,14392,DekaLLM,13175,3704,692
+HttpConnection,ZSL,ok,stop,8944,4009,0,13.872,1,13.875,runs/HttpConnection/ZSL/response.md,runs/HttpConnection/ZSL/run.json,16912,BaseTen,8944,4009,0
+HttpConnection,FSL,ok,stop,9332,2971,705,6.562,1,6.565,runs/HttpConnection/FSL/response.md,runs/HttpConnection/FSL/run.json,10667,Mara,9332,2971,705
+HttpConnection,CoT,ok,stop,9038,4307,1561,198.984,1,198.987,runs/HttpConnection/CoT/response.md,runs/HttpConnection/CoT/run.json,12256,DekaLLM,9038,4307,1561
+HttpConnection,ToT,ok,stop,8983,3343,805,47.231,1,47.233,runs/HttpConnection/ToT/response.md,runs/HttpConnection/ToT/run.json,12649,DeepInfra,8983,3343,805
+HttpConnection,GToT,ok,stop,9106,3894,783,48.247,1,48.249,runs/HttpConnection/GToT/response.md,runs/HttpConnection/GToT/run.json,15855,DeepInfra,9106,3894,783
+HttpStatusException,ZSL,ok,stop,275,1690,418,15.625,1,15.627,runs/HttpStatusException/ZSL/response.md,runs/HttpStatusException/ZSL/run.json,6124,Mancer 2,275,1690,418
+HttpStatusException,FSL,ok,stop,673,1746,0,10.565,1,10.567,runs/HttpStatusException/FSL/response.md,runs/HttpStatusException/FSL/run.json,6216,AkashML,673,1746,0
+HttpStatusException,CoT,ok,stop,381,1385,304,25.57,1,25.572,runs/HttpStatusException/CoT/response.md,runs/HttpStatusException/CoT/run.json,5076,CoreWeave,381,1385,304
+HttpStatusException,ToT,ok,stop,337,1522,280,46.021,1,46.024,runs/HttpStatusException/ToT/response.md,runs/HttpStatusException/ToT/run.json,6144,CoreWeave,337,1522,280
+HttpStatusException,GToT,ok,stop,462,2372,798,131.06,1,131.062,runs/HttpStatusException/GToT/response.md,runs/HttpStatusException/GToT/run.json,6586,DekaLLM,462,2372,798
+Jsoup,ZSL,ok,stop,2548,3309,1124,12.344,1,12.347,runs/Jsoup/ZSL/response.md,runs/Jsoup/ZSL/run.json,11895,Crusoe,2548,3309,1124
+Jsoup,FSL,ok,stop,2947,2977,486,93.348,1,93.35,runs/Jsoup/FSL/response.md,runs/Jsoup/FSL/run.json,12411,CoreWeave,2947,2977,486
+Jsoup,CoT,ok,stop,2653,4968,642,228.775,1,228.777,runs/Jsoup/CoT/response.md,runs/Jsoup/CoT/run.json,18499,DekaLLM,2653,4968,642
+Jsoup,ToT,ok,stop,2611,2786,707,4.928,1,4.93,runs/Jsoup/ToT/response.md,runs/Jsoup/ToT/run.json,9915,SambaNova,2611,2786,707
+Jsoup,GToT,ok,stop,2734,3160,0,22.979,1,22.98,runs/Jsoup/GToT/response.md,runs/Jsoup/GToT/run.json,12975,AkashML,2734,3160,0
+LeafNode,ZSL,ok,stop,591,3901,2313,8.631,1,8.633,runs/LeafNode/ZSL/response.md,runs/LeafNode/ZSL/run.json,9337,Amazon Bedrock,591,3901,2313
+LeafNode,FSL,ok,stop,977,2276,1311,29.909,1,29.91,runs/LeafNode/FSL/response.md,runs/LeafNode/FSL/run.json,5319,DeepInfra,977,2276,1311
+LeafNode,CoT,ok,stop,696,3297,1470,139.135,1,139.136,runs/LeafNode/CoT/response.md,runs/LeafNode/CoT/run.json,8587,DekaLLM,696,3297,1470
+LeafNode,ToT,ok,stop,656,2742,1419,16.463,1,16.464,runs/LeafNode/ToT/response.md,runs/LeafNode/ToT/run.json,7431,Novita,656,2742,1419
+LeafNode,GToT,ok,stop,777,2874,895,4.9,1,4.901,runs/LeafNode/GToT/response.md,runs/LeafNode/GToT/run.json,10466,SambaNova,777,2874,895
+Node,ZSL,ok,stop,5466,3042,1078,30.534,1,30.535,runs/Node/ZSL/response.md,runs/Node/ZSL/run.json,10221,Novita,5466,3042,1078
+Node,FSL,ok,stop,5879,4393,979,190.245,1,190.247,runs/Node/FSL/response.md,runs/Node/FSL/run.json,14465,DekaLLM,5879,4393,979
+Node,CoT,ok,stop,5570,3717,793,38.389,1,38.391,runs/Node/CoT/response.md,runs/Node/CoT/run.json,14599,DeepInfra,5570,3717,793
+Node,ToT,ok,stop,5543,3917,0,29.402,1,29.404,runs/Node/ToT/response.md,runs/Node/ToT/run.json,15960,AkashML,5543,3917,0
+Node,GToT,ok,stop,5664,3720,548,85.394,1,85.397,runs/Node/GToT/response.md,runs/Node/GToT/run.json,16098,CoreWeave,5664,3720,548
+NodeTraversor,ZSL,ok,stop,1143,3342,836,173.685,1,173.689,runs/NodeTraversor/ZSL/response.md,runs/NodeTraversor/ZSL/run.json,11201,DekaLLM,1143,3342,836
+NodeTraversor,FSL,ok,stop,1541,4203,1774,23.312,1,23.323,runs/NodeTraversor/FSL/response.md,runs/NodeTraversor/FSL/run.json,11244,Parasail,1541,4203,1774
+NodeTraversor,CoT,ok,stop,1236,3342,1352,64.226,1,64.229,runs/NodeTraversor/CoT/response.md,runs/NodeTraversor/CoT/run.json,10600,DeepInfra,1236,3342,1352
+NodeTraversor,ToT,ok,stop,1205,3720,386,109.34,1,109.342,runs/NodeTraversor/ToT/response.md,runs/NodeTraversor/ToT/run.json,15288,CoreWeave,1205,3720,386
+NodeTraversor,GToT,ok,stop,1330,3511,775,15.187,1,15.188,runs/NodeTraversor/GToT/response.md,runs/NodeTraversor/GToT/run.json,13500,Parasail,1330,3511,775
+Normalizer,ZSL,ok,stop,219,1339,305,5.426,1,5.428,runs/Normalizer/ZSL/response.md,runs/Normalizer/ZSL/run.json,4962,Crusoe,219,1339,305
+Normalizer,FSL,ok,stop,619,1448,424,6.288,1,6.289,runs/Normalizer/FSL/response.md,runs/Normalizer/FSL/run.json,5096,Crusoe,619,1448,424
+Normalizer,CoT,ok,stop,324,1606,483,36.501,1,36.503,runs/Normalizer/CoT/response.md,runs/Normalizer/CoT/run.json,5645,CoreWeave,324,1606,483
+Normalizer,ToT,ok,stop,282,1053,314,5.456,1,5.458,runs/Normalizer/ToT/response.md,runs/Normalizer/ToT/run.json,3490,Mancer 2,282,1053,314
+Normalizer,GToT,ok,stop,391,1031,389,13.155,1,13.157,runs/Normalizer/GToT/response.md,runs/Normalizer/GToT/run.json,3390,Phala,391,1031,389
+ParseError,ZSL,ok,stop,320,1439,317,20.767,1,20.77,runs/ParseError/ZSL/response.md,runs/ParseError/ZSL/run.json,5489,Novita,320,1439,317
+ParseError,FSL,ok,stop,732,1404,486,7.561,1,7.562,runs/ParseError/FSL/response.md,runs/ParseError/FSL/run.json,4959,AkashML,732,1404,486
+ParseError,CoT,ok,stop,438,1323,407,39.17,1,39.172,runs/ParseError/CoT/response.md,runs/ParseError/CoT/run.json,4479,CoreWeave,438,1323,407
+ParseError,ToT,ok,stop,407,1524,0,9.032,1,9.033,runs/ParseError/ToT/response.md,runs/ParseError/ToT/run.json,6514,BaseTen,407,1524,0
+ParseError,GToT,ok,stop,519,2583,391,10.209,1,10.211,runs/ParseError/GToT/response.md,runs/ParseError/GToT/run.json,9964,Crusoe,519,2583,391
+ParseErrorList,ZSL,ok,stop,296,1926,789,30.035,1,30.039,runs/ParseErrorList/ZSL/response.md,runs/ParseErrorList/ZSL/run.json,5244,DeepInfra,296,1926,789
+ParseErrorList,FSL,ok,stop,707,1626,687,66.919,1,66.921,runs/ParseErrorList/FSL/response.md,runs/ParseErrorList/FSL/run.json,3961,DekaLLM,707,1626,687
+ParseErrorList,CoT,ok,stop,415,1872,605,60.548,1,60.55,runs/ParseErrorList/CoT/response.md,runs/ParseErrorList/CoT/run.json,5876,CoreWeave,415,1872,605
+ParseErrorList,ToT,ok,stop,358,2591,930,32.706,1,32.708,runs/ParseErrorList/ToT/response.md,runs/ParseErrorList/ToT/run.json,8074,DeepInfra,358,2591,930
+ParseErrorList,GToT,ok,stop,496,2092,536,65.329,1,65.331,runs/ParseErrorList/GToT/response.md,runs/ParseErrorList/GToT/run.json,7290,CoreWeave,496,2092,536
+ParseSettings,ZSL,ok,stop,427,1704,337,91.607,1,91.61,runs/ParseSettings/ZSL/response.md,runs/ParseSettings/ZSL/run.json,6555,DekaLLM,427,1704,337
+ParseSettings,FSL,ok,stop,826,1674,744,6.439,1,6.441,runs/ParseSettings/FSL/response.md,runs/ParseSettings/FSL/run.json,5240,Crusoe,826,1674,744
+ParseSettings,CoT,ok,stop,532,2050,583,54.873,1,54.876,runs/ParseSettings/CoT/response.md,runs/ParseSettings/CoT/run.json,7642,CoreWeave,532,2050,583
+ParseSettings,ToT,ok,stop,490,1656,335,43.498,1,43.5,runs/ParseSettings/ToT/response.md,runs/ParseSettings/ToT/run.json,6736,CoreWeave,490,1656,335
+ParseSettings,GToT,ok,stop,600,1752,535,30.279,1,30.282,runs/ParseSettings/GToT/response.md,runs/ParseSettings/GToT/run.json,7058,DeepInfra,600,1752,535
+Parser,ZSL,ok,stop,1923,3243,0,27.139,1,27.141,runs/Parser/ZSL/response.md,runs/Parser/ZSL/run.json,10838,AkashML,1923,3243,0
+Parser,FSL,ok,stop,2323,3094,647,141.223,1,141.225,runs/Parser/FSL/response.md,runs/Parser/FSL/run.json,11233,DekaLLM,2323,3094,647
+Parser,CoT,ok,stop,2027,3569,0,33.666,1,33.668,runs/Parser/CoT/response.md,runs/Parser/CoT/run.json,13540,AkashML,2027,3569,0
+Parser,ToT,ok,stop,1987,3390,559,95.596,1,95.598,runs/Parser/ToT/response.md,runs/Parser/ToT/run.json,14831,CoreWeave,1987,3390,559
+Parser,GToT,ok,stop,2108,3017,0,31.497,1,31.499,runs/Parser/GToT/response.md,runs/Parser/GToT/run.json,10779,AkashML,2108,3017,0
+PseudoTextElement,ZSL,ok,stop,287,1785,466,8.359,1,8.361,runs/PseudoTextElement/ZSL/response.md,runs/PseudoTextElement/ZSL/run.json,6406,Novita,287,1785,466
+PseudoTextElement,FSL,ok,stop,685,1766,540,9.17,1,9.172,runs/PseudoTextElement/FSL/response.md,runs/PseudoTextElement/FSL/run.json,6148,Phala,685,1766,540
+PseudoTextElement,CoT,ok,stop,392,3135,563,142.322,1,142.324,runs/PseudoTextElement/CoT/response.md,runs/PseudoTextElement/CoT/run.json,11767,DekaLLM,392,3135,563
+PseudoTextElement,ToT,ok,stop,333,2128,647,21.922,1,21.924,runs/PseudoTextElement/ToT/response.md,runs/PseudoTextElement/ToT/run.json,8091,DeepInfra,333,2128,647
+PseudoTextElement,GToT,ok,stop,474,1832,975,12.922,1,12.925,runs/PseudoTextElement/GToT/response.md,runs/PseudoTextElement/GToT/run.json,5280,Novita,474,1832,975
+QueryParser,ZSL,ok,stop,3319,4381,0,50.447,1,50.449,runs/QueryParser/ZSL/response.md,runs/QueryParser/ZSL/run.json,14418,AkashML,3319,4381,0
+QueryParser,FSL,ok,stop,3718,4110,458,23.465,1,23.467,runs/QueryParser/FSL/response.md,runs/QueryParser/FSL/run.json,17505,Parasail,3718,4110,458
+QueryParser,CoT,ok,stop,3424,3264,983,52.463,1,52.466,runs/QueryParser/CoT/response.md,runs/QueryParser/CoT/run.json,11546,Mancer 2,3424,3264,983
+QueryParser,ToT,ok,stop,3382,4032,686,15.711,1,15.714,runs/QueryParser/ToT/response.md,runs/QueryParser/ToT/run.json,16720,Crusoe,3382,4032,686
+QueryParser,GToT,ok,stop,3505,4537,1633,257.418,1,257.421,runs/QueryParser/GToT/response.md,runs/QueryParser/GToT/run.json,14388,DekaLLM,3505,4537,1633
+Selector,ZSL,ok,stop,4167,2468,1110,54.97,1,54.973,runs/Selector/ZSL/response.md,runs/Selector/ZSL/run.json,6193,CoreWeave,4167,2468,1110
+Selector,FSL,ok,stop,4567,2941,934,29.661,1,29.663,runs/Selector/FSL/response.md,runs/Selector/FSL/run.json,10091,Parasail,4567,2941,934
+Selector,CoT,ok,stop,4271,2160,0,17.263,1,17.266,runs/Selector/CoT/response.md,runs/Selector/CoT/run.json,6889,AkashML,4271,2160,0
+Selector,ToT,ok,stop,4231,2679,442,165.728,1,165.73,runs/Selector/ToT/response.md,runs/Selector/ToT/run.json,11121,DekaLLM,4231,2679,442
+Selector,GToT,ok,stop,4352,2548,891,14.235,1,14.237,runs/Selector/GToT/response.md,runs/Selector/GToT/run.json,8590,AkashML,4352,2548,891
+SerializationException,ZSL,ok,stop,464,1503,522,8.079,1,8.082,runs/SerializationException/ZSL/response.md,runs/SerializationException/ZSL/run.json,5381,Novita,464,1503,522
+SerializationException,FSL,ok,stop,861,1076,373,6.066,1,6.068,runs/SerializationException/FSL/response.md,runs/SerializationException/FSL/run.json,3965,Mancer 2,861,1076,373
+SerializationException,CoT,ok,stop,569,1884,585,10.504,1,10.506,runs/SerializationException/CoT/response.md,runs/SerializationException/CoT/run.json,7446,Novita,569,1884,585
+SerializationException,ToT,ok,stop,525,1327,284,32.731,1,32.732,runs/SerializationException/ToT/response.md,runs/SerializationException/ToT/run.json,4980,CoreWeave,525,1327,284
+SerializationException,GToT,ok,stop,635,1532,288,30.009,1,30.012,runs/SerializationException/GToT/response.md,runs/SerializationException/GToT/run.json,6658,DeepInfra,635,1532,288
+StringUtil,ZSL,ok,stop,2219,3678,1211,41.124,1,41.127,runs/StringUtil/ZSL/response.md,runs/StringUtil/ZSL/run.json,11567,DeepInfra,2219,3678,1211
+StringUtil,FSL,ok,stop,2631,2704,318,119.589,1,119.592,runs/StringUtil/FSL/response.md,runs/StringUtil/FSL/run.json,11717,DekaLLM,2631,2704,318
+StringUtil,CoT,ok,stop,2337,3605,781,5.769,1,5.771,runs/StringUtil/CoT/response.md,runs/StringUtil/CoT/run.json,13155,SambaNova,2337,3605,781
+StringUtil,ToT,ok,stop,2297,2978,333,14.794,1,14.796,runs/StringUtil/ToT/response.md,runs/StringUtil/ToT/run.json,12684,Novita,2297,2978,333
+StringUtil,GToT,ok,stop,2418,4725,679,97.478,1,97.481,runs/StringUtil/GToT/response.md,runs/StringUtil/GToT/run.json,18791,CoreWeave,2418,4725,679
+StructuralEvaluator,ZSL,ok,stop,805,3162,432,12.273,1,12.275,runs/StructuralEvaluator/ZSL/response.md,runs/StructuralEvaluator/ZSL/run.json,14298,Crusoe,805,3162,432
+StructuralEvaluator,FSL,ok,stop,1204,2882,652,15.207,1,15.21,runs/StructuralEvaluator/FSL/response.md,runs/StructuralEvaluator/FSL/run.json,11765,Parasail,1204,2882,652
+StructuralEvaluator,CoT,ok,stop,910,3499,568,93.013,1,93.015,runs/StructuralEvaluator/CoT/response.md,runs/StructuralEvaluator/CoT/run.json,15049,CoreWeave,910,3499,568
+StructuralEvaluator,ToT,ok,stop,855,3678,796,63.49,1,63.493,runs/StructuralEvaluator/ToT/response.md,runs/StructuralEvaluator/ToT/run.json,15031,DeepInfra,855,3678,796
+StructuralEvaluator,GToT,ok,stop,991,3473,949,104.002,1,104.005,runs/StructuralEvaluator/GToT/response.md,runs/StructuralEvaluator/GToT/run.json,13045,CoreWeave,991,3473,949
+Tag,ZSL,ok,stop,2811,2992,1453,20.624,1,20.628,runs/Tag/ZSL/response.md,runs/Tag/ZSL/run.json,8546,AkashML,2811,2992,1453
+Tag,FSL,ok,stop,3213,2405,845,15.355,1,15.359,runs/Tag/FSL/response.md,runs/Tag/FSL/run.json,7616,Novita,3213,2405,845
+Tag,CoT,ok,stop,2915,2844,1153,124.176,1,124.178,runs/Tag/CoT/response.md,runs/Tag/CoT/run.json,7742,DekaLLM,2915,2844,1153
+Tag,ToT,ok,stop,2875,2851,1037,163.452,1,163.454,runs/Tag/ToT/response.md,runs/Tag/ToT/run.json,8382,DekaLLM,2875,2851,1037
+Tag,GToT,ok,stop,2996,3336,1620,15.565,1,15.567,runs/Tag/GToT/response.md,runs/Tag/GToT/run.json,8930,Mancer 2,2996,3336,1620
+TextNode,ZSL,ok,stop,1202,2529,1878,27.621,1,27.624,runs/TextNode/ZSL/response.md,runs/TextNode/ZSL/run.json,3859,DeepInfra,1202,2529,1878
+TextNode,FSL,ok,stop,1616,2123,527,11.506,1,11.508,runs/TextNode/FSL/response.md,runs/TextNode/FSL/run.json,8201,Novita,1616,2123,527
+TextNode,CoT,ok,stop,1320,2413,574,118.456,1,118.458,runs/TextNode/CoT/response.md,runs/TextNode/CoT/run.json,8192,DekaLLM,1320,2413,574
+TextNode,ToT,ok,stop,1265,3135,1323,35.652,1,35.654,runs/TextNode/ToT/response.md,runs/TextNode/ToT/run.json,9411,DeepInfra,1265,3135,1323
+TextNode,GToT,ok,stop,1401,2232,650,10.588,1,10.59,runs/TextNode/GToT/response.md,runs/TextNode/GToT/run.json,7963,AkashML,1401,2232,650
+Token,ZSL,ok,stop,2169,2335,427,64.838,1,64.841,runs/Token/ZSL/response.md,runs/Token/ZSL/run.json,8926,CoreWeave,2169,2335,427
+Token,FSL,ok,stop,2580,2398,0,10.278,1,10.28,runs/Token/FSL/response.md,runs/Token/FSL/run.json,8175,BaseTen,2580,2398,0
+Token,CoT,ok,stop,2260,5219,889,56.226,1,56.229,runs/Token/CoT/response.md,runs/Token/CoT/run.json,19626,DeepInfra,2260,5219,889
+Token,ToT,ok,stop,2233,3255,754,158.854,1,158.858,runs/Token/ToT/response.md,runs/Token/ToT/run.json,12913,DekaLLM,2233,3255,754
+Token,GToT,ok,stop,2341,3340,1444,50.8,1,50.802,runs/Token/GToT/response.md,runs/Token/GToT/run.json,10703,DeepInfra,2341,3340,1444
+TokenQueue,ZSL,ok,stop,2887,2607,0,23.201,1,23.203,runs/TokenQueue/ZSL/response.md,runs/TokenQueue/ZSL/run.json,9034,AkashML,2887,2607,0
+TokenQueue,FSL,ok,stop,3286,2845,789,11.212,1,11.214,runs/TokenQueue/FSL/response.md,runs/TokenQueue/FSL/run.json,10484,Crusoe,3286,2845,789
+TokenQueue,CoT,ok,stop,2992,3627,0,23.988,1,23.99,runs/TokenQueue/CoT/response.md,runs/TokenQueue/CoT/run.json,11788,AkashML,2992,3627,0
+TokenQueue,ToT,ok,stop,2950,2368,400,21.865,1,21.868,runs/TokenQueue/ToT/response.md,runs/TokenQueue/ToT/run.json,9233,Mancer 2,2950,2368,400
+TokenQueue,GToT,ok,stop,3073,4136,765,14.948,1,14.953,runs/TokenQueue/GToT/response.md,runs/TokenQueue/GToT/run.json,15361,Crusoe,3073,4136,765
+Tokeniser,ZSL,ok,stop,2249,4296,794,24.868,1,24.871,runs/Tokeniser/ZSL/response.md,runs/Tokeniser/ZSL/run.json,17935,Novita,2249,4296,794
+Tokeniser,FSL,ok,stop,2646,3878,1729,14.222,1,14.223,runs/Tokeniser/FSL/response.md,runs/Tokeniser/FSL/run.json,11172,Crusoe,2646,3878,1729
+Tokeniser,CoT,ok,stop,2352,4651,2482,37.068,1,37.069,runs/Tokeniser/CoT/response.md,runs/Tokeniser/CoT/run.json,13595,Mancer 2,2352,4651,2482
+Tokeniser,ToT,ok,stop,2310,3034,598,13.757,1,13.76,runs/Tokeniser/ToT/response.md,runs/Tokeniser/ToT/run.json,12243,Mancer 2,2310,3034,598
+Tokeniser,GToT,ok,stop,2433,3247,892,62.914,1,62.916,runs/Tokeniser/GToT/response.md,runs/Tokeniser/GToT/run.json,11727,CoreWeave,2433,3247,892
+TokeniserState,ZSL,ok,stop,10542,6008,2086,24.03,1,24.034,runs/TokeniserState/ZSL/response.md,runs/TokeniserState/ZSL/run.json,20578,DeepInfra,10542,6008,2086
+TokeniserState,FSL,ok,stop,10953,6213,2540,155.36,1,155.364,runs/TokeniserState/FSL/response.md,runs/TokeniserState/FSL/run.json,18921,CoreWeave,10953,6213,2540
+TokeniserState,CoT,ok,stop,10661,3772,594,217.421,1,217.424,runs/TokeniserState/CoT/response.md,runs/TokeniserState/CoT/run.json,14820,DekaLLM,10661,3772,594
+TokeniserState,ToT,ok,stop,10617,4021,0,42.103,1,42.107,runs/TokeniserState/ToT/response.md,runs/TokeniserState/ToT/run.json,18231,AkashML,10617,4021,0
+TokeniserState,GToT,ok,stop,10744,4046,1055,21.863,1,21.866,runs/TokeniserState/GToT/response.md,runs/TokeniserState/GToT/run.json,15844,Novita,10744,4046,1055
+TreeBuilder,ZSL,ok,stop,729,3847,1499,103.717,1,103.718,runs/TreeBuilder/ZSL/response.md,runs/TreeBuilder/ZSL/run.json,12209,CoreWeave,729,3847,1499
+TreeBuilder,FSL,ok,stop,1128,3585,1057,208.4,1,208.403,runs/TreeBuilder/FSL/response.md,runs/TreeBuilder/FSL/run.json,12927,DekaLLM,1128,3585,1057
+TreeBuilder,CoT,ok,stop,834,2908,847,77.096,1,77.098,runs/TreeBuilder/CoT/response.md,runs/TreeBuilder/CoT/run.json,10172,CoreWeave,834,2908,847
+TreeBuilder,ToT,ok,stop,779,3460,1524,47.927,1,47.928,runs/TreeBuilder/ToT/response.md,runs/TreeBuilder/ToT/run.json,11709,DeepInfra,779,3460,1524
+TreeBuilder,GToT,ok,stop,915,4244,1599,6.502,1,6.503,runs/TreeBuilder/GToT/response.md,runs/TreeBuilder/GToT/run.json,13665,SambaNova,915,4244,1599
+UncheckedIOException,ZSL,ok,stop,183,1420,293,37.33,1,37.338,runs/UncheckedIOException/ZSL/response.md,runs/UncheckedIOException/ZSL/run.json,5418,CoreWeave,183,1420,293
+UncheckedIOException,FSL,ok,stop,582,1081,450,5.932,1,5.936,runs/UncheckedIOException/FSL/response.md,runs/UncheckedIOException/FSL/run.json,3563,AkashML,582,1081,450
+UncheckedIOException,CoT,ok,stop,289,1481,368,30.692,1,30.694,runs/UncheckedIOException/CoT/response.md,runs/UncheckedIOException/CoT/run.json,5416,CoreWeave,289,1481,368
+UncheckedIOException,ToT,ok,stop,232,1772,886,28.044,1,28.047,runs/UncheckedIOException/ToT/response.md,runs/UncheckedIOException/ToT/run.json,5065,DeepInfra,232,1772,886
+UncheckedIOException,GToT,ok,stop,369,1718,0,14.851,1,14.852,runs/UncheckedIOException/GToT/response.md,runs/UncheckedIOException/GToT/run.json,6287,AkashML,369,1718,0
+UnsupportedMimeTypeException,ZSL,ok,stop,280,1296,398,16.496,1,16.498,runs/UnsupportedMimeTypeException/ZSL/response.md,runs/UnsupportedMimeTypeException/ZSL/run.json,4605,Mancer 2,280,1296,398
+UnsupportedMimeTypeException,FSL,ok,stop,677,1330,392,44.017,1,44.019,runs/UnsupportedMimeTypeException/FSL/response.md,runs/UnsupportedMimeTypeException/FSL/run.json,4431,CoreWeave,677,1330,392
+UnsupportedMimeTypeException,CoT,ok,stop,398,1102,0,5.421,1,5.424,runs/UnsupportedMimeTypeException/CoT/response.md,runs/UnsupportedMimeTypeException/CoT/run.json,3893,BaseTen,398,1102,0
+UnsupportedMimeTypeException,ToT,ok,stop,341,1668,252,89.796,1,89.8,runs/UnsupportedMimeTypeException/ToT/response.md,runs/UnsupportedMimeTypeException/ToT/run.json,7503,DekaLLM,341,1668,252
+UnsupportedMimeTypeException,GToT,ok,stop,468,2091,234,15.218,1,15.219,runs/UnsupportedMimeTypeException/GToT/response.md,runs/UnsupportedMimeTypeException/GToT/run.json,8627,AkashML,468,2091,234
+Validate,ZSL,ok,stop,817,1379,368,41.027,1,41.029,runs/Validate/ZSL/response.md,runs/Validate/ZSL/run.json,4793,CoreWeave,817,1379,368
+Validate,FSL,ok,stop,1217,1451,187,3.665,1,3.666,runs/Validate/FSL/response.md,runs/Validate/FSL/run.json,7006,Mara,1217,1451,187
+Validate,CoT,ok,stop,921,2105,792,18.429,1,18.431,runs/Validate/CoT/response.md,runs/Validate/CoT/run.json,7019,AkashML,921,2105,792
+Validate,ToT,ok,stop,881,1643,205,6.838,1,6.84,runs/Validate/ToT/response.md,runs/Validate/ToT/run.json,8460,Crusoe,881,1643,205
+Validate,GToT,ok,stop,1002,2327,645,10.872,1,10.877,runs/Validate/GToT/response.md,runs/Validate/GToT/run.json,9582,Crusoe,1002,2327,645
+W3CDom,ZSL,ok,stop,1530,2918,1010,8.769,1,8.771,runs/W3CDom/ZSL/response.md,runs/W3CDom/ZSL/run.json,8645,Nebius,1530,2918,1010
+W3CDom,FSL,ok,stop,1929,2531,980,14.338,1,14.34,runs/W3CDom/FSL/response.md,runs/W3CDom/FSL/run.json,7416,Novita,1929,2531,980
+W3CDom,CoT,ok,stop,1624,2978,1014,33.972,1,33.974,runs/W3CDom/CoT/response.md,runs/W3CDom/CoT/run.json,9834,DeepInfra,1624,2978,1014
+W3CDom,ToT,ok,stop,1591,2386,412,17.161,1,17.163,runs/W3CDom/ToT/response.md,runs/W3CDom/ToT/run.json,9468,AkashML,1591,2386,412
+W3CDom,GToT,ok,stop,1718,3555,0,33.855,1,33.856,runs/W3CDom/GToT/response.md,runs/W3CDom/GToT/run.json,12173,AkashML,1718,3555,0
+Whitelist,ZSL,ok,stop,5598,3601,415,160.561,1,160.565,runs/Whitelist/ZSL/response.md,runs/Whitelist/ZSL/run.json,14681,DekaLLM,5598,3601,415
+Whitelist,FSL,ok,stop,5985,2872,761,45.35,1,45.352,runs/Whitelist/FSL/response.md,runs/Whitelist/FSL/run.json,9697,DeepInfra,5985,2872,761
+Whitelist,CoT,ok,stop,5705,3732,756,20.272,1,20.274,runs/Whitelist/CoT/response.md,runs/Whitelist/CoT/run.json,13976,Novita,5705,3732,756
+Whitelist,ToT,ok,stop,5661,2565,578,19.816,1,19.819,runs/Whitelist/ToT/response.md,runs/Whitelist/ToT/run.json,9363,Mancer 2,5661,2565,578
+Whitelist,GToT,ok,stop,5783,4248,731,236.849,1,236.851,runs/Whitelist/GToT/response.md,runs/Whitelist/GToT/run.json,15883,DekaLLM,5783,4248,731
+XmlDeclaration,ZSL,ok,stop,694,2490,1445,9.714,1,9.718,runs/XmlDeclaration/ZSL/response.md,runs/XmlDeclaration/ZSL/run.json,6399,Crusoe,694,2490,1445
+XmlDeclaration,FSL,ok,stop,1080,1966,1116,28.446,1,28.448,runs/XmlDeclaration/FSL/response.md,runs/XmlDeclaration/FSL/run.json,5060,DeepInfra,1080,1966,1116
+XmlDeclaration,CoT,ok,stop,799,2729,1293,22.672,1,22.674,runs/XmlDeclaration/CoT/response.md,runs/XmlDeclaration/CoT/run.json,7292,Mancer 2,799,2729,1293
+XmlDeclaration,ToT,ok,stop,757,2465,1134,12.375,1,12.377,runs/XmlDeclaration/ToT/response.md,runs/XmlDeclaration/ToT/run.json,8723,AkashML,757,2465,1134
+XmlDeclaration,GToT,ok,stop,882,2951,1373,14.996,1,14.998,runs/XmlDeclaration/GToT/response.md,runs/XmlDeclaration/GToT/run.json,9520,Novita,882,2951,1373
+XmlTreeBuilder,ZSL,ok,stop,1234,3949,2485,30.131,1,30.133,runs/XmlTreeBuilder/ZSL/response.md,runs/XmlTreeBuilder/ZSL/run.json,8561,Novita,1234,3949,2485
+XmlTreeBuilder,FSL,ok,stop,1617,5593,2666,124.009,1,124.01,runs/XmlTreeBuilder/FSL/response.md,runs/XmlTreeBuilder/FSL/run.json,16693,DeepInfra,1617,5593,2666
+XmlTreeBuilder,CoT,ok,stop,1338,3878,2144,221.898,1,221.9,runs/XmlTreeBuilder/CoT/response.md,runs/XmlTreeBuilder/CoT/run.json,8171,DekaLLM,1338,3878,2144
+XmlTreeBuilder,ToT,ok,stop,1281,2761,843,51.109,1,51.111,runs/XmlTreeBuilder/ToT/response.md,runs/XmlTreeBuilder/ToT/run.json,9173,DeepInfra,1281,2761,843
+XmlTreeBuilder,GToT,ok,stop,1406,2749,1078,41.311,1,41.313,runs/XmlTreeBuilder/GToT/response.md,runs/XmlTreeBuilder/GToT/run.json,9550,DeepInfra,1406,2749,1078

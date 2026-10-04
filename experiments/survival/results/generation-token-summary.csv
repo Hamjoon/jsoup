@@ -11,9 +11,9 @@ CoT,reasoning_tokens,52,0,676.5,2482,39911
 ToT,prompt_tokens,52,232,1436.0,13035,134949
 ToT,completion_tokens,52,1053,2818.5,5727,150681
 ToT,reasoning_tokens,52,0,601.5,1524,30895
-GToT,prompt_tokens,52,369,1562.0,13175,141999
-GToT,completion_tokens,52,1031,3125.5,6417,165211
-GToT,reasoning_tokens,52,0,737.0,2892,41092
-pooled,prompt_tokens,260,183,1595.0,13384,698362
-pooled,completion_tokens,260,1031,2917.5,10465,787336
-pooled,reasoning_tokens,260,0,689.5,3128,196596
+GToT,prompt_tokens,52,369,1562.0,13175,141377
+GToT,completion_tokens,52,1031,3203.5,7445,169739
+GToT,reasoning_tokens,52,0,730.0,2892,41067
+pooled,prompt_tokens,260,183,1595.0,13384,697740
+pooled,completion_tokens,260,1031,2919.5,10465,791864
+pooled,reasoning_tokens,260,0,689.5,3128,196571

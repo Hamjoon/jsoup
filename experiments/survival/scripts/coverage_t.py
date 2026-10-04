@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Collect baseline source-file line coverage; failures never stop the track."""
 from collections import Counter
+import argparse
 import csv
 import json
 import subprocess
@@ -22,6 +23,9 @@ def cli(args,log):
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--add-new',action='store_true')
+    args=parser.parse_args()
     start=time.monotonic()
     root=EXP/'llm'/BASELINE/'coverage'
     root.mkdir(parents=True,exist_ok=True)
@@ -34,6 +38,9 @@ def main():
             continue
         name=row['class']+'.'+row['technique']
         dest=root/(name+'.exec')
+        if args.add_new and dest.exists() and (root/(name+'.summary.json')).exists():
+            groups[row['technique']].append(dest)
+            continue
         try:
             source(row)
             summary=run_class(fqcn(row),classpath(BASELINE,row['class'],row['technique']),root/(name+'.json'),
@@ -51,18 +58,19 @@ def main():
     groups['pooled']=[p for tech in TECHS for p in groups[tech]]
     dev_output=root/'dev.exec'
     try:
-        compile_dev=json.loads((EXP/'dev'/BASELINE/'compile-summary.json').read_text())
-        names=[r['test_class'] for r in compile_dev['files'] if not r['exit_status']]
-        parts=[str(EXP/'dev'/BASELINE/'helpers'),*[str(EXP/'dev'/BASELINE/'classes'/n) for n in names],dev_cp(BASELINE,helpers=False)]
-        command=['java',f'-javaagent:{EXP}/tools/jacocoagent.jar=destfile={dev_output},includes=org.jsoup.*',
-                 '-cp',':'.join(parts),'org.junit.runner.JUnitCore',*names]
-        p=subprocess.run(command,cwd=T,capture_output=True,text=True,timeout=600)
-        (root/'dev.log').write_text(p.stdout+p.stderr)
-        write_json(root/'dev-run.json',dict(command=command,exit_status=p.returncode))
-        if not dev_output.exists():
-            raise RuntimeError('Developer run produced no execution file')
-        if p.returncode:
-            failures.append(dict(scope='dev-suite',error_type='JUnitExit',message='Coverage suite exit '+str(p.returncode)))
+        if not (args.add_new and dev_output.exists()):
+            compile_dev=json.loads((EXP/'dev'/BASELINE/'compile-summary.json').read_text())
+            names=[r['test_class'] for r in compile_dev['files'] if not r['exit_status']]
+            parts=[str(EXP/'dev'/BASELINE/'helpers'),*[str(EXP/'dev'/BASELINE/'classes'/n) for n in names],dev_cp(BASELINE,helpers=False)]
+            command=['java',f'-javaagent:{EXP}/tools/jacocoagent.jar=destfile={dev_output},includes=org.jsoup.*',
+                     '-cp',':'.join(parts),'org.junit.runner.JUnitCore',*names]
+            p=subprocess.run(command,cwd=T,capture_output=True,text=True,timeout=600)
+            (root/'dev.log').write_text(p.stdout+p.stderr)
+            write_json(root/'dev-run.json',dict(command=command,exit_status=p.returncode))
+            if not dev_output.exists():
+                raise RuntimeError('Developer run produced no execution file')
+            if p.returncode:
+                failures.append(dict(scope='dev-suite',error_type='JUnitExit',message='Coverage suite exit '+str(p.returncode)))
         groups['Dev']=[dev_output]
     except Exception as exc:
         failures.append(dict(scope='dev-suite',error_type=type(exc).__name__,message=str(exc)))
@@ -106,8 +114,10 @@ def main():
         rows.append(row)
     fields=['package','class',*[g+s for g in ['Dev','pooled',*TECHS] for s in ['_line_coverage','_covered','_total']]]
     write_csv(EXP/'results/coverage-t.csv',rows,fields)
+    elapsed=round(time.monotonic()-start,3)
+    previous=json.loads((EXP/'results/coverage-t-summary.json').read_text()) if args.add_new else None
     write_json(EXP/'results/coverage-t-summary.json',dict(cuts=len(cuts),groups_reported=list(coverage),
-        failures=failures,seconds=round(time.monotonic()-start,3),
+        failures=failures,seconds=elapsed+(previous['seconds'] if previous else 0),incremental_seconds=elapsed if args.add_new else 0,
         measurement='One full run per compiled LLM test file, pooled across those classes; one whole developer JUnit suite run. Source-file line counters from JaCoCo XML accompany the requested raw CSV reports.',
         group_totals={g:dict(covered=sum(int(r[g+'_covered'] or 0) for r in rows),
                             total=sum(int(r[g+'_total'] or 0) for r in rows)) for g in ['Dev','pooled',*TECHS]}))

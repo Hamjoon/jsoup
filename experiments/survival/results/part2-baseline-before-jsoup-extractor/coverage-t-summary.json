@@ -1,0 +1,45 @@
+{
+  "cuts": 52,
+  "groups_reported": [
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT",
+    "pooled",
+    "Dev"
+  ],
+  "failures": [],
+  "seconds": 33.287,
+  "measurement": "One full run per compiled LLM test file, pooled across those classes; one whole developer JUnit suite run. Source-file line counters from JaCoCo XML accompany the requested raw CSV reports.",
+  "group_totals": {
+    "Dev": {
+      "covered": 5581,
+      "total": 7075
+    },
+    "pooled": {
+      "covered": 2465,
+      "total": 7075
+    },
+    "ZSL": {
+      "covered": 1387,
+      "total": 7075
+    },
+    "FSL": {
+      "covered": 1562,
+      "total": 7075
+    },
+    "CoT": {
+      "covered": 1340,
+      "total": 7075
+    },
+    "ToT": {
+      "covered": 1733,
+      "total": 7075
+    },
+    "GToT": {
+      "covered": 1498,
+      "total": 7075
+    }
+  }
+}

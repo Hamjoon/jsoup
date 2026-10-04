@@ -10,7 +10,8 @@
     "Dev"
   ],
   "failures": [],
-  "seconds": 33.287,
+  "seconds": 53.772,
+  "incremental_seconds": 20.485,
   "measurement": "One full run per compiled LLM test file, pooled across those classes; one whole developer JUnit suite run. Source-file line counters from JaCoCo XML accompany the requested raw CSV reports.",
   "group_totals": {
     "Dev": {
@@ -18,27 +19,27 @@
       "total": 7075
     },
     "pooled": {
-      "covered": 2465,
+      "covered": 4566,
       "total": 7075
     },
     "ZSL": {
-      "covered": 1387,
+      "covered": 3462,
       "total": 7075
     },
     "FSL": {
-      "covered": 1562,
+      "covered": 3851,
       "total": 7075
     },
     "CoT": {
-      "covered": 1340,
+      "covered": 3353,
       "total": 7075
     },
     "ToT": {
-      "covered": 1733,
+      "covered": 3536,
       "total": 7075
     },
     "GToT": {
-      "covered": 1498,
+      "covered": 3598,
       "total": 7075
     }
   }

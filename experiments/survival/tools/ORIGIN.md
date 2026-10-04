@@ -38,3 +38,17 @@ Copied byte for byte from the LLM4TS replication repository at commit `eb5088094
 | prompts/templates/fewshot_example.txt | prompts/templates/fewshot_example.txt | e85ca2d0f5041b8029a7319562c81df2c46882418f110b6f47d0c8b562317ae4 | e85ca2d0f5041b8029a7319562c81df2c46882418f110b6f47d0c8b562317ae4 |
 | scripts/extract_v2.py | scripts/extract_v2.py | 15924c4bacca9c6f69ae928423b9bc4817a2d023757af3374a0a7dc60b481444 | 15924c4bacca9c6f69ae928423b9bc4817a2d023757af3374a0a7dc60b481444 |
 | scripts/dedup.py | scripts/dedup_lib.py | ce4638c1598827522dd3d48652da1b5a3616b06e5fe7d7fb4a6e8b04035e0767 | ce4638c1598827522dd3d48652da1b5a3616b06e5fe7d7fb4a6e8b04035e0767 |
+
+## Authorized jsoup extractor variant
+
+Derived from the unchanged `scripts/extract_v2.py` at Gary’s explicit review instruction. The only difference is the HTML check input: `code` is the second value of `lexical_masks`, with comments and string/character literals masked. Extraction output bytes and all other logic are unchanged.
+
+```diff
+-    html = bool(re.search(r'<(?:html|body|div|script)\b', comments, re.I))
++    html = bool(re.search(r'<(?:html|body|div|script)\b', code, re.I))
+```
+
+| File | SHA-256 |
+|---|---|
+| scripts/extract_v2.py | 15924c4bacca9c6f69ae928423b9bc4817a2d023757af3374a0a7dc60b481444 |
+| scripts/extract_jsoup.py | 0fa9ecb407457c3496db9278d70245112b38f83a5b4c716c3e76eed7c7b9cdcd |

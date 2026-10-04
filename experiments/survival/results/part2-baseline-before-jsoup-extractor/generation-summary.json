@@ -1,0 +1,45 @@
+{
+  "expected_calls": 260,
+  "completed_calls": 260,
+  "responses_with_content": 260,
+  "finish_reasons": {
+    "stop": 259,
+    "error": 1
+  },
+  "statuses": {
+    "ok": 260
+  },
+  "empty_contents": 0,
+  "length_finishes": 0,
+  "attempts": 260,
+  "maximum_concurrency": 2,
+  "seconds": 7023.558,
+  "token_distributions": {
+    "prompt_tokens": {
+      "count": 260,
+      "min": 183,
+      "median": 1595.0,
+      "max": 13384,
+      "total": 698362
+    },
+    "completion_tokens": {
+      "count": 260,
+      "min": 1031,
+      "median": 2917.5,
+      "max": 10465,
+      "total": 787336
+    },
+    "reasoning_tokens": {
+      "count": 260,
+      "min": 0,
+      "median": 689.5,
+      "max": 3128,
+      "total": 196596
+    }
+  },
+  "total_tokens": {
+    "prompt_tokens": 698362,
+    "completion_tokens": 787336,
+    "reasoning_tokens": 196596
+  }
+}

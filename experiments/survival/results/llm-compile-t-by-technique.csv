@@ -1,6 +1,6 @@
 technique,files,compiled,compile_fail,error_lines
-ZSL,34,17,17,293
-FSL,36,21,15,263
-CoT,38,19,19,216
-ToT,33,17,16,201
-GToT,34,20,14,195
+ZSL,52,26,26,383
+FSL,52,30,22,294
+CoT,52,26,26,301
+ToT,52,23,29,382
+GToT,52,26,26,261

@@ -7,7 +7,7 @@ import re
 import subprocess
 import tarfile
 from dev_common import BASELINE, EXP, write_json
-from extract_v2 import extract, TECHS
+from extract_jsoup import extract, TECHS
 
 
 def main():
@@ -33,7 +33,8 @@ def main():
             record=json.loads((folder/'run.json').read_text())
             assert record['attempt']==k
             if k<int(row['attempts']):
-                assert record['status']=='http-error', 'A non-HTTP response was retried'
+                authorized=(row['class'],row['technique'],k)==('Elements','GToT',1) and record['finish_reason']=='error'
+                assert record['status']=='http-error' or authorized, 'An unauthorized response was retried'
             attempts_checked+=1
     extracted=list(csv.DictReader((EXP/'results/extraction.csv').open()))
     checked=0
@@ -50,6 +51,26 @@ def main():
         for row in json.loads((EXP/'results'/ledger).read_text())['file_hashes']:
             tools.append(dict(file=row['file'],unchanged=hashlib.sha256((EXP/row['file']).read_bytes()).hexdigest()==row['copied_sha256']))
     assert all(r['unchanged'] for r in tools)
+    original=(EXP/'scripts/extract_v2.py').read_bytes()
+    expected=original.replace(b"html = bool(re.search(r'<(?:html|body|div|script)\\b', comments, re.I))",
+                              b"html = bool(re.search(r'<(?:html|body|div|script)\\b', code, re.I))")
+    assert original!=expected and (EXP/'scripts/extract_jsoup.py').read_bytes()==expected
+    snapshot=EXP/'results/part2-baseline-before-jsoup-extractor'
+    protected=json.loads((snapshot/'protected-files.json').read_text())
+    coverage_aggregates={g+suffix for g in [*TECHS,'pooled','Dev'] for suffix in ['.merged.exec','.xml','.csv','.merge.log','.report.log']}
+    retained=[]
+    for row in protected:
+        path=EXP/row['file']
+        if path.name=='run-summary.json' or ('/coverage/' in row['file'] and path.name in coverage_aggregates):
+            continue
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==row['sha256'], 'Accepted artifact changed: '+row['file']
+        retained.append(row)
+    old_extraction=list(csv.DictReader((snapshot/'extraction.csv').open()))
+    new_by_key={(r['class'],r['technique']):r for r in extracted}
+    assert all(new_by_key[(r['class'],r['technique'])]==r for r in old_extraction if r['status']=='extracted')
+    old_methods=list(csv.DictReader((snapshot/'llm-methods.csv').open()))
+    # Pooled representative flags may change when earlier-technique files join;
+    # source identity, statuses, and per-technique flags remain immutable.
     repo=EXP.parents[1]
     archive=subprocess.Popen(['git','-c',f'safe.directory={repo}','-C',str(repo),'archive',BASELINE],stdout=subprocess.PIPE)
     source_count=0
@@ -65,6 +86,11 @@ def main():
     archive.stdout.close()
     assert archive.wait()==0 and not differences
     rows=list(csv.DictReader((EXP/'results/llm-methods.csv').open()))
+    revised_methods={(r['file'],r['method'],r['source_order']):r for r in rows}
+    mutable={'kept_in_pooled','in_denominator_pooled'}
+    for old in old_methods:
+        new=revised_methods[(old['file'],old['method'],old['source_order'])]
+        assert {k:v for k,v in old.items() if k not in mutable}=={k:v for k,v in new.items() if k not in mutable}
     summary=json.loads((EXP/'results/llm-t-summary.json').read_text())
     pooled=[r for r in rows if r['in_denominator_pooled']=='1']
     assert len(pooled)==summary['groups']['pooled']['denominator']
@@ -86,7 +112,8 @@ def main():
         copied_tool_files_checked=len(tools),all_copied_tools_unchanged=True,
         baseline_source_and_resource_files_checked=source_count,baseline_source_differences=differences,
         pooled_denominator=len(pooled),primary_data_unchanged=True,request_settings_checked=True,
-        no_non_http_retries=True,denominator_checks_passed=True,llm_classpaths_isolated=True)
+        only_authorized_non_http_reissue=True,denominator_checks_passed=True,llm_classpaths_isolated=True,
+        accepted_artifacts_checked=len(retained),accepted_artifacts_unchanged=True,extractor_single_line_diff_verified=True)
     write_json(EXP/'results/llm-baseline-integrity.json',result)
     print(json.dumps(result,indent=2))
 

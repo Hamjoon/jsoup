@@ -1,0 +1,30 @@
+{
+  "reason": "User authorized HTML detection on comments-and-literals-masked code for jsoup test inputs.",
+  "reissue": {
+    "cut": "Elements",
+    "technique": "GToT",
+    "attempt": 2,
+    "reason": "User explicitly authorized one reissue of the content-bearing finish_reason=error response.",
+    "retry_policy": "Exactly one authorized request; no automatic retries.",
+    "status": "ok",
+    "finish_reason": "stop",
+    "seconds": 446.863,
+    "response_path": "runs/Elements/GToT/attempt-2/response.md"
+  },
+  "snapshot": "results/part2-baseline-before-jsoup-extractor",
+  "previously_extracted": 175,
+  "previously_html_rejected": 84,
+  "previous_pooled_denominator": 1224,
+  "existing_file_results_preserved": true,
+  "new_files_extracted": 85,
+  "new_files_compiled": 37,
+  "denominator_change": {
+    "previous": 1224,
+    "revised": 1862,
+    "increase": 638
+  },
+  "mechanical_fixes": [
+    "Incremental compile initially stopped before compiling any file because the new JSON ledger reader lacked its json import; the import was added and the command rerun.",
+    "A read-only extractor preview needed scripts added to Python import search path; no data changed."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "comparison": {
-    "pooled_denominator": 1224,
+    "pooled_denominator": 1862,
     "developer_denominator": 594,
     "pooled_below_developer": false
   },
@@ -9,136 +9,136 @@
     "completed_calls": 260,
     "responses_with_content": 260,
     "finish_reasons": {
-      "stop": 259,
-      "error": 1
+      "stop": 260
     },
     "statuses": {
       "ok": 260
     },
     "empty_contents": 0,
     "length_finishes": 0,
-    "attempts": 260,
+    "attempts": 261,
     "maximum_concurrency": 2,
-    "seconds": 7023.558,
+    "seconds": 7470.421,
     "token_distributions": {
       "prompt_tokens": {
         "count": 260,
         "min": 183,
         "median": 1595.0,
         "max": 13384,
-        "total": 698362
+        "total": 697740
       },
       "completion_tokens": {
         "count": 260,
         "min": 1031,
-        "median": 2917.5,
+        "median": 2919.5,
         "max": 10465,
-        "total": 787336
+        "total": 791864
       },
       "reasoning_tokens": {
         "count": 260,
         "min": 0,
         "median": 689.5,
         "max": 3128,
-        "total": 196596
+        "total": 196571
       }
     },
     "total_tokens": {
-      "prompt_tokens": 698362,
-      "completion_tokens": 787336,
-      "reasoning_tokens": 196596
+      "prompt_tokens": 703217,
+      "completion_tokens": 794781,
+      "reasoning_tokens": 197314
     }
   },
   "groups": {
     "ZSL": {
       "files_generated": 52,
-      "files_extracted": 34,
-      "files_compiled": 17,
-      "methods_listed": 247,
-      "source_methods": 247,
-      "pass_in_all_three": 220,
+      "files_extracted": 52,
+      "files_compiled": 26,
+      "methods_listed": 392,
+      "source_methods": 392,
+      "pass_in_all_three": 342,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 220
+      "denominator": 342
     },
     "FSL": {
       "files_generated": 52,
-      "files_extracted": 36,
-      "files_compiled": 21,
-      "methods_listed": 300,
-      "source_methods": 300,
-      "pass_in_all_three": 263,
+      "files_extracted": 52,
+      "files_compiled": 30,
+      "methods_listed": 444,
+      "source_methods": 444,
+      "pass_in_all_three": 381,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 263
+      "denominator": 381
     },
     "CoT": {
       "files_generated": 52,
-      "files_extracted": 38,
-      "files_compiled": 19,
-      "methods_listed": 305,
-      "source_methods": 305,
-      "pass_in_all_three": 280,
+      "files_extracted": 52,
+      "files_compiled": 26,
+      "methods_listed": 481,
+      "source_methods": 481,
+      "pass_in_all_three": 427,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 280
+      "denominator": 427
     },
     "ToT": {
       "files_generated": 52,
-      "files_extracted": 33,
-      "files_compiled": 17,
-      "methods_listed": 258,
-      "source_methods": 258,
-      "pass_in_all_three": 232,
+      "files_extracted": 52,
+      "files_compiled": 23,
+      "methods_listed": 391,
+      "source_methods": 391,
+      "pass_in_all_three": 346,
       "flaky": 0,
       "duplicates_removed": 1,
       "duplicate_name_methods": 0,
-      "denominator": 231
+      "denominator": 345
     },
     "GToT": {
       "files_generated": 52,
-      "files_extracted": 34,
-      "files_compiled": 20,
-      "methods_listed": 358,
-      "source_methods": 358,
-      "pass_in_all_three": 320,
+      "files_extracted": 52,
+      "files_compiled": 26,
+      "methods_listed": 535,
+      "source_methods": 535,
+      "pass_in_all_three": 465,
       "flaky": 0,
       "duplicates_removed": 0,
       "duplicate_name_methods": 0,
-      "denominator": 320
+      "denominator": 465
     },
     "pooled": {
       "files_generated": 260,
-      "files_extracted": 175,
-      "files_compiled": 94,
-      "methods_listed": 1468,
-      "source_methods": 1468,
-      "pass_in_all_three": 1315,
+      "files_extracted": 260,
+      "files_compiled": 131,
+      "methods_listed": 2243,
+      "source_methods": 2243,
+      "pass_in_all_three": 1961,
       "flaky": 0,
-      "duplicates_removed": 91,
+      "duplicates_removed": 99,
       "duplicate_name_methods": 0,
-      "denominator": 1224
+      "denominator": 1862
     }
   },
   "coverage_failures": 0,
   "stage_seconds": {
-    "generation": 7023.558,
-    "extraction": 0.648,
-    "compilation": 47.353,
-    "deduplication": 0.337,
-    "coverage": 33.287,
-    "run1": 19.732,
-    "run2": 19.014,
-    "run3": 19.837
+    "generation": 7470.421,
+    "extraction": 0.9299999999999999,
+    "compilation": 72.861,
+    "deduplication": 0.94,
+    "coverage": 53.772,
+    "run1": 29.497999999999998,
+    "run2": 28.656,
+    "run3": 30.494
   },
   "deviations": [
     "Gary accepted the observed abstract CUT count and all source-path absence cases; the accepted presence matrix will be used unchanged.",
     "All primary prompt, response, and generated-source bytes are protected from Git newline normalization with experiment-local attributes.",
-    "Only HTTP errors are retried. Every attempt is retained; extraction uses the final selected attempt recorded in the generation ledger.",
-    "Materialization follows the unchanged extractor CSR-v2 acceptance, including its HTML-detection flag. HTML-looking text can be flagged even inside Java string literals; no extraction or source repair was applied.",
+    "The original generation retained every response without non-HTTP retries. Gary subsequently authorized exactly one reissue of Elements/GToT after its finish_reason=error; attempt-2 is preserved and selected for extraction. This is not a second generation round.",
+    "Gary authorized extract_jsoup.py, a copy of unchanged extract_v2.py with only HTML detection changed from comment-masked text to comment-and-literal-masked code. The exact diff and hashes are in tools/ORIGIN.md. Generated Java bytes are not repaired.",
+    "Previously extracted files and per-file compile/run/coverage artifacts remain byte-identical. Only newly extracted files were compiled and run. Previous aggregate results and the prior handover are archived in results/part2-baseline-before-jsoup-extractor; aggregate totals and pooled deduplication flags are recomputed for the expanded set.",
     "Listing failures retain the original wrapper output and a separate source-inventoried JUnitListingFailure record; their methods are not denominator-eligible.",
     "Deduplication representatives are selected from compiled-file source methods in the fixed technique/source order before intersection with all-three-pass. Flags and source-body hashes remain separate from run status.",
     "Coverage executes complete compiled LLM classes and the whole developer suite. It is supplementary coverage, not a measurement limited to deduplicated denominator methods; JaCoCo XML source-file counters accompany its requested CSV reports.",
@@ -146,5 +146,35 @@
   ],
   "generation_complete": true,
   "later_release_llm_execution_started": false,
-  "branch_pushed": false
+  "branch_pushed": false,
+  "authorized_revision": {
+    "reason": "User authorized HTML detection on comments-and-literals-masked code for jsoup test inputs.",
+    "reissue": {
+      "cut": "Elements",
+      "technique": "GToT",
+      "attempt": 2,
+      "reason": "User explicitly authorized one reissue of the content-bearing finish_reason=error response.",
+      "retry_policy": "Exactly one authorized request; no automatic retries.",
+      "status": "ok",
+      "finish_reason": "stop",
+      "seconds": 446.863,
+      "response_path": "runs/Elements/GToT/attempt-2/response.md"
+    },
+    "snapshot": "results/part2-baseline-before-jsoup-extractor",
+    "previously_extracted": 175,
+    "previously_html_rejected": 84,
+    "previous_pooled_denominator": 1224,
+    "existing_file_results_preserved": true,
+    "new_files_extracted": 85,
+    "new_files_compiled": 37,
+    "denominator_change": {
+      "previous": 1224,
+      "revised": 1862,
+      "increase": 638
+    },
+    "mechanical_fixes": [
+      "Incremental compile initially stopped before compiling any file because the new JSON ledger reader lacked its json import; the import was added and the command rerun.",
+      "A read-only extractor preview needed scripts added to Python import search path; no data changed."
+    ]
+  }
 }
