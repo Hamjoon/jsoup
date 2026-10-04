@@ -228,5 +228,29 @@
       "unchanged": true,
       "sha256": "34d33370979b0336ae3615213bc3e397d967ca2149ef026f40e04c5a1347ad64"
     }
+  ],
+  "post_baseline_runs_verified": true,
+  "class_level_ignored_verification": [
+    {
+      "run": 1,
+      "methods": 2,
+      "all_ignored": true,
+      "jvm_launches": 0,
+      "listing_invoked": false
+    },
+    {
+      "run": 2,
+      "methods": 2,
+      "all_ignored": true,
+      "jvm_launches": 0,
+      "listing_invoked": false
+    },
+    {
+      "run": 3,
+      "methods": 2,
+      "all_ignored": true,
+      "jvm_launches": 0,
+      "listing_invoked": false
+    }
   ]
 }

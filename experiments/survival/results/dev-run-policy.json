@@ -1,0 +1,15 @@
+{
+  "clarification": "Gary confirmed that dev_run.py records the two methods of class-level ignored ConstrainableInputStreamTest as ignored without executing them at the baseline and every later release. Copied tools and release sources remain unchanged.",
+  "expected_ignored_at_t": 5,
+  "method_level_ignored_at_t": 3,
+  "class_level_ignored_at_t": 2,
+  "class_level_ignored": {
+    "org.jsoup.internal.ConstrainableInputStreamTest": {
+      "source": "src/test/java/org/jsoup/internal/ConstrainableInputStreamTest.java",
+      "methods": [
+        "remainingAfterFirstRead",
+        "noLimitAfterFirstRead"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "tag": "jsoup-1.11.2",
+  "run": 3,
+  "complete": true,
+  "classes_run": 31,
+  "methods_run": 599,
+  "counts": {
+    "pass": 594,
+    "ignored": 5
+  },
+  "seconds": 8.727
+}

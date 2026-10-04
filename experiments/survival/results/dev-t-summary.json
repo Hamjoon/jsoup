@@ -1,0 +1,84 @@
+{
+  "listed_methods": 599,
+  "ignored": 5,
+  "pass_in_all_three": 594,
+  "flaky": 0,
+  "fail_error_timeout_in_all_three": 0,
+  "consistent_failures_by_status": {
+    "fail": 0,
+    "error": 0,
+    "timeout": 0
+  },
+  "compile_failures_at_t": 0,
+  "denominator_rate": 0.991653,
+  "status_counts_by_run": {
+    "1": {
+      "pass": 594,
+      "ignored": 5
+    },
+    "2": {
+      "pass": 594,
+      "ignored": 5
+    },
+    "3": {
+      "pass": 594,
+      "ignored": 5
+    }
+  },
+  "not_run_methods": 0,
+  "non_denominator_methods": [
+    {
+      "test_class": "org.jsoup.internal.ConstrainableInputStreamTest",
+      "method": "noLimitAfterFirstRead",
+      "run1": "ignored",
+      "run2": "ignored",
+      "run3": "ignored",
+      "in_denominator": 0,
+      "flaky_at_t": 0
+    },
+    {
+      "test_class": "org.jsoup.internal.ConstrainableInputStreamTest",
+      "method": "remainingAfterFirstRead",
+      "run1": "ignored",
+      "run2": "ignored",
+      "run3": "ignored",
+      "in_denominator": 0,
+      "flaky_at_t": 0
+    },
+    {
+      "test_class": "org.jsoup.nodes.DocumentTest",
+      "method": "testOverflowClone",
+      "run1": "ignored",
+      "run2": "ignored",
+      "run3": "ignored",
+      "in_denominator": 0,
+      "flaky_at_t": 0
+    },
+    {
+      "test_class": "org.jsoup.parser.HtmlParserTest",
+      "method": "handlesMisnestedAInDivs",
+      "run1": "ignored",
+      "run2": "ignored",
+      "run3": "ignored",
+      "in_denominator": 0,
+      "flaky_at_t": 0
+    },
+    {
+      "test_class": "org.jsoup.parser.XmlTreeBuilderTest",
+      "method": "testSupplyParserToConnection",
+      "run1": "ignored",
+      "run2": "ignored",
+      "run3": "ignored",
+      "in_denominator": 0,
+      "flaky_at_t": 0
+    }
+  ],
+  "stage_seconds": {
+    "compile": 10.545,
+    "run1": 10.164,
+    "run2": 9.263,
+    "run3": 8.727
+  },
+  "expected_ignored": 5,
+  "errors": []
+}

@@ -48,8 +48,16 @@ def main():
     baseline=RESULTS/'dev-t-summary.json'
     stop=RESULTS/'dev-baseline-stop.json'
     if stop.exists():
-        text+='\n## Required baseline execution stop\n\n```json\n'+stop.read_text()+'```\n'
-        text+='\nThe first baseline run is incomplete. The ignored class has no method description tree for the unchanged runner to list. The denominator is unset and later runs were not started. Gary must confirm whether the orchestration layer may inventory the class’s annotated methods and record them as ignored without executing them.\n'
+        stop_data=json.loads(stop.read_text())
+        if stop_data.get('resolved'):
+            text+='\n## Resolved class-level ignore limitation\n\n'
+            text+='Gary authorized dev_run.py to record the class-level ignored methods without executing them at the baseline and every later release. Copied tools and release sources remain unchanged.\n\n'
+            text+='```json\n'+(RESULTS/'dev-run-policy.json').read_text()+'```\n'
+            text+='\nThe interrupted baseline attempt was preserved and excluded from the measured runs. All measured runs are complete runs started after the orchestration correction.\n\n'
+            text+='```json\n'+(RESULTS/'dev-run-restart.json').read_text()+'```\n'
+        else:
+            text+='\n## Required baseline execution stop\n\n```json\n'+stop.read_text()+'```\n'
+            text+='\nThe first baseline run is incomplete. The ignored class has no method description tree for the unchanged runner to list. The denominator is unset and later runs were not started. Gary must confirm whether the orchestration layer may inventory the class’s annotated methods and record them as ignored without executing them.\n'
     compilation_path=RESULTS/'dev-t-compile.json'
     if compilation_path.exists():
         compilation=json.loads(compilation_path.read_text())
@@ -72,7 +80,7 @@ def main():
             text+='The baseline denominator is now fixed. This is the required denominator review stop; later-release test execution has not started. Continue only after Gary confirms.\n'
         else:
             text+='The baseline summary records an unexpected result requiring review before further work.\n'
-    text+='\n## Deviations and open questions\n\nThe initial exact tool status check was resolved by Gary: compile-fail belongs to dev_compile.py, while the copied wrapper adds only not-run. The original inventory expectations were corrected by Gary to the observed counts, with package membership taking precedence for integration helpers. The production-class map records the observed count as requested, using top-level production Java files excluding package-info (including examples). Maven quiet output contained no obsolete/deprecated warnings in the completed build logs; warnings are recorded from the output rather than inferred from the source level. No JDK was switched. The API-key file remains ignored and its contents were not inspected. No mechanical fixes were needed. All figures above are generated from results files.\n'
+    text+='\n## Deviations and open questions\n\nThe initial exact tool status check was resolved by Gary: compile-fail belongs to dev_compile.py, while the copied wrapper adds only not-run. The original inventory expectations were corrected by Gary to the observed counts, with package membership taking precedence for integration helpers. Gary authorized orchestration of the class-level ignored methods, correcting the expected ignored count as recorded in dev-run-policy.json. The interrupted first attempt is preserved separately and excluded from the denominator calculation. The production-class map records the observed count as requested, using top-level production Java files excluding package-info (including examples). Maven quiet output contained no obsolete/deprecated warnings in the completed build logs; warnings are recorded from the output rather than inferred from the source level. No JDK was switched. The API-key file remains ignored and its contents were not inspected. No mechanical fixes were needed. All figures above are generated from results files.\n'
     (EXP/'docs/handover-part1-a.md').write_text(text)
     print('Updated docs/handover-part1-a.md from results files.')
 

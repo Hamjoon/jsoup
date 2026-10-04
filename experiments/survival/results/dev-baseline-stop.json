@@ -50,5 +50,7 @@
   },
   "proposed_resolution": "Have dev_run.py detect class-level @Ignore and record its @Test methods as ignored via source/bytecode inventory, without executing them or changing copied tools or release sources.",
   "denominator_fixed": false,
-  "run1_complete": false
+  "run1_complete": false,
+  "resolved": true,
+  "resolution": "Gary confirmed orchestration records the two class-level ignored methods without execution; expected ignored count is five."
 }

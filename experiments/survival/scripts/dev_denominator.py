@@ -51,7 +51,9 @@ def main():
     errors=[]
     if abs(listed-599)>30:
         errors.append('Listed methods are not close to the baseline annotation count')
-    if summary['ignored']!=4:
+    policy=json.loads((EXP/'results/dev-run-policy.json').read_text())
+    summary['expected_ignored']=policy['expected_ignored_at_t']
+    if summary['ignored']!=policy['expected_ignored_at_t']:
         errors.append('Ignored methods differ from the expected count')
     if denominator/listed<0.9 or summary['compile_failures_at_t']:
         errors.append('Baseline passing threshold or compilation requirement failed')

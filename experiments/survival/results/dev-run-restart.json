@@ -1,0 +1,6 @@
+{
+  "reason": "Preserve the interrupted attempt; restart measured run one in full after Gary authorized class-level ignore handling.",
+  "archived_attempt": "dev/jsoup-1.11.2/interrupted-run1-before-ignore-fix",
+  "excluded_from_denominator": true,
+  "measured_runs_restarted_from_beginning": true
+}
