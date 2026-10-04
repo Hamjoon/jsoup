@@ -4,6 +4,7 @@ tools/*.jar
 tools/*.zip
 tools/runner/*.class
 dev/
+llm/
 docker/.env
 docs/handover-*.md
 docs/*-review-decisions.md

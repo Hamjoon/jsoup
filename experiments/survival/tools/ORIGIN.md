@@ -23,3 +23,18 @@ Listing uses a separate JVM; --cwd resolves classpath entries to absolute paths;
 ## Status-contract clarification
 
 The initial exact status-set check triggered an early stop because run_class.py does not emit compile-fail. Gary confirmed that compile-fail is assigned by dev_compile.py at the file level. The Step 3 check is satisfied by pass/fail/error/ignored/timeout from JsonRunner and not-run from run_class.py. Both copied files remain unchanged. Release builds may proceed; the denominator review stop remains required.
+
+## LLM prompt and library provenance
+
+Copied byte for byte from the LLM4TS replication repository at commit `eb5088094ee51a7abb945f8cfabc5558803134e1`. Only source_tests from dedup_lib.py and extract from extract_v2.py are imported; their entry points are not called.
+
+| Source file | Experiment file | Source SHA-256 | Copied SHA-256 |
+|---|---|---|---|
+| prompts/templates/ZSL.txt | prompts/templates/ZSL.txt | 76f684228964c772d401a8cb44e8ccb0f3c2fb525caaf195f3ceb8bd21f7f4ef | 76f684228964c772d401a8cb44e8ccb0f3c2fb525caaf195f3ceb8bd21f7f4ef |
+| prompts/templates/FSL.txt | prompts/templates/FSL.txt | 8ec872a158a61d4a0ea63591990a3cca35fcf9a8d32129a71ac63a1fe68fc99a | 8ec872a158a61d4a0ea63591990a3cca35fcf9a8d32129a71ac63a1fe68fc99a |
+| prompts/templates/CoT.txt | prompts/templates/CoT.txt | d176f4276fb22664e80e318d6f2118181ee34b153a14ad548eb553e0c1efd50b | d176f4276fb22664e80e318d6f2118181ee34b153a14ad548eb553e0c1efd50b |
+| prompts/templates/ToT.txt | prompts/templates/ToT.txt | 6cabd0f4020d024e933e1ea7a01ba833e12e47d6f4a90450dde0add5876d329b | 6cabd0f4020d024e933e1ea7a01ba833e12e47d6f4a90450dde0add5876d329b |
+| prompts/templates/GToT.txt | prompts/templates/GToT.txt | cd305c96c26e4497b65597b352fe36b84020cfe7e245269bb37008bbe7caba61 | cd305c96c26e4497b65597b352fe36b84020cfe7e245269bb37008bbe7caba61 |
+| prompts/templates/fewshot_example.txt | prompts/templates/fewshot_example.txt | e85ca2d0f5041b8029a7319562c81df2c46882418f110b6f47d0c8b562317ae4 | e85ca2d0f5041b8029a7319562c81df2c46882418f110b6f47d0c8b562317ae4 |
+| scripts/extract_v2.py | scripts/extract_v2.py | 15924c4bacca9c6f69ae928423b9bc4817a2d023757af3374a0a7dc60b481444 | 15924c4bacca9c6f69ae928423b9bc4817a2d023757af3374a0a7dc60b481444 |
+| scripts/dedup.py | scripts/dedup_lib.py | ce4638c1598827522dd3d48652da1b5a3616b06e5fe7d7fb4a6e8b04035e0767 | ce4638c1598827522dd3d48652da1b5a3616b06e5fe7d7fb4a6e8b04035e0767 |
