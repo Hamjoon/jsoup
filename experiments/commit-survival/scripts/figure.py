@@ -2,6 +2,7 @@
 """Render the fixed commit-survival figure from the recorded curves."""
 import json
 import time
+import re
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -32,6 +33,11 @@ def main():
     ax.legend([handles[i] for i in order],[labels[i] for i in order],loc='lower left',frameon=True,framealpha=.95,ncol=2)
     fig.tight_layout(pad=2)
     for ext in ['png','svg']: fig.savefig(EXP/'results'/('figure1-survival-by-commit.'+ext),dpi=100,facecolor='white')
+    svg=EXP/'results/figure1-survival-by-commit.svg'
+    text,count=re.subn(r'(<svg\b[^>]*?)width="[^"]+" height="[^"]+"',
+                       r'\1width="1600px" height="900px"',svg.read_text(),count=1)
+    assert count==1
+    svg.write_text(text)
     plt.close(fig)
     write_json(EXP/'results/figure-stage.json',dict(seconds=round(time.monotonic()-start,3),width=1600,height=900,build_fail_ticks=len(failures)))
 

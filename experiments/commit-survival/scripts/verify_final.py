@@ -6,6 +6,7 @@ from pathlib import Path
 import struct
 import subprocess
 import time
+import xml.etree.ElementTree as ET
 from collections import Counter
 from dev_common import EXP,PREV,write_json
 from survival import GROUPS,STATUSES,read,identity,key,members
@@ -69,7 +70,8 @@ def main():
     data=(EXP/'results/figure1-survival-by-commit.png').read_bytes()
     assert data[:8]==b'\x89PNG\r\n\x1a\n'
     width,height=struct.unpack('>II',data[16:24]); assert (width,height)==(1600,900)
-    assert '<svg' in (EXP/'results/figure1-survival-by-commit.svg').read_text()
+    svg=ET.parse(EXP/'results/figure1-survival-by-commit.svg').getroot()
+    assert svg.attrib['width']=='1600px' and svg.attrib['height']=='900px'
     record=dict(frozen_files_checked=len(manifest),changed_frozen_files=changed,copied_results_checked=len(setup['copied_results']),
                 checkout_source_files_checked=source_files,points=len(later),groups=checked_groups,coverage_rows=len(coverage),
                 figure_width=width,figure_height=height,seconds=round(time.monotonic()-started,3),verified=True)
