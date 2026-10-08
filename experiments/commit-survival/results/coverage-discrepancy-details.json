@@ -1,0 +1,22 @@
+[
+  {
+    "group": "GToT",
+    "test_class": "org.jsoup.nodes.EntitiesTest",
+    "method": "testEscape_AsciiCharset_NonEncodableChar",
+    "status": "fail",
+    "message": "expected:<caf&[#xe9];> but was:<caf&[eacute];>",
+    "exception": "org.junit.ComparisonFailure",
+    "milliseconds": 3,
+    "launch": 1
+  },
+  {
+    "group": "pooled",
+    "test_class": "org.jsoup.nodes.EntitiesTest",
+    "method": "testEscape_AsciiCharset_NonEncodableChar",
+    "status": "fail",
+    "message": "expected:<caf&[#xe9];> but was:<caf&[eacute];>",
+    "exception": "org.junit.ComparisonFailure",
+    "milliseconds": 4,
+    "launch": 1
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "group": "GToT",
+  "denominator": 465,
+  "final_survived": 306,
+  "final_point_pass": 306,
+  "first_break_counts": {
+    "survived": 306,
+    "fail": 6,
+    "absent": 5,
+    "compile-fail": 148
+  },
+  "transient_methods": 0,
+  "not_run_cells": 0
+}

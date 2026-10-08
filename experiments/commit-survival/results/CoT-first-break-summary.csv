@@ -1,0 +1,16 @@
+scope,first_break_index,first_break_status,count
+status,,fail,3
+status,,error,0
+status,,timeout,0
+status,,compile-fail,89
+status,,absent,4
+status,,not-run,0
+status,,not-evaluated,0
+status,,survived,331
+index,41,compile-fail,5
+index,54,fail,1
+index,55,fail,1
+index,109,fail,1
+index,144,absent,4
+index,144,compile-fail,61
+index,179,compile-fail,23

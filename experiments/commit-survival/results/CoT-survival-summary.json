@@ -1,0 +1,14 @@
+{
+  "group": "CoT",
+  "denominator": 427,
+  "final_survived": 331,
+  "final_point_pass": 331,
+  "first_break_counts": {
+    "survived": 331,
+    "fail": 3,
+    "absent": 4,
+    "compile-fail": 89
+  },
+  "transient_methods": 0,
+  "not_run_cells": 0
+}

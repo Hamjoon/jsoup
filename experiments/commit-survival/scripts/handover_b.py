@@ -14,17 +14,20 @@ def main():
     checks=load('consistency-summary.json'); setup=load('setup.json'); builds=load('build-summary.json')
     integrity=load('final-integrity.json'); coverage=load('coverage-stage.json'); continuation=load('completion-timing.json')
     summary={g:load(g+'-survival-summary.json') for g in GROUPS}
+    coverage_details=load('coverage-discrepancy-details.json')
     differences=checks['tag_differing_cells']+checks['same_tree_differing_cells']
     first='Consistency differences: none.' if not differences else f"Consistency differences: {checks['tag_differing_cells']} unique cells at tagged points; {checks['same_tree_differing_cells']} unique cells at same-tree points."
     lines=[first,'','# Commit-survival final handover','',
            'Branch: `'+setup['branch']+'`. Base: `'+setup['base_commit']+'`.','',
            f"Built later commits: {builds['later_built']}; failed: {builds['later_failed']}; baseline copied. Failed points: "+(', '.join(r['point'] for r in builds['failed']) or 'none')+'.',
            '', '## Survival by event','',(EXP/'results/table1-survival-by-event.md').read_text(),
+           '## Survival figure','','![Cumulative survival by commit](../results/figure1-survival-by-commit.png)','[Vector figure](../results/figure1-survival-by-commit.svg)','',
            '## Largest breaking commits','',(EXP/'results/table2-breaking-commits.md').read_text(),
            '## Baseline coverage','',(EXP/'results/table3-coverage-t.md').read_text(),
            'Coverage is authoritative for the denominator-only executions. Inner and anonymous class counters are summed into their outer CUT; these totals can differ from the previous source-file counter totals even with identical execution.',
            f"Coverage execution status differences from the passing denominator: {len(coverage['discrepancies'])}. Per-CUT Dev/pooled coverage differences from the previous report: {coverage['previous_differences']}.",
            '', '[Coverage comparison](../results/coverage-t-vs-prev.md). [Coverage execution discrepancies](../results/coverage-t-discrepancies.csv).','',
+           mdtable(['Group','Method','Status','Assertion detail'],[[r['group'],r['test_class']+'#'+r['method'],r['status'],r['message']] for r in coverage_details]),
            '## Baseline funnel','',(EXP/'results/t-funnel.md').read_text(),
            '## First breaks by status','']
     statuses=['compile-fail','absent','fail','error','timeout','not-run','not-evaluated','survived']
@@ -42,6 +45,8 @@ def main():
                 rows.append([name,r['i'],r['status_i'],r['j']])
             lines.append(mdtable(['Method','First non-pass index','Status','First later pass index'],rows))
         else: lines.extend(['None.',''])
+    available=sum(summary[g]['transient_methods'] for g in ['dev','pooled'])
+    lines.extend([f"Available distinct transient examples across developer and pooled tracks: {available}. All available examples are shown; there are no additional observed methods to supply further examples.",''])
     lines.extend(['## Flaky lists',''])
     for track in ['dev','llm']:
         flaky=read(track+'-flaky.csv')
@@ -73,6 +78,8 @@ def main():
         lines.append('Review the reported consistency differences before interpreting them as historical behavior changes. The per-method evidence and limited examples are in the consistency report.')
     else:
         lines.append('No unresolved consistency questions. Review the event-level losses, transient recoveries, and denominator-only coverage for interpretation.')
+    if coverage_details:
+        lines.extend(['','Review why the Entities assertion fails during denominator-only coverage execution. The recorded mismatch is numeric versus named entity escaping; these executions alone do not establish whether instrumentation, the selected method subset, or execution order caused the difference. Coverage measurements were retained and execution continued as required by the brief.'])
     lines.extend(['', 'Stopped at the requested final review point.','',
                   'All numeric values in this handover are rendered from files under results/. Raw execution, compilation, and coverage artifacts remain in their ignored per-point directories.'])
     (EXP/'docs/handover-b.md').write_text('\n'.join(lines)+'\n')

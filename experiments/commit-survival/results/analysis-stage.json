@@ -1,0 +1,101 @@
+{
+  "seconds": 1.151,
+  "groups": [
+    {
+      "group": "dev",
+      "denominator": 594,
+      "final_survived": 345,
+      "final_point_pass": 347,
+      "first_break_counts": {
+        "survived": 345,
+        "compile-fail": 237,
+        "fail": 12
+      },
+      "transient_methods": 2,
+      "not_run_cells": 0
+    },
+    {
+      "group": "pooled",
+      "denominator": 1862,
+      "final_survived": 1270,
+      "final_point_pass": 1270,
+      "first_break_counts": {
+        "compile-fail": 565,
+        "survived": 1270,
+        "fail": 18,
+        "absent": 9
+      },
+      "transient_methods": 0,
+      "not_run_cells": 0
+    },
+    {
+      "group": "ZSL",
+      "denominator": 342,
+      "final_survived": 236,
+      "final_point_pass": 236,
+      "first_break_counts": {
+        "survived": 236,
+        "compile-fail": 101,
+        "fail": 5
+      },
+      "transient_methods": 0,
+      "not_run_cells": 0
+    },
+    {
+      "group": "FSL",
+      "denominator": 381,
+      "final_survived": 239,
+      "final_point_pass": 239,
+      "first_break_counts": {
+        "compile-fail": 139,
+        "survived": 239,
+        "fail": 3
+      },
+      "transient_methods": 0,
+      "not_run_cells": 0
+    },
+    {
+      "group": "CoT",
+      "denominator": 427,
+      "final_survived": 331,
+      "final_point_pass": 331,
+      "first_break_counts": {
+        "survived": 331,
+        "fail": 3,
+        "absent": 4,
+        "compile-fail": 89
+      },
+      "transient_methods": 0,
+      "not_run_cells": 0
+    },
+    {
+      "group": "ToT",
+      "denominator": 345,
+      "final_survived": 224,
+      "final_point_pass": 224,
+      "first_break_counts": {
+        "survived": 224,
+        "compile-fail": 120,
+        "fail": 1
+      },
+      "transient_methods": 0,
+      "not_run_cells": 0
+    },
+    {
+      "group": "GToT",
+      "denominator": 465,
+      "final_survived": 306,
+      "final_point_pass": 306,
+      "first_break_counts": {
+        "survived": 306,
+        "fail": 6,
+        "absent": 5,
+        "compile-fail": 148
+      },
+      "transient_methods": 0,
+      "not_run_cells": 0
+    }
+  ],
+  "tag_differing_cells": 0,
+  "same_tree_differing_cells": 0
+}

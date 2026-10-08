@@ -1,0 +1,3 @@
+group,file,test_class,method,expected,actual
+GToT,Entities.GToT.org.jsoup.nodes.EntitiesTest,org.jsoup.nodes.EntitiesTest,testEscape_AsciiCharset_NonEncodableChar,pass,fail
+pooled,Entities.GToT.org.jsoup.nodes.EntitiesTest,org.jsoup.nodes.EntitiesTest,testEscape_AsciiCharset_NonEncodableChar,pass,fail

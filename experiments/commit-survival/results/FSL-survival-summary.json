@@ -1,0 +1,13 @@
+{
+  "group": "FSL",
+  "denominator": 381,
+  "final_survived": 239,
+  "final_point_pass": 239,
+  "first_break_counts": {
+    "compile-fail": 139,
+    "survived": 239,
+    "fail": 3
+  },
+  "transient_methods": 0,
+  "not_run_cells": 0
+}

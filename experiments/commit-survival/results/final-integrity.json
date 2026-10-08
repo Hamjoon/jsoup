@@ -1,0 +1,56 @@
+{
+  "frozen_files_checked": 768,
+  "changed_frozen_files": [],
+  "copied_results_checked": 6,
+  "checkout_source_files_checked": 26895,
+  "points": 185,
+  "groups": [
+    {
+      "group": "dev",
+      "denominator": 594,
+      "final_survived": 345,
+      "final_point_pass": 347
+    },
+    {
+      "group": "pooled",
+      "denominator": 1862,
+      "final_survived": 1270,
+      "final_point_pass": 1270
+    },
+    {
+      "group": "ZSL",
+      "denominator": 342,
+      "final_survived": 236,
+      "final_point_pass": 236
+    },
+    {
+      "group": "FSL",
+      "denominator": 381,
+      "final_survived": 239,
+      "final_point_pass": 239
+    },
+    {
+      "group": "CoT",
+      "denominator": 427,
+      "final_survived": 331,
+      "final_point_pass": 331
+    },
+    {
+      "group": "ToT",
+      "denominator": 345,
+      "final_survived": 224,
+      "final_point_pass": 224
+    },
+    {
+      "group": "GToT",
+      "denominator": 465,
+      "final_survived": 306,
+      "final_point_pass": 306
+    }
+  ],
+  "coverage_rows": 364,
+  "figure_width": 1600,
+  "figure_height": 900,
+  "seconds": 8.888,
+  "verified": true
+}

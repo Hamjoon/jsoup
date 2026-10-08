@@ -37,7 +37,7 @@ def main():
     text,count=re.subn(r'(<svg\b[^>]*?)width="[^"]+" height="[^"]+"',
                        r'\1width="1600px" height="900px"',svg.read_text(),count=1)
     assert count==1
-    svg.write_text(text)
+    svg.write_text('\n'.join(line.rstrip() for line in text.splitlines())+'\n')
     plt.close(fig)
     write_json(EXP/'results/figure-stage.json',dict(seconds=round(time.monotonic()-start,3),width=1600,height=900,build_fail_ticks=len(failures)))
 

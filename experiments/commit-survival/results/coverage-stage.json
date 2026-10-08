@@ -1,0 +1,2646 @@
+{
+  "seconds": 153.636,
+  "groups": [
+    "dev",
+    "ZSL",
+    "FSL",
+    "CoT",
+    "ToT",
+    "GToT",
+    "pooled"
+  ],
+  "discrepancies": [
+    {
+      "group": "GToT",
+      "file": "Entities.GToT.org.jsoup.nodes.EntitiesTest",
+      "test_class": "org.jsoup.nodes.EntitiesTest",
+      "method": "testEscape_AsciiCharset_NonEncodableChar",
+      "expected": "pass",
+      "actual": "fail"
+    },
+    {
+      "group": "pooled",
+      "file": "Entities.GToT.org.jsoup.nodes.EntitiesTest",
+      "test_class": "org.jsoup.nodes.EntitiesTest",
+      "method": "testEscape_AsciiCharset_NonEncodableChar",
+      "expected": "pass",
+      "actual": "fail"
+    }
+  ],
+  "previous_differences": 26,
+  "runs": [
+    {
+      "group": "dev",
+      "file": "org.jsoup.helper.DataUtilTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.843
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.helper.HttpConnectionTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.511
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.helper.StringUtilTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.555
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.helper.W3CDomTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.708
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.AttributeTest",
+      "methods": 2,
+      "counts": {
+        "pass": 2
+      },
+      "seconds": 0.477
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.AttributesTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.439
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.DocumentTest",
+      "methods": 28,
+      "counts": {
+        "pass": 28
+      },
+      "seconds": 0.78
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.DocumentTypeTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.534
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.ElementTest",
+      "methods": 89,
+      "counts": {
+        "pass": 89
+      },
+      "seconds": 0.87
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.EntitiesTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 1.315
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.FormElementTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.74
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.NodeTest",
+      "methods": 25,
+      "counts": {
+        "pass": 25
+      },
+      "seconds": 0.785
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.nodes.TextNodeTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.558
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.AttributeParseTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.631
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.CharacterReaderTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.443
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.HtmlParserTest",
+      "methods": 119,
+      "counts": {
+        "pass": 119
+      },
+      "seconds": 1.196
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.HtmlTreeBuilderStateTest",
+      "methods": 1,
+      "counts": {
+        "pass": 1
+      },
+      "seconds": 0.442
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.HtmlTreeBuilderTest",
+      "methods": 1,
+      "counts": {
+        "pass": 1
+      },
+      "seconds": 0.505
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.ParserSettingsTest",
+      "methods": 3,
+      "counts": {
+        "pass": 3
+      },
+      "seconds": 0.397
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.TagTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.357
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.TokenQueueTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.343
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.TokeniserStateTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.571
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.TokeniserTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.667
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.parser.XmlTreeBuilderTest",
+      "methods": 16,
+      "counts": {
+        "pass": 16
+      },
+      "seconds": 0.577
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.safety.CleanerTest",
+      "methods": 33,
+      "counts": {
+        "pass": 33
+      },
+      "seconds": 0.604
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.select.CssTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.69
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.select.ElementsTest",
+      "methods": 34,
+      "counts": {
+        "pass": 34
+      },
+      "seconds": 0.605
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.select.QueryParserTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.42
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.select.SelectorTest",
+      "methods": 62,
+      "counts": {
+        "pass": 62
+      },
+      "seconds": 1.197
+    },
+    {
+      "group": "dev",
+      "file": "org.jsoup.select.TraversorTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.609
+    },
+    {
+      "group": "ZSL",
+      "file": "ChangeNotifyingArrayList.ZSL.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 16,
+      "counts": {
+        "pass": 16
+      },
+      "seconds": 0.393
+    },
+    {
+      "group": "ZSL",
+      "file": "CharacterReader.ZSL.org.jsoup.parser.CharacterReaderTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.388
+    },
+    {
+      "group": "ZSL",
+      "file": "Cleaner.ZSL.org.jsoup.safety.CleanerTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.568
+    },
+    {
+      "group": "ZSL",
+      "file": "CombiningEvaluator.ZSL.org.jsoup.select.CombiningEvaluatorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.404
+    },
+    {
+      "group": "ZSL",
+      "file": "Comment.ZSL.org.jsoup.nodes.CommentTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.39
+    },
+    {
+      "group": "ZSL",
+      "file": "DataNode.ZSL.org.jsoup.nodes.DataNodeTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.634
+    },
+    {
+      "group": "ZSL",
+      "file": "DataUtil.ZSL.org.jsoup.helper.DataUtilTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.657
+    },
+    {
+      "group": "ZSL",
+      "file": "Document.ZSL.org.jsoup.nodes.DocumentTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.461
+    },
+    {
+      "group": "ZSL",
+      "file": "DocumentType.ZSL.org.jsoup.nodes.DocumentTypeTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.368
+    },
+    {
+      "group": "ZSL",
+      "file": "Element.ZSL.org.jsoup.nodes.ElementTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.479
+    },
+    {
+      "group": "ZSL",
+      "file": "Entities.ZSL.org.jsoup.nodes.EntitiesTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.461
+    },
+    {
+      "group": "ZSL",
+      "file": "Evaluator.ZSL.org.jsoup.select.EvaluatorTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 1.018
+    },
+    {
+      "group": "ZSL",
+      "file": "FormElement.ZSL.org.jsoup.nodes.FormElementTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.445
+    },
+    {
+      "group": "ZSL",
+      "file": "HttpStatusException.ZSL.org.jsoup.HttpStatusExceptionTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.361
+    },
+    {
+      "group": "ZSL",
+      "file": "Normalizer.ZSL.org.jsoup.internal.NormalizerTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.334
+    },
+    {
+      "group": "ZSL",
+      "file": "ParseError.ZSL.org.jsoup.parser.ParseErrorTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.3
+    },
+    {
+      "group": "ZSL",
+      "file": "ParseErrorList.ZSL.org.jsoup.parser.ParseErrorListTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.285
+    },
+    {
+      "group": "ZSL",
+      "file": "ParseSettings.ZSL.org.jsoup.parser.ParseSettingsTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.319
+    },
+    {
+      "group": "ZSL",
+      "file": "PseudoTextElement.ZSL.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.423
+    },
+    {
+      "group": "ZSL",
+      "file": "SerializationException.ZSL.org.jsoup.SerializationExceptionTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.362
+    },
+    {
+      "group": "ZSL",
+      "file": "StringUtil.ZSL.org.jsoup.helper.StringUtilTest",
+      "methods": 37,
+      "counts": {
+        "pass": 37
+      },
+      "seconds": 0.401
+    },
+    {
+      "group": "ZSL",
+      "file": "StructuralEvaluator.ZSL.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.748
+    },
+    {
+      "group": "ZSL",
+      "file": "TextNode.ZSL.org.jsoup.nodes.TextNodeTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.541
+    },
+    {
+      "group": "ZSL",
+      "file": "TokenQueue.ZSL.org.jsoup.parser.TokenQueueTest",
+      "methods": 25,
+      "counts": {
+        "pass": 25
+      },
+      "seconds": 0.394
+    },
+    {
+      "group": "ZSL",
+      "file": "UnsupportedMimeTypeException.ZSL.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.318
+    },
+    {
+      "group": "ZSL",
+      "file": "Validate.ZSL.org.jsoup.helper.ValidateTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.35
+    },
+    {
+      "group": "FSL",
+      "file": "Attribute.FSL.org.jsoup.nodes.AttributeTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.494
+    },
+    {
+      "group": "FSL",
+      "file": "ChangeNotifyingArrayList.FSL.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.322
+    },
+    {
+      "group": "FSL",
+      "file": "CharacterReader.FSL.org.jsoup.parser.CharacterReaderTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.318
+    },
+    {
+      "group": "FSL",
+      "file": "Cleaner.FSL.org.jsoup.safety.CleanerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.527
+    },
+    {
+      "group": "FSL",
+      "file": "CombiningEvaluator.FSL.org.jsoup.select.CombiningEvaluatorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.497
+    },
+    {
+      "group": "FSL",
+      "file": "Comment.FSL.org.jsoup.nodes.CommentTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.357
+    },
+    {
+      "group": "FSL",
+      "file": "ConstrainableInputStream.FSL.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.314
+    },
+    {
+      "group": "FSL",
+      "file": "DataNode.FSL.org.jsoup.nodes.DataNodeTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.497
+    },
+    {
+      "group": "FSL",
+      "file": "DocumentType.FSL.org.jsoup.nodes.DocumentTypeTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.727
+    },
+    {
+      "group": "FSL",
+      "file": "Element.FSL.org.jsoup.nodes.ElementTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.741
+    },
+    {
+      "group": "FSL",
+      "file": "Elements.FSL.org.jsoup.select.ElementsTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.842
+    },
+    {
+      "group": "FSL",
+      "file": "Entities.FSL.org.jsoup.nodes.EntitiesTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.44
+    },
+    {
+      "group": "FSL",
+      "file": "HttpStatusException.FSL.org.jsoup.HttpStatusExceptionTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.351
+    },
+    {
+      "group": "FSL",
+      "file": "Jsoup.FSL.org.jsoup.JsoupTest",
+      "methods": 19,
+      "counts": {
+        "pass": 19
+      },
+      "seconds": 0.79
+    },
+    {
+      "group": "FSL",
+      "file": "LeafNode.FSL.org.jsoup.nodes.LeafNodeTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.504
+    },
+    {
+      "group": "FSL",
+      "file": "NodeTraversor.FSL.org.jsoup.select.NodeTraversorTest",
+      "methods": 1,
+      "counts": {
+        "pass": 1
+      },
+      "seconds": 0.497
+    },
+    {
+      "group": "FSL",
+      "file": "Normalizer.FSL.org.jsoup.internal.NormalizerTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.366
+    },
+    {
+      "group": "FSL",
+      "file": "ParseError.FSL.org.jsoup.parser.ParseErrorTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.34
+    },
+    {
+      "group": "FSL",
+      "file": "ParseErrorList.FSL.org.jsoup.parser.ParseErrorListTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.354
+    },
+    {
+      "group": "FSL",
+      "file": "ParseSettings.FSL.org.jsoup.parser.ParseSettingsTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.338
+    },
+    {
+      "group": "FSL",
+      "file": "PseudoTextElement.FSL.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.448
+    },
+    {
+      "group": "FSL",
+      "file": "SerializationException.FSL.org.jsoup.SerializationExceptionTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.327
+    },
+    {
+      "group": "FSL",
+      "file": "StringUtil.FSL.org.jsoup.helper.StringUtilTest",
+      "methods": 33,
+      "counts": {
+        "pass": 33
+      },
+      "seconds": 0.378
+    },
+    {
+      "group": "FSL",
+      "file": "StructuralEvaluator.FSL.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.55
+    },
+    {
+      "group": "FSL",
+      "file": "TokenQueue.FSL.org.jsoup.parser.TokenQueueTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.341
+    },
+    {
+      "group": "FSL",
+      "file": "UncheckedIOException.FSL.org.jsoup.UncheckedIOExceptionTest",
+      "methods": 3,
+      "counts": {
+        "pass": 3
+      },
+      "seconds": 0.3
+    },
+    {
+      "group": "FSL",
+      "file": "UnsupportedMimeTypeException.FSL.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.31
+    },
+    {
+      "group": "FSL",
+      "file": "Validate.FSL.org.jsoup.helper.ValidateTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.331
+    },
+    {
+      "group": "FSL",
+      "file": "W3CDom.FSL.org.jsoup.helper.W3CDomTest",
+      "methods": 3,
+      "counts": {
+        "pass": 3
+      },
+      "seconds": 0.552
+    },
+    {
+      "group": "FSL",
+      "file": "Whitelist.FSL.org.jsoup.safety.WhitelistTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.354
+    },
+    {
+      "group": "CoT",
+      "file": "Attribute.CoT.org.jsoup.nodes.AttributeTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.832
+    },
+    {
+      "group": "CoT",
+      "file": "Attributes.CoT.org.jsoup.nodes.AttributesTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.603
+    },
+    {
+      "group": "CoT",
+      "file": "BooleanAttribute.CoT.org.jsoup.nodes.BooleanAttributeTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.389
+    },
+    {
+      "group": "CoT",
+      "file": "ChangeNotifyingArrayList.CoT.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.464
+    },
+    {
+      "group": "CoT",
+      "file": "CharacterReader.CoT.org.jsoup.parser.CharacterReaderTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.481
+    },
+    {
+      "group": "CoT",
+      "file": "Cleaner.CoT.org.jsoup.safety.CleanerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.637
+    },
+    {
+      "group": "CoT",
+      "file": "Comment.CoT.org.jsoup.nodes.CommentTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.768
+    },
+    {
+      "group": "CoT",
+      "file": "ConstrainableInputStream.CoT.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.4
+    },
+    {
+      "group": "CoT",
+      "file": "DataNode.CoT.org.jsoup.nodes.DataNodeTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.491
+    },
+    {
+      "group": "CoT",
+      "file": "Evaluator.CoT.org.jsoup.select.EvaluatorTest",
+      "methods": 52,
+      "counts": {
+        "pass": 52
+      },
+      "seconds": 0.609
+    },
+    {
+      "group": "CoT",
+      "file": "HttpStatusException.CoT.org.jsoup.HttpStatusExceptionTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.305
+    },
+    {
+      "group": "CoT",
+      "file": "Jsoup.CoT.org.jsoup.JsoupTest",
+      "methods": 19,
+      "counts": {
+        "pass": 19
+      },
+      "seconds": 0.582
+    },
+    {
+      "group": "CoT",
+      "file": "Normalizer.CoT.org.jsoup.internal.NormalizerTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.318
+    },
+    {
+      "group": "CoT",
+      "file": "ParseError.CoT.org.jsoup.parser.ParseErrorTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.302
+    },
+    {
+      "group": "CoT",
+      "file": "ParseErrorList.CoT.org.jsoup.parser.ParseErrorListTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.307
+    },
+    {
+      "group": "CoT",
+      "file": "Parser.CoT.org.jsoup.parser.ParserTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.659
+    },
+    {
+      "group": "CoT",
+      "file": "PseudoTextElement.CoT.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.734
+    },
+    {
+      "group": "CoT",
+      "file": "SerializationException.CoT.org.jsoup.SerializationExceptionTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.37
+    },
+    {
+      "group": "CoT",
+      "file": "StructuralEvaluator.CoT.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 28,
+      "counts": {
+        "pass": 28
+      },
+      "seconds": 0.637
+    },
+    {
+      "group": "CoT",
+      "file": "TextNode.CoT.org.jsoup.nodes.TextNodeTest",
+      "methods": 16,
+      "counts": {
+        "pass": 16
+      },
+      "seconds": 0.557
+    },
+    {
+      "group": "CoT",
+      "file": "Token.CoT.org.jsoup.parser.TokenTest",
+      "methods": 23,
+      "counts": {
+        "pass": 23
+      },
+      "seconds": 0.332
+    },
+    {
+      "group": "CoT",
+      "file": "TokenQueue.CoT.org.jsoup.parser.TokenQueueTest",
+      "methods": 27,
+      "counts": {
+        "pass": 27
+      },
+      "seconds": 0.37
+    },
+    {
+      "group": "CoT",
+      "file": "UnsupportedMimeTypeException.CoT.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.41
+    },
+    {
+      "group": "CoT",
+      "file": "Validate.CoT.org.jsoup.helper.ValidateTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.325
+    },
+    {
+      "group": "CoT",
+      "file": "W3CDom.CoT.org.jsoup.helper.W3CDomTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.554
+    },
+    {
+      "group": "CoT",
+      "file": "XmlDeclaration.CoT.org.jsoup.nodes.XmlDeclarationTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.401
+    },
+    {
+      "group": "ToT",
+      "file": "Attributes.ToT.org.jsoup.nodes.AttributesTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.43
+    },
+    {
+      "group": "ToT",
+      "file": "ChangeNotifyingArrayList.ToT.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 25,
+      "counts": {
+        "pass": 25
+      },
+      "seconds": 0.388
+    },
+    {
+      "group": "ToT",
+      "file": "Cleaner.ToT.org.jsoup.safety.CleanerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.993
+    },
+    {
+      "group": "ToT",
+      "file": "Comment.ToT.org.jsoup.nodes.CommentTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.899
+    },
+    {
+      "group": "ToT",
+      "file": "ConstrainableInputStream.ToT.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 1.014
+    },
+    {
+      "group": "ToT",
+      "file": "DataNode.ToT.org.jsoup.nodes.DataNodeTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.506
+    },
+    {
+      "group": "ToT",
+      "file": "DataUtil.ToT.org.jsoup.helper.DataUtilTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.484
+    },
+    {
+      "group": "ToT",
+      "file": "Document.ToT.org.jsoup.nodes.DocumentTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 0.457
+    },
+    {
+      "group": "ToT",
+      "file": "Evaluator.ToT.org.jsoup.select.EvaluatorTest",
+      "methods": 32,
+      "counts": {
+        "pass": 32
+      },
+      "seconds": 0.65
+    },
+    {
+      "group": "ToT",
+      "file": "HttpStatusException.ToT.org.jsoup.HttpStatusExceptionTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.343
+    },
+    {
+      "group": "ToT",
+      "file": "Jsoup.ToT.org.jsoup.JsoupTest",
+      "methods": 16,
+      "counts": {
+        "pass": 16
+      },
+      "seconds": 0.625
+    },
+    {
+      "group": "ToT",
+      "file": "Normalizer.ToT.org.jsoup.internal.NormalizerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.321
+    },
+    {
+      "group": "ToT",
+      "file": "ParseError.ToT.org.jsoup.parser.ParseErrorTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.522
+    },
+    {
+      "group": "ToT",
+      "file": "SerializationException.ToT.org.jsoup.SerializationExceptionTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.354
+    },
+    {
+      "group": "ToT",
+      "file": "StringUtil.ToT.org.jsoup.helper.StringUtilTest",
+      "methods": 32,
+      "counts": {
+        "pass": 32
+      },
+      "seconds": 0.391
+    },
+    {
+      "group": "ToT",
+      "file": "TextNode.ToT.org.jsoup.nodes.TextNodeTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.667
+    },
+    {
+      "group": "ToT",
+      "file": "TokenQueue.ToT.org.jsoup.parser.TokenQueueTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 0.415
+    },
+    {
+      "group": "ToT",
+      "file": "UncheckedIOException.ToT.org.jsoup.UncheckedIOExceptionTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 1.027
+    },
+    {
+      "group": "ToT",
+      "file": "UnsupportedMimeTypeException.ToT.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.651
+    },
+    {
+      "group": "ToT",
+      "file": "Validate.ToT.org.jsoup.helper.ValidateTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.385
+    },
+    {
+      "group": "ToT",
+      "file": "Whitelist.ToT.org.jsoup.safety.WhitelistTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.581
+    },
+    {
+      "group": "ToT",
+      "file": "XmlDeclaration.ToT.org.jsoup.nodes.XmlDeclarationTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.47
+    },
+    {
+      "group": "GToT",
+      "file": "Attributes.GToT.org.jsoup.nodes.AttributesTest",
+      "methods": 27,
+      "counts": {
+        "pass": 27
+      },
+      "seconds": 0.447
+    },
+    {
+      "group": "GToT",
+      "file": "BooleanAttribute.GToT.org.jsoup.nodes.BooleanAttributeTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.385
+    },
+    {
+      "group": "GToT",
+      "file": "ChangeNotifyingArrayList.GToT.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 0.338
+    },
+    {
+      "group": "GToT",
+      "file": "CharacterReader.GToT.org.jsoup.parser.CharacterReaderTest",
+      "methods": 36,
+      "counts": {
+        "pass": 36
+      },
+      "seconds": 0.348
+    },
+    {
+      "group": "GToT",
+      "file": "CombiningEvaluator.GToT.org.jsoup.select.CombiningEvaluatorTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.392
+    },
+    {
+      "group": "GToT",
+      "file": "Comment.GToT.org.jsoup.nodes.CommentTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.402
+    },
+    {
+      "group": "GToT",
+      "file": "ConstrainableInputStream.GToT.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.37
+    },
+    {
+      "group": "GToT",
+      "file": "DataNode.GToT.org.jsoup.nodes.DataNodeTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 1.178
+    },
+    {
+      "group": "GToT",
+      "file": "Document.GToT.org.jsoup.nodes.DocumentTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.589
+    },
+    {
+      "group": "GToT",
+      "file": "DocumentType.GToT.org.jsoup.nodes.DocumentTypeTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.471
+    },
+    {
+      "group": "GToT",
+      "file": "Elements.GToT.org.jsoup.select.ElementsTest",
+      "methods": 49,
+      "counts": {
+        "pass": 49
+      },
+      "seconds": 0.644
+    },
+    {
+      "group": "GToT",
+      "file": "Entities.GToT.org.jsoup.nodes.EntitiesTest",
+      "methods": 24,
+      "counts": {
+        "pass": 23,
+        "fail": 1
+      },
+      "seconds": 0.423
+    },
+    {
+      "group": "GToT",
+      "file": "HttpStatusException.GToT.org.jsoup.HttpStatusExceptionTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.359
+    },
+    {
+      "group": "GToT",
+      "file": "Jsoup.GToT.org.jsoup.JsoupTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 0.532
+    },
+    {
+      "group": "GToT",
+      "file": "Normalizer.GToT.org.jsoup.internal.NormalizerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.312
+    },
+    {
+      "group": "GToT",
+      "file": "ParseError.GToT.org.jsoup.parser.ParseErrorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.365
+    },
+    {
+      "group": "GToT",
+      "file": "ParseSettings.GToT.org.jsoup.parser.ParseSettingsTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.345
+    },
+    {
+      "group": "GToT",
+      "file": "Parser.GToT.org.jsoup.parser.ParserTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.614
+    },
+    {
+      "group": "GToT",
+      "file": "PseudoTextElement.GToT.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.511
+    },
+    {
+      "group": "GToT",
+      "file": "StringUtil.GToT.org.jsoup.helper.StringUtilTest",
+      "methods": 45,
+      "counts": {
+        "pass": 45
+      },
+      "seconds": 0.51
+    },
+    {
+      "group": "GToT",
+      "file": "StructuralEvaluator.GToT.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 23,
+      "counts": {
+        "pass": 23
+      },
+      "seconds": 0.541
+    },
+    {
+      "group": "GToT",
+      "file": "Token.GToT.org.jsoup.parser.TokenTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.367
+    },
+    {
+      "group": "GToT",
+      "file": "UncheckedIOException.GToT.org.jsoup.UncheckedIOExceptionTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.326
+    },
+    {
+      "group": "GToT",
+      "file": "UnsupportedMimeTypeException.GToT.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.323
+    },
+    {
+      "group": "GToT",
+      "file": "Validate.GToT.org.jsoup.helper.ValidateTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.695
+    },
+    {
+      "group": "GToT",
+      "file": "XmlDeclaration.GToT.org.jsoup.nodes.XmlDeclarationTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.59
+    },
+    {
+      "group": "pooled",
+      "file": "Attribute.CoT.org.jsoup.nodes.AttributeTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.504
+    },
+    {
+      "group": "pooled",
+      "file": "Attribute.FSL.org.jsoup.nodes.AttributeTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.52
+    },
+    {
+      "group": "pooled",
+      "file": "Attributes.CoT.org.jsoup.nodes.AttributesTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.436
+    },
+    {
+      "group": "pooled",
+      "file": "Attributes.GToT.org.jsoup.nodes.AttributesTest",
+      "methods": 23,
+      "counts": {
+        "pass": 23
+      },
+      "seconds": 0.476
+    },
+    {
+      "group": "pooled",
+      "file": "Attributes.ToT.org.jsoup.nodes.AttributesTest",
+      "methods": 23,
+      "counts": {
+        "pass": 23
+      },
+      "seconds": 0.471
+    },
+    {
+      "group": "pooled",
+      "file": "BooleanAttribute.CoT.org.jsoup.nodes.BooleanAttributeTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.446
+    },
+    {
+      "group": "pooled",
+      "file": "BooleanAttribute.GToT.org.jsoup.nodes.BooleanAttributeTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.466
+    },
+    {
+      "group": "pooled",
+      "file": "ChangeNotifyingArrayList.CoT.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 26,
+      "counts": {
+        "pass": 26
+      },
+      "seconds": 0.424
+    },
+    {
+      "group": "pooled",
+      "file": "ChangeNotifyingArrayList.FSL.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.389
+    },
+    {
+      "group": "pooled",
+      "file": "ChangeNotifyingArrayList.GToT.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.465
+    },
+    {
+      "group": "pooled",
+      "file": "ChangeNotifyingArrayList.ToT.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 25,
+      "counts": {
+        "pass": 25
+      },
+      "seconds": 0.43
+    },
+    {
+      "group": "pooled",
+      "file": "ChangeNotifyingArrayList.ZSL.org.jsoup.helper.ChangeNotifyingArrayListTest",
+      "methods": 16,
+      "counts": {
+        "pass": 16
+      },
+      "seconds": 0.348
+    },
+    {
+      "group": "pooled",
+      "file": "CharacterReader.CoT.org.jsoup.parser.CharacterReaderTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.419
+    },
+    {
+      "group": "pooled",
+      "file": "CharacterReader.FSL.org.jsoup.parser.CharacterReaderTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.452
+    },
+    {
+      "group": "pooled",
+      "file": "CharacterReader.GToT.org.jsoup.parser.CharacterReaderTest",
+      "methods": 35,
+      "counts": {
+        "pass": 35
+      },
+      "seconds": 0.439
+    },
+    {
+      "group": "pooled",
+      "file": "CharacterReader.ZSL.org.jsoup.parser.CharacterReaderTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.375
+    },
+    {
+      "group": "pooled",
+      "file": "Cleaner.CoT.org.jsoup.safety.CleanerTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.537
+    },
+    {
+      "group": "pooled",
+      "file": "Cleaner.FSL.org.jsoup.safety.CleanerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.542
+    },
+    {
+      "group": "pooled",
+      "file": "Cleaner.ToT.org.jsoup.safety.CleanerTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 1.212
+    },
+    {
+      "group": "pooled",
+      "file": "Cleaner.ZSL.org.jsoup.safety.CleanerTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.693
+    },
+    {
+      "group": "pooled",
+      "file": "CombiningEvaluator.FSL.org.jsoup.select.CombiningEvaluatorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.572
+    },
+    {
+      "group": "pooled",
+      "file": "CombiningEvaluator.GToT.org.jsoup.select.CombiningEvaluatorTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.435
+    },
+    {
+      "group": "pooled",
+      "file": "CombiningEvaluator.ZSL.org.jsoup.select.CombiningEvaluatorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.381
+    },
+    {
+      "group": "pooled",
+      "file": "Comment.CoT.org.jsoup.nodes.CommentTest",
+      "methods": 1,
+      "counts": {
+        "pass": 1
+      },
+      "seconds": 0.416
+    },
+    {
+      "group": "pooled",
+      "file": "Comment.FSL.org.jsoup.nodes.CommentTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.692
+    },
+    {
+      "group": "pooled",
+      "file": "Comment.GToT.org.jsoup.nodes.CommentTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.409
+    },
+    {
+      "group": "pooled",
+      "file": "Comment.ToT.org.jsoup.nodes.CommentTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.439
+    },
+    {
+      "group": "pooled",
+      "file": "Comment.ZSL.org.jsoup.nodes.CommentTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.374
+    },
+    {
+      "group": "pooled",
+      "file": "ConstrainableInputStream.CoT.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.335
+    },
+    {
+      "group": "pooled",
+      "file": "ConstrainableInputStream.FSL.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.362
+    },
+    {
+      "group": "pooled",
+      "file": "ConstrainableInputStream.GToT.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.348
+    },
+    {
+      "group": "pooled",
+      "file": "ConstrainableInputStream.ToT.org.jsoup.internal.ConstrainableInputStreamTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.345
+    },
+    {
+      "group": "pooled",
+      "file": "DataNode.CoT.org.jsoup.nodes.DataNodeTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.44
+    },
+    {
+      "group": "pooled",
+      "file": "DataNode.FSL.org.jsoup.nodes.DataNodeTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.471
+    },
+    {
+      "group": "pooled",
+      "file": "DataNode.GToT.org.jsoup.nodes.DataNodeTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.449
+    },
+    {
+      "group": "pooled",
+      "file": "DataNode.ToT.org.jsoup.nodes.DataNodeTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.476
+    },
+    {
+      "group": "pooled",
+      "file": "DataNode.ZSL.org.jsoup.nodes.DataNodeTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.44
+    },
+    {
+      "group": "pooled",
+      "file": "DataUtil.ToT.org.jsoup.helper.DataUtilTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.51
+    },
+    {
+      "group": "pooled",
+      "file": "DataUtil.ZSL.org.jsoup.helper.DataUtilTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.535
+    },
+    {
+      "group": "pooled",
+      "file": "Document.GToT.org.jsoup.nodes.DocumentTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.454
+    },
+    {
+      "group": "pooled",
+      "file": "Document.ToT.org.jsoup.nodes.DocumentTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 0.524
+    },
+    {
+      "group": "pooled",
+      "file": "Document.ZSL.org.jsoup.nodes.DocumentTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.817
+    },
+    {
+      "group": "pooled",
+      "file": "DocumentType.FSL.org.jsoup.nodes.DocumentTypeTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.487
+    },
+    {
+      "group": "pooled",
+      "file": "DocumentType.GToT.org.jsoup.nodes.DocumentTypeTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.417
+    },
+    {
+      "group": "pooled",
+      "file": "DocumentType.ZSL.org.jsoup.nodes.DocumentTypeTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.453
+    },
+    {
+      "group": "pooled",
+      "file": "Element.FSL.org.jsoup.nodes.ElementTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.507
+    },
+    {
+      "group": "pooled",
+      "file": "Element.ZSL.org.jsoup.nodes.ElementTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.561
+    },
+    {
+      "group": "pooled",
+      "file": "Elements.FSL.org.jsoup.select.ElementsTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 1.918
+    },
+    {
+      "group": "pooled",
+      "file": "Elements.GToT.org.jsoup.select.ElementsTest",
+      "methods": 49,
+      "counts": {
+        "pass": 49
+      },
+      "seconds": 0.688
+    },
+    {
+      "group": "pooled",
+      "file": "Entities.FSL.org.jsoup.nodes.EntitiesTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.449
+    },
+    {
+      "group": "pooled",
+      "file": "Entities.GToT.org.jsoup.nodes.EntitiesTest",
+      "methods": 24,
+      "counts": {
+        "pass": 23,
+        "fail": 1
+      },
+      "seconds": 0.492
+    },
+    {
+      "group": "pooled",
+      "file": "Entities.ZSL.org.jsoup.nodes.EntitiesTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.487
+    },
+    {
+      "group": "pooled",
+      "file": "Evaluator.CoT.org.jsoup.select.EvaluatorTest",
+      "methods": 52,
+      "counts": {
+        "pass": 52
+      },
+      "seconds": 0.712
+    },
+    {
+      "group": "pooled",
+      "file": "Evaluator.ToT.org.jsoup.select.EvaluatorTest",
+      "methods": 32,
+      "counts": {
+        "pass": 32
+      },
+      "seconds": 1.22
+    },
+    {
+      "group": "pooled",
+      "file": "Evaluator.ZSL.org.jsoup.select.EvaluatorTest",
+      "methods": 22,
+      "counts": {
+        "pass": 22
+      },
+      "seconds": 1.15
+    },
+    {
+      "group": "pooled",
+      "file": "FormElement.ZSL.org.jsoup.nodes.FormElementTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.508
+    },
+    {
+      "group": "pooled",
+      "file": "HttpStatusException.CoT.org.jsoup.HttpStatusExceptionTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.368
+    },
+    {
+      "group": "pooled",
+      "file": "HttpStatusException.FSL.org.jsoup.HttpStatusExceptionTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.344
+    },
+    {
+      "group": "pooled",
+      "file": "HttpStatusException.GToT.org.jsoup.HttpStatusExceptionTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.335
+    },
+    {
+      "group": "pooled",
+      "file": "HttpStatusException.ToT.org.jsoup.HttpStatusExceptionTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.311
+    },
+    {
+      "group": "pooled",
+      "file": "HttpStatusException.ZSL.org.jsoup.HttpStatusExceptionTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.498
+    },
+    {
+      "group": "pooled",
+      "file": "Jsoup.CoT.org.jsoup.JsoupTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.99
+    },
+    {
+      "group": "pooled",
+      "file": "Jsoup.FSL.org.jsoup.JsoupTest",
+      "methods": 19,
+      "counts": {
+        "pass": 19
+      },
+      "seconds": 0.659
+    },
+    {
+      "group": "pooled",
+      "file": "Jsoup.GToT.org.jsoup.JsoupTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.593
+    },
+    {
+      "group": "pooled",
+      "file": "Jsoup.ToT.org.jsoup.JsoupTest",
+      "methods": 16,
+      "counts": {
+        "pass": 16
+      },
+      "seconds": 0.583
+    },
+    {
+      "group": "pooled",
+      "file": "LeafNode.FSL.org.jsoup.nodes.LeafNodeTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.382
+    },
+    {
+      "group": "pooled",
+      "file": "NodeTraversor.FSL.org.jsoup.select.NodeTraversorTest",
+      "methods": 1,
+      "counts": {
+        "pass": 1
+      },
+      "seconds": 0.45
+    },
+    {
+      "group": "pooled",
+      "file": "Normalizer.CoT.org.jsoup.internal.NormalizerTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.356
+    },
+    {
+      "group": "pooled",
+      "file": "Normalizer.FSL.org.jsoup.internal.NormalizerTest",
+      "methods": 18,
+      "counts": {
+        "pass": 18
+      },
+      "seconds": 0.338
+    },
+    {
+      "group": "pooled",
+      "file": "Normalizer.GToT.org.jsoup.internal.NormalizerTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.32
+    },
+    {
+      "group": "pooled",
+      "file": "Normalizer.ToT.org.jsoup.internal.NormalizerTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.352
+    },
+    {
+      "group": "pooled",
+      "file": "Normalizer.ZSL.org.jsoup.internal.NormalizerTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.343
+    },
+    {
+      "group": "pooled",
+      "file": "ParseError.CoT.org.jsoup.parser.ParseErrorTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.356
+    },
+    {
+      "group": "pooled",
+      "file": "ParseError.FSL.org.jsoup.parser.ParseErrorTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 1.015
+    },
+    {
+      "group": "pooled",
+      "file": "ParseError.GToT.org.jsoup.parser.ParseErrorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.709
+    },
+    {
+      "group": "pooled",
+      "file": "ParseError.ToT.org.jsoup.parser.ParseErrorTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 1.262
+    },
+    {
+      "group": "pooled",
+      "file": "ParseError.ZSL.org.jsoup.parser.ParseErrorTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.622
+    },
+    {
+      "group": "pooled",
+      "file": "ParseErrorList.CoT.org.jsoup.parser.ParseErrorListTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.385
+    },
+    {
+      "group": "pooled",
+      "file": "ParseErrorList.FSL.org.jsoup.parser.ParseErrorListTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.478
+    },
+    {
+      "group": "pooled",
+      "file": "ParseErrorList.ZSL.org.jsoup.parser.ParseErrorListTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.444
+    },
+    {
+      "group": "pooled",
+      "file": "ParseSettings.FSL.org.jsoup.parser.ParseSettingsTest",
+      "methods": 11,
+      "counts": {
+        "pass": 11
+      },
+      "seconds": 0.427
+    },
+    {
+      "group": "pooled",
+      "file": "ParseSettings.GToT.org.jsoup.parser.ParseSettingsTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.382
+    },
+    {
+      "group": "pooled",
+      "file": "ParseSettings.ZSL.org.jsoup.parser.ParseSettingsTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.353
+    },
+    {
+      "group": "pooled",
+      "file": "Parser.CoT.org.jsoup.parser.ParserTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.725
+    },
+    {
+      "group": "pooled",
+      "file": "Parser.GToT.org.jsoup.parser.ParserTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.539
+    },
+    {
+      "group": "pooled",
+      "file": "PseudoTextElement.CoT.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.444
+    },
+    {
+      "group": "pooled",
+      "file": "PseudoTextElement.FSL.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.392
+    },
+    {
+      "group": "pooled",
+      "file": "PseudoTextElement.GToT.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.416
+    },
+    {
+      "group": "pooled",
+      "file": "PseudoTextElement.ZSL.org.jsoup.nodes.PseudoTextElementTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.38
+    },
+    {
+      "group": "pooled",
+      "file": "SerializationException.CoT.org.jsoup.SerializationExceptionTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.421
+    },
+    {
+      "group": "pooled",
+      "file": "SerializationException.FSL.org.jsoup.SerializationExceptionTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.308
+    },
+    {
+      "group": "pooled",
+      "file": "SerializationException.ToT.org.jsoup.SerializationExceptionTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.341
+    },
+    {
+      "group": "pooled",
+      "file": "SerializationException.ZSL.org.jsoup.SerializationExceptionTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.341
+    },
+    {
+      "group": "pooled",
+      "file": "StringUtil.FSL.org.jsoup.helper.StringUtilTest",
+      "methods": 27,
+      "counts": {
+        "pass": 27
+      },
+      "seconds": 0.397
+    },
+    {
+      "group": "pooled",
+      "file": "StringUtil.GToT.org.jsoup.helper.StringUtilTest",
+      "methods": 38,
+      "counts": {
+        "pass": 38
+      },
+      "seconds": 0.382
+    },
+    {
+      "group": "pooled",
+      "file": "StringUtil.ToT.org.jsoup.helper.StringUtilTest",
+      "methods": 25,
+      "counts": {
+        "pass": 25
+      },
+      "seconds": 0.409
+    },
+    {
+      "group": "pooled",
+      "file": "StringUtil.ZSL.org.jsoup.helper.StringUtilTest",
+      "methods": 37,
+      "counts": {
+        "pass": 37
+      },
+      "seconds": 0.808
+    },
+    {
+      "group": "pooled",
+      "file": "StructuralEvaluator.CoT.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 28,
+      "counts": {
+        "pass": 28
+      },
+      "seconds": 0.639
+    },
+    {
+      "group": "pooled",
+      "file": "StructuralEvaluator.FSL.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 13,
+      "counts": {
+        "pass": 13
+      },
+      "seconds": 0.616
+    },
+    {
+      "group": "pooled",
+      "file": "StructuralEvaluator.GToT.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 23,
+      "counts": {
+        "pass": 23
+      },
+      "seconds": 0.585
+    },
+    {
+      "group": "pooled",
+      "file": "StructuralEvaluator.ZSL.org.jsoup.select.StructuralEvaluatorTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.564
+    },
+    {
+      "group": "pooled",
+      "file": "TextNode.CoT.org.jsoup.nodes.TextNodeTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.499
+    },
+    {
+      "group": "pooled",
+      "file": "TextNode.ToT.org.jsoup.nodes.TextNodeTest",
+      "methods": 17,
+      "counts": {
+        "pass": 17
+      },
+      "seconds": 0.57
+    },
+    {
+      "group": "pooled",
+      "file": "TextNode.ZSL.org.jsoup.nodes.TextNodeTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.563
+    },
+    {
+      "group": "pooled",
+      "file": "Token.CoT.org.jsoup.parser.TokenTest",
+      "methods": 23,
+      "counts": {
+        "pass": 23
+      },
+      "seconds": 0.436
+    },
+    {
+      "group": "pooled",
+      "file": "Token.GToT.org.jsoup.parser.TokenTest",
+      "methods": 12,
+      "counts": {
+        "pass": 12
+      },
+      "seconds": 0.35
+    },
+    {
+      "group": "pooled",
+      "file": "TokenQueue.CoT.org.jsoup.parser.TokenQueueTest",
+      "methods": 24,
+      "counts": {
+        "pass": 24
+      },
+      "seconds": 0.424
+    },
+    {
+      "group": "pooled",
+      "file": "TokenQueue.FSL.org.jsoup.parser.TokenQueueTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.335
+    },
+    {
+      "group": "pooled",
+      "file": "TokenQueue.ToT.org.jsoup.parser.TokenQueueTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.347
+    },
+    {
+      "group": "pooled",
+      "file": "TokenQueue.ZSL.org.jsoup.parser.TokenQueueTest",
+      "methods": 25,
+      "counts": {
+        "pass": 25
+      },
+      "seconds": 0.38
+    },
+    {
+      "group": "pooled",
+      "file": "UncheckedIOException.FSL.org.jsoup.UncheckedIOExceptionTest",
+      "methods": 3,
+      "counts": {
+        "pass": 3
+      },
+      "seconds": 0.277
+    },
+    {
+      "group": "pooled",
+      "file": "UncheckedIOException.GToT.org.jsoup.UncheckedIOExceptionTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.29
+    },
+    {
+      "group": "pooled",
+      "file": "UncheckedIOException.ToT.org.jsoup.UncheckedIOExceptionTest",
+      "methods": 6,
+      "counts": {
+        "pass": 6
+      },
+      "seconds": 0.341
+    },
+    {
+      "group": "pooled",
+      "file": "UnsupportedMimeTypeException.CoT.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.739
+    },
+    {
+      "group": "pooled",
+      "file": "UnsupportedMimeTypeException.FSL.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.431
+    },
+    {
+      "group": "pooled",
+      "file": "UnsupportedMimeTypeException.GToT.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.455
+    },
+    {
+      "group": "pooled",
+      "file": "UnsupportedMimeTypeException.ToT.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.33
+    },
+    {
+      "group": "pooled",
+      "file": "UnsupportedMimeTypeException.ZSL.org.jsoup.UnsupportedMimeTypeExceptionTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.337
+    },
+    {
+      "group": "pooled",
+      "file": "Validate.CoT.org.jsoup.helper.ValidateTest",
+      "methods": 15,
+      "counts": {
+        "pass": 15
+      },
+      "seconds": 0.406
+    },
+    {
+      "group": "pooled",
+      "file": "Validate.FSL.org.jsoup.helper.ValidateTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.299
+    },
+    {
+      "group": "pooled",
+      "file": "Validate.GToT.org.jsoup.helper.ValidateTest",
+      "methods": 21,
+      "counts": {
+        "pass": 21
+      },
+      "seconds": 0.317
+    },
+    {
+      "group": "pooled",
+      "file": "Validate.ToT.org.jsoup.helper.ValidateTest",
+      "methods": 14,
+      "counts": {
+        "pass": 14
+      },
+      "seconds": 0.328
+    },
+    {
+      "group": "pooled",
+      "file": "Validate.ZSL.org.jsoup.helper.ValidateTest",
+      "methods": 20,
+      "counts": {
+        "pass": 20
+      },
+      "seconds": 0.317
+    },
+    {
+      "group": "pooled",
+      "file": "W3CDom.CoT.org.jsoup.helper.W3CDomTest",
+      "methods": 4,
+      "counts": {
+        "pass": 4
+      },
+      "seconds": 0.57
+    },
+    {
+      "group": "pooled",
+      "file": "W3CDom.FSL.org.jsoup.helper.W3CDomTest",
+      "methods": 3,
+      "counts": {
+        "pass": 3
+      },
+      "seconds": 0.518
+    },
+    {
+      "group": "pooled",
+      "file": "Whitelist.FSL.org.jsoup.safety.WhitelistTest",
+      "methods": 7,
+      "counts": {
+        "pass": 7
+      },
+      "seconds": 0.369
+    },
+    {
+      "group": "pooled",
+      "file": "Whitelist.ToT.org.jsoup.safety.WhitelistTest",
+      "methods": 8,
+      "counts": {
+        "pass": 8
+      },
+      "seconds": 0.349
+    },
+    {
+      "group": "pooled",
+      "file": "XmlDeclaration.CoT.org.jsoup.nodes.XmlDeclarationTest",
+      "methods": 10,
+      "counts": {
+        "pass": 10
+      },
+      "seconds": 0.386
+    },
+    {
+      "group": "pooled",
+      "file": "XmlDeclaration.GToT.org.jsoup.nodes.XmlDeclarationTest",
+      "methods": 5,
+      "counts": {
+        "pass": 5
+      },
+      "seconds": 0.401
+    },
+    {
+      "group": "pooled",
+      "file": "XmlDeclaration.ToT.org.jsoup.nodes.XmlDeclarationTest",
+      "methods": 9,
+      "counts": {
+        "pass": 9
+      },
+      "seconds": 0.406
+    }
+  ],
+  "method": "Existing run_class java_options API; denominator-only includes; class-level counters folded by outer CUT, append=false."
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "class": "HttpConnection",
+    "group": "dev",
+    "previous_covered": "203",
+    "new_covered": 203,
+    "previous_total": "596",
+    "new_total": 598
+  },
+  {
+    "class": "StringUtil",
+    "group": "dev",
+    "previous_covered": "81",
+    "new_covered": 80,
+    "previous_total": "84",
+    "new_total": 85
+  },
+  {
+    "class": "Attributes",
+    "group": "dev",
+    "previous_covered": "157",
+    "new_covered": 158,
+    "previous_total": "166",
+    "new_total": 167
+  },
+  {
+    "class": "Element",
+    "group": "dev",
+    "previous_covered": "373",
+    "new_covered": 375,
+    "previous_total": "403",
+    "new_total": 405
+  },
+  {
+    "class": "Node",
+    "group": "dev",
+    "previous_covered": "212",
+    "new_covered": 213,
+    "previous_total": "229",
+    "new_total": 230
+  },
+  {
+    "class": "HtmlTreeBuilderState",
+    "group": "dev",
+    "previous_covered": "828",
+    "new_covered": 851,
+    "previous_total": "1081",
+    "new_total": 1104
+  },
+  {
+    "class": "TokeniserState",
+    "group": "dev",
+    "previous_covered": "698",
+    "new_covered": 765,
+    "previous_total": "1090",
+    "new_total": 1157
+  },
+  {
+    "class": "HttpConnection",
+    "group": "pooled",
+    "previous_covered": "140",
+    "new_covered": 140,
+    "previous_total": "596",
+    "new_total": 598
+  },
+  {
+    "class": "StringUtil",
+    "group": "pooled",
+    "previous_covered": "82",
+    "new_covered": 83,
+    "previous_total": "84",
+    "new_total": 85
+  },
+  {
+    "class": "W3CDom",
+    "group": "pooled",
+    "previous_covered": "70",
+    "new_covered": 63,
+    "previous_total": "74",
+    "new_total": 74
+  },
+  {
+    "class": "Attribute",
+    "group": "pooled",
+    "previous_covered": "61",
+    "new_covered": 57,
+    "previous_total": "64",
+    "new_total": 64
+  },
+  {
+    "class": "Attributes",
+    "group": "pooled",
+    "previous_covered": "160",
+    "new_covered": 161,
+    "previous_total": "166",
+    "new_total": 167
+  },
+  {
+    "class": "Element",
+    "group": "pooled",
+    "previous_covered": "372",
+    "new_covered": 335,
+    "previous_total": "403",
+    "new_total": 405
+  },
+  {
+    "class": "Entities",
+    "group": "pooled",
+    "previous_covered": "135",
+    "new_covered": 134,
+    "previous_total": "141",
+    "new_total": 141
+  },
+  {
+    "class": "LeafNode",
+    "group": "pooled",
+    "previous_covered": "32",
+    "new_covered": 30,
+    "previous_total": "33",
+    "new_total": 33
+  },
+  {
+    "class": "Node",
+    "group": "pooled",
+    "previous_covered": "162",
+    "new_covered": 144,
+    "previous_total": "229",
+    "new_total": 230
+  },
+  {
+    "class": "CharacterReader",
+    "group": "pooled",
+    "previous_covered": "227",
+    "new_covered": 222,
+    "previous_total": "230",
+    "new_total": 230
+  },
+  {
+    "class": "HtmlTreeBuilderState",
+    "group": "pooled",
+    "previous_covered": "390",
+    "new_covered": 406,
+    "previous_total": "1081",
+    "new_total": 1104
+  },
+  {
+    "class": "Token",
+    "group": "pooled",
+    "previous_covered": "151",
+    "new_covered": 144,
+    "previous_total": "156",
+    "new_total": 156
+  },
+  {
+    "class": "TokenQueue",
+    "group": "pooled",
+    "previous_covered": "136",
+    "new_covered": 131,
+    "previous_total": "138",
+    "new_total": 138
+  },
+  {
+    "class": "TokeniserState",
+    "group": "pooled",
+    "previous_covered": "300",
+    "new_covered": 359,
+    "previous_total": "1090",
+    "new_total": 1157
+  },
+  {
+    "class": "Whitelist",
+    "group": "pooled",
+    "previous_covered": "211",
+    "new_covered": 207,
+    "previous_total": "222",
+    "new_total": 222
+  },
+  {
+    "class": "Elements",
+    "group": "pooled",
+    "previous_covered": "177",
+    "new_covered": 153,
+    "previous_total": "182",
+    "new_total": 182
+  },
+  {
+    "class": "Evaluator",
+    "group": "pooled",
+    "previous_covered": "209",
+    "new_covered": 208,
+    "previous_total": "211",
+    "new_total": 211
+  },
+  {
+    "class": "NodeTraversor",
+    "group": "pooled",
+    "previous_covered": "62",
+    "new_covered": 55,
+    "previous_total": "66",
+    "new_total": 66
+  },
+  {
+    "class": "QueryParser",
+    "group": "pooled",
+    "previous_covered": "120",
+    "new_covered": 118,
+    "previous_total": "233",
+    "new_total": 233
+  }
+]

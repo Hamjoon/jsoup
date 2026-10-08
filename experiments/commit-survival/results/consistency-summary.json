@@ -1,0 +1,3311 @@
+{
+  "tag_differing_cells": 0,
+  "same_tree_differing_cells": 0,
+  "definition": "Unique track/point/method cells; technique and pooled overlaps counted once.",
+  "comparisons": [
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "dev",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "dev",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "dev",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "dev",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "dev",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "pooled",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "pooled",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "pooled",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "pooled",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "pooled",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ZSL",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ZSL",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ZSL",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ZSL",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ZSL",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "FSL",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "FSL",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "FSL",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "FSL",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "FSL",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "CoT",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "CoT",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "CoT",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "CoT",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "CoT",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ToT",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ToT",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ToT",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "ToT",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "ToT",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "2",
+      "point": "c002-461609f",
+      "reference": "c001-bbef9d7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "4",
+      "point": "c004-e9885f0",
+      "reference": "c003-c07c0ee",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "9",
+      "point": "c009-11e018f",
+      "reference": "c008-df272b7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "12",
+      "point": "c012-03bffef",
+      "reference": "c011-b92b4f6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "13",
+      "point": "c013-71561e0",
+      "reference": "c012-03bffef",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "19",
+      "point": "c019-47a7f5a",
+      "reference": "c018-0f7e0cc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "GToT",
+      "index": "23",
+      "point": "c023-2b1ea06",
+      "reference": "jsoup-1.11.3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "25",
+      "point": "c025-fa38b8a",
+      "reference": "c024-176c173",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "29",
+      "point": "c029-d2fb53f",
+      "reference": "c028-e38dfd4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "33",
+      "point": "c033-39e90ee",
+      "reference": "c032-6be19a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "40",
+      "point": "c040-e26267d",
+      "reference": "c039-c8c0569",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "45",
+      "point": "c045-220b771",
+      "reference": "c044-26adfcb",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "47",
+      "point": "c047-54e8730",
+      "reference": "c046-cecdb32",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "51",
+      "point": "c051-1be6e5c",
+      "reference": "c050-2da07a1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "52",
+      "point": "c052-9934dfc",
+      "reference": "c051-1be6e5c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "53",
+      "point": "c053-8adcd55",
+      "reference": "c052-9934dfc",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "57",
+      "point": "c057-18cd16d",
+      "reference": "c056-7c60ac1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "62",
+      "point": "c062-82e2c44",
+      "reference": "c061-7842f88",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "64",
+      "point": "c064-315655c",
+      "reference": "c063-eaf876d",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "67",
+      "point": "c067-b87c013",
+      "reference": "c066-247c5d0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "GToT",
+      "index": "68",
+      "point": "c068-3f02569",
+      "reference": "jsoup-1.12.1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "70",
+      "point": "c070-a87b1c6",
+      "reference": "c069-fb45283",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "74",
+      "point": "c074-ff979f4",
+      "reference": "c073-a3649e6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "78",
+      "point": "c078-d65510c",
+      "reference": "c077-7bd5cf5",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "79",
+      "point": "c079-fd46489",
+      "reference": "c078-d65510c",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "90",
+      "point": "c090-333fcc3",
+      "reference": "c089-e42ca3b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "91",
+      "point": "c091-92392a6",
+      "reference": "c090-333fcc3",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "92",
+      "point": "c092-27a445b",
+      "reference": "c091-92392a6",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "94",
+      "point": "c094-e9e6137",
+      "reference": "c093-0fc3d67",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "96",
+      "point": "c096-b61a3e6",
+      "reference": "c095-a9439f0",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "98",
+      "point": "c098-8d1d503",
+      "reference": "c097-fb58877",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "100",
+      "point": "c100-9fdda99",
+      "reference": "c099-a0b87bf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "104",
+      "point": "c104-9b674f8",
+      "reference": "c103-c2b1fe7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "108",
+      "point": "c108-eb7b0d7",
+      "reference": "c107-91ca25b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "110",
+      "point": "c110-de1ced9",
+      "reference": "c109-f2ff26b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "113",
+      "point": "c113-cfd1362",
+      "reference": "c112-5a570cf",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "115",
+      "point": "c115-ef400e7",
+      "reference": "c114-a8d431b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "116",
+      "point": "c116-a7d704f",
+      "reference": "c115-ef400e7",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "120",
+      "point": "c120-97758e7",
+      "reference": "c119-279fbe1",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "123",
+      "point": "c123-2d43141",
+      "reference": "c122-5359490",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "125",
+      "point": "c125-c198334",
+      "reference": "c124-894d3ec",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "127",
+      "point": "c127-d36f91a",
+      "reference": "c126-9297a22",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "130",
+      "point": "c130-1a84ce3",
+      "reference": "c129-052dc1b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "132",
+      "point": "c132-2ea6f9a",
+      "reference": "c131-4e05274",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "133",
+      "point": "c133-6b2bf55",
+      "reference": "c132-2ea6f9a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "134",
+      "point": "c134-3bd77f8",
+      "reference": "c133-6b2bf55",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "137",
+      "point": "c137-0bec593",
+      "reference": "c136-e020854",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "141",
+      "point": "c141-e81c35f",
+      "reference": "c140-d06d8f4",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "GToT",
+      "index": "142",
+      "point": "c142-6ef8922",
+      "reference": "jsoup-1.12.2",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "149",
+      "point": "c149-08fa006",
+      "reference": "c148-fbc7e76",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "151",
+      "point": "c151-52bbe52",
+      "reference": "c150-0a4bd07",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "162",
+      "point": "c162-006c6cc",
+      "reference": "c161-6e8241a",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "168",
+      "point": "c168-265653e",
+      "reference": "c167-f54857e",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "171",
+      "point": "c171-5d864bd",
+      "reference": "c170-bd64b01",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "172",
+      "point": "c172-50fae5b",
+      "reference": "c171-5d864bd",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "173",
+      "point": "c173-19be649",
+      "reference": "c172-50fae5b",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "174",
+      "point": "c174-d9dfc4a",
+      "reference": "c173-19be649",
+      "differing_cells": 0
+    },
+    {
+      "kind": "same-tree",
+      "group": "GToT",
+      "index": "184",
+      "point": "c184-fb9aa17",
+      "reference": "c183-9675a92",
+      "differing_cells": 0
+    },
+    {
+      "kind": "tag",
+      "group": "GToT",
+      "index": "185",
+      "point": "c185-dcf3c8b",
+      "reference": "jsoup-1.13.1",
+      "differing_cells": 0
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Script provenance
 
-Frozen sources are read-only. No classpath order, method timeout, or status logic was changed. Shared dependency modules are copied so imports do not write bytecode under the previous experiment. extract_v2.py is imported only for lexical_masks and TECHS; no extraction or generation is executed.
+Frozen sources are read-only. Runtime status classification, classpath order, and method timeouts are preserved; cumulative analysis follows the new commit protocol. Shared dependency modules are copied so imports do not write bytecode under the previous experiment. extract_v2.py is imported only for lexical_masks and TECHS; no extraction or generation is executed.
 
 | Script | Source | Source SHA-256 | Change |
 |---|---|---|---|

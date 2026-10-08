@@ -1,0 +1,3 @@
+test_class,method,i,point_i,status_i,j,point_j
+org.jsoup.helper.W3CDomTest,simpleConversion,128,c128-fe92494,fail,136,c136-e020854
+org.jsoup.parser.TagTest,defaultSemantics,118,c118-3a9bf46,fail,119,c119-279fbe1

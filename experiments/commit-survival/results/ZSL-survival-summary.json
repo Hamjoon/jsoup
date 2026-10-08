@@ -1,0 +1,13 @@
+{
+  "group": "ZSL",
+  "denominator": 342,
+  "final_survived": 236,
+  "final_point_pass": 236,
+  "first_break_counts": {
+    "survived": 236,
+    "compile-fail": 101,
+    "fail": 5
+  },
+  "transient_methods": 0,
+  "not_run_cells": 0
+}

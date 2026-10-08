@@ -1,0 +1,13 @@
+{
+  "group": "dev",
+  "denominator": 594,
+  "final_survived": 345,
+  "final_point_pass": 347,
+  "first_break_counts": {
+    "survived": 345,
+    "compile-fail": 237,
+    "fail": 12
+  },
+  "transient_methods": 2,
+  "not_run_cells": 0
+}
