@@ -1,0 +1,11 @@
+checkouts/
+dev/
+llm/
+coverage/
+docs/handover-*.md
+docs/*-review-decisions.md
+docs/*.pdf
+docs/*.html
+docs/*meeting-memo*
+.DS_Store
+__pycache__/

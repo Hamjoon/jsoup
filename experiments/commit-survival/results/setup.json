@@ -1,0 +1,125 @@
+{
+  "branch": "experiment/2026-10-week3-jsoup-commit-survival",
+  "base_commit": "2555b2847caf4a14aa3d0502f823c62bd6cb3d7a Add jsoup survival weekly report",
+  "started_unix": 1791441885.312185,
+  "denominators": {
+    "dev": 594,
+    "pooled": 1862,
+    "ZSL": 342,
+    "FSL": 381,
+    "CoT": 427,
+    "ToT": 345,
+    "GToT": 465
+  },
+  "generated_files": 260,
+  "copied_results": [
+    {
+      "file": "dev-denominator.csv",
+      "sha256": "1384d2ebdb855834e5e91c09dbe78497479488b8418ea6d394abca5858582cc1"
+    },
+    {
+      "file": "llm-methods.csv",
+      "sha256": "af24aea5d75459950a1eb3ca1a484b64f0f1a44e9e0f2514274263b7906795d0"
+    },
+    {
+      "file": "cut-classes.csv",
+      "sha256": "e3e125b3aef00c5d98603e2bff4498c9f8f8547a327cba89b43b892f7389b833"
+    },
+    {
+      "file": "releases.csv",
+      "sha256": "8927a17e40f716b5fae2e157d18e4d7c19dcdb61cfcc8f2a2297d1fff52b7415"
+    },
+    {
+      "file": "dev-matrix.csv",
+      "sha256": "e04389219148615d893626b4c6967f6f80d20cef02aeb93232138aa8b3fbb469"
+    },
+    {
+      "file": "llm-matrix.csv",
+      "sha256": "07fff8d6112c19d72ea0cf44ab576bc18287cb749a8e06ce054366f6e8e1f059"
+    }
+  ],
+  "script_origins": [
+    {
+      "script": "run_class.py",
+      "source": "experiments/survival/scripts/run_class.py",
+      "source_sha256": "b40b267d791d48dad23bf861f40856f19939090c149aa4d38ef8f1014bc0de48",
+      "change": "Unchanged copy."
+    },
+    {
+      "script": "dev_compile.py",
+      "source": "experiments/survival/scripts/dev_compile.py",
+      "source_sha256": "9b72e04525671736c4b56580a666f4de93e66dcca9986c8bc7f1a9a80ca6b13f",
+      "change": "Rename CLI to --point and validate commit builds; use the previous baseline method listings on compile failure."
+    },
+    {
+      "script": "dev_run.py",
+      "source": "experiments/survival/scripts/dev_run.py",
+      "source_sha256": "443dcc449d0d60b8544f51143b6588cc63ff7ece27777756c24b9786c0918fdb",
+      "change": "Rename CLI to --point; read the unchanged ignored-class policy from PREV."
+    },
+    {
+      "script": "llm_compile.py",
+      "source": "experiments/survival/scripts/llm_compile.py",
+      "source_sha256": "8547ee1a53965dc5881fe4295b3d64f6c47502588ee64273ef83a7238ecca790",
+      "change": "Rename CLI to --point; check CUT source presence in the point checkout; import the unchanged CSV writer from csv_utils."
+    },
+    {
+      "script": "llm_run.py",
+      "source": "experiments/survival/scripts/llm_run.py",
+      "source_sha256": "a6419301ea24697fea27c5cdfe92879ea6f204e3821a9482a22eeb906614aa8c",
+      "change": "Rename CLI to --point; paths follow adapted shared modules."
+    },
+    {
+      "script": "survival.py",
+      "source": "experiments/survival/scripts/survival.py",
+      "source_sha256": "9922cbd9bacfbc701a561b80cecdade17c2cd7b184bc2c50d837e23376fe30d0",
+      "change": "Import the unchanged CSV writer from csv_utils; cumulative commit analysis is deferred to Step 7 and this script is not executed before review."
+    },
+    {
+      "script": "dedup_lib.py",
+      "source": "experiments/survival/scripts/dedup_lib.py",
+      "source_sha256": "ce4638c1598827522dd3d48652da1b5a3616b06e5fe7d7fb4a6e8b04035e0767",
+      "change": "Unchanged copy."
+    },
+    {
+      "script": "dev_common.py",
+      "source": "experiments/survival/scripts/dev_common.py",
+      "source_sha256": "a1af1955bbe5afc34e5ca6b5e1562a2f22db25c50e497e030e55198b7ac820f5",
+      "change": "Use commit/build rows and point baseline; read frozen inventories, resources, runner and libraries from PREV; preserve classpath order."
+    },
+    {
+      "script": "llm_common.py",
+      "source": "experiments/survival/scripts/llm_common.py",
+      "source_sha256": "536ee17cd1be4cd2ed5e8ecd545454c62141bb2e13d6bd50b0c54321fa50b4a4",
+      "change": "Read frozen extraction ledger/generated sources and runner/JUnit jars from PREV; validate point builds, preserving classpath order."
+    },
+    {
+      "script": "survival_common.py",
+      "source": "experiments/survival/scripts/survival_common.py",
+      "source_sha256": "3b196e3c90cdd8fe912b4a0fae8e62add36c8b325530382c6a42d9df861ac718",
+      "change": "Read frozen denominator summary from PREV; release-analysis adaptation is deferred to Step 7."
+    },
+    {
+      "script": "extract_v2.py",
+      "source": "experiments/survival/scripts/extract_v2.py",
+      "source_sha256": "15924c4bacca9c6f69ae928423b9bc4817a2d023757af3374a0a7dc60b481444",
+      "change": "Unchanged copy."
+    },
+    {
+      "script": "csv_utils.py",
+      "source": "experiments/survival/scripts/dev_later.py",
+      "source_sha256": "48d3152fd55348cd3da8a8ef363eb35e1d05bf2f6c141aacee54e6258eba13f3",
+      "change": "Copy only write_csv unchanged; avoid importing the release orchestration module."
+    }
+  ],
+  "deviations": [
+    "Copied shared script dependencies and extracted the unchanged CSV writer to preserve imports without modifying PREV."
+  ],
+  "validation": {
+    "copied_script_imports": "passed in run service",
+    "python_syntax": "passed",
+    "previous_experiment_git_diff": "empty",
+    "jdk": "Temurin-11.0.32.1+1",
+    "locale_options": "-Duser.language=en -Duser.country=US -Duser.timezone=UTC -Dfile.encoding=UTF-8"
+  }
+}
