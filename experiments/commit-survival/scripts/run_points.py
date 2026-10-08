@@ -40,9 +40,10 @@ def process(commit,track,baseline,eligible,builds):
     if builds[point]['build_fail']=='1':
         result['methods']=[dict(**{k:r[k] for k in ids},status='not-evaluated') for r in eligible]
     else:
-        invoke(track+'_compile.py',['--point',point],root/'compile.log')
+        file_args=['--workers','4'] if track=='llm' else []
+        invoke(track+'_compile.py',['--point',point,*file_args],root/'compile.log')
         compiled=json.loads((root/'compile-summary.json').read_text())
-        invoke(track+'_run.py',['--point',point,'--run','1'],root/'run.log')
+        invoke(track+'_run.py',['--point',point,'--run','1',*file_args],root/'run.log')
         run=json.loads((root/'run1/run-summary.json').read_text())
         result.update(compile_seconds=compiled['seconds'],run_seconds=run['seconds'])
         if track=='dev':

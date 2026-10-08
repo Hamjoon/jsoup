@@ -9,3 +9,4 @@ docs/*.html
 docs/*meeting-memo*
 .DS_Store
 __pycache__/
+tools/python/
