@@ -60,6 +60,8 @@ def main():
             ('Coverage',coverage['seconds']),('Survival and consistency',load('analysis-stage.json')['seconds']),
             ('Event tables',load('events-stage.json')['seconds']),('Figure',load('figure-stage.json')['seconds']),
             ('Final integrity audit',integrity['seconds']),('Authorized continuation through final verification',continuation['seconds'])]
+    if (EXP/'results/handover-stage.json').exists():
+        stages.append(('Handover initial rendering',load('handover-stage.json')['seconds']))
     lines.append(mdtable(['Stage','Wall seconds'],stages))
     lines.extend(['## Integrity and deviations','',
                   f"Verified {integrity['frozen_files_checked']} frozen files and {integrity['copied_results_checked']} copied result files; frozen changes: {len(integrity['changed_frozen_files'])}. Checked {integrity['checkout_source_files_checked']} archived source/POM files across all checkouts against their Git blob hashes.",
