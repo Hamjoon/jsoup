@@ -26,7 +26,7 @@ def main():
             ax.text(i-.7 if i==final else i+.7,98,r['tag'],rotation=90,ha='right' if i==final else 'left',va='top',fontsize=10,color='#555555')
     failures=[int(r['index']) for r in read('builds.csv') if r['build_fail']=='1']
     if failures: ax.plot(failures,[0]*len(failures),'|',color='black',markersize=9,clip_on=False,label='Build failure')
-    ax.set(xlim=(0,final),ylim=(0,100),xlabel='Commit index',ylabel='Cumulative survival')
+    ax.set(xlim=(0,final),ylim=(50,100),xlabel='Commit index',ylabel='Cumulative survival')
     ax.yaxis.set_major_formatter(PercentFormatter(100)); ax.grid(axis='y',color='#e5e7eb',linewidth=.7)
     ax.spines[['top','right']].set_visible(False)
     handles,labels=ax.get_legend_handles_labels(); order=sorted(range(len(labels)),key=lambda i: ['Dev','LLM pooled','ZSL','FSL','CoT','ToT','GToT','Build failure'].index(labels[i]))
