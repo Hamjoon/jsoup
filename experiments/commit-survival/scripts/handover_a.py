@@ -2,6 +2,7 @@
 """Render the build-review handover exclusively from results files."""
 import csv
 import json
+import re
 from pathlib import Path
 
 EXP=Path(__file__).resolve().parents[1]
@@ -49,13 +50,13 @@ def main():
                   'Verified denominators: '+', '.join(f'{group}: {count:,}' for group,count in setup['denominators'].items())+'.',
                   f"Generated test files: {setup['generated_files']}. Frozen files checked: {integrity['frozen_files_checked']}; changed: {len(integrity['changed_frozen_files'])}. Copied result files checked: {integrity['copied_results_checked']}. Baseline copied files checked: {integrity['baseline_files_checked']}.",
                   f"Per-point build records checked: {integrity['build_records_checked']}. Successful Maven commands checked: {integrity['successful_maven_commands']}. Previous experiment tracked diff: {integrity['previous_experiment_git_diff']}.",
-                  '', '```text',env['java'].strip(),env['maven'].strip(),'```','',
+                  '', '```text',env['java'].strip(),re.sub(r'\x1b\[[0-9;]*m', '', env['maven']).strip(),'```','',
                   '## Wall time','',
                   f"Commit enumeration and validation: {commits['seconds']} seconds. Build stage, including baseline copy: {builds['seconds']} seconds.",
                   'Build started: '+builds['started_at']+'. Finished: '+builds['finished_at']+'.',
                   f"Resumed work through final integrity verification: {integrity['resumed_wall_seconds']} seconds. Initial setup/inspection time was not separately measured; the review pause is excluded from this resumed duration.",'',
                   '## Corrections, deviations, and remaining work','',
-                  'The earlier merge-diff stop is resolved by the revised brief: '+revision['resolution'],
+                  'The earlier merge-diff stop is resolved by the revised brief: `'+revision['resolution']+'`',
                   'Brief provenance: `'+revision['brief_path']+'`; SHA-256 `'+revision['brief_sha256']+'`.',
                   revision['mechanical_fix'],
                   *setup['deviations'],

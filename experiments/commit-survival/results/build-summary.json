@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "later_attempted": 185,
+  "later_built": 185,
+  "later_failed": 0,
+  "baseline_copied": true,
+  "rows": 186,
+  "workers": 4,
+  "max_failures": 18,
+  "stopped_at_failure_threshold": false,
+  "failed": [],
+  "started_at": "2026-10-08T06:56:41.742808+00:00",
+  "finished_at": "2026-10-08T07:03:06.494910+00:00",
+  "seconds": 384.755
+}
