@@ -2,6 +2,7 @@
 """Render event tables and denominator funnels from measured result files."""
 from collections import Counter
 import json
+import html
 import time
 from csv_utils import write_csv
 from dev_common import EXP, write_json
@@ -12,7 +13,7 @@ LABEL={'dev':'Dev','pooled':'LLM all','ZSL':'ZSL','FSL':'FSL','CoT':'CoT','ToT':
 
 
 def mdtable(headers,rows):
-    def escape(x): return str(x).replace('|',' / ').replace('\n',' ')
+    def escape(x): return html.escape(str(x), quote=False).replace('|',' / ').replace('\n',' ')
     return '\n'.join(['| '+' | '.join(headers)+' |','| '+' | '.join('---' for _ in headers)+' |',
                       *['| '+' | '.join(escape(x) for x in r)+' |' for r in rows]])+'\n'
 

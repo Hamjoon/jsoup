@@ -31,7 +31,8 @@ def main():
             if not item: continue
             metadata,path=item.split(b'\t',1); mode,kind,digest=metadata.split()
             assert kind==b'blob'
-            p=EXP/'checkouts'/c['point']/path.decode(); data=p.read_bytes()
+            p=EXP/'checkouts'/c['point']/path.decode()
+            data=str(p.readlink()).encode() if mode==b'120000' else p.read_bytes()
             actual=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
             assert actual==digest.decode(), 'Checkout source changed: '+str(p)
             source_files+=1
