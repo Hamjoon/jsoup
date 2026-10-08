@@ -1,0 +1,11 @@
+{
+  "points_completed": 185,
+  "tracked_methods": 594,
+  "workers": 4,
+  "seconds": 1862.435,
+  "flaky_events": 0,
+  "rerun_methods": 488,
+  "not_run_cells": 0,
+  "compile_seconds": 3634.8989999999985,
+  "run_seconds": 3479.451999999999
+}
