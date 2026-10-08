@@ -28,9 +28,9 @@ def main():
     for index, sha in enumerate(shas):
         date = datetime.fromisoformat(git('show', '-s', '--format=%cI', sha)).date()
         parents = git('show', '-s', '--format=%P', sha).split()
-        paths = git('diff-tree', '--no-commit-id', '--name-only', '-r', '-m', '--first-parent', sha).splitlines()
+        paths = git('diff-tree', '--no-commit-id', '--name-only', '-r', parents[0], sha).splitlines()
         # An explicit parent diff verifies that merges count only first-parent changes.
-        assert paths == git('diff', '--name-only', parents[0], sha).splitlines()
+        assert paths == git('diff', '--no-renames', '--name-only', parents[0], sha).splitlines()
         tags = sorted(t for t in git('tag', '--points-at', sha).splitlines() if re.fullmatch(r'jsoup-1\.\d+\.\d+', t))
         assert len(tags) <= 1, (sha, tags)
         tree = (git('rev-parse', sha+':src/main'), git('rev-parse', sha+':pom.xml'))

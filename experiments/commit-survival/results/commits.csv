@@ -1,0 +1,187 @@
+index,point,sha,date,days_since_t,is_merge,parent1,subject,tag,files_main,files_test,files_pom,files_other,main_files,same_main_as_prev
+0,c000-429f2c7,429f2c7db2b60683be76d4a82fb28a561f941909,2017-11-19,0,0,6b5b09d21e5a712db88a76c4547e724de42475d5,[maven-release-plugin] prepare release jsoup-1.11.2,jsoup-1.11.2,0,0,1,0,,0
+1,c001-bbef9d7,bbef9d720df519581e457f3415bcccdde0dda382,2017-11-19,0,0,429f2c7db2b60683be76d4a82fb28a561f941909,[maven-release-plugin] prepare for next development iteration,,0,0,1,0,,0
+2,c002-461609f,461609f686bf49177f125425c160c730700f0c7a,2017-11-19,0,0,bbef9d720df519581e457f3415bcccdde0dda382,Release date,,0,0,0,1,,1
+3,c003-c07c0ee,c07c0eead5ec708303b7bfb54c28df2e7cad19e9,2017-11-23,4,0,461609f686bf49177f125425c160c730700f0c7a,Preserve CDATA sections,,8,2,0,1,CDataNode|Element|HtmlTreeBuilder|StringUtil|TextNode|Token|TokeniserState|XmlTreeBuilder,0
+4,c004-e9885f0,e9885f060d59dc2bd7351c5bd654a27cbe6de69a,2017-11-25,6,0,c07c0eead5ec708303b7bfb54c28df2e7cad19e9,More cdata coverage,,0,1,0,0,,1
+5,c005-1791ef1,1791ef17ad6e0624a7b057b89439f7a33b3bbb82,2017-11-30,11,0,e9885f060d59dc2bd7351c5bd654a27cbe6de69a,Adding support for nested quotes in attribute selection,,1,1,1,0,TokenQueue,0
+6,c006-3676b13,3676b132429306c722304e94177172dca42c2dda,2017-12-21,32,1,1791ef17ad6e0624a7b057b89439f7a33b3bbb82,Merge branch 'master' into pr/988,,6,4,0,1,Attribute|Attributes|DataUtil|Element|HtmlTreeBuilderState|HttpConnection,0
+7,c007-bf4f99c,bf4f99c72ba3d59486e0decb59a2b87edee4f1ff,2017-12-21,32,0,3676b132429306c722304e94177172dca42c2dda,Prep #988 for merge,,1,1,1,1,TokenQueue,0
+8,c008-df272b7,df272b77c2cf89e9cbe2512bbddf8a3bc28a704b,2017-12-22,33,0,bf4f99c72ba3d59486e0decb59a2b87edee4f1ff,"In XML parse mode set to lowercase, normalize closing tags",,1,2,0,1,XmlTreeBuilder,0
+9,c009-11e018f,11e018fe623758986910069a6285b614dd98cc98,2017-12-22,33,0,df272b77c2cf89e9cbe2512bbddf8a3bc28a704b,Verify that form data mixes ok with form uploads,,0,1,0,0,,1
+10,c010-e5210d1,e5210d1f9ef4f1d41ff0a8c4a2ab8e9192d5e087,2017-12-22,33,0,11e018fe623758986910069a6285b614dd98cc98,Corrected fix for #998,,1,1,0,0,XmlTreeBuilder,0
+11,c011-b92b4f6,b92b4f6b9b3256e97bfb6a0732bf113b6da53a4c,2017-12-23,34,0,e5210d1f9ef4f1d41ff0a8c4a2ab8e9192d5e087,isEmpty() should bufferUp,,1,1,0,1,CharacterReader,0
+12,c012-03bffef,03bffef1c7f6652f28214961bac16ad837064d32,2017-12-23,34,0,b92b4f6b9b3256e97bfb6a0732bf113b6da53a4c,Correct the change note location,,0,0,0,1,,1
+13,c013-71561e0,71561e09e0f29ec5fd1bb918206f3d8e42876518,2018-04-07,139,0,03bffef1c7f6652f28214961bac16ad837064d32,It's 2018,,0,0,0,1,,1
+14,c014-2c4e79b,2c4e79b104c0ff32566ce247617d47c0b39cc2c7,2018-04-14,146,0,71561e09e0f29ec5fd1bb918206f3d8e42876518,DataUtil should throw IOException on failed reads during parse,,3,3,0,1,Connection|DataUtil|UncheckedIOException,0
+15,c015-1028b37,1028b37a1dfbc5dda7b18cbe692ab168c54fb505,2018-04-14,146,0,2c4e79b104c0ff32566ce247617d47c0b39cc2c7,"Leaf nodes should return an empty list on .childNodes(), not except",,1,1,0,1,LeafNode,0
+16,c016-a4dfbcf,a4dfbcf090102e13949cc15a973a9ad2721d98d0,2018-04-14,146,0,1028b37a1dfbc5dda7b18cbe692ab168c54fb505,Set automatic module name for Java 9,,0,0,1,0,,0
+17,c017-e0f9c5f,e0f9c5fbb3961ab3a5baacabbde85a2569abed65,2018-04-14,146,1,a4dfbcf090102e13949cc15a973a9ad2721d98d0,Merge branch 'master' of https://github.com/jhy/jsoup,,2,0,0,1,HtmlTreeBuilder|Token,0
+18,c018-0f7e0cc,0f7e0cc373aced32629f5321c9521f81d8248647,2018-04-14,146,0,e0f9c5fbb3961ab3a5baacabbde85a2569abed65,Make sure to consume a UTF-8 BOM at the start of a doc,,2,4,0,1,DataUtil|HtmlTreeBuilderState,0
+19,c019-47a7f5a,47a7f5ab2a22a2ce526f96e0cf9f2c46511c56d9,2018-04-15,147,0,0f7e0cc373aced32629f5321c9521f81d8248647,Keep \n on file endings,,0,0,0,1,,1
+20,c020-e9feec9,e9feec90dbd3e428dc1930c3b5efbd9271160d01,2018-04-15,147,0,47a7f5ab2a22a2ce526f96e0cf9f2c46511c56d9,Check that XML declarations parse OK,,1,1,0,1,XmlTreeBuilder,0
+21,c021-18ef323,18ef323541f6c369824e0c726b2be55880ec36da,2018-04-15,147,1,e9feec90dbd3e428dc1930c3b5efbd9271160d01,Merge branch 'pr/1046',,1,1,0,1,Tokeniser,0
+22,c022-04f0ab3,04f0ab3bf48a4ea1247fa9619b34cac6f6049a6a,2018-04-15,147,1,18ef323541f6c369824e0c726b2be55880ec36da,Merge branch 'pr/1038',,2,0,0,1,Connection|HttpConnection,0
+23,c023-2b1ea06,2b1ea0633ff5d4cba5db0e202a4ce0fbdccc19db,2018-04-15,147,0,04f0ab3bf48a4ea1247fa9619b34cac6f6049a6a,[maven-release-plugin] prepare release jsoup-1.11.3,jsoup-1.11.3,0,0,1,0,,0
+24,c024-176c173,176c173b24bf890460fe8ecb08ddf60d4fc2e195,2018-04-15,147,0,2b1ea0633ff5d4cba5db0e202a4ce0fbdccc19db,[maven-release-plugin] prepare for next development iteration,,0,0,1,0,,0
+25,c025-fa38b8a,fa38b8a95414984c1ded0a3672adae95b51c1ab3,2018-04-15,147,0,176c173b24bf890460fe8ecb08ddf60d4fc2e195,Release date,,0,0,0,1,,1
+26,c026-bf6667c,bf6667c439a1fa29ea50d531b65633ffe150d16b,2018-04-28,160,0,fa38b8a95414984c1ded0a3672adae95b51c1ab3,Removed deprecated Connection.validateTLSCertificates() method,,2,1,0,1,Connection|HttpConnection,0
+27,c027-850a9cc,850a9cc02fb72cc450d1a9dc41912fa80fee9020,2018-04-28,160,0,bf6667c439a1fa29ea50d531b65633ffe150d16b,Maintain the Parser used when parsing a Document,,8,3,0,1,Document|Element|HtmlTreeBuilder|Node|ParseSettings|Parser|TreeBuilder|XmlTreeBuilder,0
+28,c028-e38dfd4,e38dfd44829e13ee83fd62bfe937580f5a998c11,2018-04-28,160,0,850a9cc02fb72cc450d1a9dc41912fa80fee9020,Detect charset from pseudo XML declaration when in HTML parser mode,,3,1,0,1,Comment|DataUtil|XmlTreeBuilder,0
+29,c029-d2fb53f,d2fb53fd1ca0e06d877c8e9b8cd5da897c0d6618,2018-04-29,161,0,e38dfd44829e13ee83fd62bfe937580f5a998c11,Para move,,0,0,0,1,,1
+30,c030-f1b885d,f1b885d238d8576d91d71a09f8658358dd846921,2018-04-29,161,0,d2fb53fd1ca0e06d877c8e9b8cd5da897c0d6618,Spring cleaning,,10,0,0,1,Comment|DataUtil|Element|HtmlTreeBuilder|HttpConnection|Node|NodeUtils|Parser|PseudoTextElement|Whitelist,0
+31,c031-77966f7,77966f79996f3fc4c7828b4d02a926c071faf040,2018-04-29,161,0,f1b885d238d8576d91d71a09f8658358dd846921,Some redirect tests,,1,3,0,0,HttpConnection,0
+32,c032-6be19a6,6be19a6fa26e6e5e3d716283bad4b5de0348a8b7,2018-04-29,161,0,77966f79996f3fc4c7828b4d02a926c071faf040,"If a charset cannot encode, flip to one that can",,1,1,0,1,DataUtil,0
+33,c033-39e90ee,39e90ee38c3ce7aa254bb89740282c12eb149162,2018-04-29,161,0,6be19a6fa26e6e5e3d716283bad4b5de0348a8b7,Indentation fix,,0,1,0,0,,1
+34,c034-bdf1df7,bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664,2018-04-29,161,0,39e90ee38c3ce7aa254bb89740282c12eb149162,"Treat < in a start tag as a new tag, not an attribute name",,2,2,0,1,CharacterReader|TokeniserState,0
+35,c035-a810d2e,a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8,2018-04-29,161,0,bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664,Don't blow up if a namespace is undefined,,1,1,0,1,W3CDom,0
+36,c036-eec4cf3,eec4cf3503d226272642c7507686e96870307dfb,2018-05-05,167,0,a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8,"Call .disconnect() in close, so Android OKHttp impl can clean its pool",,1,0,0,0,HttpConnection,0
+37,c037-ae99d7e,ae99d7ebaa7ce4e8446150ce4ccbad4646433f8f,2018-05-06,168,0,eec4cf3503d226272642c7507686e96870307dfb,Table parse performance tweak,,2,1,0,1,CharacterReader|HtmlTreeBuilderState,0
+38,c038-1649122,16491229eeee7cea72d35ff0de6ed7302fd088de,2018-05-06,168,0,ae99d7ebaa7ce4e8446150ce4ccbad4646433f8f,"Perf tweaks in start tags, data",,2,0,0,1,CharacterReader|HtmlTreeBuilder,0
+39,c039-c8c0569,c8c05694da5489221c27e45a5e49d0f5fcb41863,2018-05-09,171,0,16491229eeee7cea72d35ff0de6ed7302fd088de,"Use a stack for StringBuilder flyweight, so threads can use more than one at a t",,13,0,0,0,Attribute|Attributes|DataUtil|Element|Elements|Entities|HttpConnection|Node|QueryParser|StringUtil|TokenQueue|Tokeniser|XmlDeclaration,0
+40,c040-e26267d,e26267dd77b437f9e3ea155ae7a52013fde6c2f5,2018-05-11,173,0,c8c05694da5489221c27e45a5e49d0f5fcb41863,Remove no-longer relevant comment,,0,1,0,0,,1
+41,c041-ae7d216,ae7d21635654f1e93e4b732983d633af46f53b73,2018-05-11,173,1,e26267dd77b437f9e3ea155ae7a52013fde6c2f5,Merge branch 'master' of https://github.com/jhy/jsoup,,22,6,0,0,Attribute|Attributes|CombiningEvaluator|DataUtil|Document|DocumentType|Element|Elements|Entities|HtmlToPlainText|HtmlTreeBuilder|HtmlTreeBuilderState|HttpConnection|Node|QueryParser|StringUtil|TextNode|TokenQueue|Tokeniser|W3CDom|XmlDeclaration,0
+42,c042-4d10472,4d104721d96baaa6a6c28d2b472a37f631227f46,2018-05-11,173,0,ae7d21635654f1e93e4b732983d633af46f53b73,Simplify code a bit,,1,0,0,0,HttpConnection,0
+43,c043-1933e97,1933e9727c694863d6b7a9bb98682b560510d212,2018-05-11,173,0,4d104721d96baaa6a6c28d2b472a37f631227f46,Make HttpConnection constructor public,,1,1,0,0,HttpConnection,0
+44,c044-26adfcb,26adfcbcb07bca87f0d50084aaca7549c97abb0c,2018-05-11,173,1,1933e9727c694863d6b7a9bb98682b560510d212,Merge branch 'pr/1054',,2,1,0,1,Element|Elements,0
+45,c045-220b771,220b77140bce70dcf9c767f8f04758b09097db14,2018-05-11,173,0,26adfcbcb07bca87f0d50084aaca7549c97abb0c,Previous elements are returned in reverse order,,0,1,0,0,,1
+46,c046-cecdb32,cecdb3250c9d3f6cd3e5aed2743afa360e0d8531,2018-10-21,336,0,220b77140bce70dcf9c767f8f04758b09097db14,Updated jetty-server (which is used for integration tests) to latest 9.2 series ,,0,0,1,1,,0
+47,c047-54e8730,54e87300275b587cd2033ab6493526cbb2caf3e9,2018-12-05,381,0,cecdb3250c9d3f6cd3e5aed2743afa360e0d8531,Adding unit test demonstrating character reader buffer issue.,,0,2,0,0,,1
+48,c048-952b0e8,952b0e85cc70fedf7c11d75d1c262b73e51b6a5b,2018-12-23,399,0,54e87300275b587cd2033ab6493526cbb2caf3e9,Typo,,1,1,0,0,Tokeniser,0
+49,c049-54a8d30,54a8d301bb486fcc87887d2961da0e82b55dd54e,2018-12-23,399,0,952b0e85cc70fedf7c11d75d1c262b73e51b6a5b,Do a full bufferUp when marking a reader,,1,1,0,0,CharacterReader,0
+50,c050-2da07a1,2da07a110b04c7d181c04c0fbcfb141035255374,2018-12-23,399,1,54a8d301bb486fcc87887d2961da0e82b55dd54e,Merge branch 'master' into pr/1154,,10,5,1,2,Attribute|Comment|Element|HtmlTreeBuilder|HtmlTreeBuilderState|Node|ParseSettings|Parser|Tag|Token,0
+51,c051-1be6e5c,1be6e5c1cc868e5cfbd5937db4e926717fe5904c,2018-12-23,399,0,2da07a110b04c7d181c04c0fbcfb141035255374,Changelog for #1154,,0,0,0,1,,1
+52,c052-9934dfc,9934dfc6f514881940256bd1605f86fcdb245cf2,2018-12-23,399,0,1be6e5c1cc868e5cfbd5937db4e926717fe5904c,Add build status to readme,,0,0,0,1,,1
+53,c053-8adcd55,8adcd55d8abe4c84ae2dcffb9a882abc4143bb93,2018-12-23,399,0,9934dfc6f514881940256bd1605f86fcdb245cf2,Chagelog tweak,,0,0,0,1,,1
+54,c054-8b837a4,8b837a43cbe2c12624ab2088dc4ff9a725af5f4d,2018-12-23,399,0,8adcd55d8abe4c84ae2dcffb9a882abc4143bb93,Return null attribute values as empty string,,1,1,0,1,Attribute,0
+55,c055-1d663ee,1d663eeb1c0d1c08bcfe5d30f05170768bb0438e,2018-12-23,399,0,8b837a43cbe2c12624ab2088dc4ff9a725af5f4d,Don't NPE in setValue for an orphan Attribute,,1,1,0,1,Attribute,0
+56,c056-7c60ac1,7c60ac132afc0034da18bfe969e18046994f9427,2018-12-26,402,1,1d663eeb1c0d1c08bcfe5d30f05170768bb0438e,Merge branch 'pr/1113',,1,1,0,1,Tag,0
+57,c057-18cd16d,18cd16d2a1418a8e9b684b35e00e59a5ccaf90a7,2018-12-26,402,0,7c60ac132afc0034da18bfe969e18046994f9427,Fix up end-of-line normalization; always want LFs on text,,0,0,0,1,,1
+58,c058-56ea479,56ea479e22fdcb360696c5a922d6b45d9445e06d,2018-12-26,402,0,18cd16d2a1418a8e9b684b35e00e59a5ccaf90a7,Allow multipart form submission by setting header; automatically add boundary.,,1,1,0,0,HttpConnection,0
+59,c059-68ff8cb,68ff8cbe7ad847059737a09c567a501a7f1d251f,2018-12-26,402,0,56ea479e22fdcb360696c5a922d6b45d9445e06d,Changelog and visibility for auto multipater,,1,1,0,1,HttpConnection,0
+60,c060-5f5c64b,5f5c64b2b2ca734b83b58656152091c9532b9fdb,2019-05-12,539,0,68ff8cbe7ad847059737a09c567a501a7f1d251f,Cleanup,,0,0,1,1,,0
+61,c061-7842f88,7842f8879e576acb6e14d8692f9f7babc7d6fb53,2019-05-12,539,0,5f5c64b2b2ca734b83b58656152091c9532b9fdb,Update Jetty version,,0,0,1,0,,0
+62,c062-82e2c44,82e2c44234ca5a33b5f6a688949e0247af4dbfe4,2019-05-12,539,0,7842f8879e576acb6e14d8692f9f7babc7d6fb53,Test for #1205,,0,1,0,0,,1
+63,c063-eaf876d,eaf876dc4a149e674f1c871894ffb4ec188f2d62,2019-05-12,539,0,82e2c44234ca5a33b5f6a688949e0247af4dbfe4,Clone attributes in shallowClone(),,1,1,0,0,Element,0
+64,c064-315655c,315655cc11c9d49bb821dd800d45580696b02185,2019-05-12,539,0,eaf876dc4a149e674f1c871894ffb4ec188f2d62,Changelog for #1201,,0,0,0,1,,1
+65,c065-7de614f,7de614ffd01161d8718d7458bab9d9690ad2334f,2019-05-12,539,0,315655cc11c9d49bb821dd800d45580696b02185,Validate string length,,1,1,0,1,HttpConnection,0
+66,c066-247c5d0,247c5d05f4529e55aa1fdbd333f99e323809b5e0,2019-05-12,539,0,7de614ffd01161d8718d7458bab9d9690ad2334f,"If the input file or URL is binary, throw an exception",,3,3,0,1,CharacterReader|DataUtil|UncheckedIOException,0
+67,c067-b87c013,b87c013947d59cca92e853a02f2d2d6ae41ef586,2019-05-12,539,0,247c5d05f4529e55aa1fdbd333f99e323809b5e0,Test binary to byte fetch OK,,0,1,0,0,,1
+68,c068-3f02569,3f0256953a2938875dba33e58004037989985f7d,2019-05-12,539,0,b87c013947d59cca92e853a02f2d2d6ae41ef586,[maven-release-plugin] prepare release jsoup-1.12.1,jsoup-1.12.1,0,0,1,0,,0
+69,c069-fb45283,fb45283bbd19e2a82f35639ebffdfabd43d1aad6,2019-05-12,539,0,3f0256953a2938875dba33e58004037989985f7d,[maven-release-plugin] prepare for next development iteration,,0,0,1,0,,0
+70,c070-a87b1c6,a87b1c6d762e3714bd88540e2df9e232f6f12200,2019-05-12,539,0,fb45283bbd19e2a82f35639ebffdfabd43d1aad6,Changelog prep,,0,0,0,1,,1
+71,c071-620287b,620287bf786001cb88eb2c87086b6d40ffecd5ae,2019-05-12,539,0,a87b1c6d762e3714bd88540e2df9e232f6f12200,Updated jetty-server (test dependency),,0,0,1,0,,0
+72,c072-7400fec,7400feca7aa07d834cdaae87175a3ca687da250b,2019-05-12,539,0,620287bf786001cb88eb2c87086b6d40ffecd5ae,fix typo in Selector.java,,1,0,0,0,Selector,0
+73,c073-a3649e6,a3649e6b1cb55c7cbb47870a802bbc6419b74f45,2019-05-12,539,0,7400feca7aa07d834cdaae87175a3ca687da250b,fix inconsistent javadoc,,1,0,0,0,Element,0
+74,c074-ff979f4,ff979f461572acfc32c0c70b091cc3a24529296a,2019-05-12,539,0,a3649e6b1cb55c7cbb47870a802bbc6419b74f45,test: chompBalanced() should throw IllegalArgumentException when unbalanced inpu,,0,1,0,0,,1
+75,c075-e499559,e499559601270be462bbcc665014dc061032134f,2019-05-12,539,0,ff979f461572acfc32c0c70b091cc3a24529296a,maven-compiler-plugin 3.8.0,,0,0,1,0,,0
+76,c076-7755a41,7755a419b2db2f49132ad4ae83fc96bb9853c7d4,2019-05-15,542,0,e499559601270be462bbcc665014dc061032134f,Don't recompile all on every build,,0,0,1,0,,0
+77,c077-7bd5cf5,7bd5cf5b1caf75db802121fc2e82507a7f3f5a10,2019-05-15,542,0,7755a419b2db2f49132ad4ae83fc96bb9853c7d4,Rollback -Xpkginfo:always,,0,0,1,0,,0
+78,c078-d65510c,d65510c8ed0f10561372838b1c15b9d8af658d8b,2019-05-15,542,0,7bd5cf5b1caf75db802121fc2e82507a7f3f5a10,JDK 12 CI build added.,,0,0,0,1,,1
+79,c079-fd46489,fd46489cd718ddea7b28f89953265e7ce4ec8372,2019-05-16,543,0,d65510c8ed0f10561372838b1c15b9d8af658d8b,Moved some URL tests to local servlet,,0,3,0,0,,1
+80,c080-525d7c1,525d7c19ec44e5b4e462946f68746d6df74eb393,2019-05-16,543,0,fd46489cd718ddea7b28f89953265e7ce4ec8372,Splelling,,1,0,0,0,HttpConnection,0
+81,c081-0fe6d51,0fe6d51fd8b026e6a860376b228533da66654fb4,2019-05-16,543,0,525d7c19ec44e5b4e462946f68746d6df74eb393,"Fix :has selector to set the root, allowing relative selectors",,1,1,0,0,StructuralEvaluator,0
+82,c082-e441754,e4417540b2d24ee5218dbbf14df1f0f63002db02,2019-05-16,543,0,0fe6d51fd8b026e6a860376b228533da66654fb4,Changelog for #1214,,3,0,0,1,Selector|StringUtil|package-info,0
+83,c083-a63ed99,a63ed9938a441c0496e7789b09e59d298370d9ae,2019-05-16,543,0,e4417540b2d24ee5218dbbf14df1f0f63002db02,Limit style to the syntax table,,1,0,0,0,Selector,0
+84,c084-1e576bb,1e576bbb7bb896b8f2ee7f3c20224d678fb21acf,2019-05-17,544,0,a63ed9938a441c0496e7789b09e59d298370d9ae,Added remaining typed Element chaining methods,,2,1,0,1,Element|Node,0
+85,c085-9e36f9e,9e36f9e26cb8342ea54ad1379d6b1bfee718e90e,2019-05-17,544,0,1e576bbb7bb896b8f2ee7f3c20224d678fb21acf,A few cleanups /  sanity assertions,,4,0,0,0,CharacterReader|DataUtil|HtmlToPlainText|HttpConnection,0
+86,c086-a47a7e4,a47a7e45dd22d293e4b1f4fd7fdf8b2d83e539be,2019-05-17,544,0,9e36f9e26cb8342ea54ad1379d6b1bfee718e90e,Allocate entities in static section; saves 16K from .jar,,1,0,0,0,EntitiesData,0
+87,c087-8e3eeb5,8e3eeb5f41a21b57c407b24b4e9c5ee036847f1b,2019-06-02,560,0,a47a7e45dd22d293e4b1f4fd7fdf8b2d83e539be,Jdk11 / Jdk12 JavaDoc generation fix (#1217),,0,0,1,0,,0
+88,c088-a4b5e82,a4b5e826f2440b19ee2a98fdece7211433cfdaed,2019-06-02,560,0,8e3eeb5f41a21b57c407b24b4e9c5ee036847f1b,Code improvements (#1216),,5,7,0,0,Cleaner|DataUtil|Evaluator|HtmlTreeBuilder|HttpConnection,0
+89,c089-e42ca3b,e42ca3b8e00d611b5d3c0bb15ddff7163dd0f36a,2019-06-29,587,0,a4b5e826f2440b19ee2a98fdece7211433cfdaed,Move integ tests to Maven Failsafe,,0,2,1,1,,0
+90,c090-333fcc3,333fcc3f8df3ce8300730a08c012a1d0e1cf6b5c,2019-06-29,587,0,e42ca3b8e00d611b5d3c0bb15ddff7163dd0f36a,Travis fixup,,0,0,0,1,,1
+91,c091-92392a6,92392a674e3905c85f960696d99fe1f3e0c19413,2019-06-29,587,0,333fcc3f8df3ce8300730a08c012a1d0e1cf6b5c,Don't recompile regex on each hit,,0,1,0,0,,1
+92,c092-27a445b,27a445b029b02bced263a0686f40a4f373827953,2019-07-04,592,0,92392a674e3905c85f960696d99fe1f3e0c19413,Get location from path info,,0,3,0,0,,1
+93,c093-0fc3d67,0fc3d6728ae270fb38f9778ad7fa2663060b50c7,2019-07-04,592,0,27a445b029b02bced263a0686f40a4f373827953,"On duplicate attributes, retain first not last instance",,6,2,0,1,Attributes|HtmlTreeBuilder|ParseSettings|Token|TreeBuilder|XmlTreeBuilder,0
+94,c094-e9e6137,e9e613706443fd1cd3458d1e5116c0498afd8b09,2019-07-04,592,0,0fc3d6728ae270fb38f9778ad7fa2663060b50c7,Testcase for #1234,,0,1,0,0,,1
+95,c095-a9439f0,a9439f0c503ac8e0f009a0ec39f8bff1a6271d51,2019-07-04,592,0,e9e613706443fd1cd3458d1e5116c0498afd8b09,Don't submit button values,,1,1,0,1,FormElement,0
+96,c096-b61a3e6,b61a3e6b340b878b30c518e35c6066f559b5102e,2019-07-04,592,0,a9439f0c503ac8e0f009a0ec39f8bff1a6271d51,Fix Travis CI JDK issues (#1236),,0,0,0,1,,1
+97,c097-fb58877,fb588770a45a9ab6b64fce0f800d50ec225a42ee,2019-07-04,592,0,b61a3e6b340b878b30c518e35c6066f559b5102e,"Reorder conn.disconnect, to support keepalives when bodyStream read",,1,0,0,1,HttpConnection,0
+98,c098-8d1d503,8d1d503913a68e549b5c4a94717c62cf3f64507a,2019-07-04,592,0,fb588770a45a9ab6b64fce0f800d50ec225a42ee,Removed external URL from testsuite,,0,2,0,0,,1
+99,c099-a0b87bf,a0b87bf10a9a520b49748c619c868caed8d7a109,2020-01-20,792,0,8d1d503913a68e549b5c4a94717c62cf3f64507a,Ensure enough data is buffered to survive a Mark reset,,4,3,0,1,CharacterReader|Tokeniser|TokeniserState|Validate,0
+100,c100-9fdda99,9fdda9932e6420bb6a2b780107f39a6fa69fef99,2020-01-20,792,0,a0b87bf10a9a520b49748c619c868caed8d7a109,Update Travis JDK builds,,0,0,0,1,,1
+101,c101-86d69ea,86d69ea625edc3650b50b8f13364c58a173fb9bf,2020-01-26,798,0,9fdda9932e6420bb6a2b780107f39a6fa69fef99,Update default max body to 2MB. Update default UA.,,2,0,0,1,Connection|HttpConnection,0
+102,c102-de97030,de97030ff54ee0bd306cbc58bd8093645cc8a5dc,2020-01-26,798,0,86d69ea625edc3650b50b8f13364c58a173fb9bf,Fix edge cases with delimiters being near a buffer boundary.,,3,2,0,0,CharacterReader|Tokeniser|TokeniserState,0
+103,c103-c2b1fe7,c2b1fe73129e9c23d93e5393ce8007995c1630dc,2020-01-26,798,0,de97030ff54ee0bd306cbc58bd8093645cc8a5dc,Report the correct error position in some malformed constructs,,2,2,0,0,CharacterReader|TokeniserState,0
+104,c104-9b674f8,9b674f82b984c65a17b2e127d5d0beac130fe1ce,2020-01-26,798,0,c2b1fe73129e9c23d93e5393ce8007995c1630dc,Changes for #1253,,0,0,0,1,,1
+105,c105-8371a17,8371a171fcc3314a343223d83bcab7fa2c40c0c7,2020-01-26,798,0,9b674f82b984c65a17b2e127d5d0beac130fe1ce,fix for bug #1279,,2,1,0,0,Evaluator|Normalizer,0
+106,c106-a4210b7,a4210b7a958aa2eaff2b78881f5a1e16f8265dc8,2020-01-26,798,0,8371a171fcc3314a343223d83bcab7fa2c40c0c7,Also add fix for ends with spaces,,1,1,0,1,Evaluator,0
+107,c107-91ca25b,91ca25b341bc5ad1c364b8e7389287c45ca9df2c,2020-01-30,802,0,a4210b7a958aa2eaff2b78881f5a1e16f8265dc8,Don't normalize away zwj or zwnj,,1,1,0,1,StringUtil,0
+108,c108-eb7b0d7,eb7b0d785d3229a87e11a18e171d011cfe664f1e,2020-01-30,802,0,91ca25b341bc5ad1c364b8e7389287c45ca9df2c,Changes typo,,0,0,0,1,,1
+109,c109-f2ff26b,f2ff26b63c74c379c52da1f9c58bf328598fd2ba,2020-01-30,802,0,eb7b0d785d3229a87e11a18e171d011cfe664f1e,Fix case in-sensitivity for Tag.Endswith (namespaced elements),,2,1,0,1,Evaluator|QueryParser,0
+110,c110-de1ced9,de1ced99d4dae991a546534454d5f7d9dc26f0b1,2020-01-30,802,0,f2ff26b63c74c379c52da1f9c58bf328598fd2ba,Changes typo,,0,0,0,1,,1
+111,c111-f5fc1bb,f5fc1bb04c224865f8eee5ed718f4ffee0e18712,2020-01-30,802,0,de1ced99d4dae991a546534454d5f7d9dc26f0b1,"Don't throw an exception if a selector ends in a space, just trim it.",,1,2,0,1,QueryParser,0
+112,c112-5a570cf,5a570cf31e078c9b3865f93a37fbbde68c9799df,2020-02-01,804,0,f5fc1bb04c224865f8eee5ed718f4ffee0e18712,Much faster perf when bulk inserting a complete node list into anothe r node,,3,1,0,1,Element|LeafNode|Node,0
+113,c113-cfd1362,cfd1362861093f5836513fb1a7a9670f9c5c1de6,2020-02-01,804,0,5a570cf31e078c9b3865f93a37fbbde68c9799df,Extra tests,,0,1,0,0,,1
+114,c114-a8d431b,a8d431bad9575d5f32d7b87252962a8aae02d59f,2020-02-01,804,0,cfd1362861093f5836513fb1a7a9670f9c5c1de6,Fixes #1220 self-closing textarea,,1,1,0,1,HtmlTreeBuilderState,0
+115,c115-ef400e7,ef400e71e9d85b8bab30b28552bf1c339024d79f,2020-02-01,804,0,a8d431bad9575d5f32d7b87252962a8aae02d59f,Moved test,,0,2,0,0,,1
+116,c116-a7d704f,a7d704f2713cafb49356ed592a71772dde1f90e2,2020-02-01,804,0,ef400e71e9d85b8bab30b28552bf1c339024d79f,2020 date,,0,0,0,1,,1
+117,c117-b891b6f,b891b6f54f7c53b0ca4510093251f0c1a81b02e6,2020-02-01,804,0,a7d704f2713cafb49356ed592a71772dde1f90e2,Removed todo,,1,0,0,0,HtmlTreeBuilderState,0
+118,c118-3a9bf46,3a9bf46eeb36196d841c3fa05597e40a13f51f43,2020-02-02,805,0,b891b6f54f7c53b0ca4510093251f0c1a81b02e6,Not add line break when pretty printing inline tags,,2,4,0,0,Element|Tag,0
+119,c119-279fbe1,279fbe120c5bd4221478481b78d31ddf41475360,2020-02-02,805,0,3a9bf46eeb36196d841c3fa05597e40a13f51f43,"Cleaned up Tag, tweaked output for inline text then tag",,2,4,0,1,Element|Tag,0
+120,c120-97758e7,97758e74cbd39552f711480a4d1e4e5fe058efea,2020-02-02,805,0,279fbe120c5bd4221478481b78d31ddf41475360,Test for #851,,0,1,0,0,,1
+121,c121-128008e,128008e29c33cf6b3b20fde8f2bbd13ead98509c,2020-02-02,805,0,97758e74cbd39552f711480a4d1e4e5fe058efea,Fix TextNode.outerHtml normalization for orhpans,,1,1,0,1,TextNode,0
+122,c122-5359490,5359490c56501b231d0d1d19e7eed4ffb37425d7,2020-02-02,805,0,128008e29c33cf6b3b20fde8f2bbd13ead98509c,Removed binary input detection attempt,,1,2,0,1,CharacterReader,0
+123,c123-2d43141,2d431412fc5a2fea8d7d4490c487e2012474011e,2020-02-02,805,0,5359490c56501b231d0d1d19e7eed4ffb37425d7,Test to verify zwnj fix for Farsi,,0,1,0,0,,1
+124,c124-894d3ec,894d3ec9c71a324c007a4790604e6ca44e1d83c7,2020-02-02,805,1,2d431412fc5a2fea8d7d4490c487e2012474011e,Merge branch 'pr/1291',,1,1,0,1,Element,0
+125,c125-c198334,c198334e12c68dd547fd4c63f892b14529f5fed6,2020-02-02,805,1,894d3ec9c71a324c007a4790604e6ca44e1d83c7,Merge branch 'master' of https://github.com/jhy/jsoup,,0,0,0,1,,1
+126,c126-9297a22,9297a22afcf1396c54539e0f225d048f794783ab,2020-02-02,805,0,c198334e12c68dd547fd4c63f892b14529f5fed6,Safeclose to get any inputstreams closed first on error,,1,0,0,0,HttpConnection,0
+127,c127-d36f91a,d36f91a47fc5e4ae8a8b172d6822e5019abf356c,2020-02-02,805,0,9297a22afcf1396c54539e0f225d048f794783ab,Test to verify #1208,,0,1,0,0,,1
+128,c128-fe92494,fe92494c7716eeb04d5d4040cc43d67b8f2f4aaf,2020-02-02,805,0,d36f91a47fc5e4ae8a8b172d6822e5019abf356c,W3CDom#asString should emit XML,,1,2,0,1,W3CDom,0
+129,c129-052dc1b,052dc1b1cac3dd4bfded785ce8c9dadc8b95f18c,2020-02-02,805,0,fe92494c7716eeb04d5d4040cc43d67b8f2f4aaf,Added tests to verify #1096,,1,1,0,0,W3CDom,0
+130,c130-1a84ce3,1a84ce3b0e3df1018088c59b7c4484df181a2fdb,2020-02-02,805,0,052dc1b1cac3dd4bfded785ce8c9dadc8b95f18c,Normalize xml strings before comparison,,0,1,0,0,,1
+131,c131-4e05274,4e052740436ce42efa1bf4cb49204f90e4796fd7,2020-02-05,808,0,1a84ce3b0e3df1018088c59b7c4484df181a2fdb,Updata Jetty servlet to current,,0,4,1,0,,0
+132,c132-2ea6f9a,2ea6f9a8fc51b3a52754517523699b255beb5832,2020-02-05,808,0,4e052740436ce42efa1bf4cb49204f90e4796fd7,Test cleanup,,0,1,0,0,,1
+133,c133-6b2bf55,6b2bf55e43ce17efb8d8ac15d5417d78c3eaad16,2020-02-06,809,0,2ea6f9a8fc51b3a52754517523699b255beb5832,Added test to validate #1243,,0,1,0,0,,1
+134,c134-3bd77f8,3bd77f862826a9b3b1bd4c33a66af51cb467eea8,2020-02-06,809,0,6b2bf55e43ce17efb8d8ac15d5417d78c3eaad16,Don't want that,,0,1,0,0,,1
+135,c135-fb50d96,fb50d9635874185fc050735057b8a7363cd53f3f,2020-02-06,809,0,3bd77f862826a9b3b1bd4c33a66af51cb467eea8,Deepclone attributes in LeafNodes if set,,7,1,0,1,CDataNode|Comment|DataNode|FormElement|LeafNode|TextNode|XmlDeclaration,0
+136,c136-e020854,e02085409f0bdd7e71441fc62448192720305444,2020-02-08,811,0,fb50d9635874185fc050735057b8a7363cd53f3f,"In W3CDom, handle doctypes, and don't force XML output",,3,3,0,1,Document|DocumentType|W3CDom,0
+137,c137-0bec593,0bec593106b90897b8b7b8f3ac82603ca56a0b6c,2020-02-08,811,0,e02085409f0bdd7e71441fc62448192720305444,Readme URL update,,0,0,0,1,,1
+138,c138-a0711e5,a0711e57666055161a9eab9346e16e9ce2e0d547,2020-02-08,811,0,0bec593106b90897b8b7b8f3ac82603ca56a0b6c,Use String#replace instead of String#replaceAll where possible.,,1,0,0,0,HttpConnection,0
+139,c139-f91e1e8,f91e1e8dac668024c693a2ecd238b1c6b7219c30,2020-02-08,811,0,a0711e57666055161a9eab9346e16e9ce2e0d547,Avoid unnecessary boxing of char in TokenQueue#chompBalanced.,,1,0,0,0,TokenQueue,0
+140,c140-d06d8f4,d06d8f423439290032dbbb8211c58220fa13e7bd,2020-02-08,811,0,f91e1e8dac668024c693a2ecd238b1c6b7219c30,"Avoid unnecessary null checks, as Element#indexInList never returns null.",,1,0,0,0,Element,0
+141,c141-e81c35f,e81c35f9ffa3eb56a7cdff92ff2e5d44f5e7ac51,2020-02-08,811,0,d06d8f423439290032dbbb8211c58220fa13e7bd,Fix file to LF endings,,0,1,0,0,,1
+142,c142-6ef8922,6ef89226deae4683ccc0f2367db048278e94d5b0,2020-02-08,811,0,e81c35f9ffa3eb56a7cdff92ff2e5d44f5e7ac51,[maven-release-plugin] prepare release jsoup-1.12.2,jsoup-1.12.2,0,0,1,0,,0
+143,c143-437c727,437c727f6c33272c7a971aa75cbfd38d666fc229,2020-02-09,812,0,6ef89226deae4683ccc0f2367db048278e94d5b0,Prep 1.13.1 development,,0,0,1,1,,0
+144,c144-a7b0c2d,a7b0c2df028f49fa246c7b6a51b6b83011655865,2020-02-09,812,0,437c727f6c33272c7a971aa75cbfd38d666fc229,Removed old deprecated classes and methods,,13,3,0,1,Attribute|Attributes|BooleanAttribute|Comment|DataNode|DocumentType|Entities|NodeTraversor|Parser|Tag|TextNode|Token|XmlDeclaration,0
+145,c145-91fcf20,91fcf208945f458b176c2b6915b53bad095cf527,2020-02-09,812,0,a7b0c2df028f49fa246c7b6a51b6b83011655865,Test for application/rss+xml,,1,3,0,0,HttpConnection,0
+146,c146-50df99d,50df99d6acacb32da25beb39ab4683edf5a48908,2020-02-09,812,0,91fcf208945f458b176c2b6915b53bad095cf527,Added some tests,,1,3,0,0,Comment,0
+147,c147-a82d6b6,a82d6b6ae8cb33cc7ccc78c7a805886a06b1dcd2,2020-02-09,812,0,50df99d6acacb32da25beb39ab4683edf5a48908,Don't push inline comments to newline,,1,3,0,1,Comment,0
+148,c148-fbc7e76,fbc7e76a2ac966a19b12c73147d3c6c8ab0eb61d,2020-02-09,812,0,a82d6b6ae8cb33cc7ccc78c7a805886a06b1dcd2,Auto close optgroup in select,,1,1,0,1,HtmlTreeBuilderState,0
+149,c149-08fa006,08fa0064c33d0a076b425f53c550ee83e57d5c65,2020-02-09,812,0,fbc7e76a2ac966a19b12c73147d3c6c8ab0eb61d,Assert harder,,0,1,0,0,,1
+150,c150-0a4bd07,0a4bd07adf2f483207c0c0820f020a2361d841c3,2020-02-09,812,0,08fa0064c33d0a076b425f53c550ee83e57d5c65,Don't create Attributes objects until required,,5,1,0,1,Element|HtmlTreeBuilder|ParseSettings|Token|XmlTreeBuilder,0
+151,c151-52bbe52,52bbe52a0cc943708bb25f0a4c56421cfda2e1ae,2020-02-09,812,0,0a4bd07adf2f483207c0c0820f020a2361d841c3,Update test for varying XHTML impl formats,,0,1,0,0,,1
+152,c152-1c51c84,1c51c84e68f0d76ee239a4a1ab52a487a4e2e764,2020-02-09,812,0,52bbe52a0cc943708bb25f0a4c56421cfda2e1ae,Fix some jdoc warnings,,2,0,0,0,Element|StringUtil,0
+153,c153-2080cbb,2080cbb75a2746123eb89db2bd9f923e7c109e15,2020-02-09,812,0,1c51c84e68f0d76ee239a4a1ab52a487a4e2e764,"Added Attribute#hasValue, Attributes#hasValue(key)",,2,2,0,1,Attribute|Attributes,0
+154,c154-f93f2fe,f93f2fe951a73a386cac980ad917a675ee557f67,2020-02-09,812,0,2080cbb75a2746123eb89db2bd9f923e7c109e15,Speed tweaks in hot methods,,2,0,0,0,CharacterReader|TokeniserState,0
+155,c155-fb79dea,fb79deab9ddac9ac494ab444ba0086b935c10e6e,2020-02-12,815,0,f93f2fe951a73a386cac980ad917a675ee557f67,Ensure that attributes are nulled on clear(),,2,1,0,0,Element|Token,0
+156,c156-6f2fd07,6f2fd07c9a0035e796e7b549598f13563a1a7d7d,2020-02-12,815,0,fb79deab9ddac9ac494ab444ba0086b935c10e6e,Renamed hasKey to hasKeyWithDefinedValue,,1,1,0,1,Attributes,0
+157,c157-979d5dd,979d5dd744b7cd30319965743b8a62269ba7845b,2020-02-12,815,0,6f2fd07c9a0035e796e7b549598f13563a1a7d7d,Introduced internal attributes,,5,3,0,0,Attributes|Element|HtmlTreeBuilder|Node|XmlTreeBuilder,0
+158,c158-528ba55,528ba552b19ab2ae949feecb373ef85a0b126566,2020-02-13,816,0,979d5dd744b7cd30319965743b8a62269ba7845b,Updated to Attributes#hasDeclaredValueForKey,,2,2,0,1,Attribute|Attributes,0
+159,c159-62c0595,62c0595813b817ec593b0941ca4c3f29d10fac55,2020-02-15,818,0,528ba552b19ab2ae949feecb373ef85a0b126566,Preserve the mark when buffering,,2,4,0,1,CharacterReader|Token,0
+160,c160-1d9f465,1d9f465895af9141e361b276322fc0bdb323b566,2020-02-15,818,0,62c0595813b817ec593b0941ca4c3f29d10fac55,Apply attribute normalization to void tags,,1,1,0,0,HtmlTreeBuilder,0
+161,c161-6e8241a,6e8241ab59152f1e87a9276654c67534124793c7,2020-02-15,818,0,1d9f465895af9141e361b276322fc0bdb323b566,Normalize form attributes,,1,1,0,1,HtmlTreeBuilder,0
+162,c162-006c6cc,006c6cc5cb279245b57a4327327ecded17a77849,2020-02-15,818,0,6e8241ab59152f1e87a9276654c67534124793c7,Indent sanity test,,0,1,0,0,,1
+163,c163-f4338e2,f4338e20a5e439632e3d2fc8fa3a330ade6d02ad,2020-02-15,818,0,006c6cc5cb279245b57a4327327ecded17a77849,Indent preserve-upper-cased tags correctly,,1,1,0,1,Tag,0
+164,c164-c5c5a73,c5c5a735d3d3f643ee614e9f9f93a0978970cf20,2020-02-15,818,0,f4338e20a5e439632e3d2fc8fa3a330ade6d02ad,Close and clear the character reader,,2,2,0,1,CharacterReader|TreeBuilder,0
+165,c165-5323605,532360506bdc20ed6ae71d4ca16effd078a18266,2020-02-15,818,0,c5c5a735d3d3f643ee614e9f9f93a0978970cf20,Script and Style must be DataNodes when case-sensitive parsing,,1,1,0,1,HtmlTreeBuilder,0
+166,c166-75815e2,75815e2d6b743bbdffede8e46d80da5c9684385c,2020-02-15,818,0,532360506bdc20ed6ae71d4ca16effd078a18266,"Use Tag#normalName, not Element#tagName for all comparisons",,4,1,0,0,Cleaner|Element|HtmlTreeBuilder|ListLinks,0
+167,c167-f54857e,f54857ed7a0423a0d5482b33308bc3d1a65bb97e,2020-02-15,818,0,75815e2d6b743bbdffede8e46d80da5c9684385c,Sampling found avg num attributes is 1.49,,1,0,0,1,Attributes,0
+168,c168-265653e,265653e3f2e04321fa327a5a32241de70cdbe234,2020-02-16,819,0,f54857ed7a0423a0d5482b33308bc3d1a65bb97e,Use URL instead of email,,0,0,0,1,,1
+169,c169-7a40591,7a405918f4fdf71ebc2a8b07ce3f6fb09f987c0a,2020-02-16,819,0,265653e3f2e04321fa327a5a32241de70cdbe234,Minor (~2%) increase in cache hit rate,,1,0,0,0,CharacterReader,0
+170,c170-bd64b01,bd64b0192c7d3485665afdc10805b587df19eab3,2020-02-18,821,0,7a405918f4fdf71ebc2a8b07ce3f6fb09f987c0a,Added Element#closest,,2,1,0,1,Element|QueryParser,0
+171,c171-5d864bd,5d864bd94f7c301364878e54b72cfe402e46e925,2020-02-18,821,0,bd64b0192c7d3485665afdc10805b587df19eab3,Issue link,,0,0,0,1,,1
+172,c172-50fae5b,50fae5bf22955a0b34f512cac9bf77c71257c889,2020-02-18,821,0,5d864bd94f7c301364878e54b72cfe402e46e925,Test for #1170 text node content,,0,1,0,0,,1
+173,c173-19be649,19be649e596b3066ed0d98d009cdd5b73d14c08d,2020-02-19,822,0,50fae5bf22955a0b34f512cac9bf77c71257c889,Extra test for mark invalid issue,,0,2,0,0,,1
+174,c174-d9dfc4a,d9dfc4a6f2769a7211113b54427b5fd8966f418a,2020-02-19,822,0,19be649e596b3066ed0d98d009cdd5b73d14c08d,Moved some longer running tests to IT tests,,0,5,0,0,,1
+175,c175-a657ae0,a657ae0240b875a703a1e4909d56ad59997d362d,2020-02-22,825,0,d9dfc4a6f2769a7211113b54427b5fd8966f418a,"Added forms(), comments(), textNodes(), dataNodes()",,1,1,0,1,Elements,0
+176,c176-9d9e53c,9d9e53c8f5ab7d5dfa689ff39ee9e5dc5f7a881e,2020-02-22,825,0,a657ae0240b875a703a1e4909d56ad59997d362d,Fixed a performance regression in 1.12,,2,0,0,0,Tokeniser|TreeBuilder,0
+177,c177-c693d6e,c693d6e42a06c09fca13dab8bd2c8d465481badb,2020-02-22,825,0,9d9e53c8f5ab7d5dfa689ff39ee9e5dc5f7a881e,"Use switch for start, end tags",,1,0,0,0,HtmlTreeBuilderState,0
+178,c178-1f5ffb8,1f5ffb85c35e0fd42fcefc1eb562e36d809a3d15,2020-02-23,826,0,c693d6e42a06c09fca13dab8bd2c8d465481badb,Pulled out InBody start and end sequences,,1,0,0,0,HtmlTreeBuilderState,0
+179,c179-696461b,696461b3288ad792ae41d057693a07b7e01d0635,2020-02-23,826,0,1f5ffb85c35e0fd42fcefc1eb562e36d809a3d15,Perf - catch comments in one hit,,3,1,0,0,Token|Tokeniser|TokeniserState,0
+180,c180-ebd2a77,ebd2a773d67e8d1d042607fd2458f92e18b9203b,2020-02-23,826,0,696461b3288ad792ae41d057693a07b7e01d0635,Don't copy String if a char buf is available,,1,0,0,0,DataUtil,0
+181,c181-5127814,51278145ef4f55e7b45276ac071332a53e6b19a6,2020-02-23,826,0,ebd2a773d67e8d1d042607fd2458f92e18b9203b,Save a little time - that verification hasn't fired to date,,1,0,0,0,Tokeniser,0
+182,c182-328f2e4,328f2e4ea8edb4c993051ba6834f12cde513657e,2020-02-29,832,0,51278145ef4f55e7b45276ac071332a53e6b19a6,Use canned arrays for all searches,,1,1,0,0,HtmlTreeBuilderState,0
+183,c183-9675a92,9675a92b41593244d6d3ecd99425aeb19e2a6219,2020-02-29,832,0,328f2e4ea8edb4c993051ba6834f12cde513657e,Preserve whitespace in nodes before <head>,,3,3,0,1,HtmlTreeBuilder|HtmlTreeBuilderState|TextNode,0
+184,c184-fb9aa17,fb9aa17b42dc62a087634788b93d9cba9d91d203,2020-02-29,832,0,9675a92b41593244d6d3ecd99425aeb19e2a6219,Changes for #1327,,0,0,0,1,,1
+185,c185-dcf3c8b,dcf3c8ba5a0963260999f463ee80b6a787928bb9,2020-02-29,832,0,fb9aa17b42dc62a087634788b93d9cba9d91d203,[maven-release-plugin] prepare release jsoup-1.13.1,jsoup-1.13.1,0,0,1,0,,0

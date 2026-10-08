@@ -1,0 +1,8 @@
+{
+  "status": "resolved-by-revised-brief",
+  "brief_path": "/Users/donggi/_downloads/jsoup-commit-survival-cc-instructions-2026-10-week3.md",
+  "brief_sha256": "512406f5a37548136fde2b6317f855e39349bf79bc3dd06bed8899dfa58deb7c",
+  "resolution": "Use git diff-tree --no-commit-id --name-only -r <parent1> <sha> for every point.",
+  "resumed_unix": 1791442492.524435,
+  "mechanical_fix": "The independent git diff validation uses --no-renames to match the prescribed diff-tree rename detection default; the prescribed metadata command is unchanged."
+}
