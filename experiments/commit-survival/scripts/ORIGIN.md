@@ -21,7 +21,7 @@ Frozen sources are read-only. Runtime status classification, classpath order, an
 
 - `run_points.py`: new point orchestration, using the previous dev_later.py and llm_later.py status/rerun rules; four isolated commit workers, and the prior four file workers within LLM compilation/runs. No cached points.
 - `coverage_t.py`: new denominator-only baseline measurement; uses the existing run_class.java_options API unchanged, with include_methods and append=false. Sums JaCoCo class counters, including inner and anonymous classes.
-- `events.py`, `figure.py`, `verify_final.py`, `handover_b.py`, `test_analysis.py`: new commit-analysis, reporting and validation scripts.
+- `events.py`, `figure.py`, `verify_final.py`, `test_analysis.py`: new commit-analysis, reporting and validation scripts.
 - `survival_common.py` remains an unused preserved release-analysis helper; the new survival.py is self-contained.
 
 Reference `experiments/survival/scripts/dev_later.py` SHA-256: `48d3152fd55348cd3da8a8ef363eb35e1d05bf2f6c141aacee54e6258eba13f3`.

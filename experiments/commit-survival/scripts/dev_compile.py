@@ -82,7 +82,7 @@ def main():
     if tag==BASELINE:
         write_json(EXP/'results/dev-t-compile.json',summary)
     if cross_test:
-        raise SystemExit('STOP: javac names another test class; report in handover')
+        raise SystemExit('STOP: javac names another test class; inspect the compilation diagnostics')
     if tag==BASELINE and (summary['files_compile_fail'] or failed):
         raise SystemExit('STOP: baseline compile failure')
 

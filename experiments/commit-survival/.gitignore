@@ -10,3 +10,11 @@ docs/*meeting-memo*
 .DS_Store
 __pycache__/
 tools/python/
+results/brief-revision.json
+results/commits-validation-error.json
+results/continuation.json
+results/deviations.json
+results/handover-stage.json
+scripts/handover_a.py
+scripts/handover_b.py
+scripts/record_commit_validation_stop.py

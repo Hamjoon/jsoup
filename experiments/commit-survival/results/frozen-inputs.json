@@ -68,26 +68,6 @@
     "sha256": "4ad733708e603cc50b169b0d43846fb7d6f9051c837d5116fd36f63afeed9c4e"
   },
   {
-    "path": "scripts/handover_a.py",
-    "sha256": "fbc2d77334936158d241f1959c5dcbdb8f3450230d5190751d9061be21af2119"
-  },
-  {
-    "path": "scripts/handover_b.py",
-    "sha256": "1167c8989b15455319eeba11f026c0a87bc7f9f6dbce0b62720346fa2ad09051"
-  },
-  {
-    "path": "scripts/handover_part2_a.py",
-    "sha256": "8d34d8ed7004f8a1f276c1373192068957703f4ae50db862c6f980b092c65808"
-  },
-  {
-    "path": "scripts/handover_part2_b.py",
-    "sha256": "9982a89ea10eba6106532a88ecc0137a063b7ad85ebe40a402b7db7cc2ebb08a"
-  },
-  {
-    "path": "scripts/handover_part2_c.py",
-    "sha256": "ff6d861b47c64d1ab30dd23a7f029843a018abbc6039c037375b29e64304df50"
-  },
-  {
     "path": "scripts/llm_common.py",
     "sha256": "536ee17cd1be4cd2ed5e8ecd545454c62141bb2e13d6bd50b0c54321fa50b4a4"
   },

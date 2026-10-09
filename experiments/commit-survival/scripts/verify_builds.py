@@ -5,7 +5,6 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
-import time
 from build_commits import COMMANDS, EXP, PREV, REPO, FIELDS
 
 
@@ -49,11 +48,10 @@ def main():
     for p in baseline_files:
         assert digest(p)==digest(baseline/p.relative_to(PREV/'checkouts/jsoup-1.11.2'))
     subprocess.run(['git','diff','--exit-code',setup['base_commit'].split()[0],'--','experiments/survival'],cwd=REPO,check=True)
-    revision=json.loads((results/'brief-revision.json').read_text())
     record=dict(frozen_files_checked=len(manifest),changed_frozen_files=changed,
                 copied_results_checked=len(setup['copied_results']),baseline_files_checked=len(baseline_files),
                 build_records_checked=len(builds),successful_maven_commands=commands,
-                previous_experiment_git_diff='empty',resumed_wall_seconds=round(time.time()-revision['resumed_unix'],3))
+                previous_experiment_git_diff='empty')
     (results/'step3-integrity.json').write_text(json.dumps(record,indent=2)+'\n')
     print(json.dumps(record,indent=2))
 
